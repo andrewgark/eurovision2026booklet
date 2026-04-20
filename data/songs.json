@@ -1,0 +1,20 @@
+[
+  {
+    "entry_id": "SE_2026_DEMO",
+    "country_code": "SE",
+    "artist_id": "artist_demo",
+    "song_title": "Demo Song",
+    "song_title_en": "Demo Song",
+    "song_title_ru": "Демо-песня",
+    "lyrics_original": "Lyrics go here (manual).",
+    "translation_en": "Translation to English (manual).",
+    "translation_ru": "Перевод на русский (вручную).",
+    "facts": {
+      "en": "Song facts (manual).",
+      "ru": "Факты о песне (вручную)."
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": ""
+  }
+]
+

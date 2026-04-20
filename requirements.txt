@@ -1,0 +1,9 @@
+jinja2
+pydantic
+requests
+python-dotenv
+matplotlib
+geopandas
+shapely
+pyproj
+fiona

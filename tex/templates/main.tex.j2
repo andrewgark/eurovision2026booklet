@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+
+\usepackage{booklet}
+
+% Language selection
+{% if lang == "ru" %}
+\setdefaultlanguage{russian}
+{% else %}
+\setdefaultlanguage{english}
+{% endif %}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black
+}
+
+\begin{document}
+
+% Page 1: Title + contents
+\thispagestyle{empty}
+\BookletTitle{ {{ event_name }} }
+{\Large \Muted{ {{ booklet_title }} — {{ variant_title }} }}\par
+\vspace{8mm}
+
+\SectionTitle{ {% if lang == "ru" %}Содержание{% else %}Contents{% endif %} }
+\begin{itemize}[leftmargin=*]
+  \item {% if lang == "ru" %}О проекте{% else %}About{% endif %}
+  \item {% if lang == "ru" %}Песни{% else %}Songs{% endif %} ({{ entries|length }})
+  \item {% if mode == "pre" %}{% if lang == "ru" %}Коэффициенты букмекеров{% else %}Bookmaker odds{% endif %}{% else %}{% if lang == "ru" %}Результаты{% else %}Results{% endif %}{% endif %}
+\end{itemize}
+\newpage
+
+% Page 2: about text
+\SectionTitle{ {% if lang == "ru" %}О проекте{% else %}About{% endif %} }
+{{ about_text }}
+\newpage
+
+% Song pages
+{% for e in entries %}
+{% include "song_page.tex.j2" %}
+\newpage
+{% endfor %}
+
+% Odds / results page
+{% if mode == "pre" %}
+\SectionTitle{ {% if lang == "ru" %}Коэффициенты букмекеров{% else %}Bookmaker odds{% endif %} }
+\Muted{ {% if lang == "ru" %}Данные из базы знаний. Заполните таблицу odds в Google Sheets.{% else %}Data comes from the knowledge base. Fill the odds tab in Google Sheets.{% endif %} }\par
+\vspace{4mm}
+\begin{itemize}[leftmargin=*]
+{% for row in odds_rows %}
+  \item \textbf{ {{ row.entry_label }} }: {{ row.odds }} (\Muted{ {{ row.bookmaker }} }, {{ row.as_of_date }})
+{% endfor %}
+\end{itemize}
+{% else %}
+\SectionTitle{ {% if lang == "ru" %}Результаты{% else %}Results{% endif %} }
+\Muted{ {% if lang == "ru" %}Данные из базы знаний. Заполните таблицу results в Google Sheets.{% else %}Data comes from the knowledge base. Fill the results tab in Google Sheets.{% endif %} }\par
+{% endif %}
+
+\end{document}
+

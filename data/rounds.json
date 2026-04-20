@@ -1,0 +1,11 @@
+{
+  "rounds": [
+    { "round": "SF1", "name": { "en": "Semi-final 1", "ru": "Полуфинал 1" } },
+    { "round": "SF2", "name": { "en": "Semi-final 2", "ru": "Полуфинал 2" } },
+    { "round": "F", "name": { "en": "Final", "ru": "Финал" } }
+  ],
+  "running_order": [
+    { "round": "SF1", "entry_id": "SE_2026_DEMO", "order": 1 }
+  ]
+}
+

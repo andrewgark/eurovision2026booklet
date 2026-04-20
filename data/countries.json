@@ -1,0 +1,17 @@
+[
+  {
+    "country_code": "SE",
+    "country_name": { "en": "Sweden", "ru": "Швеция" },
+    "basic_stats": {
+      "en": "Basic stats (fill in via Sheets).",
+      "ru": "Базовая статистика (заполнить через Sheets)."
+    },
+    "eurovision_stats": {
+      "en": "Eurovision stats (fill in via Sheets).",
+      "ru": "Статистика Евровидения (заполнить через Sheets)."
+    },
+    "flag": { "wikidata_qid": "Q34" },
+    "map": { "iso_a2": "SE" }
+  }
+]
+

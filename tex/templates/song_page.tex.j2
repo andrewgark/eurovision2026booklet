@@ -1,0 +1,28 @@
+\SectionTitle{ {{ e.country_name }} }
+
+\TwoColBlock{
+  \textbf{ {{ e.artist_name }} }\par
+  \Muted{ {{ e.song_title }} }\par
+  \vspace{3mm}
+  \textbf{ {% if lang == "ru" %}Биография{% else %}Biography{% endif %} }\par
+  {{ e.bio }}\par
+  \vspace{2mm}
+  \textbf{ {% if lang == "ru" %}Факты{% else %}Facts{% endif %} }\par
+  {{ e.facts }}\par
+}{
+  \AssetBox{0.49\textwidth}{
+    {% if e.flag_path %}\includegraphics[width=0.9\linewidth]{ {{ e.flag_path }} }{% else %}\Muted{[flag missing]}{% endif %}\par
+    \vspace{2mm}
+    {% if e.map_path %}\includegraphics[width=0.9\linewidth]{ {{ e.map_path }} }{% else %}\Muted{[map missing]}{% endif %}\par
+    \vspace{2mm}
+    {% if e.photo_path %}\includegraphics[width=0.9\linewidth]{ {{ e.photo_path }} }{% else %}\Muted{[artist photo missing]}{% endif %}
+  }
+}
+
+\vspace{4mm}
+\textbf{ {% if lang == "ru" %}Текст{% else %}Lyrics{% endif %} }\par
+\ClampTextBlock{10.5pt}{ {{ e.lyrics_original }} }\par
+\vspace{3mm}
+\textbf{ {% if lang == "ru" %}Перевод{% else %}Translation{% endif %} }\par
+\ClampTextBlock{10.5pt}{ {{ e.translation }} }\par
+

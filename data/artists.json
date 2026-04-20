@@ -1,0 +1,16 @@
+[
+  {
+    "artist_id": "artist_demo",
+    "artist_name": "Demo Artist",
+    "bio": {
+      "en": "Short bio (manual).",
+      "ru": "Краткая биография (вручную)."
+    },
+    "facts": {
+      "en": "Interesting facts (manual).",
+      "ru": "Интересные факты (вручную)."
+    },
+    "photo_file": ""
+  }
+]
+
