@@ -1,28 +1,120 @@
-\SectionTitle{ {{ e.country_name }} }
-
-\TwoColBlock{
-  \textbf{ {{ e.artist_name }} }\par
-  \Muted{ {{ e.song_title }} }\par
-  \vspace{3mm}
-  \textbf{ {% if lang == "ru" %}Биография{% else %}Biography{% endif %} }\par
-  {{ e.bio }}\par
-  \vspace{2mm}
-  \textbf{ {% if lang == "ru" %}Факты{% else %}Facts{% endif %} }\par
-  {{ e.facts }}\par
+{%- set L_ABOUT_COUNTRY = "Страна"      if lang == "ru" else "Country" -%}
+{%- set L_ABOUT_ARTIST  = "Исполнитель" if lang == "ru" else "Artist" -%}
+{%- set L_ABOUT_SONG    = "Песня"       if lang == "ru" else "Song" -%}
+{%- set L_BORN          = "р." if lang == "ru" else "b." -%}
+{%- set L_WIN           = "Победа"  if lang == "ru" else "Win" -%}
+{%- set L_QUALIFY       = "В финал" if lang == "ru" else "Qualify" -%}
+{%- set L_BOOKIES       = "Букмекеры считают:" if lang == "ru" else "Bookies expect:" -%}
+{%- set L_NF            = "Нацотбор"     if lang == "ru" else "National selection" -%}
+{%- set L_MV            = "Клип"         if lang == "ru" else "Official video" -%}
+\SongPage{
+{%- if e.national_final_url or e.music_video_url %}
+\SetSongFooter{ {%- if e.national_final_url %}\VideoLinkFooter{ {{ e.national_final_url }} }{ {{ L_NF }} }{% endif %}{% if e.national_final_url and e.music_video_url %}\hspace{2.0mm}{\color{BookletMuted}\scriptsize\textbullet}\hspace{2.0mm}{% endif %}{% if e.music_video_url %}\VideoLinkFooter{ {{ e.music_video_url }} }{ {{ L_MV }} }{% endif -%} }
+{%- endif %}
+\leavevmode\phantomsection\label{song-{{ e.country_code }}}%
+  \HeroBand
+    { {{ e.flag_path or "" }} }
+    { {{ e.country_name }} }
+    { {{ e.context_tag or "" }} }
+    { {{ e.number_label or "" }} }
+    { {{ e.vote_label or "" }} }
 }{
-  \AssetBox{0.49\textwidth}{
-    {% if e.flag_path %}\includegraphics[width=0.9\linewidth]{ {{ e.flag_path }} }{% else %}\Muted{[flag missing]}{% endif %}\par
-    \vspace{2mm}
-    {% if e.map_path %}\includegraphics[width=0.9\linewidth]{ {{ e.map_path }} }{% else %}\Muted{[map missing]}{% endif %}\par
-    \vspace{2mm}
-    {% if e.photo_path %}\includegraphics[width=0.9\linewidth]{ {{ e.photo_path }} }{% else %}\Muted{[artist photo missing]}{% endif %}
-  }
+% LEFT column: stacked Artist / Country / Song panels.
+% --- Artist -------------------------------------------------------------
+\begin{infopanel}{ {{ L_ABOUT_ARTIST }} }
+\MixedFont\setstretch{1.22}\RaggedRight
+{% if e.photo_path %}
+\begin{minipage}[t]{\linewidth}\vspace*{0pt}
+\includegraphics[width=\linewidth, height=44mm, keepaspectratio]{ {{ e.photo_path }} }
+\end{minipage}
+\par\vspace{2.2mm}
+{% endif %}
+\begin{minipage}[t]{\linewidth}\vspace*{0pt}
+{% for line in e.artist_name_lines %}
+{\sffamily\normalsize\bfseries\MixedBody{ {{ line }} }}\par
+{% if not loop.last %}\vspace{0.3mm}{% endif %}
+{% endfor %}
+{% if e.artist_birth_name_lines %}\vspace{0.12mm}{% endif %}
+{% for line in e.artist_birth_name_lines %}
+{\scriptsize\Muted{\MixedBody{ {{ line }} }}}\par
+{% if not loop.last %}\vspace{0.1mm}{% endif %}
+{% endfor %}
+{% if e.artist_birth_year or e.artist_birth_place or e.artist_grew_up or e.artist_lgbtq %}
+\vspace{1.1mm}\par
+{% elif e.artist_birth_name_lines %}
+\vspace{0.6mm}\par
+{% endif %}
+{% if e.artist_birth_year %}{\scriptsize\Muted{ {{ L_BORN }}\,{{ e.artist_birth_year }} }}\par{% endif %}
+{% if e.artist_birth_place %}{\scriptsize\Muted{\PlaceMarker\,\MixedBody{ {{ e.artist_birth_place }} }}}\par{% endif %}
+{% if e.artist_grew_up and e.artist_grew_up != e.artist_birth_place %}{\scriptsize\Muted{\textrightarrow\,\MixedBody{ {{ e.artist_grew_up }} }}}\par{% endif %}
+{% if e.artist_lgbtq %}\vspace{1.2mm}\LgbtqPill{ {{ e.artist_lgbtq }} }\par{% endif %}
+\end{minipage}
+{% if e.bio_lines %}\par\vspace{2.2mm}\scriptsize\setstretch{1.20}\RaggedRight
+{% for line in e.bio_lines %}\FactChip{ {{ line }} }
+{% endfor %}{% endif %}
+\end{infopanel}
+\par\vspace{2.8mm}
+% --- Country ------------------------------------------------------------
+\begin{infopanel}{ {{ L_ABOUT_COUNTRY }} }
+\scriptsize\MixedFont\setstretch{1.25}\RaggedRight
+{% if e.qualify_percent or e.win_percent %}
+{\scriptsize\Muted{ {{ L_BOOKIES }} }}\par
+\vspace{1.0mm}\par
+{% if e.qualify_percent %}\ProbPill{ {{ L_QUALIFY }} }{ {{ e.qualify_percent }} }{% if e.win_percent %}\hspace{1.6mm}{% endif %}{% endif %}
+{% if e.win_percent %}\ProbPill{ {{ L_WIN }} }{ {{ e.win_percent }} }{% endif %}
+\par
+{% endif %}
+{% if e.country_stats_lines %}
+\vspace{1.6mm}\par
+{% for s in e.country_stats_lines %}{\color{BookletAccent!50}\textbullet}\,{\Muted{ {{ s }} }}\par
+{% endfor %}
+{% endif %}
+{% if e.selection_tag %}\vspace{1.4mm}\MetaPill{ {{ e.selection_tag }} }\par{% endif %}
+{% if e.country_facts_lines %}\vspace{2.0mm}\par\setstretch{1.20}\RaggedRight
+{% for line in e.country_facts_lines %}\FactChip{ {{ line }} }
+{% endfor %}{% endif %}
+\end{infopanel}
+\par\vspace{2.8mm}
+% --- Song ---------------------------------------------------------------
+\begin{infopanel}{ {{ L_ABOUT_SONG }} }
+\MixedFont\setstretch{1.22}\RaggedRight
+{\sffamily\normalsize\bfseries\MixedBody{ {{ e.song_title }} }}\par
+{% if e.song_title_translation %}\vspace{0.1mm}{\scriptsize\Muted{\MixedBody{ {{ e.song_title_translation }} }}}\par{% endif %}
+{% if e.langs_major or e.langs_minor %}
+\vspace{1.8mm}\par\noindent
+\raisebox{0.05ex}{\SongLangIcon}\hspace{2.0mm}%
+{% for t in e.langs_major %}\MetaPill{ {{ t }} }\hspace{1.2mm}{% endfor %}{% for t in e.langs_minor %}\MetaPillMuted{ {{ t }} }\hspace{1.2mm}{% endfor %}
+\par
+{% endif %}
+{% if e.genres %}
+\vspace{1.4mm}\par\noindent
+\raisebox{0.05ex}{\SongGenreIcon}\hspace{2.0mm}%
+{% for t in e.genres %}\MetaPill{ {{ t }} }\hspace{1.2mm}{% endfor %}
+\par
+{% endif %}
+{% if e.facts_lines %}\vspace{2.0mm}\par\scriptsize\setstretch{1.20}\RaggedRight
+{% for line in e.facts_lines %}\FactChip{ {{ line }} }
+{% endfor %}{% endif %}
+\end{infopanel}
+}{
+% RIGHT column: a single tall lyrics column running the full body height.
+{% if not e.has_translation %}
+\LyricsHeaderSolo{ {{ e.song_title }} }
+\LyricsTallSolo{ {{ e.lyrics_font_pt }} }{ {{ e.lyrics_baseline_pt }} }{
+{% for row in e.lyrics_rows %}
+{% if row.kind == "gap" %}\LyricsSoloGap
+{% else %}{{ row.orig }}\\
+{% endif %}
+{% endfor %}
 }
-
-\vspace{4mm}
-\textbf{ {% if lang == "ru" %}Текст{% else %}Lyrics{% endif %} }\par
-\ClampTextBlock{10.5pt}{ {{ e.lyrics_original }} }\par
-\vspace{3mm}
-\textbf{ {% if lang == "ru" %}Перевод{% else %}Translation{% endif %} }\par
-\ClampTextBlock{10.5pt}{ {{ e.translation }} }\par
-
+{% else %}
+\LyricsHeader{ {{ e.song_title }} }{ {{ e.song_title_translation or "" }} }
+\LyricsTall{ {{ e.lyrics_font_pt }} }{ {{ e.lyrics_baseline_pt }} }{
+{% for row in e.lyrics_rows %}
+{% if row.kind == "gap" %}\LyricsGap
+{% else %}{{ row.orig }} & \Muted{ {{ row.trans }} }\\
+{% endif %}
+{% endfor %}
+}
+{% endif %}
+}

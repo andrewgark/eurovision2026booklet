@@ -1,11 +1,180 @@
 {
-  "rounds": [
-    { "round": "SF1", "name": { "en": "Semi-final 1", "ru": "Полуфинал 1" } },
-    { "round": "SF2", "name": { "en": "Semi-final 2", "ru": "Полуфинал 2" } },
-    { "round": "F", "name": { "en": "Final", "ru": "Финал" } }
-  ],
+  "rounds": [],
   "running_order": [
-    { "round": "SF1", "entry_id": "SE_2026_DEMO", "order": 1 }
+    {
+      "round": "SF1",
+      "country_code": "MD",
+      "order": 1
+    },
+    {
+      "round": "SF1",
+      "country_code": "SE",
+      "order": 2
+    },
+    {
+      "round": "SF1",
+      "country_code": "HR",
+      "order": 3
+    },
+    {
+      "round": "SF1",
+      "country_code": "GR",
+      "order": 4
+    },
+    {
+      "round": "SF1",
+      "country_code": "PT",
+      "order": 5
+    },
+    {
+      "round": "SF1",
+      "country_code": "GE",
+      "order": 6
+    },
+    {
+      "round": "SF1",
+      "country_code": "IT",
+      "order": 7
+    },
+    {
+      "round": "SF1",
+      "country_code": "FI",
+      "order": 8
+    },
+    {
+      "round": "SF1",
+      "country_code": "ME",
+      "order": 9
+    },
+    {
+      "round": "SF1",
+      "country_code": "EE",
+      "order": 10
+    },
+    {
+      "round": "SF1",
+      "country_code": "IL",
+      "order": 11
+    },
+    {
+      "round": "SF1",
+      "country_code": "DE",
+      "order": 12
+    },
+    {
+      "round": "SF1",
+      "country_code": "BE",
+      "order": 13
+    },
+    {
+      "round": "SF1",
+      "country_code": "LT",
+      "order": 14
+    },
+    {
+      "round": "SF1",
+      "country_code": "SM",
+      "order": 15
+    },
+    {
+      "round": "SF1",
+      "country_code": "PL",
+      "order": 16
+    },
+    {
+      "round": "SF1",
+      "country_code": "RS",
+      "order": 17
+    },
+    {
+      "round": "SF2",
+      "country_code": "BG",
+      "order": 1
+    },
+    {
+      "round": "SF2",
+      "country_code": "AZ",
+      "order": 2
+    },
+    {
+      "round": "SF2",
+      "country_code": "RO",
+      "order": 3
+    },
+    {
+      "round": "SF2",
+      "country_code": "LU",
+      "order": 4
+    },
+    {
+      "round": "SF2",
+      "country_code": "CZ",
+      "order": 5
+    },
+    {
+      "round": "SF2",
+      "country_code": "FR",
+      "order": 6
+    },
+    {
+      "round": "SF2",
+      "country_code": "AM",
+      "order": 7
+    },
+    {
+      "round": "SF2",
+      "country_code": "CH",
+      "order": 8
+    },
+    {
+      "round": "SF2",
+      "country_code": "CY",
+      "order": 9
+    },
+    {
+      "round": "SF2",
+      "country_code": "AT",
+      "order": 10
+    },
+    {
+      "round": "SF2",
+      "country_code": "LV",
+      "order": 11
+    },
+    {
+      "round": "SF2",
+      "country_code": "DK",
+      "order": 12
+    },
+    {
+      "round": "SF2",
+      "country_code": "AU",
+      "order": 13
+    },
+    {
+      "round": "SF2",
+      "country_code": "UA",
+      "order": 14
+    },
+    {
+      "round": "SF2",
+      "country_code": "GB",
+      "order": 15
+    },
+    {
+      "round": "SF2",
+      "country_code": "AL",
+      "order": 16
+    },
+    {
+      "round": "SF2",
+      "country_code": "MT",
+      "order": 17
+    },
+    {
+      "round": "SF2",
+      "country_code": "NO",
+      "order": 18
+    }
   ]
 }
-

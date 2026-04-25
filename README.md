@@ -2,6 +2,10 @@
 
 This project generates Eurovision 2026 PDF booklets from a shared knowledge base (Google Sheets).
 
+**Source spreadsheet:** [Eurovision Booklet Content](https://docs.google.com/spreadsheets/d/1INXyh8glLCOrtI_M-cV_gZ7LXcr5mBm0ffeVhYXQIVc/edit) (view/export access required for pulls).
+
+For the 2026 contest we treat each row as **one country ↔ one artist ↔ one song**; **`country_code` (ISO2) is the only stable id** in JSON and in the template CSVs (no separate entry or artist ids).
+
 ## Outputs
 
 We build **10 PDF variants** (5 booklet types × 2 languages):
@@ -65,8 +69,14 @@ Outputs land in `dist/`.
 
 We use a **two-step flow**:
 
-1) `scripts/pull_sheets.py` pulls data from Google Sheets into local `data/*.json` snapshots.\n
-2) LaTeX build reads only the local JSON snapshots (deterministic builds).
+1. `scripts/pull_sheets.py` pulls CSV exports from the [booklet spreadsheet](https://docs.google.com/spreadsheets/d/1INXyh8glLCOrtI_M-cV_gZ7LXcr5mBm0ffeVhYXQIVc/edit) into `data/*.json` and saves raw tab CSV under `data/source_csv/` (use `--no-save-csv` to skip snapshots).
+2. LaTeX build reads only the local JSON snapshots (deterministic builds).
+
+```bash
+.venv/bin/python scripts/pull_sheets.py
+```
+
+Use `--format template` plus `--gid-*` flags if you point at a sheet that follows the older column layout in `templates/sheets/`.
 
 This keeps the build reproducible and avoids requiring Google credentials at LaTeX build time.
 
@@ -95,16 +105,16 @@ See `assets/sources.md` for the approved sources.
 
 ## Folder layout
 
-- `data/`: JSON snapshots (config, countries, artists, songs, rounds, odds, results)\n
-- `assets/`: flags, maps, artist photos\n
-- `scripts/`: sync/build pipelines\n
-- `tex/`: LaTeX styles + templates\n
-- `build/`: generated TeX intermediates\n
-- `dist/`: final PDFs\n
+- `data/`: JSON snapshots (config, countries, artists, songs, rounds, odds, results) and optional `data/source_csv/` exports
+- `assets/`: flags, maps, artist photos
+- `scripts/`: sync/build pipelines
+- `tex/`: LaTeX styles + templates
+- `build/`: generated TeX intermediates
+- `dist/`: final PDFs
 
 ## Notes on TeX availability
 
-If `latexmk` is not installed, `scripts/build_all.py` will fail. You can still generate TeX sources without running LaTeX:\n
+If `latexmk` is not installed, `scripts/build_all.py` will fail. You can still generate TeX sources without running LaTeX:
 
 ```bash
 python scripts/build.py --variant overall_pre --lang en

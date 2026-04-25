@@ -1,16 +1,947 @@
 [
   {
-    "artist_id": "artist_demo",
-    "artist_name": "Demo Artist",
+    "country_code": "AL",
+    "artist_name": "Alis",
     "bio": {
-      "en": "Short bio (manual).",
-      "ru": "Краткая биография (вручную)."
+      "en": "TODO: перевести",
+      "ru": "В 2024 году победил в албанском X Factor."
     },
     "facts": {
-      "en": "Interesting facts (manual).",
-      "ru": "Интересные факты (вручную)."
+      "en": "Type: SINGER. Birth name: Alis Kallaçi. Born: 2002. LGBTQ+: . Born in: Shkodër. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Алис Каллачи. Год рождения: 2002. LGBTQ+: . Место рождения: Шкодер. Вырос(ла): ."
     },
-    "photo_file": ""
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/img_6182jpeg/IMG_6182-fill_size%3D2560x1600-focal_point%3D917x593-focal_size%3D491x571-fill_size%3D2560x1600-focal_point%3D917x593-focal_size%3D491x571.jpeg",
+    "artist_real_name": {
+      "en": "Alis Kallaçi",
+      "ru": "Алис Каллачи"
+    },
+    "year_born": "2002",
+    "place_born": {
+      "en": "Shkodër",
+      "ru": "Шкодер"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "AM",
+    "artist_name": "Simón",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Simon Hovhannisyan. Born: 1994. LGBTQ+: . Born in: Hrazdan. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Симон Ованнисян. Год рождения: 1994. LGBTQ+: . Место рождения: Раздан. Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/simonjpg/Simon-fill_size%3D1600x900-focal_point%3D536x374-focal_size%3D309x251-fill_size%3D1600x900-focal_point%3D536x374-focal_size%3D309x251.jpg",
+    "artist_real_name": {
+      "en": "Simon Hovhannisyan",
+      "ru": "Симон Ованнисян"
+    },
+    "year_born": "1994",
+    "place_born": {
+      "en": "Hrazdan",
+      "ru": "Раздан"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "AT",
+    "artist_name": "Cosmó",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Один из самых молодых участников конкурса в этом году.\nПрошёл в финал немецкого The Voice Kids в 2022 году, где спел две песни Фрэнка Синатры."
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Benjamin Gedeon. Born: 2006. LGBTQ+: . Born in: Budapest, Hungary. Grew up in: Halbturn, Austria.",
+      "ru": "Тип: SINGER. Имя при рождении: Бенджамин Гедеон. Год рождения: 2006. LGBTQ+: . Место рождения: Будапешт, Венгрия. Вырос(ла): Хальбтурн, Австрия."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/vienna_calling__15_owyglxkjpg/Vienna_Calling__15_OwyGLxK-fill_size%3D1600x900-focal_point%3D832x584-focal_size%3D401x470-fill_size%3D1600x900-focal_point%3D832x584-focal_size%3D401x470.jpg",
+    "artist_real_name": {
+      "en": "Benjamin Gedeon",
+      "ru": "Бенджамин Гедеон"
+    },
+    "year_born": "2006",
+    "place_born": {
+      "en": "Budapest, Hungary",
+      "ru": "Будапешт, Венгрия"
+    },
+    "place_growup": {
+      "en": "Halbturn, Austria",
+      "ru": "Хальбтурн, Австрия"
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "AU",
+    "artist_name": "Delta Goodrem",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Самая успешная среди музыкантов этого года.\nСтала известной в 2002 году, сыграв школьницу Нину в мыльной опере \"Соседи\", которая идёт с 1985 года,\nВ 2003 году у Дельты была диагностирована Лимфома Ходжкина, редкая форма рака.\nВ том же году она выпускает альбом, который теперь входит в топ-10 самых продаваемых альбомов Австралии.\nНесмотря на борьбу с раком, Дельта построила успешную карьеру: 7 студийных альбомов, 9 топ-1 песен в австралийских чартах, выиграно 3 World Music Awards, 12 ARIA Music Awards, MTV Video Music Award и много чего ещё.\nВ 2011-2012 годах встречалась с Ником Джонасом , который младше её на 8 лет.\n20 лет занимается благотворительностью, написала книгу, играла в Cats, снялась в нескольких фильмах, тренировала начинающих звёзд в The Voice Australia и The Voice Kids."
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: . Born: 1984. LGBTQ+: . Born in: Sydney. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: . Год рождения: 1984. LGBTQ+: . Место рождения: Сидней. Вырос(ла): ."
+    },
+    "photo_file": "https://assets.sbs.com.au/dims4/default/062b769/2147483647/strip/true/crop/4962x2791+0+258/resize/1280x720!/quality/90/?url=https%3A%2F%2Fsbs-au-brightspot.s3.ap-southeast-2.amazonaws.com%2F18%2F67%2F1e366b024a5c8e5c0fce5788e396%2F260202-dg-press-04-927-2.jpg",
+    "artist_real_name": {
+      "en": "",
+      "ru": ""
+    },
+    "year_born": "1984",
+    "place_born": {
+      "en": "Sydney",
+      "ru": "Сидней"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "AZ",
+    "artist_name": "Jiva",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Победительница The Voice of Azerbaijan в 2025 году."
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Jamila Hashimova. Born: 1982. LGBTQ+: . Born in: Moscow, Russia. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Джамиля Гашимова. Год рождения: 1982. LGBTQ+: . Место рождения: Москва, Россия. Вырос(ла): ."
+    },
+    "photo_file": "https://static.wixstatic.com/media/1b5dc7_3d086145911f40b490d199be775636fe~mv2.png/v1/fill/w_2500,h_1427,al_c/1b5dc7_3d086145911f40b490d199be775636fe~mv2.png",
+    "artist_real_name": {
+      "en": "Jamila Hashimova",
+      "ru": "Джамиля Гашимова"
+    },
+    "year_born": "1982",
+    "place_born": {
+      "en": "Moscow, Russia",
+      "ru": "Москва, Россия"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "BE",
+    "artist_name": "Essyla",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Участвовала во втором и пока последнем \"Евровидение: Хор\" в 2019 году.\nЗаняла второе место на The Voice Belgique в 2020 году, проиграв Жереми Макиесе, который представил Бельгию на Евровидении в 2022 году.\nПсевдоним \"Essyla\" появился как перевернутое имя певицы \"Alice\"."
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Alice Van Eesbeeck. Born: 1996. LGBTQ+: . Born in: Perwez. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Элис Ван Эсбек. Год рождения: 1996. LGBTQ+: . Место рождения: Перве. Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/essyla-euro_l_rs_ekrztndjpg/ESSYLA%20EURO_L_RS_ekRZTnD-fill_size%3D2560x1600-focal_point%3D973x526-focal_size%3D423x369-fill_size%3D2560x1600-focal_point%3D973x526-focal_size%3D423x369.jpg",
+    "artist_real_name": {
+      "en": "Alice Van Eesbeeck",
+      "ru": "Элис Ван Эсбек"
+    },
+    "year_born": "1996",
+    "place_born": {
+      "en": "Perwez",
+      "ru": "Перве"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "BG",
+    "artist_name": "Dara",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Заняла третье место на болгарском The X Factor в 2015 году.\nТренер на The Voice of Bulgaria с 2021 года, её подопечные выиграли 2 сезона из этих 4.\nАвтор 2 студийных альбомов и больше 30 синглов."
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Darina Yotova. Born: 1998. LGBTQ+: . Born in: Varna. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Дарина Йотова. Год рождения: 1998. LGBTQ+: . Место рождения: Варна. Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/1000078466jpg/1000078466-fill_size%3D1600x900-focal_point%3D1960x650-focal_size%3D403x368-fill_size%3D1600x900-focal_point%3D1960x650-focal_size%3D403x368.jpg",
+    "artist_real_name": {
+      "en": "Darina Yotova",
+      "ru": "Дарина Йотова"
+    },
+    "year_born": "1998",
+    "place_born": {
+      "en": "Varna",
+      "ru": "Варна"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "CH",
+    "artist_name": "Veronica Fusaro",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Участница The Voice of Switzerland в 2014 году.\nВыступала на Гластонбери, а также на разогреве у Марка Нопфлера.\nАвтор 2 студийных альбомов и 20 синглов."
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: . Born: 1997. LGBTQ+: . Born in: Thun. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: . Год рождения: 1997. LGBTQ+: . Место рождения: Тун. Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/switzerland_edk0ddyjpg/Switzerland_eDk0DdY-fill_size%3D2560x1600-focal_point%3D1219x615-focal_size%3D436x403-fill_size%3D2560x1600-focal_point%3D1219x615-focal_size%3D436x403.jpg",
+    "artist_real_name": {
+      "en": "",
+      "ru": ""
+    },
+    "year_born": "1997",
+    "place_born": {
+      "en": "Thun",
+      "ru": "Тун"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "CY",
+    "artist_name": "Antigoni",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Мать Антигони - повар Тоня Бакстон, она ведёт телешоу My Greek Kitchen и My Cypriot Kitchen.\nАнтигони участвовала в реалити-шоу Love Island.\nОна училась в BRIT School, а начала музыкальную карьеру с загрузки треков на SoundCloud и, позже, YouTube.\nВыпустила уже больше 20 синглов."
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Antigoni Buxton. Born: 1996. LGBTQ+: . Born in: London, UK. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Антигони Бакстон. Год рождения: 1996. LGBTQ+: . Место рождения: Лондон, Великобритания. Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/tezza-8111jpg/Tezza-8111-fill_size%3D1600x900-focal_point%3D1127x824-focal_size%3D804x826-fill_size%3D1600x900-focal_point%3D1127x824-focal_size%3D804x826.jpg",
+    "artist_real_name": {
+      "en": "Antigoni Buxton",
+      "ru": "Антигони Бакстон"
+    },
+    "year_born": "1996",
+    "place_born": {
+      "en": "London, UK",
+      "ru": "Лондон, Великобритания"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "CZ",
+    "artist_name": "Daniel Zizka",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Изучает эстрадное пение и композицию в пражской консерватории им. Ярослава Ежека."
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: . Born: 2003. LGBTQ+: . Born in: Prague. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: . Год рождения: 2003. LGBTQ+: . Место рождения: Прага. Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/daniel-zizka_finals__img7135_dcg99uzjpg/Daniel%20Zizka_finals__IMG7135_dcG99Uz-fill_size%3D2560x1600-focal_point%3D765x673-focal_size%3D418x375-fill_size%3D2560x1600-focal_point%3D765x673-focal_size%3D418x375.jpg",
+    "artist_real_name": {
+      "en": "",
+      "ru": ""
+    },
+    "year_born": "2003",
+    "place_born": {
+      "en": "Prague",
+      "ru": "Прага"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "DE",
+    "artist_name": "Sarah Engels",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Стала популярной в 2011 году после занятия 2 места в Deutschland sucht den Superstar.\nТакже заняла 2 место в шоу Let's Dance и выиграла шоу Das große Promibacken, The Masked Singer и Dancing on Ice.\nАвтор 6 студийных альбомов и более 30 синглов."
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: . Born: 1992. LGBTQ+: . Born in: Cologne. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: . Год рождения: 1992. LGBTQ+: . Место рождения: Кёльн. Вырос(ла): ."
+    },
+    "photo_file": "https://i0.wp.com/escxtra.com/wp-content/uploads/Sarah-Engels-Das-Deutsche-Finale-Eurovisoin-2026-Germany.jpg?fit=1440%2C810&ssl=1",
+    "artist_real_name": {
+      "en": "",
+      "ru": ""
+    },
+    "year_born": "1992",
+    "place_born": {
+      "en": "Cologne",
+      "ru": "Кёльн"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "DK",
+    "artist_name": "Søren Torpegaard Lund",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Символ Сёрена -- птица зимородок"
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: . Born: 1998. LGBTQ+: GAY. Born in: Gudme. Grew up in: Oure.",
+      "ru": "Тип: SINGER. Имя при рождении: . Год рождения: 1998. LGBTQ+: GAY. Место рождения: Гудме. Вырос(ла): Оуре."
+    },
+    "photo_file": "https://www.eurovisionuniverse.com/wp-content/uploads/2026/02/Soren-Torpegaard-Lund-1.jpg",
+    "artist_real_name": {
+      "en": "",
+      "ru": ""
+    },
+    "year_born": "1998",
+    "place_born": {
+      "en": "Gudme",
+      "ru": "Гудме"
+    },
+    "place_growup": {
+      "en": "Oure",
+      "ru": "Оуре"
+    },
+    "lgbt": "GAY"
+  },
+  {
+    "country_code": "EE",
+    "artist_name": "Vanilla Ninja",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Эстонская группа с 2002 года, популярная и на родине, и в Европе.\nГруппа представляла Швейцарию на Евровидении-2005 и заняла 8-ое место.\nГруппа прекратила существовать в 2008 году из-за финансовых проблем, музыкантки занялись сольными карьерами.\nНо в 2020 году группа вернулась."
+    },
+    "facts": {
+      "en": "Type: BAND. Birth name: Lenna Kuurmaa, Piret Järvis-Milder, Kerli Kivilaan. Born: . LGBTQ+: . Born in: . Grew up in: .",
+      "ru": "Тип: BAND. Имя при рождении: Леннаа Куурма, Пирет Ярвис-Милдер, Керли Кивилаан. Год рождения: . LGBTQ+: . Место рождения: . Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/eesti-laul-2026-vanilla-ninja-photo-ken-murk_rxkqjpljpg/Eesti%20Laul%202026%20-%20Vanilla%20Ninja%20%28Photo%20Ken%20M%C3%BCrk%29_RxKqJpL-fill_size%3D1600x900-focal_point%3D1463x611-focal_size%3D1758x963-fill_size%3D1600x900-focal_point%3D1463x611-focal_size%3D1758x963.jpg",
+    "artist_real_name": {
+      "en": "Lenna Kuurmaa, Piret Järvis-Milder, Kerli Kivilaan",
+      "ru": "Леннаа Куурма, Пирет Ярвис-Милдер, Керли Кивилаан"
+    },
+    "year_born": "",
+    "place_born": {
+      "en": "",
+      "ru": ""
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "FI",
+    "artist_name": "Linda Lampenius and Pete Parkkonen",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "facts": {
+      "en": "Type: DUO. Birth name: . Born: 1970, 1990. LGBTQ+: . Born in: . Grew up in: Helsinki and Pihtipudas.",
+      "ru": "Тип: DUO. Имя при рождении: . Год рождения: 1970, 1990. LGBTQ+: . Место рождения: . Вырос(ла): Хельсинки и Пихтипудас."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/linda_lampenius_x_pete_parkkonen_music_video_still_credit_nelli_kentta_lcyg46bjpg/Linda_Lampenius_x_Pete_Parkkonen_music_video_still_Credit_Nelli_kentta_LCYG46b-fill_size%3D2560x1600-focal_point%3D2546x913-focal_size%3D968x704-fill_size%3D2560x1600-focal_point%3D2546x913-focal_size%3D968x704.jpg",
+    "artist_real_name": {
+      "en": "",
+      "ru": ""
+    },
+    "year_born": "1970, 1990",
+    "place_born": {
+      "en": "",
+      "ru": ""
+    },
+    "place_growup": {
+      "en": "Helsinki and Pihtipudas",
+      "ru": "Хельсинки и Пихтипудас"
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "FR",
+    "artist_name": "Monroe",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Самая молодая участница этого года"
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Monroe Vata Rigby. Born: 2008. LGBTQ+: . Born in: Salt Lake City, USA. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Монро Вата Ригби. Год рождения: 2008. LGBTQ+: . Место рождения: Солт-Лейк-Сити, США. Вырос(ла): ."
+    },
+    "photo_file": "https://www.leparisien.fr/resizer/0DlHo1k_P1yh35d4_9Rw7d0rE2g=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/C3KMS5SEXVGRDPYEACKUOGHRSE.jpg",
+    "artist_real_name": {
+      "en": "Monroe Vata Rigby",
+      "ru": "Монро Вата Ригби"
+    },
+    "year_born": "2008",
+    "place_born": {
+      "en": "Salt Lake City, USA",
+      "ru": "Солт-Лейк-Сити, США"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "GB",
+    "artist_name": "Look Mum No Computer",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Много лет ведёт блог с музыкальными экспериментами на ютубе"
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Sam Battle. Born: 1989. LGBTQ+: . Born in: Grantham. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Сэм Джеймс Бэттл. Год рождения: 1989. LGBTQ+: . Место рождения: Грантем. Вырос(ла): ."
+    },
+    "photo_file": "https://pix.eurovisionworld.com/pix/united-kingdom-2026-look-mum-no-computer-67.jpg",
+    "artist_real_name": {
+      "en": "Sam Battle",
+      "ru": "Сэм Джеймс Бэттл"
+    },
+    "year_born": "1989",
+    "place_born": {
+      "en": "Grantham",
+      "ru": "Грантем"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "GE",
+    "artist_name": "Bzikebi",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Победители Детского Евровидения в 2008 году с пчелиной песней «Bzz…»."
+    },
+    "facts": {
+      "en": "Type: BAND. Birth name: Giorgi Shiolashvili, Mariam Tatulashvili, Mariam Kikuashvili. Born: . LGBTQ+: . Born in: . Grew up in: .",
+      "ru": "Тип: BAND. Имя при рождении: Георгий Шиолашвили, Мариам Татулашвили, Мариам Кикуашвили. Год рождения: . LGBTQ+: . Место рождения: . Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/img_7022png/IMG_7022-fill_size%3D1600x900-focal_point%3D1158x358-focal_size%3D285x273-fill_size%3D1600x900-focal_point%3D1158x358-focal_size%3D285x273.png",
+    "artist_real_name": {
+      "en": "Giorgi Shiolashvili, Mariam Tatulashvili, Mariam Kikuashvili",
+      "ru": "Георгий Шиолашвили, Мариам Татулашвили, Мариам Кикуашвили"
+    },
+    "year_born": "",
+    "place_born": {
+      "en": "",
+      "ru": ""
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "GR",
+    "artist_name": "Akylas",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Два года работал певцом на круизных лайнерах"
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Akylas Mytilinaios. Born: 1999. LGBTQ+: QUEER. Born in: Serres. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Акилас Митилинайос. Год рождения: 1999. LGBTQ+: QUEER. Место рождения: Сере. Вырос(ла): ."
+    },
+    "photo_file": "https://i0.wp.com/eurovision-quotidien.com/wp-content/uploads/2026/02/AKYLAS-Grece-2026.jpg?resize=1280%2C640&ssl=1",
+    "artist_real_name": {
+      "en": "Akylas Mytilinaios",
+      "ru": "Акилас Митилинайос"
+    },
+    "year_born": "1999",
+    "place_born": {
+      "en": "Serres",
+      "ru": "Сере"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": "QUEER"
+  },
+  {
+    "country_code": "HR",
+    "artist_name": "Lelek",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "facts": {
+      "en": "Type: BAND. Birth name: Inka Večerina Perušić, Judita Štorga, Korina Olivia Rogić, Lara Brtan, Marina Ramljak. Born: . LGBTQ+: . Born in: . Grew up in: .",
+      "ru": "Тип: BAND. Имя при рождении: Инка Вечерина Перушич, Юдита Шторга, Корина Оливия Рогич, Лара Бртан, Марина Рамляк. Год рождения: . LGBTQ+: . Место рождения: . Вырос(ла): ."
+    },
+    "photo_file": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH9Bh4mXy-6TlbqOlS4W9Lxy1rwhHdRt7CDw&s",
+    "artist_real_name": {
+      "en": "Inka Večerina Perušić, Judita Štorga, Korina Olivia Rogić, Lara Brtan, Marina Ramljak",
+      "ru": "Инка Вечерина Перушич, Юдита Шторга, Корина Оливия Рогич, Лара Бртан, Марина Рамляк"
+    },
+    "year_born": "",
+    "place_born": {
+      "en": "",
+      "ru": ""
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "IL",
+    "artist_name": "Noam Bettan",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: . Born: 1998. LGBTQ+: . Born in: Ra'anana. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: . Год рождения: 1998. LGBTQ+: . Место рождения: Раанана. Вырос(ла): ."
+    },
+    "photo_file": "https://i0.wp.com/escxtra.com/wp-content/uploads/Noam-Bettan-Israel-Eurovision-2026.jpg?fit=1320%2C880&ssl=1",
+    "artist_real_name": {
+      "en": "",
+      "ru": ""
+    },
+    "year_born": "1998",
+    "place_born": {
+      "en": "Ra'anana",
+      "ru": "Раанана"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "IT",
+    "artist_name": "Sal Da Vinci",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Самый возрастной участник этого года"
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: . Born: 1969. LGBTQ+: . Born in: New York City, USA. Grew up in: Неаполь, Италия.",
+      "ru": "Тип: SINGER. Имя при рождении: . Год рождения: 1969. LGBTQ+: . Место рождения: Нью-Йорк, США. Вырос(ла): Naples, Italy."
+    },
+    "photo_file": "https://www.raiplay.it/dl/img/2026/02/28/1772314075053_saldavinci-1152.jpg",
+    "artist_real_name": {
+      "en": "",
+      "ru": ""
+    },
+    "year_born": "1969",
+    "place_born": {
+      "en": "New York City, USA",
+      "ru": "Нью-Йорк, США"
+    },
+    "place_growup": {
+      "en": "Неаполь, Италия",
+      "ru": "Naples, Italy"
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "LT",
+    "artist_name": "Lion Ceccah",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Развивает драг-культуру в Литве"
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Tomas Alenčikas. Born: 1991. LGBTQ+: QUEER. Born in: Vilnius. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Томас Аленчикас. Год рождения: 1991. LGBTQ+: QUEER. Место рождения: Вильнюс. Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/lithuaniajpg/Lithuania-fill_size%3D2560x1600-focal_point%3D1306x690-focal_size%3D570x459-fill_size%3D2560x1600-focal_point%3D1306x690-focal_size%3D570x459.jpg",
+    "artist_real_name": {
+      "en": "Tomas Alenčikas",
+      "ru": "Томас Аленчикас"
+    },
+    "year_born": "1991",
+    "place_born": {
+      "en": "Vilnius",
+      "ru": "Вильнюс"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": "QUEER"
+  },
+  {
+    "country_code": "LU",
+    "artist_name": "Eva Marija",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Вдохновилась стать скрипачкой, увидев выступление Александра Рыбака на Евровидении в 2009 году"
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Eva Marija Kavaš Puc. Born: 2005. LGBTQ+: . Born in: Luxembourg City. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Ева Мария Каваш Пуц. Год рождения: 2005. LGBTQ+: . Место рождения: Люксембург. Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/eva_marija-008_yfx8gpcjpg/Eva_Marija-008_yFX8GPC-fill_size%3D1600x900-fill_size%3D1600x900.jpg",
+    "artist_real_name": {
+      "en": "Eva Marija Kavaš Puc",
+      "ru": "Ева Мария Каваш Пуц"
+    },
+    "year_born": "2005",
+    "place_born": {
+      "en": "Luxembourg City",
+      "ru": "Люксембург"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "LV",
+    "artist_name": "Atvara",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Несколько лет входила в команды участников Евровидения, но занималась там маркетингом и была среди авторов песен"
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Liene Atvara. Born: 1993. LGBTQ+: . Born in: Liepāja. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Лиене Атвара. Год рождения: 1993. LGBTQ+: . Место рождения: Лиепая. Вырос(ла): ."
+    },
+    "photo_file": "https://thateurovisionsite.com/wp-content/uploads/image_2026-02-14_212850452.png",
+    "artist_real_name": {
+      "en": "Liene Atvara",
+      "ru": "Лиене Атвара"
+    },
+    "year_born": "1993",
+    "place_born": {
+      "en": "Liepāja",
+      "ru": "Лиепая"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "MD",
+    "artist_name": "Satoshi",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Одна из участниц группы, Алёна Мун, уже дважды была на Евровидении. В 2012 в роли бэк вокалистки, а в 2013 с сольным номером"
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Vlad Sabajuc. Born: 1998. LGBTQ+: . Born in: Cahul. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Влад Сабажук. Год рождения: 1998. LGBTQ+: . Место рождения: Кагул. Вырос(ла): ."
+    },
+    "photo_file": "https://i0.wp.com/eurovoix.com/wp-content/uploads/2026/01/Satoshi.webp?resize=800%2C500&ssl=1",
+    "artist_real_name": {
+      "en": "Vlad Sabajuc",
+      "ru": "Влад Сабажук"
+    },
+    "year_born": "1998",
+    "place_born": {
+      "en": "Cahul",
+      "ru": "Кагул"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "ME",
+    "artist_name": "Tamara Živković",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: . Born: 2000. LGBTQ+: . Born in: Kotor. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: . Год рождения: 2000. LGBTQ+: . Место рождения: Котор. Вырос(ла): ."
+    },
+    "photo_file": "https://pix.eurovisionworld.com/pix/montenegro-2026-tamara-zivkovic-6.jpg",
+    "artist_real_name": {
+      "en": "",
+      "ru": ""
+    },
+    "year_born": "2000",
+    "place_born": {
+      "en": "Kotor",
+      "ru": "Котор"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "MT",
+    "artist_name": "Aidan",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Aidan Cassar. Born: 1999. LGBTQ+: . Born in: Żejtun. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Эйдан Кассар. Год рождения: 1999. LGBTQ+: . Место рождения: Зейтун. Вырос(ла): ."
+    },
+    "photo_file": "https://pix.eurovisionworld.com/pix/malta-2026-aidan.jpg",
+    "artist_real_name": {
+      "en": "Aidan Cassar",
+      "ru": "Эйдан Кассар"
+    },
+    "year_born": "1999",
+    "place_born": {
+      "en": "Żejtun",
+      "ru": "Зейтун"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "NO",
+    "artist_name": "Jonas Lovv",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: . Born: . LGBTQ+: . Born in: . Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: . Год рождения: . LGBTQ+: . Место рождения: . Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/jonas-lovv_pm8n6dqjpg/Jonas%20Lovv_pm8n6Dq-fill_size%3D1600x900-focal_point%3D1473x621-focal_size%3D705x778-fill_size%3D1600x900-focal_point%3D1473x621-focal_size%3D705x778.jpg",
+    "artist_real_name": {
+      "en": "",
+      "ru": ""
+    },
+    "year_born": "",
+    "place_born": {
+      "en": "",
+      "ru": ""
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "PL",
+    "artist_name": "Alicja",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Должна была представлять Польшу на отменённом Евровидении-2020."
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Alicja Maria Szemplińska. Born: 2002. LGBTQ+: . Born in: Ciechanów. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Алиция Мария Шемплинская. Год рождения: 2002. LGBTQ+: . Место рождения: Цеханув. Вырос(ла): ."
+    },
+    "photo_file": "https://pix.eurovisionworld.com/pix/poland-2026-alicja.jpg",
+    "artist_real_name": {
+      "en": "Alicja Maria Szemplińska",
+      "ru": "Алиция Мария Шемплинская"
+    },
+    "year_born": "2002",
+    "place_born": {
+      "en": "Ciechanów",
+      "ru": "Цеханув"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "PT",
+    "artist_name": "Bandidos do Cante",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "facts": {
+      "en": "Type: BAND. Birth name: Miguel Costa, Duarte Farias, Francisco Raposo, Luís Aleixo, Francisco Pestana. Born: . LGBTQ+: . Born in: . Grew up in: .",
+      "ru": "Тип: BAND. Имя при рождении: Мигель Коста, Дуарте Фариас, Франсиско Рапосо, Луис Алейшу, Франсиско Пестана. Год рождения: . LGBTQ+: . Место рождения: . Вырос(ла): ."
+    },
+    "photo_file": "https://pix.eurovisionworld.com/pix/portugal-2026-bandidos-do-cante.jpg",
+    "artist_real_name": {
+      "en": "Miguel Costa, Duarte Farias, Francisco Raposo, Luís Aleixo, Francisco Pestana",
+      "ru": "Мигель Коста, Дуарте Фариас, Франсиско Рапосо, Луис Алейшу, Франсиско Пестана"
+    },
+    "year_born": "",
+    "place_born": {
+      "en": "",
+      "ru": ""
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "RO",
+    "artist_name": "Alexandra Căpitănescu",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: . Born: 2003. LGBTQ+: . Born in: Galați. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: . Год рождения: 2003. LGBTQ+: . Место рождения: Галац. Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/romaniajpg/Romania-fill_size%3D2560x1600-focal_point%3D1659x838-focal_size%3D348x296-fill_size%3D2560x1600-focal_point%3D1659x838-focal_size%3D348x296.jpg",
+    "artist_real_name": {
+      "en": "",
+      "ru": ""
+    },
+    "year_born": "2003",
+    "place_born": {
+      "en": "Galați",
+      "ru": "Галац"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "RS",
+    "artist_name": "Lavina",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "facts": {
+      "en": "Type: BAND. Birth name: Luka Aranđelović, Pavle Aranđelović, Pavle Samardžić, Andrija Cvetanović, Nikola Petrović, Bojan Ilić. Born: . LGBTQ+: . Born in: . Grew up in: .",
+      "ru": "Тип: BAND. Имя при рождении: Лука Аранджелович, Павле Аранджелович, Павле Самарджич, Андрия Цветанович, Никола Петрович, Боян Илич. Год рождения: . LGBTQ+: . Место рождения: . Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/lavina_dsc_6690-copdy-copy2_l0qfyuvjpg/LAVINA_DSC_6690%20copdy%20copy2_l0QfYUv-fill_size%3D1600x900-focal_point%3D1984x751-focal_size%3D1209x759-fill_size%3D1600x900-focal_point%3D1984x751-focal_size%3D1209x759.jpg",
+    "artist_real_name": {
+      "en": "Luka Aranđelović, Pavle Aranđelović, Pavle Samardžić, Andrija Cvetanović, Nikola Petrović, Bojan Ilić",
+      "ru": "Лука Аранджелович, Павле Аранджелович, Павле Самарджич, Андрия Цветанович, Никола Петрович, Боян Илич"
+    },
+    "year_born": "",
+    "place_born": {
+      "en": "",
+      "ru": ""
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "SE",
+    "artist_name": "Felicia",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Фелисия скрывает нижнюю часть лица маской или надевает большие солнцезащитные очки"
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Felicia Eriksson. Born: 2001. LGBTQ+: . Born in: Tullinge. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Фелисия Агнета Эрикссон. Год рождения: 2001. LGBTQ+: . Место рождения: Туллинге. Вырос(ла): ."
+    },
+    "photo_file": "https://pix.eurovisionworld.com/pix/sweden-2026-felicia.jpg",
+    "artist_real_name": {
+      "en": "Felicia Eriksson",
+      "ru": "Фелисия Агнета Эрикссон"
+    },
+    "year_born": "2001",
+    "place_born": {
+      "en": "Tullinge",
+      "ru": "Туллинге"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "SM",
+    "artist_name": "Senhit",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "Уже представляла Сан-Марино в 2011 (не вышла в финал), в 2020 (конкурс отменили) и в 2021 (22 место в финале)."
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Senhit Zadik Zadik. Born: 1979. LGBTQ+: . Born in: Bologna, Italy. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Сенит Задик Задик. Год рождения: 1979. LGBTQ+: . Место рождения: Болонья, Италия. Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/san-marinojpg/San%20Marino-fill_size%3D2560x1600-focal_point%3D1335x451-focal_size%3D318x413-fill_size%3D2560x1600-focal_point%3D1335x451-focal_size%3D318x413.jpg",
+    "artist_real_name": {
+      "en": "Senhit Zadik Zadik",
+      "ru": "Сенит Задик Задик"
+    },
+    "year_born": "1979",
+    "place_born": {
+      "en": "Bologna, Italy",
+      "ru": "Болонья, Италия"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
+  },
+  {
+    "country_code": "UA",
+    "artist_name": "Leléka",
+    "bio": {
+      "en": "TODO: перевести",
+      "ru": "«Лелека» переводится с укранского как «Аист»"
+    },
+    "facts": {
+      "en": "Type: SINGER. Birth name: Viktoria Leléka. Born: 1990. LGBTQ+: . Born in: Shakhtarske. Grew up in: .",
+      "ru": "Тип: SINGER. Имя при рождении: Виктория Лелека. Год рождения: 1990. LGBTQ+: . Место рождения: Шахтёрское. Вырос(ла): ."
+    },
+    "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/leleka_editjpg/LEL%C3%89KA_edit-fill_size%3D1600x900-focal_point%3D2088x1249-focal_size%3D1546x1484-fill_size%3D1600x900-focal_point%3D2088x1249-focal_size%3D1546x1484.jpg",
+    "artist_real_name": {
+      "en": "Viktoria Leléka",
+      "ru": "Виктория Лелека"
+    },
+    "year_born": "1990",
+    "place_born": {
+      "en": "Shakhtarske",
+      "ru": "Шахтёрское"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
+    },
+    "lgbt": ""
   }
 ]
-

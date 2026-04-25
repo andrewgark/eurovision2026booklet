@@ -1,10 +1,457 @@
 [
   {
+    "round": "F",
+    "country_code": "BE",
+    "bookmaker": "BETSSON",
+    "odds": "401",
+    "as_of_date": "2026-04-23"
+  },
+  {
     "round": "SF1",
-    "entry_id": "SE_2026_DEMO",
-    "bookmaker": "DemoBookmaker",
-    "odds": "10/1",
-    "as_of_date": "2026-04-20"
+    "country_code": "BE",
+    "bookmaker": "BETSSON",
+    "odds": "2.25",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "HR",
+    "bookmaker": "BETSSON",
+    "odds": "67",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "HR",
+    "bookmaker": "BETSSON",
+    "odds": "1.15",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "EE",
+    "bookmaker": "BETSSON",
+    "odds": "501",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "EE",
+    "bookmaker": "BETSSON",
+    "odds": "2.5",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "FI",
+    "bookmaker": "BETSSON",
+    "odds": "2.3",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "FI",
+    "bookmaker": "BETSSON",
+    "odds": "1.01",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "GE",
+    "bookmaker": "BETSSON",
+    "odds": "501",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "GE",
+    "bookmaker": "BETSSON",
+    "odds": "1.4",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "GR",
+    "bookmaker": "BETSSON",
+    "odds": "10",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "GR",
+    "bookmaker": "BETSSON",
+    "odds": "1.01",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "IL",
+    "bookmaker": "BETSSON",
+    "odds": "13",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "IL",
+    "bookmaker": "BETSSON",
+    "odds": "1.01",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "LT",
+    "bookmaker": "BETSSON",
+    "odds": "51",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "LT",
+    "bookmaker": "BETSSON",
+    "odds": "1.35",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "MD",
+    "bookmaker": "BETSSON",
+    "odds": "67",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "MD",
+    "bookmaker": "BETSSON",
+    "odds": "1.15",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "ME",
+    "bookmaker": "BETSSON",
+    "odds": "501",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "ME",
+    "bookmaker": "BETSSON",
+    "odds": "1.45",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "PL",
+    "bookmaker": "BETSSON",
+    "odds": "301",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "PL",
+    "bookmaker": "BETSSON",
+    "odds": "1.5",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "PT",
+    "bookmaker": "BETSSON",
+    "odds": "501",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "PT",
+    "bookmaker": "BETSSON",
+    "odds": "2.1",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "SM",
+    "bookmaker": "BETSSON",
+    "odds": "301",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "SM",
+    "bookmaker": "BETSSON",
+    "odds": "5",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "RS",
+    "bookmaker": "BETSSON",
+    "odds": "301",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "RS",
+    "bookmaker": "BETSSON",
+    "odds": "1.12",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "SE",
+    "bookmaker": "BETSSON",
+    "odds": "16",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF1",
+    "country_code": "SE",
+    "bookmaker": "BETSSON",
+    "odds": "1.01",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "DE",
+    "bookmaker": "BETSSON",
+    "odds": "201",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "IT",
+    "bookmaker": "BETSSON",
+    "odds": "26",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "AL",
+    "bookmaker": "BETSSON",
+    "odds": "251",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "AL",
+    "bookmaker": "BETSSON",
+    "odds": "1.25",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "AM",
+    "bookmaker": "BETSSON",
+    "odds": "151",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "AM",
+    "bookmaker": "BETSSON",
+    "odds": "2",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "AU",
+    "bookmaker": "BETSSON",
+    "odds": "8.5",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "AU",
+    "bookmaker": "BETSSON",
+    "odds": "1.01",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "AZ",
+    "bookmaker": "BETSSON",
+    "odds": "501",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "AZ",
+    "bookmaker": "BETSSON",
+    "odds": "7",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "BG",
+    "bookmaker": "BETSSON",
+    "odds": "51",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "BG",
+    "bookmaker": "BETSSON",
+    "odds": "1.1",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "CY",
+    "bookmaker": "BETSSON",
+    "odds": "51",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "CY",
+    "bookmaker": "BETSSON",
+    "odds": "1.14",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "CZ",
+    "bookmaker": "BETSSON",
+    "odds": "51",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "CZ",
+    "bookmaker": "BETSSON",
+    "odds": "1.14",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "DK",
+    "bookmaker": "BETSSON",
+    "odds": "7",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "DK",
+    "bookmaker": "BETSSON",
+    "odds": "1.01",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "LV",
+    "bookmaker": "BETSSON",
+    "odds": "151",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "LV",
+    "bookmaker": "BETSSON",
+    "odds": "1.5",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "LU",
+    "bookmaker": "BETSSON",
+    "odds": "81",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "LU",
+    "bookmaker": "BETSSON",
+    "odds": "2.65",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "MT",
+    "bookmaker": "BETSSON",
+    "odds": "67",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "MT",
+    "bookmaker": "BETSSON",
+    "odds": "1.18",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "NO",
+    "bookmaker": "BETSSON",
+    "odds": "101",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "NO",
+    "bookmaker": "BETSSON",
+    "odds": "1.25",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "RO",
+    "bookmaker": "BETSSON",
+    "odds": "23",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "RO",
+    "bookmaker": "BETSSON",
+    "odds": "1.1",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "CH",
+    "bookmaker": "BETSSON",
+    "odds": "301",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "CH",
+    "bookmaker": "BETSSON",
+    "odds": "2.3",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "UA",
+    "bookmaker": "BETSSON",
+    "odds": "29",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "SF2",
+    "country_code": "UA",
+    "bookmaker": "BETSSON",
+    "odds": "1.01",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "AT",
+    "bookmaker": "BETSSON",
+    "odds": "401",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "FR",
+    "bookmaker": "BETSSON",
+    "odds": "6.5",
+    "as_of_date": "2026-04-23"
+  },
+  {
+    "round": "F",
+    "country_code": "GB",
+    "bookmaker": "BETSSON",
+    "odds": "81",
+    "as_of_date": "2026-04-23"
   }
 ]
-

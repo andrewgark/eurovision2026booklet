@@ -1,0 +1,36 @@
+odds_type,country_id,country_name,SF,odds_23_04_2026_BETSSON_winner,odds_23_04_2026_BETSSON_qualify
+Winner,BE,Belgium,SF1,401,2.25
+Winner,HR,Croatia,SF1,67,1.15
+Winner,EE,Estonia,SF1,501,2.5
+Winner,FI,Finland,SF1,2.3,1.01
+Winner,GE,Georgia,SF1,501,1.4
+Winner,GR,Greece,SF1,10,1.01
+Winner,IL,Israel,SF1,13,1.01
+Winner,LT,Lithuania,SF1,51,1.35
+Winner,MD,Moldova,SF1,67,1.15
+Winner,ME,Montenegro,SF1,501,1.45
+Winner,PL,Poland,SF1,301,1.5
+Winner,PT,Portugal,SF1,501,2.1
+Winner,SM,San Marino,SF1,301,5
+Winner,RS,Serbia,SF1,301,1.12
+Winner,SE,Sweden,SF1,16,1.01
+Winner,DE,Germany,SF1_AUTO,201,
+Winner,IT,Italy,SF1_AUTO,26,
+Winner,AL,Albania,SF2,251,1.25
+Winner,AM,Armenia,SF2,151,2
+Winner,AU,Australia,SF2,8.5,1.01
+Winner,AZ,Azerbaijan,SF2,501,7
+Winner,BG,Bulgaria,SF2,51,1.1
+Winner,CY,Cyprus,SF2,51,1.14
+Winner,CZ,Czechia,SF2,51,1.14
+Winner,DK,Denmark,SF2,7,1.01
+Winner,LV,Latvia,SF2,151,1.5
+Winner,LU,Luxembourg,SF2,81,2.65
+Winner,MT,Malta,SF2,67,1.18
+Winner,NO,Norway,SF2,101,1.25
+Winner,RO,Romania,SF2,23,1.1
+Winner,CH,Switzerland,SF2,301,2.3
+Winner,UA,Ukraine,SF2,29,1.01
+Winner,AT,Austria,SF2_AUTO,401,
+Winner,FR,France,SF2_AUTO,6.5,
+Winner,GB,United Kingdom,SF2_AUTO,81,

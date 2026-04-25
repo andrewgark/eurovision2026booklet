@@ -1,20 +1,1052 @@
 [
   {
-    "entry_id": "SE_2026_DEMO",
-    "country_code": "SE",
-    "artist_id": "artist_demo",
-    "song_title": "Demo Song",
-    "song_title_en": "Demo Song",
-    "song_title_ru": "Демо-песня",
-    "lyrics_original": "Lyrics go here (manual).",
-    "translation_en": "Translation to English (manual).",
-    "translation_ru": "Перевод на русский (вручную).",
+    "country_code": "AL",
+    "song_title": "Nân",
+    "song_title_en": "Nân",
+    "song_title_ru": "Мама",
+    "lyrics_original": "[Hyrja]\nTa dish se nana po ju pret\nE nana ju po ju përcjell\nNana në prag aty ngel në derë\nDy javë, dy vjet, iku kjo verë\n\n[Strofa 1]\nZemra po dhemb\nE lotin mezi po e mban\nJu tash po ikni, do qani pak\nDo harroheni, për jetë ma t'mirë, e di\nE ne na duket shohim hijet\nNë korridor ecin me vrap\nDëgjojmë zërat, hala n'oborr\n\n[Pararefreni]\nE qeshun me t'madhe\nHap dritaren e askush nuk asht aty\nMarr t'shtroj për t'fjet n'divana e n'tokë\nBaj za, askush s'përgjigjet\n\n[Refreni]\nTa dish se nana po ju pret\nE nana ju po ju përcjell\nNana në prag aty ngel në derë\nDy javë, dy vjet, iku kjo verë\n\n[Strofa 2]\nRri e kujtoj\nKët' vend që dikur s'pat qetësi\nRrëmujë e ngrohtë\nGjithë librat n'tokë\nShpejt u ba ftohtë\nShkretinë e plotë\n\n[Refreni]\nTa dish se nana po ju pret\nE nana ju po ju përcjell\nNana në prag aty ngel në derë\nDy javë, dy vjet, iku kjo verë\nTa dish se nana po ju pret\nE nana ju po ju përcjell\nNana në prag aty ngel në derë\nDy javë, dy vjet, iku kjo verë\nTa dish se nana po ju pret\nE nana ju po ju përcjell\nNana në prag aty ngel në derë\nDy javë, dy vjet, iku kjo verë\n\n[Mbyllja]\nKur po vjen, moj nan?\nSe malli m'than\nPo mos u mërzit\nNana ka me t'prit",
+    "translation_en": "[Intro]\nKnow that your mom is waiting for you\nAnd your mom is showing you the way\nMom stays there, standing at the door\nTwo weeks, two years, this summer is gone\n\n[Verse 1]\nYour heart is aching\nAnd you’re barely holding back the tears\nYou're leaving now, you'll cry a little\nThen you'll move on, I know it's for a better life\nAnd to us it feels like we still see the shadows\nThey're running through the hallway\nWe still hear their voices out in the yard\n\n[Pre-Chorus]\nI hear their loud laughters\nI open the window, but no one is there anymore\nI take out the blankеts to make your bed on the couch or on thе floor\nI call out, but no one answers\n\n[Chorus]\nKnow that your mom is waiting for you\nAnd your mom is sending you off\nMom stands there at the doorway\nTwo weeks, two years, this summer is gone\n\n[Verse 2]\nI sit and remember\nWhen this place was never quiet\nA warming mess\nAll the books on the floor\nIt quickly turned cold\nAn empty wasteland\n\n[Chorus]\nKnow that your mom is waiting for you\nAnd your mom is sending you off\nMom stands there at the doorway\nTwo weeks, two years, this summer is gone\nKnow that your mom is waiting for you\nAnd your mom is sending you off\nMom stands there at the doorway\nTwo weeks, two years, this summer is gone\nKnow that your mom is waiting for you\nAnd your mom is sending you off\nMom stands there at the doorway\nTwo weeks, two years, this summer is gone\n\n[Outro]\nWhen are you coming, my child?\n'Cause my longing is eating me\nBut don't be sad\nMom will be waiting for you",
+    "translation_ru": "Знай, что мама ждёт тебя,\nОна машет тебе вслед у дороги.\nВсё ещё стоит у двери,\nПока две недели, два года, да и это лето тоже – прошло.\n\nМоё сердце болит,\nЯ едва сдерживаю слёзы.\nТеперь ты уходишь, ты поплачешь немного,\nА потом забудешь ради лучшей жизни, я знаю.\nМы всё ещё видим ваши тени,\nЧто бегут по коридору,\nИ слышим ваши голоса, что тихим эхом отдаются во дворе.\n\nЯ слышу громкий смех,\nОткрываю окно, но там никого нет.\nЯ застилаю постели на диванах и на полу,\nЗову вас по именам — никто не откликается.\n\nЗнай, что мама ждёт тебя,\nОна машет тебе вслед у дороги.\nВсё ещё стоит у двери,\nПока две недели, два года, да и это лето тоже – прошло.\n\nСижу и вспоминаю это место —\nКогда-то оно не знало покоя даже ночью.\nТёплая, полная беспорядка жизнь,\nКниги на полу.\nВнезапно стало холодно,\nОсталась лишь пустыня.\n\nЗнай, что мать ждёт тебя,\nОна машет тебе вслед у дороги.\nВсё ещё стоит у двери,\nПока две недели, два года, да и это лето тоже – прошло.\nЗнай, что мать ждёт тебя,\nОна машет тебе вслед у дороги.\nВсё ещё стоит у двери,\nПока две недели, два года, да и это лето тоже – прошло.\nЗнай, что мать ждёт тебя,\nОна машет тебе вслед у дороги.\nВсё ещё стоит у двери,\nПока две недели, два года, да и это лето тоже – прошло.\n\nКогда ты вернёшься, дитя моё?\nЭта тоска сжигает изнутри.\nНо не беспокойся,\nМама будет ждать тебя.",
     "facts": {
-      "en": "Song facts (manual).",
-      "ru": "Факты о песне (вручную)."
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "Albanian",
+      "ru": "Албанский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Pop, Ballad",
+      "ru": "Поп, Баллада"
+    },
+    "number_sf": 13,
+    "national_final_url": "https://www.youtube.com/watch?v=-2cZ-Ba6ygg",
+    "music_video_url": "https://www.youtube.com/watch?v=b9AdRrA554o"
+  },
+  {
+    "country_code": "AM",
+    "song_title": "Paloma Rumba",
+    "song_title_en": "Paloma Rumba",
+    "song_title_ru": "Палома Румба",
+    "lyrics_original": "[Intro]\nPa-la-la-la-la\nLa-la-la-la-la\nPa-la-la-la-la-la\n\n[Verse 1]\nSame old place, familiar faces\nCopy paste my days\n(Put on a smile and go on)\nOne last round of kissing the ground\nAnd then I'll be gone for good\n\n[Chorus]\nPaloma Rumba, let's go\nDelete my number burn the phone\n\n[Verse 2]\nTake my chance to finally dance\nAway from all the anger\nToo much sweat and tears and regrets\n'Cause I don't wanna talk about numbers all day long\n\n[Chorus]\nPaloma Rumba, let's go\nRock this, rock this\nDelete my number burn the phone\nRock this, rock this\n\n[Verse 3]\nI'm not a machine just stuck on a wage\nIn a rage, as a cage with a badge, oh no\nCan't take no more, takе no more\nI'm done for sure, yеah (Put on a smile and go on)\nI'm not a robot just playing the part\nAnd I'm losing my heart I'm falling apart\nSo watch me go steal the show\nLike a pro, yeah\n\n[Verse 4]\nThis meeting could have been an email\nFree coffee won't keep me here man\nCan't do this anymore\nAlready at the door\n\n[Chorus]\nPaloma Rumba, let's go\nRock this, rock this\nDelete my number burn the phone\nRock this, rock thiѕ\n\n[Bridge]\nYou ole-ole-ole-ole-fa, Paloma Rumba\nYou ole-ole-ole-ole-fa, Paloma Rumba\nYou ole-ole-ole-ole-fa, Paloma Rumba\nYou ole-ole-ole-ole-fa, Paloma Rumba\nAre you ready?\n\n[Outro]\nPa-la-la-la-la (Rock this)\nLa-la-la-la-la (Rock this)\nPa-la-la-la-la-la\nGo, one more time",
+    "translation_en": "",
+    "translation_ru": "[Интро]\nПа-ла-ла-ла-ла-ла\nЛа-ла-ла-ла-ла-ла\nПа-ла-ла-ла-ла-ла-ла\n\n[Куплет 1]\nТо же старое место, знакомые лица\nСкопируй и вставь мои дни\n(Улыбнись и продолжай)\nПоследний раз поцелую землю\nА потом уйду навсегда\n\n[Припев]\nПалома Румба, поехали\nСотри мой номер, сожги телефон\n\n[Куплет 2]\nВоспользуюсь шансом наконец-то потанцевать\nВдали от всего этого гнева\nОт пота, слёз и сожалений\nПотому что я не хочу целыми днями говорить о цифрах\n\n[Припев]\nПалома Румба, поехали\nЗажигай, зажигай\nСотри мой номер, сожги телефон\nЗажигай, зажигай\n\n[Куплет 3]\nЯ не машина, которая просто отрабатывает зарплату\nВ ярости, как клетка со значком, о нет\nЯ больше не могу, не могу больше\nС меня хватит, да (улыбнись и продолжай)\nЯ не робот, который просто играет свою роль\nЯ теряю сердце, я разваливаюсь на части\nТак что смотри, как я затмеваю всех\nКак профи, да\n\n[Куплет 4]\nЭту встречу можно было заменить письмом\nБесплатный кофе меня здесь не удержит\nЯ больше не могу\nЯ уже у двери\n\n[Припев]\nПалома Румба, поехали\nЗажигай, зажигай\nСотри мой номер, сожги телефон\nЗажигай, зажигай\n\n[Бридж]\nТы оле-оле-оле-оле-фа, Палома Румба\nТы оле-оле-оле-оле-фа, Палома Румба\nТы оле-оле-оле-оле-фа, Палома Румба\nТы оле-оле-оле-оле-фа, Палома Румба\nТы готова?\n\n[Аутро]\nПа-ла-ла-ла-ла (Зажигай)\nЛа-ла-ла-ла-ла (Зажигай)\nПа-ла-ла-ла-ла\nИди, ещё разок",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": "Текст песни написала Роза Линн, авторка и исполнительница песни Snap (Армения-2022)."
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Pop, Pop-rock",
+      "ru": "Поп, Поп-рок"
+    },
+    "number_sf": 6,
+    "national_final_url": "",
+    "music_video_url": "https://www.youtube.com/watch?v=5EXoK-lgocw"
+  },
+  {
+    "country_code": "AT",
+    "song_title": "Tanzschein",
+    "song_title_en": "Tanzschein",
+    "song_title_ru": "Танцевальная лицензия",
+    "lyrics_original": "[Strophe 1]\nSteh' vor dem Club (Ey), bin schon gespannt\nSag, hast du Lust auf einen Tanz?\nWir treten ein, mh, auf der Suche nach Ekstase\nDoch hinterm Neonlichterschein liegt eine Tier-Oase\nUnd der Löwe versucht's bei einer Gazelle\nDer Hunger macht ihn böse und er rückt ihr auf die Pelle\nIm Gehege geht er durch wie einе Säge\nIst bekanntlich nicht romantisch, er stеht nicht aufs Gerede\n\n[Pre-Refrain]\nEy, ey, das kann doch gar nicht wahr sein\nDie machen sich zum Affen und Tänzer seh' ich gar kein'n\nEy, ey, ich hätt eine Idee, ein Konzept\nJa, das wär einfach perfekt\n\n[Refrain]\nSie brauchen einen Tanzschein, da muss ich streng sein\nWeil ohne Tanzschein, lass ich Sie nicht rein\nHab'n Sie einen Tanzschein? Das soll kein Witz sein\nWeil ohne Tanzschein, da komm'n Sie nicht rein\n\n[Strophe 2]\nIch schließ die Augen, dann bin ich Clubbesitzer\nUnd auf der schwarzen Liste steh'n die Steroidenspritzer\nUnd auch wenn sie nur bell'n und eigentlich gar nicht beißen\nDas ist hier die Regel, Hunde müssen draußen bleiben\n\n[Pre-Refrain]\nEy, ey, so kann es jeden Tag sein\nWir tanzen durch die Nacht und Löwen seh' ich gar kein'n\nEy, ey, draußen macht sich wer zum Affen\nDoch der Türsteher sagt mit einem Lachen\n\n[Refrain]\nSie brauchen einen Tanzschein, da muss ich streng sein\nWeil ohne Tanzschein, lass ich Sie nicht rein\nHab'n Sie einen Tanzschein? Das soll kein Witz sein\nWeil ohne Tanzschein, da komm'n Sie nicht rein\n\n[Bridge]\nDer Gorilla in der Ecke träumt von seiner Pirouette\nEr scheut sich vor den Blicken, die die Artgenossen schicken\nIch nehm ihn an der Hand, ja, bildet einen Gang\nWir schau'n uns in die Augen und jetzt fang'n wir an\n\n[Interlude]\nEy, ey, ey, ey, du kannst mir vertrau'n\nEy, ey, ey, ey, hier ist alles erlaubt\nOh, oh-oh, oh\nWir hab'n uns doch lang genug versteckt\n\n[Refrain]\nUnd alle wollen einen Tanzschein, sie wollen wie wir sein\nDoch ohne Tanzschein werden sie Tiere bleiben\nHab'n Sie einen Tanzschein? Das soll kein Witz sein\nWeil ohne Tanzschein, da komm'n Sie nicht rein",
+    "translation_en": "[Verse 1]\nI'm standing by the club (Ay), I'm already excited\nTell me, do you wanna dance?\nWe enter, mm, in search of ecstasy\nBut behind the neon lights there's an animal oasis\nAnd the lion tries it on a gazelle\nHunger makes him angry, and he gets on her nerves\nHe cuts through the enclosure like a saw\nHe's known as non-romantic, and he also doesn't like the talk\n\n[Pre-Chorus]\nAy, ay, that can't be true\nThey act like monkeys, and I don't see any dancers\nAy, ay, I have an idea, a concept\nYeah, that'd be just perfect\n\n[Chorus]\nYou need a dance license, I have to be strict about that\n'Cause without a dance license, I won't let you in\nDo you have a dance license? This isn't a joke\n'Cause without a dance license, you can't come in\n\n[Verse 2]\nI close my eyes, then I'm a club owner\nAnd the steroid injectiors are blacklisted\nAnd even if they just bark and don't actually bite\nThere's a rule that says that dogs must stay outside\n\n[Pre-Chorus]\nAy, ay, this can be like that every day\nWe're dancing through the night and I don't see any lions\nAy, ay, someone's acting like a monkey\nBut the bouncer says with a laugh\n\n[Chorus]\nYou need a dance license, I have to be strict about that\n'Cause without a dance license, I won't let you in\nDo you have a dance license? This isn't a joke\n'Cause without a dance license, you can't come in\n\n[Bridge]\nThe gorilla in the corner is dreaming of his pirouette\nHe shies away from the looks that his kinsmen send\nI'll take him by the hand, yes, let's have a walk\nWe'll look into each other's eyes and now let's get it started\n\n[Interlude]\nAy, ay, ay, ay, you can trust me\nAy, ay, ay, ay, everything's allowed here\nOh, oh-oh, oh\nWe've been hiding long enough\n\n[Chorus]\nAnd everyone wants a dance license, they want to be like us\nBut without a dance license, they'll remain animals\nDo you have a dance license? This isn't a joke\n'Cause without a dance license, you can't come in",
+    "translation_ru": "[Куплет 1]\nСтоя перед клубом (Эй), я уже в восторге\nСкажи, не хочешь потанцевать?\nМы входим, м-м, в поисках экстаза\nНо за неоновым светом скрывается животный оазис\nГде лев искушает газель\nГолод делает его злым, он действует ей на нервы\nОн прорезает свою клетку, словно пила\nИзвестно, что он не романтичен и не любит разговоров\n\n[Предприпев]\nЭй, эй, это не может быть правдой\nОни ведут себя как обезьяны, а я не вижу танцоров\nЭй, эй, у меня возникла одна идея, некая концепция\nДа, это было бы просто идеально\n\n[Припев]\nВам нужна танцевальная лицензия, я должен быть строг с этим\nПотому что без танцевальной лицензии я вас не впущу\nУ вас есть танцевальная лицензия? Я не шучу\nПотому что без танцевальной лицензии вы сюда не попадёте\n\n[Куплет 2]\nЯ закрываю глаза, представляю себя владельцем клуба\nГде шприцы со стероидами в чёрном списке\nИ даже если они просто лают, но не кусают\nТакие у нас тут правила, собаки должны оставаться на улице\n\n[Предприпев]\nЭй, эй, так могло бы быть каждый день\nМы танцуем всю ночь напролёт, и я не вижу львов\nЭй, эй, кто-то снаружи ведёт себя как обезьяна\nНо вышибала говорит со смехом\n\n[Припев]\nВам нужна танцевальная лицензия, я должен быть строг с этим\nПотому что без танцевальной лицензии я вас не впущу\nУ вас есть танцевальная лицензия? Я не шучу\nПотому что без танцевальной лицензии вы сюда не попадёте\n\n[Бридж]\nГорилла в углу мечтает о пируэте\nОн сторонится взглядов, которые кидают его сородичи\nЯ беру его за руку, да, давай прогуляемся\nМы смотрим друг другу в глаза, и теперь начинаем\n\n[Интерлюдия]\nЭй, эй, эй, эй, ты можешь мне доверять\nЭй, эй, эй, эй, эй, здесь разрешено всё\nО-о-о-о-о\nМы достаточно долго скрывались\n\n[Припев]\nИ все хотят получить танцевальную лицензию, хотят быть как мы\nНо без танцевальной лицензии они останутся животными\nУ вас есть танцевальная лицензия? Я не шучу\nПотому что без танцевальной лицензии вы сюда не попадёте",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": "Идея песни появилась, когда Космо пришёл в клуб и увидел, что никто не танцует."
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "yes",
+    "langs": {
+      "en": "German",
+      "ru": "Немецкий"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Dance-Pop",
+      "ru": "Дэнс-поп"
+    },
+    "number_sf": 0,
+    "national_final_url": "https://www.youtube.com/watch?v=SPpL_ZuRTZY",
+    "music_video_url": "https://www.youtube.com/watch?v=zPGP9ZphxiY"
+  },
+  {
+    "country_code": "AU",
+    "song_title": "Eclipse",
+    "song_title_en": "Eclipse",
+    "song_title_ru": "Затмение",
+    "lyrics_original": "[Verse 1]\nShadows in the moonlight\nDancing with the sun\nPlanets are aligning\nTo love as one\nAnd it won't be long\nTill the morning comes\nIn a sky full of stars\nThough our lives were apart\nWe've only just begun\n\n[Chorus]\nOne touch, one kiss\nAll my life for a night like this\nThe world stops for us\nOnly love exists\n\n[Post-Chorus]\nWhen we eclipse\nWhen we eclipse\nWhen we eclipse (Oh-oh-oh-oh)\nWhen we eclipse (Oh-oh, oh-oh)\n\n[Verse 2]\nCall it perfect timing\nI call it divine\nGravity is pulling\nYour heart to mine\nAnd it won't be long\nTill the morning comes\nIn a sky full of stars,\nI am right where you are\nForever’s just begun\n\n[Chorus]\nOne touch, one kiss\nAll my life for a night like this\nThe world stops for us\nOnly love exists\n\n[Post-Chorus]\nWhen we eclipse (Oh)\nWhen we eclipse\nWhen we eclipse (Oh-oh-oh-oh)\nWhen we eclipse (Oh-oh, oh-oh)\n\n[Bridge]\nHey! (Oh, oh)\nWhen we eclipse (Oh)\nWe are one love\n\n[Chorus]\nOne touch, one kiss\nAll my life for a night like this\nThe world stops for us\nOnly love exists\n\n[Post-Chorus]\nWhen we eclipse (Oh-oh-oh-oh)\nWhen we eclipse (Oh-oh-oh-oh)\nWhen we eclipse (Oh-oh-oh-oh)\nWhen we eclipse (Oh-oh-oh-oh)",
+    "translation_en": "",
+    "translation_ru": "Тени от лунного света\nТанцуют с солнцем,\nПланеты выстраиваются в линию\nВ знак любви,\nНо пройдёт немного времени,\nИ наступит утро,\nВ небе, усыпанном звёздами,\nНаши судьбы разминутся,\nНо для нас это только начало.\n\nОдно прикосновение, один поцелуй,\nВсю свою жизнь я ждала эту ночь,\nМир останавливается ради нас,\nИ есть лишь любовь,\n\nКогда случается наше затмение,\nКогда случается наше затмение,\nКогда случается наше затмение (о-о-о-о),\nКогда случается наше затмение (о-о-о-о).\n\nСчитай это совпадением,\nНо для меня это божий замысел,\nГравитация тянет\nТвоё сердце к моему,\nНо пройдёт немного времени,\nИ наступит утро,\nВ небе, усыпанном звёздами,\nЯ буду рядом с тобой,\nВечность начинается прямо сейчас.\n\nОдно прикосновение, один поцелуй,\nВсю свою жизнь я ждала эту ночь,\nМир останавливается ради нас,\nИ есть лишь любовь,\n\nКогда случается наше затмение (о),\nКогда случается наше затмение,\nКогда случается наше затмение (о-о-о-о),\nКогда случается наше затмение (о-о-о-о).\n\nЭй! (О-о)\nВ миг нашего затмения (о)\nМы объединены любовью.\n\nОдно прикосновение, один поцелуй,\nВсю свою жизнь я ждала эту ночь,\nМир останавливается ради нас,\nИ есть лишь любовь,\n\nКогда случается наше затмение (о-о-о-о),\nКогда случается наше затмение (о-о-о-о),\nКогда случается наше затмение (о-о-о-о),\nКогда случается наше затмение (о-о-о-о).",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": "Песню выпустили во время затмения."
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Pop, Power pop",
+      "ru": "Поп, Пауэр-поп"
+    },
+    "number_sf": 11,
+    "national_final_url": "",
+    "music_video_url": "https://www.youtube.com/watch?v=EUMCr1pnaMY"
+  },
+  {
+    "country_code": "AZ",
+    "song_title": "Just Go",
+    "song_title_en": "Just Go",
+    "song_title_ru": "Просто уходи",
+    "lyrics_original": "[Verse 1]\nI carried your love inside my heart each day\nYou said our fire would never fade away\nYour name was my dream at night\nYour name when I saw the light\nOh, I was yours all the way\n\n[Pre-Chorus]\nBut now I see through your disguise\nThe truth is burning in my eyes\n\n[Chorus]\nGo, I don't love you anymore\nGo, without you I'll shine\nYou know, I'll erase you from my soul\nGo, I don't want to see your face\nGo, no more tears will ever flow\nI'm begging you, just go\n\n[Verse 2]\nYou said we'd be forever side by side\nYou said our love would never die\nBut you fooled me once again\nYou played your little game\nYou burned the faith I had inside\n\n[Pre-Chorus]\nNow every word feels like a lie\nI'm done, I'm saying goodbye\n\n[Chorus]\nGo, I don't love you anymore\nGo, without you I'll shine\nYou know, I'll erase you from my soul\nGo, I don't want to see your face\nGo, no more tears will ever flow\nI'm begging you, just go\n\n[Bridge]\nMəni tərk et yoruldum yalanından\nMəni tərk et bezmişəm bu oyundan\nMəni tərk et qurtulum bu alovdan\nMəni tərk et çıx mənim dünyamdan\n\n[Outro]\nGo\nGo",
+    "translation_en": "[Verse 1]\nI carried your love inside my heart each day\nYou said our fire would never fade away\nYour name was my dream at night\nYour name when I saw the light\nOh, I was yours all the way\n\n[Pre-Chorus]\nBut now I see through your disguise\nThe truth is burning in my eyes\n\n[Chorus]\nGo, I don't love you anymore\nGo, without you I'll shine\nYou know, I'll erase you from my soul\nGo, I don't want to see your face\nGo, no more tears will ever flow\nI'm begging you, just go\n\n[Verse 2]\nYou said we'd be forever side by side\nYou said our love would never die\nBut you fooled me once again\nYou played your little game\nYou burned the faith I had inside\n\n[Pre-Chorus]\nNow every word feels like a lie\nI'm done, I'm saying goodbye\n\n[Chorus]\nGo, I don't love you anymore\nGo, without you I'll shine\nYou know, I'll erase you from my soul\nGo, I don't want to see your face\nGo, no more tears will ever flow\nI'm begging you, just go\n\n[Bridge]\nGo, I've had enough of your lies\nGo, I'm sick of this game\nGo, free me from this flame\nGo, get out of my world\n\n[Outro]\nGo\nGo",
+    "translation_ru": "Я берегла твою любовь в своём сердце день ото дня,\nТы сказал, что нашей страсти никогда не угаснуть,\nТвой имя снилось мне по ночам\nИ было светом для меня,\nЯ всецело была твоей.\n\nНо теперь я вижу твою маску,\nПравда прожигает мне глаза.\n\nУходи, я больше тебя не люблю,\nУходи, без тебя я буду сиять,\nТы знаешь, я сотру тебя из своей души,\nУходи, я не хочу видеть твоего лица,\nУходи, больше не будет слёз рекой,\nЯ молю тебя, просто уходи.\n\nТы сказал, что мы всегда будем рядом,\nТы сказал, что наша любовь никогда не умрёт,\nНо ты опять меня обманул,\nИграя в свою хитрую игру,\nТы сжёг веру, которая была внутри.\n\nТеперь все слова звучат, как ложь,\nХватит с меня, я говорю \"прощай\".\n\nУходи, я больше тебя не люблю,\nУходи, без тебя я буду сиять,\nТы знаешь, я сотру тебя из своей души,\nУходи, я не хочу видеть твоего лица,\nУходи, больше не будет слёз рекой,\nЯ молю тебя, просто уходи.\n\nОставь меня, я устала от твоей лжи,\nОставь меня, мне надоели твои игры,\nОставь меня, я освободилась от этого огня,\nОставь меня, уходи из моего мира.\n\nУходи,\nУходи.\n",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English, Azerbaijani",
+      "ru": "Английский, Азербайджанский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Pop, Ballad",
+      "ru": "Поп, Баллада"
+    },
+    "number_sf": 2,
+    "national_final_url": "",
+    "music_video_url": "https://www.youtube.com/watch?v=iMDBPe25JhM"
+  },
+  {
+    "country_code": "BE",
+    "song_title": "Dancing on the Ice",
+    "song_title_en": "Dancing on the Ice",
+    "song_title_ru": "Танец на льду",
+    "lyrics_original": "[Verse 1]\nI got that summer on my skin\nIt burns, it lives, it burns within\nThat wheel is hot and I'm driving\nRain's a goner, but I'm sinking\nI'm gonna burst, I'm gonna scream\n\n[Pre-Chorus]\nI want love\nBut I'm not loyal\nCall me queen\nThough I'm not royal\nWant to go\nWhat if I'm all alone?\n\n[Chorus]\nI keep dancing on the ice\nWhere everything dies\nFrozen to the bone\nI keep dancing on the ice\n'Cause I feel alive\nI'm satisfied\n\n[Post-Chorus]\nKeep dancing on the ice\nKeep dancing on the ice\n\n[Verse 2]\nGot King Winter in my back\nGotta keep going on the track\nSunscreen that sticks on wet bodies\nIce cream melting on my blue jeans\nMelting on my blue jeans\n\n[Pre-Chorus]\nI want love\nBut I'm not loyal\nCall me queen\nThough I'm not royal\nWant to go\nWhat if I'm all alone?\n\n[Chorus]\nI keep dancing on the icе\nWhere evеrything dies\nFrozen to the bone\nI keep dancing on the ice\n'Cause I feel alive\nI'm satisfied\n\n[Post-Chorus]\nKeep dancing on the ice (Keep dancing, keep dancing on the ice)\nKeep dancing on the ice\n[Bridge]\nHey, heh, hey\nWoah\n\n[Outro]\nI want love\nKeep dancing on the ice\nCall me queen (Keep dancing, keep dancing on the ice)\nWant to go\nKeep dancing on the ice\nI want love (Hey)\nKeep dancing on the ice (Hey)\nCall me queen (Keep dancing, keep dancing on the ice)\nWant to go (Hey)\nKeep dancing on the ice (Hey)",
+    "translation_en": "",
+    "translation_ru": "[Куплет 1]\nЯ чувствую лето на своей коже\nОно горит, оно живёт, горит внутри меня\nРуль горячий, я веду\nДождь кончился, но я тону\nСейчас взорвусь, сейчас закричу\n\n[Предприпев]\nЯ хочу любви\nНо я не верная\nНазывай меня королевой\nХоть я и не принадлежу к королевской семье\nХочу уйти\nНо что, если я останусь совсем одна?\n\n[Припев]\nЯ продолжаю танцевать на льду\nГде всё умирает\nПромёрзла до костей\nЯ продолжаю танцевать на льду\nПотому что чувствую себя живой\nЯ довольна\n\n[Постприпев]\nПродолжаю танцевать на льду\nПродолжаю танцевать на льду\n\n[Куплет 2]\nЗа спиной у меня зимний король\nНо я всё ещё иду своей дорогой\nСолнцезащитный крем для влажных тел\nМороженое тает на моих синих джинсах\nТает на моих синих джинсах\n\n[Предприпев]\nЯ хочу любви\nНо я не верная\nНазывай меня королевой\nХоть я и не принадлежу к королевской семье\nХочу уйти\nНо что, если я останусь совсем одна?\n\n[Припев]\nЯ продолжаю танцевать на льду\nГде всё умирает\nПромёрзла до костей\nЯ продолжаю танцевать на льду\nПотому что чувствую себя живой\nЯ довольна\n\n[Постприпев]\nПродолжаю танцевать на льду (Продолжаю танцевать, продолжаю танцевать на льду)\nПродолжаю танцевать на льду\n[Бридж]\nЭй, ха, эй\nОу\n\n[Аутро]\nЯ хочу любви\nПродолжаю танцевать на льду\nЗови меня королевой (Продолжаю танцевать, продолжаю танцевать на льду)\nХочу уйти\nПродолжаю танцевать на льду\nЯ хочу любви (Эй)\nПродолжаю танцевать на льду (Эй)\nЗови меня королевой (Продолжаю танцевать, продолжаю танцевать на льду)\nХочу уйти (Эй)\nПродолжаю танцевать на льду (Эй)",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
     },
     "round_sf": "SF1",
-    "qualified_to_final": ""
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Pop",
+      "ru": "Поп"
+    },
+    "number_sf": 11,
+    "national_final_url": "",
+    "music_video_url": "https://www.youtube.com/watch?v=9sfI4g6DWTU"
+  },
+  {
+    "country_code": "BG",
+    "song_title": "Bangaranga",
+    "song_title_en": "Bangaranga",
+    "song_title_ru": "Бунтарка",
+    "lyrics_original": "[Pre-Chorus]\nCome alive\nSurrender to the blinding lights\nNo one's gonna sleep tonight\nWelcome to the riot\nCome alive\nSurrender to the blinding lights\nNo one's gonna sleep tonight\nWelcome to the riot (I, I, I, I)\n\n[Chorus]\n(I'm the bangaran—) Bangaranga, bangaranga, bangaranga\n(I'm the bangaran—) Bangaranga, bangaranga, bangaranga\n(I'm the bangaran—) Blinding lights\nWelcome to the riot (I, I, I, I)\nI'm the bangaran—\n\n[Drop]\n(I know) I'm the bangaran—\n\n[Verse 1]\nI'm an angel, I'm a demon, I'm a psycho for no reason\nI'm a mover, I'm a teaser, I don't follow, I'm the leader\nLet me hype ya, hype ya up, let me hype ya up\nI'ma, I'ma let you get so hooked, I'ma leave you shook\n\n[Pre-Chorus]\nCome alive\nSurrender to the blinding lights\nNo one's gonna sleep tonight\nWelcome to the riot (I, I, I, I)\n\n[Chorus]\n(I'm the bangaran—) Bangaranga, bangaranga, bangaranga\n(I'm the bangaran—) Bangaranga, bangaranga, bangaranga\n(I'm the bangaran—) Blinding lights\nWelcome to the riot (I, I, I, I)\nI'm the bangaran—\n\n[Drop]\n(Bangaranga, bangaranga, bangaranga, I'm the bangaran—)\n(Bangaranga, bangaranga, bangaranga) I'm the bangaran—\n(Bangaranga, bangaranga, bangaranga, I'm the bangaran—)\n(Bangaranga, bangaranga, bangaranga; I know) I'm the bangaran—\n\n[Verse 2]\nClose to the edge, I can feel it inside\nBodies on bodies and sparks 'bout to fly\nYeah, I, I\nI'm 'bout to lose my mind, mind\n\n[Chorus]\n(I'm the bangaran—) Bangaranga, bangaranga, bangaranga\n(I'm the bangaran—) Bangaranga, bangaranga, bangaranga\n(I'm the bangaran— bangaranga, bangaranga, bangaranga) Blinding lights\n(I'm the bangaran— bangaranga, bangaranga, bangaranga) Welcome to the riot (I, I, I, I)\n\n[Bridge]\nI'm a rebel (Rebel), I'm a danger (Danger)\nI'm a mover (Mover) for freedom\nLet me light you, light you up, let me light you up\nCome on, let me pull you in so deep, I'm gon' leave you weak\n(I am) I'm the bangaran—\n\n[Outro]\n(Bangaranga, bangaranga, bangaranga, I'm the bangaran—)\n(Bangaranga, bangaranga, bangaranga) I'm the bangaran—\n(Bangaranga, bangaranga, bangaranga, I'm the bangaran—)\n(Bangaranga, bangaranga, bangaranga; I know) I'm the bangaran— (Ooh)",
+    "translation_en": "",
+    "translation_ru": "Обретаю жизнь,\nОтдавшись ослепляющим огням,\nЭтой ночью никто не будет спать,\nДобро пожаловать на место бунта!\nОбретаю жизнь,\nОтдавшись ослепляющим огням,\nЭтой ночью никто не будет спать,\nДобро пожаловать на место бунта! (Я, я, я, я)\n\n(Я бунтар—) Бунтарка, бунтарка, бунтарка,\n(Я бунтар—) Бунтарка, бунтарка, бунтарка,\n(Я бунтар—) Ослепляющие огни,\nДобро пожаловать на место бунта! (Я, я, я, я)\nЯ бунтар—\n\n(Я знаю) Я бунтар—\n\nЯ ангел, демон и сумасшедшая безо всякой причины,\nЯ инициатор, задира, я не следую за другими, я лидер,\nДавай я взбодрю тебя, давай я взбодрю тебя,\nТы попадёшь на мой крючок и останешься в шоке.\n\nОбретаю жизнь,\nОтдавшись ослепляющим огням,\nЭтой ночью никто не будет спать,\nДобро пожаловать на место бунта! (Я, я, я, я)\n\n(Я бунтар—) Бунтарка, бунтарка, бунтарка,\n(Я бунтар—) Бунтарка, бунтарка, бунтарка,\n(Я бунтар—) Ослепляющие огни,\nДобро пожаловать на место бунта! (Я, я, я, я)\nЯ бунтар—\n\n(Бунтарка, бунтарка, бунтарка, я бунтар—)\n(Бунтарка, бунтарка, бунтарка) Я бунтар—\n(Бунтарка, бунтарка, бунтарка, я бунтар—)\n(Бунтарка, бунтарка, бунтарка; я знаю) Я бунтар—\n\nДостигаю предела, я это чувствую,\nИскры от касания тел вот-вот полетят,\nЭй, я, я,\nЯ сейчас сойду с ума, с ума.\n\n(Я бунтар—) Бунтарка, бунтарка, бунтарка\n(Я бунтар—) Бунтарка, бунтарка, бунтарка\n(Я бунтар— бунтарка, бунтарка, бунтарка) Ослепительные огни\n(Я бунтар— бунтарка, бунтарка, бунтарка) Добро пожаловать на место бунта! (Я, я, я, я)\n\nЯ мятежница (мятежница), опасность (опасность),\nЯ двигаюсь (двигаюсь) к свободе,\nДавай я разожгу в тебе искру, давай я разожгу,\nНу же, позволь мне так втянуть тебя, что у тебя не останется сил.\n(Я) Я бунтар—\n\n(Бунтарка, бунтарка, бунтарка, я бунтар—)\n(Бунтарка, бунтарка, бунтарка) Я бунтар—\n(Бунтарка, бунтарка, бунтарка, я бунтар—)\n(Бунтарка, бунтарка, бунтарка; я знаю) Я бунтар— (Оо)",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": "Для Болгарии и Великобритании режиссирует стейджинг и хореографию Фредрик Ридман, ранее режиссировавший Швецию в 2015 (\"Heroes\", топ-1), Финляндию в 2023 (\"Cha Cha Cha\", топ-2) и Швейцарию в 2024 (\"The Code\", топ-1)."
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "Jamaican Patois",
+      "ru": "Ямайский креольский"
+    },
+    "genre": {
+      "en": "Dark-pop, EDM",
+      "ru": "Дарк-поп, EDM"
+    },
+    "number_sf": 1,
+    "national_final_url": "https://www.youtube.com/watch?v=_pkC9J6BPFY",
+    "music_video_url": "https://www.youtube.com/watch?v=J3oGYo_mekw"
+  },
+  {
+    "country_code": "CH",
+    "song_title": "Alice",
+    "song_title_en": "Alice",
+    "song_title_ru": "Алиса",
+    "lyrics_original": "[Verse 1]\nAlice\nYour pretty green eyes are magic\nMy precious prize, I've studied your ways\nThe way you behave\nCan I spill my secrets to you?\nAlice\nLet me inside, I promise\nI'll be polite, no, I won't make mess\nWhy you looking so stressed?\nJust let me talk to you\n\n[Pre-Chorus]\nI’ve been watching you\n\n[Chorus]\nI know you really, really love me, don't lie\nKnow you gotta, gotta give it some time\nSo honey, don't cry\nHoney, don't cry\n\n[Verse 2]\nAlice\nDon't you be scared, be honest\nI live in your head, oh, I'm lonely too\nThis world's been so cruel\nI've been here waiting for you\nAlice\nStop knocking on that door, don't panic\nLay low on the floor, you're safe in my arms\nNo, I'd never harm a hair on your head because\n\n[Pre-Chorus]\nI'm in love with you\n\n[Chorus]\nI know you really, really love me, don't lie\nOnly gotta, gotta give it some time\nSo honey, don't cry\nHoney, don't cry\n'Cause I know you really, really love me inside\nOnly gotta, gotta give it some time\nSo honey, don't cry\nHoney, don't cry\n\n[Verse 3]\nAlice\nThe light in my life has vanished\nPlease open your eyes, why are you turning cold\nFrom feather to stone? Baby, don't leave me alone",
+    "translation_en": "",
+    "translation_ru": "Алиса,\nТвои красивый зелёные глаза чаруют,\nТы – мой главный приз, я изучила твои манеры,\nТвоё поведение,\nМожно я расскажу тебе свои секреты?\nАлиса,\nВпусти меня, я обещаю,\nЯ буду обходительна, не устрою проблем,\nПочему ты так нервничаешь?\nПросто давай поговорим,\n\nЯ всё смотрела на тебя,\n\nЯ понимаю, что ты вправду любишь меня, не обманывай,\nЗнаю, тебе нужно немного времени,\nНо, милая, не плачь,\nМилая, не плачь.\n\nАлиса,\nНе бойся, будь честна,\nЯ живу в твоих мыслях, мне тоже одиноко,\nЭтот мир так жесток,\nНо я жду тебя.\nАлиса,\nПерестань стучаться в двери, не паникуй,\nЛожись на пол, в моих объятьях ты в безопасности,\nНет, я и пальцем тебя не трону, потому что\n\nЯ люблю тебя.\n\nЯ понимаю, что ты вправду любишь меня, не обманывай,\nЗнаю, тебе нужно немного времени,\nНо, милая, не плачь,\nМилая, не плачь.\nЯ понимаю, что ты вправду любишь меня где-то в душе,\nТебе лишь нужно немного времени,\nТак что, милая, не плачь,\nМилая, не плачь.\n\nАлиса,\nСвет моей жизни исчез,\nПрошу, открой глаза, почему ты так охладела,\nИз нежной превратилась в кремень? Малышка, не оставляй меня одну.",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Alternative pop, indie rock, blues-rock",
+      "ru": "Альт-поп, Инди-рок, Блюз-рок"
+    },
+    "number_sf": 7,
+    "national_final_url": "",
+    "music_video_url": "https://www.youtube.com/watch?v=PfpYGAzW5dM"
+  },
+  {
+    "country_code": "CY",
+    "song_title": "Jalla",
+    "song_title_en": "Jalla",
+    "song_title_ru": "Больше",
+    "lyrics_original": "[Intro]\nI'm dancing on the table, baby\nShake my hips to τσιφτετέλι\nAnd they want jalla\n\n[Verse 1]\nFollow me into the music\nLet's dance the night away\nI want to play with the rhythm\nMoving left, right\nAnd κούνα το κορμί σου\nShake your shoulders, hips, too\nTicka-tacka, one, two\nLet your body move\n\n[Pre-Chorus]\nHear the beat of the drum, got you feeling alive\nMelody of the song got you hypnotized\nGetting lost in the rhythm, but it's never enough\nMight just have you falling in love\nOh, they want\n\n[Chorus]\nJalla, jalla, they want jalla (Jalla, jalla)\nJalla, jalla, they want jalla (Jalla, jalla)\nI'm dancing on the table, baby\nShake my hips to τσιφτετέλι\nJalla, jalla, they want jalla, jalla\nJalla, jalla, jalla\n\n[Post-Chorus]\nΌπα, όπα, έλα, jalla\nΌπα, όπα, έλα, jalla\n\n[Interlude]\nΚόρη μου, κόρη μου\nΣάστου τζιαι φύαμεν\n\n[Verse 2]\nLet 'em stare\nIf they're watching, they got eyes for me\nWe don't care\nIf they're talking, άηστους να λαλούν\nΕννά τα πούν, εννά τα πούν (Woo)\nΤζι' άηστους τους να λαλούν\nΕννά τα πουν, εννά τα πουν, πουν, πουν\n\n[Pre-Chorus]\nHear the beat of the drum, got you feeling alive\nMelody of the song got you hypnotized\nGetting lost in the rhythm, but it's never enough\nMight just have you falling in love\nOh, they want\n\n[Chorus]\nJalla, jalla, they want jalla (Jalla, jalla)\nJalla, jalla, they want jalla (Jalla, jalla)\nI'm dancing on the table, baby\nShake my hips to τσιφτετέλι\nJalla, jalla, they want jalla, jalla\nJalla, jalla, jalla\n\n[Post-Chorus]\nΌπα, όπα, έλα, jalla\nΌπα, όπα, έλα, jalla\n\n[Chorus]\nJalla, jalla, they want jalla (Jalla, jalla)\nJalla, jalla, they want jalla (Jalla, jalla)\nYou want more?\n\n[Bridge]\nOh-oh, oh-oh\nJalla, jalla\nJalla, jalla\nJalla, jalla\nJalla\nJalla\n\n[Chorus]\nThey want jalla, jalla, they want jalla (Jalla, jalla)\nJalla, jalla, they want jalla (Jalla, jalla)\nI'm dancing on the table, baby\nShake my hips to τσιφτετέλι\nJalla, jalla, they want",
+    "translation_en": "[Intro]\nI'm dancing on the table, baby\nShake my hips to tsifteteli\nAnd they want jalla\n\n[Verse 1]\nFollow me into the music\nLet's dance the night away\nI want to play with the rhythm\nMoving left, right\nAnd move your body\nShake your shoulders, hips, too\nTicka-tacka, one, two\nLet your body move\n\n[Pre-Chorus]\nHear the beat of the drum, got you feeling alive\nMelody of the song got you hypnotized\nGetting lost in the rhythm, but it's never enough\nMight just have you falling in love\nOh, they want\n\n[Chorus]\nMore, more, they want more (More, more)\nMore, more, they want more (More, more)\nI'm dancing on the table, baby\nShake my hips to tsifteteli\nMore, more, they want more, more\nMore, more, more\n\n[Post-Chorus]\nOpa, opa, c'mon, more\nOpa, opa, c'mon, more\n\n[Interlude]\nHey girl, hey girl\nCome on, let's go\n\n[Verse 2]\nLet 'em stare\nIf they're watching, they got eyes for me\nWe don't care\nIf they're talking, let them keep talking\nLet them say it, let them say it (Woo)\nAnd let them talk\nLet them say it, let them say it, say it, say it\n\n[Pre-Chorus]\nHear the beat of the drum, got you feeling alive\nMelody of the song got you hypnotized\nGetting lost in the rhythm, but it's never enough\nMight just have you falling in love\nOh, they want\n\n[Chorus]\nMore, more, they want more (More, more)\nMore, more, they want more (More, more)\nI'm dancing on the table, baby\nShake my hips to tsifteteli\nMore, more, they want more, more\nMore, more, more\n\n[Post-Chorus]\nOpa, opa, c'mon, more\nOpa, opa, c'mon, more\n\n[Chorus]\nMore, more, they want more (More, more)\nMore, more, they want more (More, more)\nYou want more?\n\n[Bridge]\nOh-oh, oh-oh\nMore, more\nMore, more\nMore, more\nMore\nMore\n\n[Chorus]\nThey want more, more, they want more (More, more)\nMore, more, they want more (More, more)\nI'm dancing on the table, baby\nShake my hips to tsifteteli\nMore, more, they want",
+    "translation_ru": "[Интро]\nЯ танцую на столе, детка\nПокачиваю бёдрами в такт танцу цифтетели\nНо они хотят больше\n\n[Куплет 1]\nСледуй за мной, погрузись в музыку\nДавай танцевать всю ночь напролёт\nЯ хочу играть с ритмом\nДвигайся влево, вправо\nИ тряси телом\nПокачивай плечами и бёдрами тоже\nТика-така, раз, два\nПусть двигается тело твоё\n\n[Предприпев]\nУслышь бой барабана, он воскресит тебя\nМелодия песни гипнотизирует\nТеряешься в ритме, но тебе всегда мало\nТы можешь случайно влюбиться\nО, они хотят\n\n[Припев]\nБольше, больше, они хотят больше (Больше, больше)\nБольше, больше, они хотят больше (Больше, больше)\nЯ танцую на столе, детка\nПокачиваю бёдрами в такт танцу цифтетели\nБольше, больше, они хотят больше, больше\nБольше, больше, больше\n\n[Постприпев]\nОпа, опа, давай, больше\nОпа, опа, давай, больше\n\n[Интерлюдия]\nДевочка моя, девочка моя\nСобирайся, мы уходим\n\n[Куплет 2]\nПусть пялятся\nЕсли они наблюдают, то не сводят с меня глаз\nНам всё равно\nЕсли они что-то говорят, то это их право\nПусть говорят, пусть говорят (У)\nПусть говорят\nПусть говорят, пусть говорят, говорят, говорят\n\n[Предприпев]\nУслышь бой барабана, он воскресит тебя\nМелодия песни гипнотизирует\nТеряешься в ритме, но тебе всегда мало\nТы можешь случайно влюбиться\nО, они хотят\n\n[Припев]\nБольше, больше, они хотят больше (Больше, больше)\nБольше, больше, они хотят больше (Больше, больше)\nЯ танцую на столе, детка\nПокачиваю бёдрами в такт танцу цифтетели\nБольше, больше, они хотят больше, больше\nБольше, больше, больше\n\n[Постприпев]\nОпа, опа, давай, больше\nОпа, опа, давай, больше\n\n[Припев]\nБольше, больше, они хотят больше (Больше, больше)\nБольше, больше, они хотят больше (Больше, больше)\nТы хочешь больше?\n\n[Бридж]\nО-о-о, о-о-о\nБольше, больше\nБольше, больше\nБольше, больше\nБольше\nБольше\n\n[Припев]\nБольше, больше, они хотят больше (Больше, больше)\nБольше, больше, они хотят больше (Больше, больше)\nЯ танцую на столе, детка\nПокачиваю бёдрами в такт танцу цифтетели\nБольше, больше, они хотят",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English, Cypriot Greek",
+      "ru": "Английский, Кипрский греческий"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Dance-Pop",
+      "ru": "Дэнс-поп"
+    },
+    "number_sf": 8,
+    "national_final_url": "",
+    "music_video_url": "https://www.youtube.com/watch?v=TzSs51BiQrE"
+  },
+  {
+    "country_code": "CZ",
+    "song_title": "Crossroads",
+    "song_title_en": "Crossroads",
+    "song_title_ru": "Перекрёстки",
+    "lyrics_original": "[Verse 1]\nFollow a voice unknown\nLearn how to swim in open waters on your own\nA jar hollow won't reach the ocean floor\nWhere foreign fields and tangled strings unfold\n\n[Chorus]\nMother, I'll get lost without a map\nThere's too many ways\nInside this vicious spider web\nCrossroads, patterns and exceptions interwoven\n\n[Verse 2]\nI'm amazed how well we get unwell\nThen trade our pain for metal frame\nOh, I gotta find what's out there\n\n[Chorus]\nMother, I'll get lost without a map\nThere's too many ways\nInside this vicious spider web\nCrossroads, pattеrns and exceptions interwovеn\n\n[Bridge]\nWe are creatures wired well for this space\nWe're the human race\nOh, we try our best to operate on pure love and rage\nUngrateful child in a golden cage\nFor Mother Earth, man cannot change\n\n[Breakdown]\nOh, crossroads\n\n[Outro]\nYeah, yeah",
+    "translation_en": "",
+    "translation_ru": "Я иду на зов неизвестного голоса,\nУчусь плавать в открытых водах без никого,\nНо пустому сосуду не достичь дна океана\nНа чужих землях и среди растянувшихся нитей.\n\nМама, я потеряюсь здесь без карты,\nСтолько развилок\nВ этой жестокой паутине\nПерекрёстков, закономерностей и исключений на сотканной дороге.\n\nЯ удивлён, как хорошо мы поладили,\nА потом обменяли нашу боль на металлическую рамку,\nПора узнать, что там, за пределами.\n\nМама, я потеряюсь здесь без карты,\nСтолько развилок\nВ этой жестокой паутине\nПерекрёстков, закономерностей и исключений на сотканной дороге.\n\nМы – создания, хорошо приспособившиеся к этому месту,\nЧеловеческая раса,\nВсеми силами пытающаяся действовать чистой любовью и гневом.\nНеблагодарный ребёнок в золотой клетке,\nНо даже ради Матери Земли человек не изменится.\n\nО, перекрёстки.\n\nДа, да.",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Pop, Ballad",
+      "ru": "Поп, Баллада"
+    },
+    "number_sf": 5,
+    "national_final_url": "",
+    "music_video_url": "https://www.youtube.com/watch?v=6ea25aRGpLo"
+  },
+  {
+    "country_code": "DE",
+    "song_title": "Fire",
+    "song_title_en": "Fire",
+    "song_title_ru": "Огонь / В ударе",
+    "lyrics_original": "[Intro]\nStop denyin', -nyin', no lyin', lyin' no more\n\n[Verse 1]\nBoy, I'm out of your league\nNonsense what you've been doin' to me\nJust know that I could take my revenge\nI could go out with all of your friends\n\n[Pre-Chorus]\nI can fake it 'til I make it, but I won't (Fake it 'til I make it, but I won't)\nIf you crave it, you can take it, but you don't (Crave it, you can take it, but you don't)\nI don't want it, I don't need it, and I won't let you repeat it\nYou just play it 'til you break it and it's blown\n\n[Chorus]\nI'm on fire, fire, you're a liar, liar\nStop denyin', -nyin', no lyin', lyin' no more\nLike a vampire, you hide, then come out the night\nStop denyin', -nyin', no lyin', lyin' no more\n\n[Post-Chorus]\nI'm on fire, fire\nStop denyin', -nyin', no lyin', lyin' no more\n\n[Verse 2]\nJust wait a minutе, you're gonna see\nThat you won't find another like mе\nYou'll come around and I'll be to late\n'Cause I won't do the same old mistake\n\n[Pre-Chorus]\nI can fake it 'til I make it, but I won't (Fake it 'til I make it, but I won't)\nIf you crave it, you can take it, but you don't (Crave it, you can take it, but you don't)\nI don't want it, I don't need it, and I won't let you repeat it\nYou just play it 'til you break it and it's blown\n\n[Chorus]\nI'm on fire, fire, you're a liar, liar\nStop denyin', -nyin', no lyin', lyin' no more\nLike a vampire, you hide, then come out the night\nStop denyin', -nyin', no lyin', lyin' no more\n\n[Post-Chorus]\nI'm on fire, fire\nStop denyin', -nyin', no lyin', lyin' no more\nLike a vampire, you hide, then come out the night\nStop denyin', -nyin', no lyin', lyin' no more\n\n[Bridge]\nI'm on fire\n\n[Chorus]\nI'm on fire, fire, you're a liar, liar\nStop denyin', -nyin', no lyin', lyin' no more\nLike a vampire, you hide, then come out the night\nStop denyin', -nyin', no lyin', lyin' no more\n\n[Post-Chorus]\nI'm on fire\nI'm on fire\nLike a vampire, you hide, then come out the night\nStop denyin', -nyin', no lyin', lyin' no more",
+    "translation_en": "",
+    "translation_ru": "Хватит отрицать-цать, не нужно обманывать-обманывать больше.\n\nПарень, я птица не твоего полёта,\nЭто безумие, как ты со мной обходился,\nПросто знай, что я могу отомстить\nИ пойти отрываться с твоими друзьями.\n\nЯ могла бы притворяться, пока не добьюсь своего, но не стану,\nЕсли ты захочешь, то получишь меня, но ты не хочешь,\nЯ не хочу, да и не нужно мне это, не позволю тебе ещё раз со мной так обойтись,\nТы просто игрался и доломал всё, а теперь всё ветром унесло.\n\nЯ в ударе, в ударе, а ты обманщик, обманщик,\nХватит отрицать-цать, не нужно обманывать-обманывать больше.\nКак вампир, ты прячешься, а потом появляешься в ночи,\nХватит отрицать-цать, не нужно обманывать-обманывать больше.\n\nЯ в ударе, в ударе,\nХватит отрицать-цать, не нужно обманывать-обманывать больше.\n\nПодожди минуту, и всё поймёшь сам,\nЧто другой такой, как я, ты не найдёшь.\nТы вернёшься, а меня уже не будет,\nПотому что я не наступлю на старые грабли.\n\nЯ могла бы притворяться, пока не добьюсь своего, но не стану,\nЕсли ты захочешь, то получишь меня, но ты не хочешь,\nЯ не хочу, да и не нужно мне это, не позволю тебе ещё раз со мной так обойтись,\nТы просто игрался и доломал всё, а теперь всё ветром унесло.\n\nЯ в ударе, в ударе, а ты обманщик, обманщик,\nХватит отрицать-цать, не нужно обманывать-обманывать больше.\nКак вампир, ты прячешься, а потом появляешься в ночи,\nХватит отрицать-цать, не нужно обманывать-обманывать больше.\n\nЯ в ударе, в ударе, а ты обманщик, обманщик,\nХватит отрицать-цать, не нужно обманывать-обманывать больше.\nКак вампир, ты прячешься, а потом появляешься в ночи,\nХватит отрицать-цать, не нужно обманывать-обманывать больше.\n\nЯ в ударе!\n\nЯ в ударе, в ударе, а ты обманщик, обманщик,\nХватит отрицать-цать, не нужно обманывать-обманывать больше.\nКак вампир, ты прячешься, а потом появляешься в ночи,\nХватит отрицать-цать, не нужно обманывать-обманывать больше.\n\nЯ в ударе!\nЯ в ударе!\nКак вампир, ты прячешься, а потом появляешься в ночи,\nХватит отрицать-цать, не нужно обманывать-обманывать больше.",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "yes",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Power pop",
+      "ru": "Пауэр-поп"
+    },
+    "number_sf": 0,
+    "national_final_url": "https://www.youtube.com/watch?v=cv0N_jCx-nA",
+    "music_video_url": "https://www.youtube.com/watch?v=AzvRc3eH_rA"
+  },
+  {
+    "country_code": "DK",
+    "song_title": "Før vi går hjem",
+    "song_title_en": "Før vi går hjem",
+    "song_title_ru": "Прежде чем мы разойдёмся по домам",
+    "lyrics_original": "[Vers 1]\nMin krop den skriger\nKa' du høre den?\nJeg burde sig' nej\nSagd', det var sidste gang\nMen du har mig\nJa, du har mig\n\n[Vers 2]\nDu er så syrlig\nDu smelter på min tunge\nHelt ustyrlig\nJeg' så freaking dum\nMen du har mig\nÅh-ja, du har mig\n\n[Bro]\nKys mig, tag mit hjerte, knus det igen\nMen please sig, den her aften aldrig vil ende\n\n[Omkvæd]\nVi la'r natten stå i flammer, og glemmer os selv\nHolder om hinanden, til vi brænder ihjel\nGlemmer at vi vågner, og fortrydеr igen\nFør vi går, før vi går\nFør vi går, før vi går hjem\n\n[Vers 3]\nTror jeg forsvindеr\nI neonlys og røg\nNatten binder\nMig til dine øjne\nSig du har mig\nDu har mig, yeah\n\n[Bro]\nKys mig, tag mit hjerte, knus det igen\nMen please sig, den her aften aldrig vil ende\n\n[Omkvæd]\nVi la'r natten stå i flammer, og glemmer os selv\nHolder om hinanden, til vi brænder ihjel\nGlemmer at vi vågner, og fortryder igen\nFør vi går, før vi går\nFør vi går, før vi går hjem\n\n[Kontraststykke]\nKys mig, tag mit hjerte, knus det igen (Knus det igen)\nMen please sig, den her aften aldrig vil ende (Før vi går hjem)\nKys mig, tag mit hjerte, knus det igen\nHjertet ved, hva' det vil\nBar' lad det bestemme\n\n[Omkvæd]\nVi la'r natten stå i flammer, og glemmer os selv\nHolder om hinanden, til vi brænder ihjel\nGlemmer at vi vågner, og fortryder igen\nFør vi går, før vi går\nFør vi går, før vi går hjem\nVi la'r natten stå i flammer, og glemmer os selv\nHolder om hinanden, til vi brænder ihjel\nGlemmer at vi vågner, og fortryder igen\nFør vi går, før vi går\nFør vi går, før vi går hjem",
+    "translation_en": "[Verse 1]\nMy body, it screams,\nCan you hear it?\nI should say no,\nSaid it was the last time\nBut you got me\nYeah, you got me\n\nYou are so sour,\nYou're melting on my tongue\nCompletely uncontrollable,\nI'm so fucking dumb\nBut you got me\nOh, yeah, you got me\n\n[Pre-Chorus]\nKiss me, take my heart, break it again\nBut please tell me that this night will never end\n\n[Chorus]\nWe let the night stand in flames and forget ourselves\nHolding onto each other until we burn to death\nForgetting that we wake up and rеgret it again\nBefore wе go, before we go,\nBefore we go, before we go home\n\n[Verse 2]\nThink I'll disappear\nIn neon lights and smoke\nThe night binds\nMe to your eyes\nSay you have me\nYou have me, yeah\n\n[Pre-Chorus]\nKiss me, take my heart, break it again\nBut please tell me that this night will never end\n\n[Chorus]\nWe let the night stand in flames and forgetting ourselves\nHolding onto each other until we burn to death\nForgetting that we wake up and regret it again\nBefore we go, before we go,\nBefore we go, before we go home\n\n[Bridge]\nKiss me, take my heart, break it again (Break it again)\nBut please tell me that this night will never end (Before we go home)\nKiss me, take my heart, break it again\nThe heart knows what it wants,\nJust let it decide\n\n[Chorus]\nWe let the night stand in flames and forgetting ourselves\nHolding onto each other until we burn to death\nForgetting that we wake up and regret it again\nBefore we go, before we go,\nBefore we go, before we go home\nWe let the night stand in flames and forgetting ourselves\nHolding onto each other until we burn to death\nForgetting that we wake up and regret it again\nBefore we go, before we go,\nBefore we go, before we go home",
+    "translation_ru": "[Куплет 1]\nМоё тело кричит,\nСлышишь это?\nЯ должен отказаться,\nЯ снова думаю, что это последний раз\nНо тебе удалось меня обольстить\nДа, тебе удалось меня обхитрить\n\nТы такой терпкий,\nТы таешь на моем языке\nСовершенно неуправляемый,\nЯ чертовски глуп\nНо тебе удалось меня обольстить\nО, да, тебе удалось меня обхитрить\n\n[Предприпев]\nПоцелуй меня, забери сердце, разбей его снова\nНо, пожалуйста, скажи, что эта ночь никогда не закончится\n\n[Припев]\nМы позволим ночи разгореться и забудем сами себя\nМы будем в объятиях друг друга, пока не сгорим\nЗабыв о том, что мы проснёмся и будем снова сожалеть\nПрежде чем, прежде чем,\nПрежде чем, прежде чем мы разойдёмся по домам\n\n[Куплет 2]\nЯ думаю, что исчезну\nВ неоновых огнях и дыму\nНочь приковывает\nМеня к твоим глазам\nСкажи, что я принадлежу тебе\nЯ принадлежу тебе, да\n\n[Предприпев]\nПоцелуй меня, забери сердце, разбей его снова\nНо, пожалуйста, скажи, что эта ночь никогда не закончится\n\n[Припев]\nМы позволим ночи разгореться и забудем сами себя\nМы будем в объятиях друг друга, пока не сгорим\nЗабыв о том, что мы проснёмся и будем снова сожалеть\nПрежде чем, прежде чем,\nПрежде чем, прежде чем мы разойдёмся по домам\n\n[Бридж]\nПоцелуй меня, забери сердце, разбей его снова (Разбей его снова)\nНо, пожалуйста, скажи, что эта ночь никогда не закончится (Прежде чем мы разойдёмся по домам)\nПоцелуй меня, забери сердце, разбей его снова\nСердце знает, чего оно хочет,\nПозволь ему решать\n\n[Припев]\nМы позволим ночи разгореться и забудем сами себя\nМы будем в объятиях друг друга, пока не сгорим\nЗабыв о том, что мы проснёмся и будем снова сожалеть\nПрежде чем, прежде чем,\nПрежде чем, прежде чем мы разойдёмся по домам\nМы позволим ночи разгореться и забудем сами себя\nМы будем в объятиях друг друга, пока не сгорим\nЗабыв о том, что проснёмся и будем снова сожалеть\nПрежде чем, прежде чем,\nПрежде чем, прежде чем мы разойдёмся по домам",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "Danish",
+      "ru": "Датский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Electropop",
+      "ru": "Электро-поп"
+    },
+    "number_sf": 10,
+    "national_final_url": "https://www.youtube.com/watch?v=xKzEP9dwoss",
+    "music_video_url": ""
+  },
+  {
+    "country_code": "EE",
+    "song_title": "Too Epic to Be True",
+    "song_title_en": "Too Epic to Be True",
+    "song_title_ru": "Слишком эпично, чтобы быть правдой",
+    "lyrics_original": "[Intro]\nToo epic to be true\nBut here I am with you\nThe spark between us wrote the plot for us\nToo epic to be true\n\n[Verse 1]\nMaybe this could be heaven\nMaybe I'm just a fool\nMaybe we're closer than we think\nAnd I've got a clear view\n\n[Pre-Chorus]\nWhen I said I loved you, I meant it\nIt is not so hard to believe it\n\n[Chorus]\nToo epic to be true\nBut here I am with you\nThe spark between us wrote the plot for us\nToo epic to be true\n\n[Verse 2]\nMaybe I am so reckless\nI don't play by the rules\nMaybe we're closer than we think\nAnd we've got a clear view\n\n[Pre-Chorus]\nWhen I said I loved you, I meant it\nIt is not so hard to believe it\n\n[Chorus]\nToo epic to be true\nBut here I am with you\nThe spark between us wrote the plot for us\nToo epic to be true\n\n[Bridge]\nMy life was uncontrolled\nPure rebel rock and roll\nBefore you came to me like that\n\n[Interlude]\nToo epic, too epic, too epic\nToo epic, too epic, too epic\n\n[Chorus]\nToo epic to be true\nBut here I am with you\nThe spark between us wrote the plot for us\nToo epic to be true\n\n[Post-Chorus]\nToo epic, too epic, too epic, epic to be true\nToo epic, too epic, too epic, epic to be true\nThe spark between us wrote the plot for us\nToo epic to be true",
+    "translation_en": "",
+    "translation_ru": "[Интро]\nСлишком эпично, чтобы быть правдой\nНо вот я здесь, с тобой\nИскра между нами создала целый сюжет\nСлишком эпично, чтобы быть правдой\n\n[Куплет 1]\nМожет, это и есть рай\nМожет, я просто дура\nА может, мы ближе, чем думаем?\nИ я всё ясно вижу\n\n[Предприпев]\nКогда я сказала, что люблю тебя, я говорила всерьёз\nВ это не так уж трудно поверить\n\n[Припев]\nСлишком эпично, чтобы быть правдой\nНо вот я здесь, с тобой\nИскра между нами создала целый сюжет\nСлишком эпично, чтобы быть правдой\n\n[Куплет 2]\nМожет, я слишком безрассудная\nЯ не играю по правилам\nА может, мы ближе, чем думаем?\nИ ясно всё видим\n\n[Предприпев]\nКогда я сказала, что люблю тебя, я говорила всерьёз\nВ это не так уж трудно поверить\n\n[Припев]\nСлишком эпично, чтобы быть правдой\nНо вот я здесь, с тобой\nИскра между нами создала целый сюжет\nСлишком эпично, чтобы быть правдой\n\n[Бридж]\nМоя жизнь была бесконтрольной\nЧистый бунтарский рок-н-ролл\nПока ты не появился и не сказал\n\n[Интерлюдия]\nСлишком эпично, слишком эпично, слишком эпично\nСлишком эпично, слишком эпично, слишком эпично\n\n[Припев]\nСлишком эпично, чтобы быть правдой\nНо вот я здесь, с тобой\nИскра между нами создала целый сюжет\nСлишком эпично, чтобы быть правдой\n\n[Постприпев]\nСлишком эпично, слишком эпично, слишком эпично, чтобы быть правдой\nСлишком эпично, слишком эпично, слишком эпично, чтобы быть правдой\nИскра между нами создала целый сюжет\nСлишком эпично, чтобы быть правдой",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Pop-rock",
+      "ru": "Поп-рок"
+    },
+    "number_sf": 9,
+    "national_final_url": "https://www.youtube.com/watch?v=iXVguLuMwkI",
+    "music_video_url": "https://www.youtube.com/watch?v=lOiWuol3t3o"
+  },
+  {
+    "country_code": "FI",
+    "song_title": "Liekinheitin",
+    "song_title_en": "Liekinheitin",
+    "song_title_ru": "Огнемёт",
+    "lyrics_original": "[Intro]\nOis viisaampi häipyy täält\nMiten tunteet vois jäädyttää?\nSä oot, sä oot liekinheitin\n\n[Säkeistö 1]\nSamas illas, savuu ilmas\nEtin ihmisjoukost sua\nPuhut muille, sun tutuille\nOot ku et ees tuntis mua\nVähän outoo, ettet sä kato mua silmiin\nKu viime yönä et saanut musta käsiäs irti\nVaik saan sult runtuu, niin se hyvältä tuntuu\n\n[Kertosäe]\nOis viisaampi häipyy täält\nMut tulel vielkin leikin\nMiten tunteet vois jäädyttää\nKu sä oot liekinheitin? Ooh\nSaat mut palamaan (A-aah, aah)\nSaan sust palan vaan\nOot niin kuuma, mut jääkylmä\nSä oot, sä oot liekinheitin, liekinheitin\n\n[Säkeistö 2]\nPariin iltaan en sua kii saa\nVoiko ihminen kuolla kiimaan? Joo\nAina kun ollaan iho ihoa vasten\nMä saan sust palovammoja kolmannen asteen\nOh dear Lord, saanko viel yhen kasteen\nKun syntiä taas teen?\n\n[Kertosäe]\nOis viisaampi häipyy täält\nMut tulel vielkin leikin\nMiten tunteet vois jäädyttää\nKu sä oot liekinheitin? Ooh\nSaat mut palamaan (A-aah, aah)\nSaan sust palan vaan\nOot niin kuuma, mut jääkylmä\nSä oot, sä oot liekinheitin, liekinheitin\nLiekinheitin",
+    "translation_en": "[Intro]\nIt would be wiser to get away from here\nHow could I freeze the feelings?\nYou are, you are a flamethrower\n\n[Verse 1]\nThat same night, smoke in the air\nI'm looking for you in the crowd\nYou're talking to others, to your friends\nYou're pretending like you don't even know me\nKinda strange that you won't look me in the eye\nWhen last night you couldn't keep your hands off me\nYou treat me badly, but it feels good\n\n[Chorus]\nIt would be wiser to get away from here\nBut I'm still playing with fire\nHow could I freeze the feelings?\nWhеn you're a flamethrower? Ooh\nYou sеt me on fire (Ahh, ahh)\nBut you're never fully mine\nOh you're so hot, yet cold as ice\nYou are, you are a flamethrower, flamethrower\n\n[Verse 2]\nFor a couple of nights, I can't reach you\nCan a person die of lust? (Yeah)\nEvery time we're skin to skin\nYou give me third-degree burns\nOh dear Lord, can I have one more absolution\nFor I have sinned yet again\n\n[Chorus]\nIt would be wiser to get away from here\nBut I'm still playing with fire\nHow could I freeze the feelings?\nWhen you're a flamethrower? Ooh\nYou set me on fire (Ahh, ahh)\nBut you're never fully mine\nOh you're so hot, yet cold as ice\nYou are, you are a flamethrower, flamethrower\nFlamethrower",
+    "translation_ru": "Я должен быть мудрее, я должен уйти\nКак я мог заморозить свои чувства?\nТы, ты огнемет\n\nТа же старая ночь, дым в воздухе\nЯ ищу тебя в толпе\nТы мило говоришь со своими друзьями\nПритворяешься, что даже не знаешь меня\nКак-то странно, ты не смотришь мне в глаза\nКогда прошлой ночью ты не мог оторвать от меня руки\nТы плохо со мной обращаешься, но, черт возьми, мне так приятно\n\nЯ должен быть мудрее, я должен уйти\nНо я все еще играю с огнем\nКак я мог заморозить то, что чувствую?\nКогда ты огнеметчик? ох\nТы поджег меня\nНо ты никогда не будешь полностью моим\nО, так жарко, но холодно, как лед\nТы, ты огнемет, огнемет\n\nНочи проходят, я не могу связаться с тобой\nМожет ли человек умереть от жары?\nКаждый раз, когда мы кожа к коже\nТы даешь мне ожоги третьей степени\nО, дорогой Господь, еще одно отпущение грехов\nИбо я снова согрешил\n\nЯ должен быть мудрее, я должен уйти\nНо я все еще играю с огнем\nКак я мог заморозить то, что чувствую?\nКогда ты огнеметчик? ох\nТы поджег меня\nНо ты никогда не будешь полностью моим\nО, так жарко, но холодно, как лед\nТы, ты огнемет, огнемет\nОгнемет",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "Finnish",
+      "ru": "Финский"
+    },
+    "langs_minor": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "genre": {
+      "en": "Pop-rock, Classical Crossover",
+      "ru": "Поп-рок, Классический кроссовер"
+    },
+    "number_sf": 7,
+    "national_final_url": "https://www.youtube.com/watch?v=9bfwNIYb96Q",
+    "music_video_url": ""
+  },
+  {
+    "country_code": "FR",
+    "song_title": "Regarde !",
+    "song_title_en": "Regarde !",
+    "song_title_ru": "Посмотри!",
+    "lyrics_original": "[Couplet 1]\nQuand tout s'illumine dans tout Paris\nQue les rues se vident, je reste ici\n\n[Pré-refrain]\nJ'ai cherché ton amour\nDans tous les faubourgs\nJe chante tous les jours\n\n[Refrain]\nRegarde-moi, regarde-toi\nC'est ça l'amour, ça te foudroie\nRegarde-moi, regarde-toi\nC'est ça l'amour, tu ne seras jamais perdu\n\n[Couplet 2]\nAllez, viens, je peux t'emmener\nLà où c'est fort, fort de s'aimer\nAllez, viens, tu n'es pas fou\nDans ma poitrinе, tu rythmes mon pouls\nAllez, viens, sous la pluiе battante\nJe dirai aux gens qu'il est présent\nJe dirai aux femmes, aux hommes, aux enfants\nJe dirais au monde, dans chaque chanson\n\n[Pré-refrain]\nJ'ai cherché ton amour\nDans tous les faubourgs\nJe chante tous les jours\n\n[Refrain]\nRegarde-moi, regarde-toi\nC'est ça l'amour, ça te foudroie\nRegarde-moi, regarde-toi\nC'est ça l'amour, tu ne seras jamais perdu\n\n[Pont]\nC'est ça l'amour, chut\nIl est partout, chut\nIl est là, là, là\n\n[Refrain]\nRegarde-moi, regarde-toi\nC'eѕt ça l'amour, ça te foudroie\nRegаrde-moi",
+    "translation_en": "[Verse 1]\r\nWhen everything lights up all across Paris\r\nAnd the streets fall silent, I stay here\r\n\r\n[Pre-Chorus]\r\nI searched for your love\r\nIn every neighborhood\r\nI sing every day\r\n\r\n[Chorus]\r\nLook at me, look at yourself\r\nThat's what love is, it strikes you like lightning\r\nLook at me, look at yourself\r\nThat’s what love is, you will never be lost\r\n\r\n[Verse 2]\r\nCome on, I can take you\r\nTo a place where love burns strong, so strong\r\nCome on, you're not crazy\r\nIn my chest, you set the rhythm of my pulse\r\nCome on, under the pouring rain\r\nI'll tell people that it’s real\r\nI'll tell the women, the men, the children\r\nI'll tell the world, in every song\r\n\r\n[Pre-Chorus]\r\nI searched for your love\r\nIn every neighborhood\r\nI sing every day\r\n\r\n[Chorus]\r\nLook at me, look at yourself\r\nThat's what love is, it strikes you like lightning\r\nLook at me, look at yourself\r\nThat's what love is, you will never be lost\r\n\r\n[Bridge]\r\nThat's what love is, hush\r\nIt's everywhere, hush\r\nIt is there, there, there\r\n\r\n[Chorus]\r\nLook at me, look at yourself\r\nThat's what love is, it strikes you like lightning\r\nLook at me",
+    "translation_ru": "[Куплет 1]\nКогда озаряется светом весь Париж\nКогда опустевают улицы, я остаюсь здесь\n\n[Предприпев]\nЯ искала твою любовь\nВо всех пригородах\nЯ пою дни напролёт\n\n[Припев]\nПосмотри на меня, посмотри на себя\nЭта любовь подобна молнии\nПосмотри на меня, посмотри на себя\nЭто любовь, в ней никогда не затеряешься\n\n[Куплет 2]\nДавай, я поведу тебя\nТуда, где любовь горит сильнее, сильнее всего\nДавай, ты не сошёл с ума\nМоё сердце бьётся твоим пульсом в груди\nДавай, под проливным дождём\nЯ расскажу всем правду\nРасскажу мужчинам, женщинам и детям\nРасскажу миру в каждой своей песне\n\n[Предприпев]\nЯ искала твою любовь\nВо всех пригородах\nЯ пою дни напролёт\n\n[Припев]\nПосмотри на меня, посмотри на себя\nЭта любовь подобна молнии\nПосмотри на меня, посмотри на себя\nЭто любовь, в ней никогда не затеряешься\n\n[Бридж]\nЭто и есть любовь, ч-ш-ш\nОна везде, ч-ш-ш\nОна там-там-там\n\n[Припев]\nПосмотри на меня, посмотри на себя\nЭта любовь подобна молнии\nПосмотри на меня",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "yes",
+    "langs": {
+      "en": "French",
+      "ru": "Французский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Orchestral Pop, Classical Crossover",
+      "ru": "Оркестровый поп, Классический кроссовер"
+    },
+    "number_sf": 0,
+    "national_final_url": "",
+    "music_video_url": "https://www.youtube.com/watch?v=ujoCYrvvTYQ"
+  },
+  {
+    "country_code": "GB",
+    "song_title": "Eins, Zwei, Drei",
+    "song_title_en": "Eins, Zwei, Drei",
+    "song_title_ru": "Раз, два, три",
+    "lyrics_original": "[Verse 1]\nSo sick of doing the whole 9 to 5\nI pay my dues, I'm just stayin' alive\nAnd I'm so bored of it, bored of it\nOh, what's the point of it, point of it? (Oh, ja, ja, ja)\nA paracetamol to quench the pain\nThe office cubicle has trapped me again\nAm I a mouse in a cage, am I\nD-d-d-demotivational?\n\n[Pre-Chorus]\nAh, if only there was a language that I could count in\nThat would make me feel better (Oh, ja)\n\n[Chorus]\nEins, zwei, drei\nDarlin', I need something salty\nEins, zwei, drei\nWith a slice of pepperoni\nI'll pay, you can owe me\nThat'll be a pony\nEins, zwei, drei\nI'm comin' back to life\nEins, zwei, drei\nGot me feeling okеy-dokey\nEins, zwei, drei\nGoodbyе drudgery, hello me\nSo light you can throw me\nKill at karaoke\nEins, zwei, drei\nI'm coming back to life\n\n[Verse 2]\nCountin' in English doesn't cut the mustard\nSo sick of munching roly-poly with custard\nI'm so bored with it, bored with it\nOh, what's the point of it, point of it? (Oh, ja, ja, ja)\nI've always been a fan of aviation\nI'm jumpin' on a plane to another nation\nAnd all my pounds, they feel counterfeit\nI need some euros to counter it\n\n[Chorus]\nEins, zwei, drei\nDarlin', I need something salty\nEins, zwei, drei\nWith a slice of pepperoni\nI'll pay, you can owe me\nThat'll be a pony\nEins, zwei, drei\nI'm comin' back to life\nEins, zwei, drei\nGot me feeling okey-dokey\nEins, zwei, drei\nGoodbye drudgery, hello me\nSo light you can throw me\nKill at karaoke\nEins, zwei, drei\nI'm comin' back to life\n\n[Bridge]\nEins\nZwei\nDrei\nEins, zwei\nEins, zwei, drei\n\n[Chorus]\nEins, zwei, drei\nDarlin', I need something salty\nEins, zwei, drei\nWith a slice of pepperoni\nI'll pay, you can owe me\nThat'll be a pony\nEins, zwei, drei\nI'm comin' back to life\nEins, zwei, drei\nDarlin', I need something salty\nEins, zwei, drei\nWith a slice of pepperoni\nI'll pay, you can owe me\nThat'll be a pony\nEins, zwei, drei\nI'm comin' back to life\n\n[Outro]\nEins, zwei, drei\nEins, zwei, drei\nI'm comin' back to life",
+    "translation_en": "",
+    "translation_ru": "[Куплет 1:]\nМне так надоело работать с 9 до 5!\nЯ плачу по счетам, я просто выживаю,\nИ я страшно устал, страшно устал.\nО, в чем тут смысл, в чем тут смысл? (О, йа, йа, йа!) \nПарацетамол, чтобы унять боль,\nОфисная кабинка снова поймала меня в ловушку.\nЯ что — мышь в клетке? Я —\nДе-де-де-демотиватор?\n\n[Распевка:]\nАх, если бы только существовал язык, на котором я мог бы посчитать,\nОт чего мне полегчает! (О, йа!)\n\n[Припев:]\nАйнс, цвай, драй!\nДорогая, я хочу солененького.\nАйнс, цвай, драй!\nС кусочком пепперони.\nЯ заплачу, потом отдашь.\nЭто стоит 25 фунтов.\nАйнс, цвай, драй!\nЯ возвращаюсь к жизни.\nАйн, цвай, драй!\nТеперь всё чики-пуки.\nАйнс, цвай, драй!\nПрощай — рутине! Привет — мне!\nЯ такой легкий, что меня можно бросить.\nЗвезда караоке.\nАйнс, цвай, драй!\nЯ возвращаюсь к жизни.\n\n[Куплет 2:]\nСчитать по-английски уже недостаточно.\nМне так надоели рулетики с заварным кремом!\nИ я страшно устал, страшно устал.\nО, в чем тут смысл, в чем тут смысл? (О, йа, йа, йа!)\nЯ всегда был фанатом авиации.\nЯ прыгаю в самолет, летящий в другую страну,\nИ все мои фунты кажутся фальшивыми.\nМне нужно немного евро, чтобы я мог на них рассчитывать.\n\n[Припев:]\nАйнс, цвай, драй!\nДорогая, я хочу солененького.\nАйнс, цвай, драй!\nС кусочком пепперони.\nЯ заплачу, потом отдашь.\nЭто стоит 25 фунтов.\nАйнс, цвай, драй!\nЯ возвращаюсь к жизни.\nАйн, цвай, драй!\nТеперь всё чики-пуки.\nАйнс, цвай, драй!\nПрощай — рутине! Привет — мне!\nЯ такой легкий, что меня можно бросить.\nЗвезда караоке.\nАйнс, цвай, драй!\nЯ возвращаюсь к жизни.\n\n[Переход:]\nАйнс!\nЦвай!\nДрай!\nАйнс, цвай!\nАйнс, цвай, драй!\n\n[Припев:]\nАйнс, цвай, драй!\nДорогая, я хочу солененького.\nАйнс, цвай, драй!\nС кусочком пепперони.\nЯ заплачу, потом отдашь.\nЭто стоит 25 фунтов.\nАйнс, цвай, драй!\nЯ возвращаюсь к жизни.\nАйн, цвай, драй!\nДорогая, я хочу солененького.\nАйнс, цвай, драй!\nС кусочком пепперони.\nЯ заплачу, потом отдашь.\nЭто стоит 25 фунтов.\nАйнс, цвай, драй!\nЯ возвращаюсь к жизни.\n\n[Концовка:]\nАйнс, цвай, драй!\nАйнс, цвай, драй!\nЯ возвращаюсь к жизни.",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": "Для Болгарии и Великобритании режиссирует стейджинг и хореографию Фредрик Ридман, ранее режиссировавший Швецию в 2015 (\"Heroes\", топ-1), Финляндию в 2023 (\"Cha Cha Cha\", топ-2) и Швейцарию в 2024 (\"The Code\", топ-1)."
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "yes",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "German",
+      "ru": "Немецкий"
+    },
+    "genre": {
+      "en": "Synth-pop",
+      "ru": "Синти-поп"
+    },
+    "number_sf": 0,
+    "national_final_url": "",
+    "music_video_url": "https://www.youtube.com/watch?v=niMKvJ-Itq8"
+  },
+  {
+    "country_code": "GE",
+    "song_title": "On Replay",
+    "song_title_en": "On Replay",
+    "song_title_ru": "На повторе",
+    "lyrics_original": "[Intro]\nTam, ta-ra-ram-tam, tam-tam, pai\nTam, ta-ra-ram-tam, tam-tam, pai\nTam, ta-ra-ram-tam, tam-tam, pai\nTu-pa, tu-pa, tu-pa, tu-pa\nTam, ta-ra-ram-tam, tam-tam, pai\nTam, ta-ra-ram-tam, tam-tam, pai\nTam, ta-ra-ram-tam, tam-tam, pai\nTu-pa, tu-pa, tu-pa, tu-pa\n\n[Verse 1]\nLights on, stand by\nUnmasked, you and I\nStep left, step right\nNeon lights, they ignite\n\n[Pre-Chorus]\nNa-na-na-na-na, we go wild, oh my\nShameless, we tear it up\nDon't ask why\n\n[Refrain]\nDon't think\nLet go\n\n[Chorus]\nKeep me on replay, okay\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nKeep me on replay, okay\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nKeep me on replay, okay\n\n[Post-Chorus]\nTam, ta-ra-ram-tam, tam-tam, pai\nTam, ta-ra-ram-tam, tam-tam, pai\nTam, ta-ra-ram-tam, tam-tam, pai\nTu-pa, tu-pa, tu-pa, tu-pa\n\n[Verse 2]\nLa-la-la-light it up\nWe go high-low, high-low\nTa-ta-ta-take it over\nFeel it in your soul\nCan't digitise our thunder\nNo code, no clone\n\n[Refrain]\nDon't think\nLet go\n\n[Chorus]\nKeep me on replay, okay\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nKeep me on replay, okay\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nKeep me on replay, okay\n\n[Bridge]\nTake my hand, don't disappear\nThis is real, this is clear\nNot afraid of the trial\nStay with me a little while\nWe don't wait in linе for miracles\nWe jump in, we tеar the veil\nRight here right now, no maybe\nNo void that can take me\n\n[Breakdown]\nYeah, yeah, we rise and fall and riѕe again\n\n[Chorus]\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nKeep me on replay, okay\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nKeep me on replay, okay\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nKeep me on replay, okay\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nLa-la-la-la-la-la-la\nKeep me on replay, okay",
+    "translation_en": "",
+    "translation_ru": "Там, та-ра-рам-там, там-там, пай\nТам, та-ра-рам-там, там-там, пай\nТам, та-ра-рам-там, там-там, пай\nТу-па, ту-па, ту-па, ту-па\nТам, та-ра-рам-там, там-там, пай\nТам, та-ра-рам-там, там-там, пай\nТам, та-ра-рам-там, там-там, пай\nТу-па, ту-па, ту-па, ту-па\n\nОгни горят, мы готовы,\nСбросив маски, ты и я,\nШаг влево, шаг вправо,\nВспыхивают неоновые огни\n\nНа-на-на-на-на, мы сходим с ума,\nНе зная стыда, разрываем всё вокруг,\nНе спрашивайте причину\n\nНе думай,\nОтпусти\n\nОставь меня на повторе, окей,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nОставь меня на повторе, окей,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nОставь меня на повторе, окей\n\nТам, та-ра-рам-там, там-там, пай\nТам, та-ра-рам-там, там-там, пай\nТам, та-ра-рам-там, там-там, пай\nТу-па, ту-па, ту-па, ту-па\n\nЗа-за-за-зажигаем,\nМы летим то вверх, то вниз,\nВо-во-во-возьми все под свой контроль,\nПочувствуй в своей душе,\nЭтот гром невозможно оцифровать,\nНикаких кодов и клонов.\n\nНе думай,\nОтпусти\n\nОставь меня на повторе, окей,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nОставь меня на повторе, окей,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nОставь меня на повторе, окей\n\nВозьми меня за руку, не исчезай.\nЭто по-настоящему это ясно,\nНе боюсь испытаний,\nОстанься со мной, ненадолго,\nМы не ждем в очереди за чудесами,\nМы прыгаем, мы разрываем завесу,\nПрямо здесь и сейчас, без всяких «может быть»\nНет пустоты, которая могла бы меня поглотить.\n\nДа, да, мы поднимаемся, падаем и вновь поднимаемся\n\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nОставь меня на повторе, окей,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nОставь меня на повторе, окей,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nОставь меня на повторе, окей,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nЛа-ла-ла-ла-ла-ла-ла,\nОставь меня на повторе, окей",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Electropop",
+      "ru": "Электро-поп"
+    },
+    "number_sf": 6,
+    "national_final_url": "",
+    "music_video_url": "https://www.youtube.com/watch?v=coh-lygCINY"
+  },
+  {
+    "country_code": "GR",
+    "song_title": "Φέρτο",
+    "song_title_en": "Ferto",
+    "song_title_ru": "Неси",
+    "lyrics_original": "[Verse 1]\nΠρέπει να παίξω, δεν θα πάω πάσο\nMi ambicion es fuego, nunca fracaso\nNo hay limite, todo lo arraso\nΚυνηγάω τα πάντα μέχρι να τα φτάσω\nΘέλω ένα στέμμα κι έναν θρόνο να κάτσω\nΈνα block επιταγών και check σε όλους να γράψω\nΦέρε μου ένα ποτό που θέλω να ξεδιψάσω\nΦερ' τα μου όλα-όλα, πάλι δεν θα χορτάσω\n\n[Pre-Chorus]\nReal estate, φερ' το\nSashimi tuna, φερ' το\nΧρυσό ρολόι, γυαλί designer\nΣου λέω φερ' το\nLeather παλτό, φερ' το\nΚι escargot, φερ' το\nRally cars, yacht με stars\nΣου είπα φερ' το\n(Φερ' το, φερ' το, φερ' το)\n\n[Chorus]\nΦερ' το μου, φερ' το μου, φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\nΣου είπα φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\n\n[Verse 2]\nJe veux le sommet, pas juste un pas\nRien ne me suffit, je réclame tout ça\nΑκόμη κι όλα δεν ειν' αρκετά\nΘέλω τόσα πολλά, που δεν είναι απτά\nΘέλω δόξα, αιωνιότητα και λεφτά\nΡούχα επιλεγμένα που 'ναι τόσο ακριβά\nΝα φωνάζουν τ' όνομά μου τόσο δυνατά\nΚαι να χορεύω-χορεύω όσο πάω ψηλά\n\n[Pre-Chorus]\n(Diamond rings) Φερ' το\n(Cuban links) Φερ' το\n(Submarines, jet machines)\nΘέλω, οπότε φερ' το\n(Γη κι ουρανό) Φερ' το\n(Τον κόσμο όλο) Φερ' το\n(Εντός κι εκτός πλανήτη)\nΑν δεν το 'χω, φερ' το\n(Φερ' το, φερ' το)\n\n[Chorus]\nΦερ' το μου, φερ' το μου, φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\nΣου είπα φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\n\n[Post-Chorus]\nΘέλω δόξα, αιωνιότητα και λεφτά\nΡούχα επιλεγμένα που 'ναι τόσο ακριβά\nΝα φωνάζουν τ' όνομά μου τόσο δυνατά\nΝα λένε \"Φερ' το μας, Ακύλα, φερ' το\"\n\n[Bridge]\nΚοίτα μαμά\nΌσα στερηθήκαμε παλιά\nΝιώθω πως θα καταφέρω\nΝα προσφέρω μη μας λείψει κάτι ξανά\nΔες με μαμά\nΑγοράζω να κλείσω κενά\nΘα σου πάρω κι εσένα πολλά\nΣπίτια, αμάξια και εξοχικά\n(Βέβαια, αν κερδίσω\nWhatever, κατάλαβες, οπότε)\n\n[Chorus]\nΦερ' το μου, φερ' το μου, φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\nΦερ' το μου, φερ' το μου, φερ' το\nΣου είπα φερ' το",
+    "translation_en": "[Verse 1]\nI have to play, I won't quit\nMy ambition is fire, I never fail\nThere's no limit, I'll demolish everything\nI chase everything until I reach it\nI want a crown and a throne to sit on\nA checkbook and to write checks for everyone\nBring me a drink because I want to quench my thirst\nBring it all to me, I still won't be satisfied\n\n[Pre-Chorus]\nReal estate, bring it\nSashimi tuna, bring it\nGold watch, designer glass\nI tell you, bring it\nLeather coat, bring it\nAnd escargot, bring it\nRally cars, yacht with stars\nI told you, bring it\n(Bring it, bring it, bring it)\n\n[Chorus]\nBring it to me, bring it to me, bring it\nBring it to me, bring it to me, bring it\nBring it to me, bring it to me, bring it\nI told you bring it\nBring it to me, bring it to me, bring it\nBring it to me, bring it to me, bring it\nBring it to me, bring it to me, bring it\n\n[Verse 2]\nI want the summit, not just a step\nNothing is enough for me, I demand all of that\nEven everything is not enough\nI want so much, that it's intangible\nI want glory, eternity, and money\nCarefully chosen clothes that are so expensive\nFor them to shout my name so loudly\nAnd to dance, dance as I go higher\n\n[Pre-Chorus]\n(Diamond rings), bring it\n(Cuban links), bring it\n(Submarines, jet machines),\nI want it whenever, bring it\n(Earth and sky), bring it\n(The whole world), bring it\n(Inside and outside the planet),\nIf I don't have it, bring it\n(Bring it, bring it, bring it)\n\n[Chorus]\nBring it to me, bring it to me, bring it\nBring it to me, bring it to me, bring it\nBring it to me, bring it to me, bring it\nI told you bring it\nBring it to me, bring it to me, bring it\nBring it to me, bring it to me, bring it\nBring it to me, bring it to me, bring it\n\n[Post-Chorus]\nI want glory, eternity, and money\nCarefully chosen clothes that are so expensive\nFor them to shout my name so loudly\nTo say \"bring it to us, Akyla, bring it\"\n\n[Bridge]\nLook, mum,\nAt all that we lacked before\nI feel like I will manage\nTo provide so we won't lack anything again\nLook at me, mum\nI buy to fill the voids\nI'll buy a lot for you too\nHouses, cars, and country villas\n(Of course if I win,\nWhatever, you get it, so)\n\n[Chorus]\nBring it to me, bring it to me, bring it\nBring it to me, bring it to me, bring it\nBring it to me, bring it to me, bring it\nBring it to me, bring it to me, bring it\nBring it to me, bring it to me, bring it\nBring it to me, bring it to me, bring it\nI told you bring it",
+    "translation_ru": "[Куплет 1]\nЯ должен играть, я не сдамся\nЯ горю амбициями, я никогда не проигрываю\nУ меня нет пределов, я выиграю всё\nЯ преследую всё, пока не доберусь до цели\nЯ хочу корону и трон, на котором буду сидеть\nИ книжку с чеками, чтобы я их всем выписывал\nНесите мне напиток, чтобы утолить мою жажду\nНесите мне всё это, но я не буду удовлетворён\n\n[Предприпев]\nНедвижимость, несите\nТунец сашими, несите\nЗолотые часы, дизайнерские стаканы\nГоворю, несите\nКожаное пальто, несите\nИ улиток, несите\nГоночные машины, яхта с звёздами\nЯ говорю вам, несите\n(Несите, несите, несите)\n\n[Припев]\nНесите мне, несите мне, несите\nНесите мне, несите мне, несите\nНесите мне, несите мне, несите\nЯ говорю вам, несите\nНесите мне, несите мне, несите\nНесите мне, несите мне, несите\nНесите мне, несите мне, несите\n\n[Куплет 2]\nМне нужна вершина, а не просто один шаг\nНичего не достаточно для меня, я хочу всё\nДаже всего в мире мне недостаточно\nЯ хочу так многого, что это невозможно осознать\nЯ хочу славы, вечности и денег\nОдежду на заказ, дорогущую\nЧтобы они кричали моё имя\nИ танцевать, танцевать, пока я поднимаюсь всё выше\n\n[Предприпев]\n(Бриллиантовые кольца), несите\n(Кубинские цепочки), несите\n(Подлодки, реактивные машины),\nХочу всё это, несите\nЗемлю и небо, несите\nВесь мир, несите\n(Всё что на планете и вокруг неё),\nЕсли у меня нет, несите\n(Несите, несите, несите)\n\n[Припев]\nНесите мне, несите мне, несите\nНесите мне, несите мне, несите\nНесите мне, несите мне, несите\nЯ говорю вам, несите\nНесите мне, несите мне, несите\nНесите мне, несите мне, несите\nНесите мне, несите мне, несите\n\n[Постприпев]\nЯ хочу славы, вечности и денег\nОдежду на заказ, дорогущую\nЧтобы они кричали моё имя\nЧтобы они говорили: \"Неси нам, Акила, неси.\"\n\n[Бридж]\nПосмотри, мама\nНа всё, чего нам так не хватало\nЯ чувствую, что смогу,\nЯ обеспечу нас, чтобы больше нам ничего не хватало\nПосмотри на меня, мама\nЯ покупаю, чтобы заполнить пустоты\nЯ куплю тебе много вещей\nДома, машины и дачи\n(Конечно, если я выиграю,\nНу ты поняла, неважно, так что)\n\n[Припев]\nНесите мне, несите мне, несите\nНесите мне, несите мне, несите\nНесите мне, несите мне, несите\nНесите мне, несите мне, несите\nНесите мне, несите мне, несите\nНесите мне, несите мне, несите\nЯ говорю вам, несите",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": "Акилас в интервью говорил, что не любит сашими с тунцом."
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "Greek",
+      "ru": "Греческий"
+    },
+    "langs_minor": {
+      "en": "English, French, Spanish",
+      "ru": "Английский, Французский, Испанский"
+    },
+    "genre": {
+      "en": "Electropop",
+      "ru": "Электро-поп"
+    },
+    "number_sf": 4,
+    "national_final_url": "https://www.youtube.com/watch?v=j_tDJ77ntPE",
+    "music_video_url": "https://www.youtube.com/watch?v=NGwNTd_DA9s"
+  },
+  {
+    "country_code": "HR",
+    "song_title": "Andromeda",
+    "song_title_en": "Andromeda",
+    "song_title_ru": "Андромеда",
+    "lyrics_original": "[Strofa 1: Korina Olivia Rogić, Lelek]\nDok pališ svijeću, pitaj svoju baku\nZašto je kćeri rađala u strahu\nZašto su mnogi odabrali groblje\nNisu naše majke iznjedrile roblje\n\n[Strofa 2: Judita Storga, Lelek]\nMnoge su suze potekle kô rijeka\nZašto se piše povijest ispočetka?\nSinovi naši nisu podanici\nDa l' vas noću bude iz kolijevke krici?\n\n[Predrefren: Lelek]\nUzmi me sebi, kraljice Zemljo\nTvoja je duša, njima sam tijelo\n\n[Refren: Lelek]\nVodi me do zvijezda, porušenih gnijezda\nTamo gdje uz krike isprate vojnike\nVodi me do zvijezda, daleko od pogleda\nAndromeda\n\n[Strofa 3: Marina Ramljak, Lelek]\nSve urezane ožiljke do kosti\nNi jedna majka neće vam oprostit'\nNa stolu srama zlato sa đerdanâ\nDok peru ruke krvlju naših rana\n\n[Most: Judita Storga, Marina Ramljak, Lara Brtan, Lelek]\nIzdajice\nIzdajice\nIzdajice\nIzdajice\n\n[Predrefren: Lelek]\nUzmi me sebi, kraljice Zemljo\nTvoja je duša, njima sam tijelo\n\n[Refren: Lelek]\nVodi me do zvijezda, porušenih gnijezda\nTamo gdje uz krike isprate vojnike\nVodi me do zvijezda daleko od pogleda\nAndromeda\nVodi me do zvijezda, porušenih gnijezda\nTamo gdje uz klike isprate vojnike\nVodi me do zvijezda daleko od pogleda\nAndromeda\n\n[Završetak: Lelek]\nAndromeda\nAndromeda (Andromeda)\nAndromeda\nAndromeda (Andromeda)\nAndromeda\nAndromeda",
+    "translation_en": "[Verse 1]\nAs you light a candle, ask your grandmother\nWhy she gave birth to her daughters in fear\nWhy so many chose the grave\nOur mothers did not give birth to slaves\n\n[Verse 2]\nSo many tears have flowed like a river\nWhy is history written from scratch?\nOur sons are not subjects\nAre screams from the cradle waking you up at night?\n\n[Pre-Chorus]\nTake me for yourself, Queen Earth\nThe soul is yours, to them I'm a body\n\n[Chorus]\nLead me to the stars, to the shattered nests\nThere where, amid screams they send off soldiers\nLead me to the stars, far from all eyes\nAndromeda\n\n[Verse 3]\nAll the scars carved down to the bone\nNo mother will forgive you\nOn the table of shame, the gold from necklaces\nWhile they wash their hands in the blood of our wounds\n\n[Bridge]\nTraitors\nTraitors\nTraitors\nTraitors\n\n[Pre-Chorus]\nTake me for yourself, Queen Earth\nThe soul is yours, to them I'm a body\n\n[Chorus]\nLead me to the stars, to the shattered nests\nThere where, amid screams they send off soldiers\nLead me to the stars far from all eyes\nAndromeda\nLead me to the stars, to the shattered nests\nThere where, amid screams they send off soldiers\nLead me to the stars far from all eyes\nAndromeda\n\n[Outro]\nAndromeda\nAndromeda (Andromeda)\nAndromeda\nAndromeda (Andromeda)\nAndromeda\nAndromeda",
+    "translation_ru": "[Куплет 1]\nКак зажжёшь свечу, спроси свою бабушку\nПочему дочерей родила она в страхе?\nПочему так многие выбрали смерть?\nНаши матери рожали не рабов\n\n[Куплет 2]\nМного слез лилось рекой\nПочему история пишется с нуля?\nНаши сыновья — не чьи-то подданые\nВас ночью будят из колыбели крики?\n\n[Предприпев]\nВозьми меня с собой, королева Земля\nТвоя моя душа, а для них лишь тело.\n\n[Припев]\nВеди меня к звёздам, разрушенным гнёздам\nТуда, где криками провожают солдат\nВеди меня к звёздам, с глаз долой\nАндромеда\n\n[Куплет 3]\nВсе шрамы пронзили кожу до костей\nНи одна мать вас не простит\nНа столе позора — золото ожерелий\nПока они умывают руки кровью с наших ран\n\n[Бридж]\nПредатели\nПредатели\nПредатели\nПредатели\n\n[Предприпев]\nВозьми меня с собой, королева Земля\nТвоя моя душа, а для них лишь тело.\n\n[Припев]\nВеди меня к звёздам, разрушенным гнёздам\nТуда, где криками провожают солдат\nВеди меня к звёздам, с глаз долой\nАндромеда\nВеди меня к звёздам, разрушенным гнёздам\nТуда, где криками провожают солдат\nВеди меня к звёздам, с глаз долой\nАндромеда\n\n[Аутро]\nАндромеда\nАндромеда (Андромеда)\nАндромеда\nАндромеда (Андромеда)\nАндромеда\nАндромеда",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "Croatian",
+      "ru": "Хорватский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Folk-pop",
+      "ru": "Фолк-поп"
+    },
+    "number_sf": 3,
+    "national_final_url": "https://www.youtube.com/watch?v=OMCR-8gmgso",
+    "music_video_url": "https://www.youtube.com/watch?v=vl7Jqnw10sU"
+  },
+  {
+    "country_code": "IL",
+    "song_title": "Michelle",
+    "song_title_en": "Michelle",
+    "song_title_ru": "Мишель",
+    "lyrics_original": "[Intro]\nMm-mm\nMm-mm\nMm-mm, mmm\n\n[Verse 1]\nמישל זו אהבה רעילה, אני באפלה\n?איך השארת אותי בצל\nכוכבת בלי תהילה, משוגעת גדולה\nאני קם ונופל\nOh, Michelle\nJe ne sais plus quoi faire\nTu étais ma lumière\nDieu j't'en supplie réveille-moi\nJ'ai plongé dans le noir\nRamène-moi de l'espoir\nEt ma mademoiselle\n\n[Pre-Chorus]\nAlors je danse, danse avec les maux\nTu me verras rire, rire à nouveau\nT'es ma douleur, j'n'étais qu'un décor\nJ'ai crié, crié, crié\n\n[Chorus]\nMichelle\nJe te laisse partir, adieu ma belle\nJe te laisse partir, mais je t'aime\nLa reine des problèmes\nMichelle, Michelle, Michelle, Michelle\n\n[Post-Chorus]\nAye-aye-aye-aye-aye-aye (Oh-oh, oh-oh)\nAye-aye-aye-aye-aye-aye (Oh-oh, oh-oh)\n\n[Verse 2]\nWalking down Florentin\nOcean eyes, memories\nI (I), I'm losing my mind\n\n[Pre-Chorus]\nAn angel, but is it hell?\nTrapped in your carousel\n'Round and 'round ('Round and 'round)\nUnder your spell\n\n[Chorus]\nMichelle (Michelle)\nJe te laisse partir, adieu ma belle\nJe te laisse partir, mais je t'aime\nLa reine des problèmes\nMichelle, Michelle, Michelle, Michelle\n\n[Post-Chorus]\nAye-aye-aye-aye-aye-aye (Oh-oh, oh-oh)\nAye-aye-aye-aye-aye-aye (Oh-oh, oh-oh)\nOoh (Oh-oh, oh-oh)\nOoh (Oh-oh, oh-oh)\n\n[Bridge]\nואולי בסוף יהיה לנו טוב\nמתפלל עלייך שתזכי לאהוב\nבין דמעה לדמעה יש מי שישמע\nיש מי שישמע\n\n[Chorus]\n(Michelle)\nJe te laisse partir, adieu ma belle (Michelle)\nJe te laisse partir, mais je t'aime\nLa reine des problèmes\nOoh (Oh-oh, oh-oh)\n\n[Outro]\nOh, je t'aime\nMa reine des problèmes\nMichelle, Michelle, Michelle, Michelle",
+    "translation_en": "[Intro]\nMm-mm\nMm-mm\nMm-mm, mm-mm\n\n[Verse 1]\nMichelle, this is a toxic love, I'm in the darkness\nHow did you leave me in the shadows?\nA star without fame, a great madwoman\nI rise and fall\nOh, Michelle\nI no longer know what to do\nYou were my light\nGod, I beg you, wake me up\nI plunged into the dark\nBring me back some hope\nAnd my mademoiselle\n\n[Pre-Chorus]\nSo I dance, dance with the pain\nYou will see me laugh, laugh again\nYou're my pain, I was only a decoration\nI screamed, screamed, screamed\n\n[Chorus]\nMichelle\nI'm letting you go, goodbye my beautiful\nI'm letting you go, but I love you\nThe queen of problems\nMichelle, Michelle, Michelle, Michelle\n\n[Post-Chorus]\nAye-aye-aye-aye-aye-aye (Oh-oh, oh-oh)\nAye-aye-aye-aye-aye-aye (Oh-oh, oh-oh)\n\n[Verse 2]\nWalking down Florentin\nOcean eyes, memories\nI (I), I'm losing my mind\n\n[Pre-Chorus]\nAn angel, but is it hell\nTrapped in your carousel\n'Round and 'round ('Round and 'round)\nUnder your spell\n\n[Chorus]\nMichelle (Michelle)\nI'm letting you go, goodbye my beautiful\nI'm letting you go, but I love you\nThe queen of problems\nMichelle, Michelle, Michelle, Michelle\n\n[Post-Chorus]\nAye-aye-aye-aye-aye-aye (Oh-oh, oh-oh)\nAye-aye-aye-aye-aye-aye (Oh-oh, oh-oh)\nOoh (Oh-oh, oh-oh)\nOoh (Oh-oh, oh-oh)\n\n[Bridge]\nAnd maybe in the end, things will turn out well for us\nPray on you that you will deserve to love\nBetween tear to tear, there is someone who will hear\nThere is someone who will hear\n\n[Chorus]\n(Michelle)\nI'm letting you go, goodbye my beautiful (Michelle)\nI'm letting you go, but I love you\nThe queen of problems\n(Ooh; Oh-oh, oh-oh)\n\n[Outro]\nOoh, I love you\nMy queen of problems\nMichelle, Michelle, Michelle, Michelle",
+    "translation_ru": "Мм-мм\nМм-мм\nМм-мм, мм-мм\n\nМишель, от этой токсичной любви я брожу во тьме,\nЗачем ты оставила меня в тени?\nЗвезда, не получившая славы, настоящая сумасшедшая,\nЯ поднимаюсь и снова падаю.\nО, Мишель,\nЯ больше не знаю, как мне быть,\nТы была моим светом,\nБоже, молю, дай мне проснуться,\nЯ утонул во тьме,\nВерни мне надежду\nИ мою возлюбленную.\n\nИ я кружусь в танце с болью,\nТы увидишь, как я вновь смеюсь,\nТы моя боль, а я лишь декорация,\nИ я кричу, кричу, кричу.\n\nМишель,\nЯ отпускаю тебя, прощай, моя любимая,\nЯ отпускаю тебя, хоть и люблю,\nКоролева всех моих проблем –\nМишель, Мишель, Мишель, Мишель.\n\nАи-аи-аи-аи-аи-аи (о-о, о-о)\nАи-аи-аи-аи-аи-аи (о-о, о-о)\n\nПроходя по улице Флорентин,\nВ воспоминаниях твои глаза, как океан,\nЯ (я) схожу с ума,\n\nОна ангел, а это ли не ад?\nЯ застрял в твоей карусели,\nВсё по кругу (по кругу),\nЯ под твоими чарами.\n\nМишель (Мишель),\nЯ отпускаю тебя, прощай, моя любимая,\nЯ отпускаю тебя, хоть и люблю,\nКоролева всех моих проблем –\nМишель, Мишель, Мишель, Мишель.\n\n[Post-Chorus]\nАи-аи-аи-аи-аи-аи (о-о, о-о)\nАи-аи-аи-аи-аи-аи (о-о, о-о)\nОо (о-о, о-о)\nОо (о-о, о-о)\n\nА, может, всё в итоге хорошо для нас сложится,\nЯ молюсь, чтобы ты заслужила полюбить по-настоящему,\nПосле пролитых слёз найдётся кто-то,\nКто услышит тебя.\n\n(Мишель)\nЯ отпускаю тебя, прощай, моя любимая (Мишель),\nЯ отпускаю тебя, хоть и люблю,\nКоролева всех моих проблем\n(Оо; о-о, о-о)...\n\nО, я люблю тебя,\nКоролева всех моих проблем –\nМишель, Мишель, Мишель, Мишель.",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "French, Hebrew, English",
+      "ru": "Французский, Иврит, Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Pop, Chanson, Ballad",
+      "ru": "Поп, Шансон, Баллада"
+    },
+    "number_sf": 10,
+    "national_final_url": "",
+    "music_video_url": "https://www.youtube.com/watch?v=xWCnWSoG8nI"
+  },
+  {
+    "country_code": "IT",
+    "song_title": "Per sempre sì",
+    "song_title_en": "Per sempre sì",
+    "song_title_ru": "Да — навсегда",
+    "lyrics_original": "[Strofa 1]\nÈ cominciato tutto quanto dal principio\nIo che per te ero solo un uomo sconosciuto\nPoi diventato un re dal cuore innamorato\nTu una regina, ora vestita in bianco sposa\nAbbiamo sognato figli in una grande casa\nE superato tutte le difficoltà\nPerché un amore non è amore per la vita\nSe non ha affrontato la più ripida salita\n\n[Pre-Ritornello]\nE si accenderà la musica e qui ti aspetterò\nIl più grande giorno ti regalerò\n\n[Ritornello 1]\nSaremo io e te per sempre\nLegati per la vita che\nSenza te non vale niente\nNon ha senso viverе\nCon la mano sul petto\nIo te lo prometto davanti a Dio\nSarеmo io e te da qui\nSarà per sempre \"sì\"\n\n[Strofa 2]\nSo bene che è una grande incognita il futuro\nMa insieme a te non mi spaventerà perché\nCostruiremo tutto, ma non alzeremo un muro\nLitigare e far l'amore e poi che male c'è?\n\n[Pre-Ritornello]\nE si accenderà la musica, per te io canterò\nIl più grande giorno ti regalerò\n\n[Ritornello 1]\nSaremo io e te per sempre\nLegati per la vita che\nSenza te non vale niente\nNon ha senso vivere\nCon la mano sul petto\nIo te lo prometto davanti a Dio\nSaremo io e te da qui\nSarà per sempre \"sì\"\n\n[Bridge]\nSoltanto \"sì\"\nPer questi giorni e mille altri ancora\nUn semplice \"sì\"\nL'eternità è dentro una parola\n\n[Ritornello 2]\nSaremo io e te per sempre\nLegati per la vita che\nSenza te non vale niente\nNon ha senso vivere\nCon la mano sul petto\nIo te lo prometto davanti a Dio\nSaremo io e te accussí\nSarrà pe sempe \"sì\"",
+    "translation_en": "[Verse 1]\nIt all started right from the beginning\nI, who was just an unknown man to you\nThen became a king with a heart in love\nYou a queen, now dressed in white as a bride\nWe dreamed of children in a big house\nAnd overcame all the difficulties\nBecause a love isn't a love for life\nIf it hasn't faced the steepest climb\n\n[Pre-Chorus]\nAnd the music will start playing and I will wait for you here\nI will give you the greatest day\n\n[Chorus]\nIt will be you and me forever\nTied for this life that\nWithout you is worth nothing\nMakes no sense to live\nWith my hand on my chest\nI promise you before God\nIt will be you and me\nFrom here on, it will forever be \"Yes\"\n\n[Verse 2]\nI know well that the future is a great unknown\nBut together with you, it won't scare me because\nWe will build everything, but we won't raise a wall\nFighting and making love, and then what's wrong with that?\n\n[Pre-Chorus]\nAnd the music will start playing, I will sing for you\nI will give you the greatest day\n\n[Chorus]\nIt will be you and me forever\nTied for this life that\nWithout you is worth nothing\nMakes no sense to live\nWith my hand on my chest\nI promise you before God\nIt will be you and me\nFrom here on, it will forever be \"Yes\"\n\n[Bridge]\nOnly \"Yes\"\nFor these days and a thousand more\nA simple \"Yes\"\nEternity is inside one word\n\n[Chorus]\nIt will be you and me forever\nTied for this life that\nWithout you is worth nothing\nMakes no sense to live\nWith my hand on my chest\nI promise you before God\nIt will be you and me\nAnd so it will forever be \"Yes\"",
+    "translation_ru": "[Куплет 1]\nВсё началось когда-то с самого начала\nЯ для тебя был просто незнакомцем\nНо стал потом влюблённым королём\nА ты — моей царицей в белом свадебном наряде\nМы грезили о детях в большом доме\nИ через все прошли мы испытанья\nВедь любовь нельзя назвать любовью на всю жизнь\nЕсли она не прошла огонь и воду\n\n[Предприпев]\nИ заиграет музыка, и буду ждать тебя я здесь\nВеличайший день тебе я подарю\n\n[Припев]\nБудем только ты и я\nСвязанные жизнью навсегда\nКоторая без тебя ничего не стоит\nВ которой нет смысла жить\nС рукой на сердце\nЯ клянусь тебе пред Богом\nБудем только ты и я\nИ с этого дня — навечно «да»\n\n[Куплет 2]\nЯ знаю: будущее полно неизвестности\nНо вместе с тобой мне ничего не страшно\nПостроим всё, но стен воздвигать не будем\nСсориться и заниматься любовью — ну что в этом плохого?\n\n[Предприпев]\nИ заиграет музыка, и для тебя я буду петь\nВеличайший день тебе я подарю\n\n[Припев]\nБудем только ты и я\nСвязанные жизнью навсегда\nКоторая без тебя ничего не стоит\nВ которой нет смысла жить\nС рукой на сердце\nЯ клянусь тебе пред Богом\nБудем только ты и я\nИ с этого дня — навечно «да»\n\n[Бридж]\nТолько «да»\nДля этих дней и тысячи других\nПростое «да»\nВечность заключена в одном слове\n\n[Припев]\nБудем только ты и я\nСвязанные жизнью навсегда\nКоторая без тебя ничего не стоит\nВ которой нет смысла жить\nС рукой на сердце\nЯ клянусь тебе пред Богом\nБудем только ты и я\nИ с этого дня — навечно «да»",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "yes",
+    "langs": {
+      "en": "Italian",
+      "ru": "Итальянский"
+    },
+    "langs_minor": {
+      "en": "Neapolitan",
+      "ru": "Неаполитанский"
+    },
+    "genre": {
+      "en": "Ballad, Disco funk",
+      "ru": "Диско-фанк, Баллада"
+    },
+    "number_sf": 0,
+    "national_final_url": "https://www.youtube.com/watch?v=kA7pS6kaTpg",
+    "music_video_url": "https://www.youtube.com/watch?v=V406FAGkhyQ"
+  },
+  {
+    "country_code": "LT",
+    "song_title": "Sólo quiero más",
+    "song_title_en": "Sólo quiero más",
+    "song_title_ru": "Я просто хочу большего",
+    "lyrics_original": "[Verse 1]\nTai gąsdina, vaidenasi visur kur aš esu\nKas drįsta, tas klausia dėl ko aš gyvenu?\nTai nežeidžia manęs jau seniai\nTai nežeidžia manęs jau\nVis iš naujo sukuosi, rūke tiesios krantai\nSako į vidų žvelki ir rasi ko niekad neradai\nKai viskas griūna gyvenimą pamatau\nIr kuo toliau žiūriu\nAš tiesiog noriu daugiau\n\n[Chorus]\nSólo quiero más\nEven if we're living in a mad world\nEven if there're no more gods to pray for\n(Sólo quiero, sólo quiero más)\nSólo quiero más\nEven if we're living in a mad world\nEven if we're standing as the sky falls\nSólo quiero\nSólo quiero más\nSólo quiero más\n\n[Bridge]\nDolor y alegría, así es la vida\nGal lengviau būtų su subtitrais?\nComme dans un vieux film la doulеur\nCrée la musique qui unit sans mots\n\n[Chorus]\nSólo quiero más\nEvеn if we're living in a mad world\nEven if there're no more gods to pray for\n(Sólo quiero, sólo quiero más)\nSólo quiero más\nEven if we're living in a mad world\nEven if we're standing as the sky falls\n(Sólo quiero)\n(Sólo quiero más)\nSólo quiero más\n(Even if we're living in a mad world)\nIch will einfach mehr\n(Even if there're no more gods to pray for)\nJe veux juste plus\n(Even if we're living in a mad world)\nVoglio solo di più\n(Even if we're standing as the sky falls)\nAš tiesiog noriu daugiau",
+    "translation_en": "[Verse 1]\nIt scares me, it plays everywhere I go\nWhoever dares asks what I live for?\nIt hasn't hurt me for a long time\nIt doesn't hurt me anymore\nI keep turning around, the fog is straight shores\nThey say look inside and you'll find something you've never found\nWhen everything falls apart I see life\nAnd the further I look\nI just want more\n\n[Chorus]\nI just want more\nEven if we're living in a mad world\nEven if there are no more gods to pray for\nI just want more\nI just want more\nEven if we're living in a mad world\nEven if we're standing as the sky falls\nI just want\nI just want more\nI just want more\n\n[Bridge]\nPain and joy, that's life\nMaybe lengviau būtų in his subtitles?\nLike in an old movie the pain\nCreate music that unites without words\n\n[Chorus]\nI just want more\nEven if we're living in a mad world\nEven if there're no more gods pray for\nI just want I just want more\nI just want more\nEven if we're living in a mad world\nEven if we're standing as the sky falls\nI just want\nI just want more\nI just want more\n(Even if we're living in a mad world)\nI just want more\n(Even if there're no more gods pray for)\nI just want more\n(Even if we're living in a mad world)\nI just want more\n(Even if we're standing as the sky falls)\nI just want more",
+    "translation_ru": "Это пугает, это преследует, где бы я ни был.\nКто посмеет спросить: \"Ради чего я живу?\"\nЭто не причиняло мне боли долгое время.\nЭто больше не причиняет мне боли.\nЯ продолжаю кружиться снова и снова, в тумане — берега истины.\nГоворят, загляни внутрь себя – и ты найдёшь то, что никогда не находил.\nКогда всё рушится, я вижу жизнь.\nИ чем дальше я смотрю...\nЯ просто хочу большего.\n\nЯ просто хочу большего.\nДаже если мы живём в безумном мире.\nДаже если больше нет богов, которым можно молиться.\nЯ просто хочу, я просто хочу большего.\nЯ просто хочу большего.\nДаже если мы живём в безумном мире.\nДаже если мы стоим, когда небо падает.\nЯ просто хочу.\nЯ просто хочу большего.\nЯ просто хочу большего.\n\nБоль и радость — это жизнь.\nМожет быть, было бы легче с субтитрами?\nКак в старом кино, пусть боль\nСоздаёт музыку, которая объединяет без слов.\n\nЯ просто хочу большего.\nДаже если мы живём в безумном мире.\nДаже если больше нет богов, которым можно молиться.\nЯ просто хочу, я просто хочу большего.\nЯ просто хочу большего.\nДаже если мы живём в безумном мире.\nДаже если мы стоим, когда небо падает.\nЯ просто хочу.\nЯ просто хочу большего.\nЯ просто хочу большего.\n(Даже если мы живём в безумном мире.)\nЯ просто хочу большего.\n(Даже если больше нет богов, которым можно молиться.)\nЯ просто хочу большего.\n(Даже если мы живём в безумном мире.)\nЯ просто хочу большего.\n(Даже если мы стоим, когда небо падает.)\nЯ просто хочу большего.",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "Lithuanian, English, Spanish",
+      "ru": "Литовский, Английский, испанский"
+    },
+    "langs_minor": {
+      "en": "German, French, Italian",
+      "ru": "Немецкий, Французский, Итальянский"
+    },
+    "genre": {
+      "en": "Art pop, Classical Crossover",
+      "ru": "Арт-поп, Классический кроссовер"
+    },
+    "number_sf": 12,
+    "national_final_url": "https://www.youtube.com/watch?v=nWwMMMVkwRU",
+    "music_video_url": "https://www.youtube.com/watch?v=0H-PXnbhG7A"
+  },
+  {
+    "country_code": "LU",
+    "song_title": "Mother Nature",
+    "song_title_en": "Mother Nature",
+    "song_title_ru": "Мать-природа",
+    "lyrics_original": "[Verse 1]\nFrom the start\nWhen all was fun and games\nWasn't hard\nBut all good things can end\nBack when I was younger\nI planted a seed under the moonlight\nAnd even when there's thunder\nI go back when I wonder, \"Who am I?\"\n\n[Chorus]\nFrom the ground to my skin\nAs I'm howling at the wind\nDig my roots in the mud\nAnd I lean my head back\nLet it out, let it in\nLetting go of all my sins\nDig my roots in the mud\nAnd I lean my head back\n\n[Post-Chorus]\nMother Nature, she knows\nMother Nature, she knows\nI know that\nMother Nature, she knows\nMother Nature, she knows\nMother Nature, shе knows\n\n[Verse 2]\nSee the leaves\nHow thеy grow back again\nAnd I heal\nThen learn to love myself again\nEven when there's thunder\nOh, I don't have to wonder, \"Who am I?\"\n\n[Chorus]\nFrom the ground to my skin\nAs I'm howling at the wind\nDig my roots, in the mud\nAnd I lean my head back\nLet it out, let it in\nLetting go off all my sins\nDig my roots in the mud\nAnd I lean my head back\n\n[Post-Chorus]\nMother Nature, she knows\nMother Nature, she knows\nI know that\nMother Nature, she knows\nMother Nature, she knows\n\n[Outro]\nOh, oh, oh…\n(Mother Nature, she knows)\nMhm, Mother Nature, she knows",
+    "translation_en": "",
+    "translation_ru": "[Куплет 1]\nПоначалу\nКогда всё было просто игрой\nЖилось легко\nНо всё хорошее когда-нибудь заканчивается\nОднажды, когда я была моложе\nЯ посадила семечко при лунном свете\nИ даже в непогоду\nЯ прихожу к нему, когда терзаюсь вопросом: «А кто я?»\n\n[Припев]\nОт земли к моей коже\nКогда я вою на ветру\nЗарываюсь корнями в грязь\nИ откидываю голову назад\nЯ принимаю, я отпускаю\nОтпускаю все свои грехи\nЗарываюсь корнями в грязь\nИ откидываю голову назад\n\n[Постприпев]\nМать-природа знает\nМать-природа знает\nЯ знаю, что\nМать-природа знает\nМать-природа знает\nМать-природа знает\n\n[Куплет 2]\nВижу листья\nИ как они отрастают\nТогда я исцеляюсь\nИ учусь снова любить себя\nДаже в непогоду\nО, мне не приходится задаваться вопросом: «А кто я?»\n\n[Припев]\nОт земли к моей коже\nКогда я вою на ветру\nЗарываюсь корнями в грязь\nИ откидываю голову назад\nЯ принимаю, я отпускаю\nОтпускаю все свои грехи\nЗарываюсь корнями в грязь\nИ откидываю голову назад\n\n[Постприпев]\nМать-природа знает\nМать-природа знает\nЯ знаю, что\nМать-природа знает\nМать-природа знает\n\n[Аутро]\nОу-оу-оу…\n(Мать-природа знает)\nМмм, Мать-природа знает",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Pop-folk",
+      "ru": "Поп-фолк"
+    },
+    "number_sf": 4,
+    "national_final_url": "https://www.youtube.com/watch?v=DmVfJSRqgnI",
+    "music_video_url": ""
+  },
+  {
+    "country_code": "LV",
+    "song_title": "Ēnā",
+    "song_title_en": "Ēnā",
+    "song_title_ru": "В тени",
+    "lyrics_original": "[1. Pants]\r\nTik daudz silta aukstiem ļaudīm dots\r\nBet pie tuviem atnāc iztukšots\r\nCitu acīm skaisti izgleznots\r\nBet viens piliens pārvērš Tevi toņos melnbaltos\r\n\r\n[Piedziedājums]\r\nUn tā lēnām, lēnām kļūsti mēmāks\r\nLēni lēnām, lēnām paliec ēnā\r\nTu domā vēlāk, vēlāk nedaudz vēlāk\r\nUn tā lēnām, lēnām paliec ēnā\r\n\r\n[2. Pants]\r\nMeitiņ klusē, veļu necilā\r\nŠonakt tētis mājās nepārnāks\r\nRīt ar smaidu glāzi skandinās\r\nSlīksim kopā šaubu atvarā\r\n\r\n[Piedziedājums]\r\nUn tā lēnām, lēnām kļūsti mēmāks\r\nLēni lēnām, lēnām paliec ēnā\r\nTu domā vēlāk, vēlāk nedaudz vēlāk\r\nUn tā lēnām, lēnām paliec ēnā\r\n\r\n[Tilts]\r\n(Lēnām, lēnām)\r\n(Lēnām, lēnām)\r\n\r\n[Nobeigums]\r\nLēnām, lēnām paliec ēnā",
+    "translation_en": "[Verse 1]\r\nSo much warmth is given to cold ones\r\nYet when you reach the close ones, you arrive emptied\r\nIn others' eyes you're painted beautifully\r\nBut a single water drop can turn you black and white\r\n\r\n[Chorus]\r\nAnd so slowly, slowly you grow more silent\r\nSlowly, slowly, slowly you fade into the shadows\r\nYou think \"Later, later, a little later\"\r\nAnd so slowly, slowly you fade into the shadows\r\n\r\n[Verse 2]\r\nDaughter, keep quiet, don't stir the veils\r\nToday father will not come home\r\nTomorrow with a smile the glasses will be raised\r\nTogether we'll drown in the whirlpool of doubt\r\n\r\n[Chorus]\r\nAnd so slowly, slowly you grow more silent\r\nSlowly, slowly, slowly you fade into shadow\r\nYou think \"Later, later, a little later\"\r\nAnd so slowly, slowly you fade into shadow\r\n\r\n[Bridge]\r\n(Slowly, slowly)\r\n(Slowly, slowly)\r\n\r\n[Outro]\r\nSlowly, slowly you fade into shadow",
+    "translation_ru": "[Куплет 1]\nСтолько тепла отдаётся холодным рукам\nА как встретишь близких, остаётся лишь пустота\nЧужие глаза могут увидеть в тебе столько красоты\nНо одной капли хватит, чтобы отобрать все цвета\n\n[Припев]\nИ медленно, медленно ты затихаешь\nМедленно, медленно в тени угасаешь\nДумаешь: «Позже, позже, немного позже»\nИ так медленно, медленно в тени угасаешь\n\n[Куплет 2]\nТише, дочь, не поднимай шуму\nСегодня папа не вернётся домой\nЗавтра с улыбками бокалы будут подняты\nМы вместе утонем в водовороте сомнений\n\n[Припев]\nИ медленно, медленно ты затихаешь\nМедленно, медленно в тени угасаешь\nДумаешь: «Позже, позже, немного позже»\nИ так медленно, медленно в тени угасаешь\n\n[Бридж]\n(Медленно, медленно)\n(Медленно, медленно)\n\n[Аутро]\nМедленно, медленно в тени угасаешь",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "Latvian",
+      "ru": "Латвийский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Indie pop, Ballad",
+      "ru": "Инди-поп, Баллада"
+    },
+    "number_sf": 9,
+    "national_final_url": "https://www.youtube.com/watch?v=6C2ivaB5D00",
+    "music_video_url": ""
+  },
+  {
+    "country_code": "MD",
+    "song_title": "Viva, Moldova!",
+    "song_title_en": "Viva, Moldova!",
+    "song_title_ru": "Да здравствует Молдова!",
+    "lyrics_original": "[Refren: Satoshi]\nViva Moldova, aloha, adio, vida loca\nSoroca, Europa, Palma de Mallorca\nSalute a tutti, Moldova is on duty\nE una e nova, welcome to Moldova\nMoldova, aloha, adio, vida loca\nSoroca, Europa, Palma de Mallorca\nSalute a tutti, Moldova is on duty\nE una e nova, Republica Moldova\n\n[Strofa 1: Satoshi]\nPatria-mamă, te amo, forever ne cheamă\nLa lucru, la zeamă, noi trecem vamă\nFamilia e baza, mi casa es su casa\nAsseyez-vous la masă, şi spune-ne qué pasa\n\n[Pre-refren: Satoshi]\nUndeva, undeva, între praf și stele\nSuntem noi, rătăcit stringând spre ele\n\n[Refren: Satoshi]\nViva Moldova, aloha, adio, vida loca\nSoroca, Europa, Palma de Mallorca\nSalute a tutti, Moldova is on duty\nE una e nova, Republica Moldova\n\n[Post-refren: Satoshi]\nWelcome to Moldova\nRepublica Moldova\n\n[Strofa 2: Satoshi]\nDoina, te quiero\nHora, te quiero\nLimba română, moldovano vero\nVibe-ul mereu Maria Mirabela\nFocul din vatră\nDoga, Vieru\nPeace, Europa\nHasta la vista\nAsta e viața, nu mai fi tristă\nIn vino veritas — vine Moldova\nNoroc, Cin-cin, Terra Nova\n\n[Punte: Aliona Moon]\nDorule, dorule, du-mă, dorule\nDorule, dorule, du-mă, dorule\nDorule, dorule, du-mă, dorule\nDorule, dorule, dor-\n\n[Refren: Satoshi]\nViva Moldova, aloha, adio, vida loca\nSoroca, Europa, Palma de Mallorca\nSalute a tutti, Moldova is on duty\nE una e nova, welcome to Moldova\nMoldova, aloha, adio, vida loca\nSoroca, Europa, Palma de Mallorca\nSalute a tutti, Moldova is on duty\nE una e nova, Republica Moldova\n\n[Outro: Satoshi]\nWelcome to Moldova\nWelcome to Moldova",
+    "translation_en": "[Chorus]\nLong live Moldova, hello, goodbye, crazy life\nSoroca, Europe, Palma de Mallorca\nGreetings to everyone, Moldova is on duty\nIt is one and it is new, welcome to Moldova\nMoldova, hello, goodbye, crazy life\nSoroca, Europe, Palma de Mallorca\nGreetings to everyone, Moldova is on duty\nIt is one and it is new, the Republic of Moldova\n\n[Verse 1]\nMother homeland, I love you, forever it calls us\nTo work, to the soup from longing for mother\nFamily is the foundation, my home is your home\nSit down at the table and tell us what's going on\n\nSomewhere, somewhere between dust and stars\nThere are us, lost, crying out to them\n\n[Chorus]\nLong live Moldova, hello, goodbye, crazy life\nSoroca, Europе, Palma de Mallorca\nGreetings to everyonе, Moldova is on duty\nIt is one and it is new, the Republic of Moldova\n\n[Post-Chorus]\nWelcome to Moldova\nThe Republic of Moldova\n\n[Verse 2]\nDoina, I love you\nHora, I love you\nThe Romanian language, truly Moldovan\nThe vibe is always Maria Mirabela\nThe fire in the hearth\nDoga, Vieru\nPeace, Europe\nSee you later\nThat's life, don't be sad anymore\nIn wine there is truth — Moldova is coming\nBottoms up, cheers, New Land\n\nLonging, longing, take me away, longing\nLonging, longing, take me away, longing\nLonging, longing, take me away, longing\nLonging, longing, lon-\n\n[Chorus]\nLong live Moldova, hello, goodbye, crazy life\nSoroca, Europe, Palma de Mallorca\nGreetings to everyone, Moldova is on duty\nIt is one and it is new, welcome to Moldova\nMoldova, hello, goodbye, crazy life\nSoroca, Europe, Palma de Mallorca\nGreetings to everyone, Moldova is on duty\nIt is one and it is new, the Republic of Moldova\n\n[Post-Chorus]\nWelcome to Moldova\nWelcome to Moldova",
+    "translation_ru": "[Припев]\nДа здравствует Молдова, привет, прощай, безумная жизнь\nСороки, Европа, Пальма-де-Майорка\nПривет всем, Молдова на дежурстве\nОна единственная, она новая, добро пожаловать в Молдову\nМолдова, привет, прощай, безумная жизнь\nСороки, Европа, Пальма-де-Майорка\nПривет всем, Молдова на дежурстве\nОна единственная, она новая — Республика Молдова\n\n[Куплет 1]\nРодина-мать, я люблю тебя, она всегда зовёт нас\nНа работу, на похлёбку, с тоской по матери\nСемья — это база, мой дом — твой дом\nПрисаживайся за стол и расскажи, что как там?\n\nГде-то, где-то между пылью и звёздами\nЭто мы — потерянные, кричим к ним\n\n[Припев]\nДа здравствует Молдова, привет, прощай, безумная жизнь\nСороки, Европа, Пальма-де-Майорка\nПривет всем, Молдова на дежурстве\nОна единственная, она новая — Республика Молдова\n\n[Постприпев]\nДобро пожаловать в Молдову\nРеспублика Молдова\n\n[Куплет 2]\nДойна, люблю тебя\nХора, люблю тебя\nРумынский язык, воистину — молдавский\nНаш вайб всегда как у Марии Мирабелы\nОгонь в очаге\nДога, Виеру\nМир, Европа\nДо встречи\nТакова жизнь, не печалься\nИстина в вине — надвигается Молдова\nВыпьем, ваше здоровье, Новая Земля\n\n[Предприпев]\nТоска, тоска, унеси меня, тоска\nТоска, тоска, унеси меня, тоска\nТоска, тоска, унеси меня, тоска\nТоска, тоска, тос-\n\n[Припев]\nДа здравствует Молдова, привет, прощай, безумная жизнь\nСороки, Европа, Пальма-де-Майорка\nПривет всем, Молдова на дежурстве\nОна единственная, она новая — Республика Молдова,\nМолдова, привет, прощай, безумная жизнь\nСороки, Европа, Пальма-де-Майорка\nПривет всем, Молдова на дежурстве\nОна единственная, она новая — Республика Молдова\n\n[Постприпев]\nДобро пожаловать в Молдову\nДобро пожаловать в Молдову",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "Romanian",
+      "ru": "Румынский"
+    },
+    "langs_minor": {
+      "en": "Spanish, English, French, Italian, Hawaiian and Latin",
+      "ru": "Испанский, Английский, Французский, Итальянский, Гавайский, Латынь"
+    },
+    "genre": {
+      "en": "Pop rap",
+      "ru": "Поп-рэп"
+    },
+    "number_sf": 1,
+    "national_final_url": "https://www.youtube.com/watch?v=1JEmuzqob8c",
+    "music_video_url": "https://www.youtube.com/watch?v=SViojHjNSzc"
+  },
+  {
+    "country_code": "ME",
+    "song_title": "Нова зора",
+    "song_title_en": "Nova zora",
+    "song_title_ru": "Новая заря",
+    "lyrics_original": "[Strofa 1]\nKo je ovdje ko? Ma kraj je\nMoj je jači hod (Jači hod), za dalje\nIz srca sad vadim olovo\nSve je gotovo, sve je gotovo\n\n[Predrefren]\n(Lijepe žene, jake kao stijene, žene)\n(Lijepe žene, lijepe su zbog sebe)\nFinally breathing and finding love inside\n\n[Refren]\nKiša traje, kiša traje, nebo znak mi daje\nGrmi sijeva, grmi sijeva, sudbina se mijenja\nO-ou, o-o-ou, o-ou, o-ou\nIza gora, iza mora, rodila se nova zora\n\n[Drop]\n(Nova zora)\n\n[Strofa 2]\nKo si ti da mi pričaš, ko sam ja?\nDa l’ ću doć' ili poć'? Ja sam otišla\nSve što vodi do tebe, sam srušila\nIz tvojih otrova, se Sunce probija\nI nova zora zasija\n\n[Predrefren]\n(Lijepe žene, jake kao stijene, žene)\n(Lijepe žene, lijepe su zbog sebe)\nFinally breathing and finding love inside\n\n[Refren]\nKiša traje, kiša traje, nebo znak mi daje\nGrmi sijeva, grmi sijeva, sudbina se mijenja\nO-ou, o-o-ou, o-ou, o-ou\nIza gora, iza mora, rodila se nova zora\n\n[Most]\nNema okova, nema okova, nema\nKô od gromova rođena žena\nNema okova, nema okova, nema\nKô od gromova rođena žena\n\n[Refren]\nKiša traje, kiša traje, nebo znak mi daje\nGrmi sijeva, grmi sijeva, sudbina se mijenja\nO-ou, o-o-ou, o-ou, o-ou\nIza gora, iza mora, rodila se nova zora\n\n[Završetak]\n(Nova zora)",
+    "translation_en": "[Verse 1]\r\nWho is who here? Well, it's the end\r\nMy gait is stronger now (Stronger now), for I go further\r\nNow I'm pulling out lead from my heart\r\nIt's over now, it's over now\r\n\r\n[Pre-Chorus]\r\n(Beautiful women, strong as boulders, women)\r\n(Beautiful women, beautiful for themselves)\r\nFinally breathing and finding love inside\r\n\r\n[Chorus]\r\nThe rain goes on, the rain goes on, the sky is giving me a sign\r\nIt thunders and flashes, it thunders and flashes, destiny is changing\r\nO-oh, o-o-oh, o-o-oh\r\nBehind the mountains, behind the seas, a new dawn is born\r\n\r\n[Drop]\r\n(A new dawn)\r\n\r\n[Verse 2]\r\nWho do you think you are to tell me who I am?\r\nWill I come or go? I have already left\r\nEverything that leads to you, I have demolished\r\nDespite your poisons, the Sun breaks through\r\nAnd a new dawn shines\r\n\r\n[Pre-Chorus]\r\n(Beautiful women, strong as boulders, women)\r\n(Beautiful women, beautiful for themselves)\r\nFinally breathing and finding love inside\r\n\r\n[Chorus]\r\nThe rain goes on, the rain goes on, the sky is giving me a sign\r\nIt thunders and flashes, it thunders and flashes, destiny is changing\r\nO-oh, o-o-oh, o-o-oh\r\nBehind the mountains, behind the seas, a new dawn is born\r\n\r\n[Bridge]\r\nNo more shackles, no more shackles, no\r\nAs if she was born from the thunders, a woman\r\nNo more shackles, no more shackles, no\r\nAs if she was born from the thunders, a woman\r\n\r\n[Chorus]\r\nThe rain goes on, the rain goes on, the sky is giving me a sign\r\nIt thunders and flashes, it thunders and flashes, destiny is changing\r\nO-oh, o-o-oh, o-o-oh\r\nBehind the mountains, behind the seas, a new dawn is born\r\n\r\n[Outro]\r\n(A new dawn)",
+    "translation_ru": "[Куплет 1]\nКто есть кто? Что же, конец настал\nМой шаг окреп (Шаг окреп), я двигаюсь дальше\nЯ вынимаю свинец из своего сердца\nВсё кончено, всё кончено\n\n[Предприпев]\n(Прекрасные женщины, сильные как скалы, женщины)\n(Прекрасные женщины, прекрасные сами по себе)\nНаконец я дышу и нахожу любовь внутри\n\n[Припев]\nДождь идёт, дождь идёт, небо знак мне даёт\nГремит и сверкает, гремит и сверкает, судьба меняется\nО-у, о-о-у, о-у, о-у\nЗа горами, за морями, родилась новая заря\n\n[Дроп]\n(Новая заря)\n\n[Куплет 2]\nКем ты себя возомнил, чтобы рассказывать мне о том, кто я?\nПриду ли я или пойду? Я уже ушла\nВсё, что ведёт к тебе, я разрушила\nДаже сквозь твой яд пробивается солнце\nИ новая заря засияет\n\n[Предприпев]\n(Прекрасные женщины, сильные как скалы, женщины)\n(Прекрасные женщины, прекрасные сами по себе)\nНаконец я дышу и нахожу любовь внутри\n\n[Припев]\nДождь идёт, дождь идёт, небо знак мне даёт\nГремит и сверкает, гремит и сверкает, судьба меняется\nО-у, о-о-у, о-у, о-у\nЗа горами, за морями, родилась новая заря\n\n[Бридж]\nНет оков, нет оков, нет\nЖенщина, рождённая из грома\nНет оков, нет оков, нет\nЖенщина, рождённая из грома\n\n[Припев]\nДождь идёт, дождь идёт, небо знак мне даёт\nГремит и сверкает, гремит и сверкает, судьба меняется\nО-у, о-о-у, о-у, о-у\nЗа горами, за морями, родилась новая заря\n\n[Аутро]\n(Новая заря)",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "Montenegrin",
+      "ru": "Черногорский"
+    },
+    "langs_minor": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "genre": {
+      "en": "Electropop, Dance-Pop",
+      "ru": "Электропоп, Дэнс-поп"
+    },
+    "number_sf": 8,
+    "national_final_url": "https://www.youtube.com/watch?v=59hsYOMCQGY",
+    "music_video_url": "https://www.youtube.com/watch?v=nuvy2d60HbI"
+  },
+  {
+    "country_code": "MT",
+    "song_title": "Bella",
+    "song_title_en": "Bella",
+    "song_title_ru": "Красавица",
+    "lyrics_original": "[Verse]\nHello, my friend, is it the end?\nI don't recall the time you said goodbye\nHello, my friend, I'm feeling blue\nI gave it all, you took me by surprise\n\n[Pre-Chorus]\nWhat if our worlds align again?\nRight by the summer sky, my friend\nI hope you know it's fun to love again\nAnd if you're feeling cold tonight\nI'll meet you here now, don't be shy\n\n[Chorus]\nChe bella, jien hawn għadni nistenna\nI'll keep holding onto you\nAfter all of this time it's you, and only you\nBella, forsi taħseb ftit fija\nAll the nights that you danced with me\nBy the sea, they're calling me\nChe bella\n\n[Bridge]\nBella, bella, bella, bella\nBella, bella, bella\nBella, bella\nAfter all this time it is you\nMa che bella, bella, bella\nBella, bella, bella, ah\n\n[Pre-Chorus]\nWhat if our worlds align again?\nRight by the summer sky, my friend\nI hope you know it's fun to love again\nAnd if you're feeling cold tonight\nI'll meet you here now, don't be shy\n\n[Chorus]\nChe bella, jien hawn għadni nistenna\nI'll keep holding onto you\nAfter all of this time it's you, and only you\nMiskin min hu bħali, miskin min hu hekk\nIrbaħtli l-battalja, int Jean la Valette\nU tliftli kull sens, qed inħoss id-dinja ddur bija\nChe bella, u ħallejtni nistenna\nI'll keep holding onto you\nAfter all of this time it's you, and only…\nChe bella",
+    "translation_en": "[Verse]\nHello, my friend, is it the end?\nI don't recall the time you said goodbye\nHello, my friend, I'm feeling blue\nI gave it all, you took me by surprise\n\n[Pre-Chorus]\nWhat if our worlds align again?\nRight by the summer sky, my friend\nI hope you know it's fun to love again\nAnd if you're feeling cold tonight\nI'll meet you here now, don't be shy\n\n[Chorus]\nWhat a beauty, I’m still here waiting\nI'll keep holding onto you\nAfter all of this time it's you, and only you\nBeauty, maybe you think of me a little\nAll the nights that you danced with me\nBy the sea, they're calling me\nWhat a beauty\n\n[Bridge]\nBeauty, beauty, beauty, beauty\nBeauty, beauty, beauty\nBeauty, beauty\nAfter all this time it is you\nOh, what a beauty, beauty, beauty\nBeauty, beauty, beauty, ah\n\n[Pre-Chorus]\nWhat if our worlds align again?\nRight by the summer sky, my friend\nI hope you know it's fun to love again\nAnd if you're feeling cold tonight\nI'll meet you here now, don't be shy\n\n[Chorus]\nWhat a beauty, I’m still here waiting\nI'll keep holding onto you\nAfter all of this time it's you, and only you\nPity the one who is like me, pity the one who is like this\nYou won the battle against me, you are Jean la Valette\nAnd I’ve lost all sense, I feel the world spinning around me\nWhat a beauty, and you left me waiting\nI'll keep holding onto you\nAfter all of this time it's you, and only…\nWhat a beauty",
+    "translation_ru": "[Куплет]\nПриветствую, подруга, неужели это конец?\nЯ не могу вспомнить, как ты попрощалась со мной\nПриветствую, подруга, я окутан печалью\nЯ отдал тебе всё, а ты меня обманула\n\n[Предприпев]\nНо что, если наши миры столкнутся ещё раз?\nПрямо под этим летним небом, подруга\nНадеюсь, ты знаешь, что полюбить снова было бы приятно\nИ если вдруг тебе сегодня станет холодно одной\nЯ готов встретиться здесь и сейчас, ты только скажи\n\n[Припев]\nКакая красавица, я всё ещё жду тебя\nЯ не перестану цепляться за тебя\nВ конце концов, всё это оказалось лишь о тебе одной\nКрасавица, возможно, ты тоже обо мне вспоминаешь\nИ все те ночи, когда мы танцевали вместе\nОколо моря, я слышу его зов\nКакая красавица\n\n[Бридж]\nКрасавица, красавица, красавица, красавица\nКрасавица, красавица, красавица\nКрасавица, красавица\nВ конце концов, это всё о тебе\nКрасавица, красавица, красавица\nКрасавица, красавица, красавица, ах…\n\n[Предприпев]\nНо что, если наши миры столкнутся ещё раз?\nПрямо под этим летним небом, подруга\nНадеюсь, ты знаешь, что полюбить снова было бы приятно\nИ если вдруг тебе сегодня станет холодно одной\nЯ готов встретиться здесь и сейчас, ты только скажи\n\n[Припев]\nКакая красавица, я всё ещё жду тебя\nЯ не перестану цепляться за тебя\nВ конце концов, всё это оказалось лишь о тебе одной\nГоре любому мужчине, такому как я, поступающему как я\nТы одержала победу, ты Жан ла Валетт\nЯ окончательно запутался, мир вокруг меня идёт кругами\nКрасавица, ты заставила меня ждать\nЯ не перестану цепляться за тебя\nВ конце концов, всё это оказалось лишь…\nКакая красавица",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English, Maltese",
+      "ru": "Английский, Мальтийский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Pop, Ballad",
+      "ru": "Поп, Баллада"
+    },
+    "number_sf": 14,
+    "national_final_url": "https://www.youtube.com/watch?v=zpnUWz6NKMw",
+    "music_video_url": "https://www.youtube.com/watch?v=CW6mQLBh6Js"
+  },
+  {
+    "country_code": "NO",
+    "song_title": "Ya Ya Ya",
+    "song_title_en": "Ya Ya Ya",
+    "song_title_ru": "Йа-йа-йа",
+    "lyrics_original": "[Intro]\n(Ah, ya-ya-ya-ya)\n(Ah, ya-ya-ya-ya)\n\n[Verse 1]\nYou've been thinking 'bout love, how it got you so low\nBaby I'm an animal, I got no self control\nLeft it right all over you and your pretty clothes\n\n[Chorus]\nI-I-I, I-I-I-I, I got some broken bones\nI-I-I, I-I-I-I, I know it won't let go ya-ya-ya-ya\nWon't let go ya-ya-ya-ya\n\n[Verse 2]\nPretty little liar, put your makeup on ya-ya-ya-ya\nBang bang like you want it, like you know I'm gonna love it\nBang bang goes that broken heart\nBleeding right all over me until I fall apart\n\n[Chorus]\nI-I-I, I-I-I-I, I got some broken bones\nI-I-I, I-I-I-I, I know it won't let go ya-ya-ya-ya\nWon't let go ya-ya-ya-ya\n\n[Bridge]\n(Ah, ya-ya-ya-ya)\n(Ya-ya-ya-ya-ya-ya)\n(Ya-ya-ya-ya-ya-ya-ya)\n\n[Chorus]\nGo, ya-ya-ya-ya\nWon't let go (Ya-ya-ya-ya-ya-ya)\nYa-ya-ya-ya\n(Ya-ya-ya-ya-ya-ya)\n(Ya-ya-ya-ya-ya-ya-ya)",
+    "translation_en": "",
+    "translation_ru": "(А, йа-йа-йа-йа)\n(А, йа-йа-йа-йа)\n\nТы всё думала, что в любви ты совсем разочаровалась,\nМалыш, я зверюга, вообще никакого контроля над собой,\nВсецело оторвусь на тебе и над твоим красивым нарядом.\n\nЯ-я-я, я-я-я-я переломал костей,\nЯ-я-я, я-я-я-я знаю точно, что не отпущу йа-йа-йа-йа,\nНе отпущу тебя йа-йа-йа-йа.\n\nАх ты красивая обманщица, ну-ка нанеси макияж йа-йа-йа-йа,\nБа-бах, всё как ты хочешь, ты знаешь, что и мне это понравится,\nБа-бах раздаётся над разбитым сердцем,\nОно кровоточит по мне, пока я не развалюсь.\n\nЯ-я-я, я-я-я-я переломал костей,\nЯ-я-я, я-я-я-я знаю точно, что не отпущу йа-йа-йа-йа,\nНе отпущу тебя йа-йа-йа-йа.\n\n(А, йа-йа-йа-йа)\n(Йа-йа-йа-йа-йа-йа)\n(Йа-йа-йа-йа-йа-йа-йа)\n\nОтпущу, йа-йа-йа-йа\nНе отпущу (Йа-йа-йа-йа-йа-йа)\nЙа-йа-йа-йа\n(Йа-йа-йа-йа-йа-йа)\n(Йа-йа-йа-йа-йа-йа-йа)",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Pop",
+      "ru": "Поп"
+    },
+    "number_sf": 15,
+    "national_final_url": "https://www.youtube.com/watch?v=MasllzWk_bQ",
+    "music_video_url": ""
+  },
+  {
+    "country_code": "PL",
+    "song_title": "Pray",
+    "song_title_en": "Pray",
+    "song_title_ru": "Молись",
+    "lyrics_original": "[Verse 1]\nFreedom, just freedom\nWon't you give it all to me?\nLay down all my struggle\nAnd bring back the missing piece, the missing piece of me\nLord, are You givin' up on me?\n'Cause I'm not givin' up on me\nThought You would forgive my sins\nYou told me to pray (Pray)\nSo I gotta pray (Pray)\nI gotta just pray, pray, pray\n\n[Verse 2]\nPretty girls rock\nI've been on my shit, now it's pretty on top\nYou ain't my loss\nStep down, take five, now I'm the boss\nI'ma go, move fast\nTake this style, take this class\nMake the money when you run with me\nThey told me, \"Go, shake that ass\nTake that off, two steps back\"\nWhy it always feel the same?\n\n[Pre-Chorus]\nSomeone come gеt me out of here, gеt me out of here\nI guess I gotta fight 'til nobody can hurt you\n\n[Chorus]\nIn my era, no more errors, so stay out of my way\nDroppin' all them number ones with white gloves on my hands\nHoney, I'm trying to stay where the sky ends\nPaving my own ways with one important phrase\n\n[Post-Chorus]\nPray (Pray)\nPray, yeah (Pray, pray)\nPray (Pray)\n\n[Bridge]\nI think you need a sip of holy water, mm\nDon't want no problems with my mother's daughter\nScared, scared, now I guess I'm takin' over\nAyy, ayy, trickery ain't nothing new\nFrom page of your news\nThere ain't nothing you can do\nNothing you can do, ooh\n\n[Chorus]\nIn my era, no more errors, so stay out of my way\nDroppin' all them number ones with white gloves on my hands\nHoney, I'm trying to stay where the sky ends\nPaving my own ways with one important phrase\n\n[Post-Chorus]\nPray (Pray)\nPray, yeah (Pray, pray)\nPray",
+    "translation_en": "",
+    "translation_ru": "Свобода, просто свобода\nТы не можешь просто взять и отдать мне её?\nОставив в стороне все мои страдания,\nВерни эту недостающую часть меня\nГосподи, ты оставляешь меня?\nПотому что я не сдамся,\nЯ думал, ты простишь мои грехи\nТы велел мне молиться (молиться)\nПоэтому я должна молиться (молиться)\nЯ должна просто молиться, молиться, молиться\n\nКрасотки всегда зажигают,\nЯ сосредоточена на своей цели,\nТы не моя потеря,\nСпустись, сделай перерыв, теперь я главная,\nМне нужно идти вперед, очень быстро\nЗацени этот стиль, зацени этот класс\nЗарабатывай деньги, когда будешь бегать со мной\nОни сказали мне: \"Вперёд, потряси своей задницей,\nСними это, два шага назад\"\nПочему каждый раз всё одно и то же?\n\nКто-нибудь, вытащите меня отсюда, вытащите меня отсюда\nМне придётся бороться до тех пор, пока никто не сможет меня ранить\n\nВ мою эру больше никаких ошибок, так что держись от меня подальше\nСбрасываю всех этих звезд, не снимая белых перчаток,\nДорогой, я пытаюсь остаться там, где заканчивается небо,\nПрокладываю свой собственный путь одной важной фразой\n\nМолись (Молись)\nМолись, да (Молись, молись)\nМолись (Молись)\n\nДумаю, тебе нужен глоток святой воды, мм\nТы не захочешь проблем с дочерью моей матери,\nИспуган, испуган, теперь, кажется, я беру всё в свои руки,\nЭй, эй, в этих трюках ничего нового\nДля страницы твоих новостей,\nТы ничего не можешь сделать\nНичего не можешь сделать, оо\n\nВ мою эру больше никаких ошибок, так что держись от меня подальше\nСбрасываю всех этих звезд, не снимая белых перчаток,\nДорогой, я пытаюсь остаться там, где заканчивается небо,\nПрокладываю свой собственный путь одной важной фразой\n\nМолись (Молись)\nМолись, да (Молись, молись)\nМолись",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "R&B, Gospel, Hip-hop",
+      "ru": "R&B, Госпел, Хип-Хоп"
+    },
+    "number_sf": 14,
+    "national_final_url": "https://www.youtube.com/watch?v=q78cnYIoF9Y",
+    "music_video_url": ""
+  },
+  {
+    "country_code": "PT",
+    "song_title": "Rosa",
+    "song_title_en": "Rosa",
+    "song_title_ru": "Роза",
+    "lyrics_original": "[Intro]\r\nNo silêncio do luar\r\nSopra o vento devagar\r\nTraz o cheiro das roseiras\r\nE o teu nome a sussurrar\r\n\r\n[Refrão]\r\nMeu amor se hoje for\r\nÀ noitinha ao meu jardim\r\nPor lá encontrarei rosas\r\nFazem-me lembrar de ti\r\n\r\n[Verso]\r\nNão há pressa de onde eu sou\r\nNão há preço p’ra esta calma\r\nSe falhei paguei em dobro\r\nSobrou pouco ou quase nada\r\nSó as rosas que plantei\r\nQuando a gente era verdade\r\nSobrou pouco, eu não reguei\r\nE o jardim virou saudade\r\n\r\n[Refrão]\r\nMeu amor se hoje for\r\nÀ noitinha ao meu jardim\r\nPor lá encontrarei rosas\r\nFazem-me lembrar de ti\r\n\r\n[Ponte]\r\nFazem-me lembrar de ti\r\nCom saudade do teu beijo\r\nÉs a rosa mais bonita\r\nQue brotou ao sul do Tejo\r\nFazem-me lembrar de ti\r\nCom saudade do teu beijo\r\nÉs a rosa mais bonita\r\nQue brotou ao sul do Tejo\r\n\r\n[Outro]\r\nÉs a rosa mais bonita\r\nQue brotou no Alentejo",
+    "translation_en": "[Intro]\nIn the silence of the moonlight\nBlows the wind slowly\nIt brings the scent of the rose bushes\nAnd your name in a whisper\n\n[Chorus]\nMy love if today I go\nIn the night to my garden\nBy there I’ll find some roses\nThey remind me of you\n\n[Verse]\nThere’s no rush in where I’m from\nThere’s no price for this patience\nIf I failed I paid it double\nNot much left or almost nothing\nJust the roses that I planted\nWhen we were still true\nNot much left, I didn’t water them\nAnd the garden turned into saudade\n\n[Chorus]\nMy love if today I go\nIn the night to my garden\nBy there I’ll find some roses\nThey remind me of you\n\n[Bridge]\nThey remind me of you\nThe longing of your kisses\nYou’re the prettiest rose\nWhom sprouted in the south of Tejo\nThey remind me of you\nThe longing of your kisses\nYou’re the prettiest rose\nWhom sprouted in the south of Tejo\n\n[Outro]\nYou’re the prettiest rose\nWhom sprouted in Alentejo",
+    "translation_ru": "В тишине лунного света\nВетер дует медленно.\nОн приносит аромат розовых кустов\nИ шепчет твоё имя.\n\nЛюбовь моя, если этим вечером\nЯ ступлю в свой сад,\nТам я найду розы.\nОни напоминают мне о тебе.\n\nТам, откуда я родом, некуда спешить.\nУ этого покоя нет цены.\nЕсли я терпел неудачу, я платил вдвойне.\nОсталось мало, или почти ничего.\nТолько розы, которые я посадил,\nКогда мы были настоящими.\nОсталось мало — я их не поливал,\nИ сад превратился в тоску.\n\nЛюбовь моя, если этим вечером\nЯ ступлю в свой сад,\nТам я найду розы.\nОни напоминают мне о тебе.\n\nОни напоминают мне о тебе\nС тоской по твоему поцелую.\nТы — самая красивая роза,\nКоторая расцвела к югу от реки.\nОни напоминают мне о тебе\nС тоской по твоему поцелую.\nТы — самая красивая роза,\nКоторая расцвела к югу от реки.\n\nТы — самая красивая роза,\nКоторая когда-то расцвела в Алентежу.",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "Portuguese",
+      "ru": "Португальский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Cante Alentejano, Pop",
+      "ru": "Канте Алентеджано, Поп"
+    },
+    "number_sf": 5,
+    "national_final_url": "https://www.youtube.com/watch?v=jyHaE6GqaaQ",
+    "music_video_url": ""
+  },
+  {
+    "country_code": "RO",
+    "song_title": "Choke Me",
+    "song_title_en": "Choke Me",
+    "song_title_ru": "Души меня",
+    "lyrics_original": "[Verse 1]\nPhantom, you feel like a phantom\nWhy do you wanna tame me?\nIt's hard to breathe in\nDo you feel me?\n\n[Pre-Chorus]\nDo what I say\nAnd don't you ever betray me\nYou are here to obey me\nAre you not?\n\n[Chorus]\nAll I need is your love\nI want it to choke me, choke me, choke me\nBorn for you to control, I want you to choke me\nCh-ch-ch-choke me, ch-ch-ch-choke me\nLove me, make my lungs explode\nAll I need is your love, I want it to choke me\nCh-ch-ch-choke me, ch-ch-ch-choke me\n\n[Post-Chorus]\nChoke me\nChoke me\nChoke me\n\n[Verse 2]\nSave me\nInside I'm blazing\nI want you to calm me, calm me, calm me\nCalm, my body is begging\n\n[Pre-Chorus]\nDo what I say\nAnd don't you ever betray me\nYou are here to obey me\nAre you not?\n\n[Chorus]\nAll I need is your love\nI want it to choke me, choke me, choke me\nBorn for you to control, I want you to choke me\nCh-ch-ch-choke me, ch-ch-ch-choke me\nLove me, make my lungs explode\nAll I need is your love, I want it to choke me\nCh-ch-ch-choke me, ch-ch-ch-choke me\n\n[Post-Chorus]\nChoke me\nChoke me\nChoke me\n\n[Chorus]\nAll I need is your love\nI want it to choke me, choke me, choke me\nBorn for you to control, I want you to choke me\nCh-ch-ch-choke me, ch-ch-ch-choke me\nLove me, make my lungs explode\nAll I need is your love, I want it to choke me\nCh-ch-ch-choke me, ch-ch-ch-choke me",
+    "translation_en": "",
+    "translation_ru": "Ты как будто фантом,\nПочему ты хочешь укротить меня?\nМне трудно дышать,\nТы чувствуешь меня?\n\nДелай что скажу,\nДаже не думай предать,\nТы здесь, чтобы слушаться меня,\nРазве нет?\n\nМне нужна только твоя любовь,\nЯ хочу, чтобы ты задушил меня, задушил меня, задушил,\nЯ рождена быть под твоим управлением, хочу, чтобы ты душил меня,\nДу-ду-ду-души меня, ду-ду-ду-души меня.\nЛюби так, пусть лёгкие взорвутся,\nМне нужна только твоя любовь, пусть она задушит меня,\nДу-ду-ду-души меня, ду-ду-ду-души меня.\n\nДуши меня,\nДуши меня,\nДуши меня.\n\nСпаси меня,\nЯ горю изнутри,\nЯ хочу, чтобы ты успокоил меня, успокоил меня, успокоил.\nУспокой, моё тело молит.\n\nДелай что скажу,\nДаже не думай предать,\nТы здесь, чтобы слушаться меня,\nРазве нет?\n\nМне нужна только твоя любовь,\nЯ хочу, чтобы ты задушил меня, задушил меня, задушил,\nЯ рождена быть под твоим управлением, хочу, чтобы ты душил меня,\nДу-ду-ду-души меня, ду-ду-ду-души меня.\nЛюби так, пусть лёгкие взорвутся,\nМне нужна только твоя любовь, пусть она задушит меня,\nДу-ду-ду-души меня, ду-ду-ду-души меня.\n\nДуши меня,\nДуши меня,\nДуши меня.\n\nМне нужна только твоя любовь,\nЯ хочу, чтобы ты задушил меня, задушил меня, задушил,\nЯ рождена быть под твоим управлением, хочу, чтобы ты душил меня,\nДу-ду-ду-души меня, ду-ду-ду-души меня.\nЛюби так, пусть лёгкие взорвутся,\nМне нужна только твоя любовь, пусть она задушит меня,\nДу-ду-ду-души меня, ду-ду-ду-души меня.",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Nu metal",
+      "ru": "Ню-метал"
+    },
+    "number_sf": 3,
+    "national_final_url": "https://www.youtube.com/watch?v=JrSl0sTX5W4",
+    "music_video_url": "https://www.youtube.com/watch?v=yn0YmI0dPb8"
+  },
+  {
+    "country_code": "RS",
+    "song_title": "Крај мене",
+    "song_title_en": "Kraj mene",
+    "song_title_ru": "Рядом со мной",
+    "lyrics_original": "[Uvod]\n(Ja još ti čuvam mesto kraj sebe)\n(A ova jednostrana ljubav ubija me)\n\n[Strofa 1: Luka Aranđelović]\nToliko trebalo je\nDa potonem u naručje\nPodle, stare navike\nSrce si otvorila\nUzalud poklonila\nIz nemara da zgazim ga\n\n[Predrefren: Luka Aranđelović]\nKako da ti pokažem da stalo mi je\nNaravno, pre ili kasnije, srušiću sve\n\n[Refren: Luka Aranđelović]\nJa još ti čuvam mesto kraj sebe\nA ova jednostrana ljubav ubija me\nZar ne vidiš koliko lomim se\nŠto više dajem manje imam te\n\n[Strofa 2: Luka Aranđelović]\nZašto me gledaš s visine\nDok zovem u prazno\nI odgovaraš glasom tišine\nDa ipak je kasno\nNe mogu još dugo ovako\nDa puzim i molim i klanjam se\nTu si bila kad bilo je lako\nDok mislila si da sam (Savršen)\n\n[Refren: Luka Aranđelović]\nJa još ti čuvam mesto kraj sebе\nA ova jednostrana ljubav ubija me\nZar ne vidiš koliko lomim sе\nŠto više dajem manje želiš\nMe\n\n[Postrefren: Luka Aranđelović]\nNe želiš me\n\n[Refren: Luka Aranđelović i Pavle Aranđelović, Luka Aranđelović]\nJoš uvek sanjam da si kraj mene\nA ova nemoguća ljubav ubija me\nZar ne vidiš koliko lomim se\nŠto više dajem manje želiš me",
+    "translation_en": "[Intro]\n(I’m still saving a place for you beside me)\n(And this one-sided love is killing me)\n\n[Verse 1]\nIt took so little\nFor me to sink into the embrace\nOf mean, old habits\nYou opened your heart\nGave it in vain\nFor me to carelessly trample it\n\n[Pre-Chorus]\nHow can I show you that I care\nOf course, sooner or later, I’ll tear everything down\n\n[Chorus]\nI’m still saving a place for you beside me\nAnd this one-sided love is killing me\nDon’t you see how much I’m breaking\nThe more I give, the less I have of you\n\n[Verse 2]\nWhy do you look down on me\nWhile I call into the void\nAnd you answer with the voice of silence\nThat it’s already too late\nI can’t go on like this much longer\nCrawling and begging, bowing down\nYou were here when it was easy\nWhen you thought I was (Perfect)\n\n[Chorus]\nI’m still saving a place for you beside me\nAnd this one-sided love is killing me\nDon’t you see how much I’m breaking\nThe more I give, the less you want\nMe\n\n[Post-Chorus]\nYou don't want me\n\n[Chorus]\nI still dream that you’re beside me\nAnd this impossible love is killing me\nDon’t you see how much I’m breaking\nThe more I give, the less you want me",
+    "translation_ru": "(Я все еще приберегаю для тебя место рядом со мной)\n(И эта безответная любовь убивает меня)\n\n[Куплет 1:]\nЯ так долго ждал,\nЧтобы утонуть в объятиях\nДурных старых привычек.\nТы открыла мне сердце.\nНапрасно ты отдала его,\nЧтобы я небрежно растоптал его.\n\n[Распевка:]\nКак мне показать тебе, что я люблю тебя?\nКонечно, рано или поздно я все разрушу.\n\n[Припев:]\nЯ все еще приберегаю для тебя место рядом со мной,\nИ эта безответная любовь убивает меня.\nРазве ты не видишь, как сильно я ломаюсь?\nЧем больше я отдаю, тем меньше у меня тебя.\n\n[Куплет 2:]\nПочему ты смотришь на меня свысока,\nПока я взываю в пустоту?\nА ты отвечаешь голосом молчания,\nЧто уже поздно.\nЯ больше не могу продолжать\nПресмыкаться, молиться и кланяться.\nТы была рядом, когда все было легко,\nПока ты думала, что я (идеален).\n\n[Припев:]\nЯ все еще приберегаю для тебя место рядом со мной,\nИ эта безответная любовь убивает меня.\nРазве ты не видишь, как сильно я ломаюсь?\nЧем больше я отдаю, тем меньше тебе нужен\nЯ\n\nЯ тебе не нужен.\n\n[Припев:]\nЯ все еще приберегаю для тебя место рядом со мной,\nИ эта безответная любовь убивает меня.\nРазве ты не видишь, как сильно я ломаюсь?\nЧем больше я отдаю, тем меньше я тебе нужен.",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "Serbian",
+      "ru": "Сербский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Progressive metal",
+      "ru": "Прогрессивный метал"
+    },
+    "number_sf": 15,
+    "national_final_url": "https://www.youtube.com/watch?v=FJTLKBOOE98",
+    "music_video_url": ""
+  },
+  {
+    "country_code": "SE",
+    "song_title": "My System",
+    "song_title_en": "My System",
+    "song_title_ru": "Моя система",
+    "lyrics_original": "[Verse 1]\nI don't even want you (Want you)\nNo, you don't take up space\nOn any given Monday (Monday)\nI'm forgetting how you taste\nI killed the whole idea of you\nBeen dancing on your grave\n'Cause I don't even want you\nThen Friday screams your name\n\n[Chorus]\n'Cause now you're in my head\nMy heart, my body parts\nYou're always coming back on the weekends\nYou're in every touch\nAnd thought and every shot\nNo, I can't get you out of my system\n(My system)\n\n[Drop]\nNo, I can't get you out of my system\n\n[Verse 2]\nHate the morning after\nHate the way you make me feel\nI am a disaster\nI just need to fix myself for real\n\n[Chorus]\n'Cause now you're in my head\nMy heart, my body parts\nYou're always coming back on the weekends\nYou're in every touch\nAnd thought and every shot\nNo, I can't get you out of my system\n(My system)\n\n[Drop]\nNo, I can't get you out of my system\nNo, I can't get you out of my system\n\n[Bridge]\nIf I deleted all the memories of you and me\nAnd barricaded my walls\nIf I encrypted all my feelings for security\nIt wouldn't matter at all\n\n[Chorus]\n'Cause now you're in my head\nMy heart, my body parts\nYou're always coming back on the weekends\nYou're in every touch\nAnd thought and every shot\nNo, I can't get you out of my system\n\n[Drop]\n(My, my, my system)\nNo, I can't get you out of my system",
+    "translation_en": "",
+    "translation_ru": "Я даже не хочу тебя (Хочу тебя),\nНет, ты не займёшь пустое место\nВ любой случайный понедельник,\nЯ забываю твой вкус.\nИдею о тебе убила внутри себя\nИ танцевала на твоей могиле,\nВедь я даже не хочу тебя,\nНо с пятницей твоё имя доносится криком.\n\nИ теперь ты у меня в голове,\nВ моём сердце, в частях моего тела,\nИ всегда возвращаешься по выходным,\nВ каждом прикосновении\nИ мысли, в каждой секунде –\nЯ никак не могу удалить тебя из своей системы\n(Своей системы).\n\nНет, я никак не могу удалить тебя из своей системы.\n\nНенавижу утро следующего дня,\nНенавижу, как ты заставляешь меня себя чувствовать.\nЯ – ходячая катастрофа,\nМне нужно разобраться в себе наконец.\n\nИ теперь ты у меня в голове,\nВ моём сердце, в частях моего тела,\nИ всегда возвращаешься по выходным,\nВ каждом прикосновении\nИ мысли, в каждой секунде –\nЯ никак не могу удалить тебя из своей системы\n(Своей системы).\n\nНет, я никак не могу удалить тебя из своей системы.\nНет, я никак не могу удалить тебя из своей системы.\n\nЕсли бы я удалила все воспоминания о нас с тобой,\nЗабаррикадировалась за стенами,\nЗашифровала все свои чувства ради безопасности,\nТо это всё равно бы не помогло.\n\nИ теперь ты у меня в голове,\nВ моём сердце, в частях моего тела,\nИ всегда возвращаешься по выходным,\nВ каждом прикосновении\nИ мысли, в каждой секунде –\nЯ никак не могу удалить тебя из своей системы.\n\n(Моя, моя, моя система)\nНет, я никак не могу удалить тебя из своей системы.",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Pop, EDM",
+      "ru": "Поп, EDM"
+    },
+    "number_sf": 2,
+    "national_final_url": "https://www.youtube.com/watch?v=ibbfS8iG450",
+    "music_video_url": ""
+  },
+  {
+    "country_code": "SM",
+    "song_title": "Superstar",
+    "song_title_en": "Superstar",
+    "song_title_ru": "Суперзвезда",
+    "lyrics_original": "[Verse 1]\nAll the boys in the back\nWearing black\nLookin' like they're up to somethin'\nAll the girls on the floor\nLookin' for something more\nLike it's all or nothing\n\n[Pre-Chorus]\nNeon lights, smoky eyes\nDrippin' diamonds, flashin' lights\nThere you are\nLook at you, starin' at your shoes\nLike you're scared or something\n\n[Chorus]\nOh baby, there you are\nGo, go and get it like a superstar\nGo, go and do it for your broken heart\n'Cause baby, you're a superstar, superstar\nUh-huh, uh-huh\nThere you are\nGo, go ahead and show them all your scars\nGo, go and show exactly who you are\nLet them know you're a superstar, superstar\n\n[Verse 2]\nBaby you're a gem, freaky queen\nFour a.m. you're really something\nAnd it's about time\nYou get out, show it off\nWhat you're becoming\nThey took themselves on the floor\nThey've never seen perfection like this before\nBaby, I know that\nYou've been to hell and back\nBut there is one thing\n\n[Chorus]\nOh baby, there you are\nGo, go and get it like a superstar\nGo, go and do it for your broken heart\n'Cause baby, you're a superstar, superstar\nUh-huh, uh-huh\nThere you are\nGo, go ahead and show them all your scars\nGo, go and show exactly who you are\nLet them know you're a superstar, superstar\n\n[Bridge]\n(All the boys at the bar sipping cool champagne)\n(All the girls on the dance floor freaking insane)\nYou're a superstar\n\n[Chorus]\nOh baby, there you are\nGo, go and get it like a superstar\nGo, go and do it for your broken heart\n'Cause baby, you're a superstar, superstar\nUh-huh, uh-huh\nThere you are\n(All the boys at bar sipping cool champagne)\nGo, go ahead and show them all your scars\nGo, go and show exactly who you are\n(All the girls on the dance floor freaking insane)\nLet them know you're a superstar, superѕtаr",
+    "translation_en": "",
+    "translation_ru": "Все парни сзади\nОдеты в черное\nВыглядят, как будто что-то задумали\nВсе девчонки на танцполе\nИщут чего-то большего,\nКак будто все или ничего\n\nНеоновый свет, смоки-айз\nСыплющиеся бриллианты, мерцающий свет\nВот ты где\nПосмотри на себя, уставилась в пол\nКак будто ты чего-то боишься\n\nО детка, вот ты где\nИди, иди и зажги, как суперзвезда\nИди, иди и сделай это ради своего разбитого сердца\nПотому что, детка, ты суперзвезда, суперзвезда\nА-га, а-га\nВот ты где\nИди, иди вперед и покажи всем свои шрамы\nИди, иди и покажи, кто ты на самом деле\nПусть они знают, что ты суперзвезда, суперзвезда\n\nДетка, ты алмаз, чудачка-королева\n4 утра, ты просто нечто,\nИ это самое время\nВыйти и показать им всем,\nКем ты становишься\nОни приходят на танцпол\nОни никогда раньше не видели такого совершенства\nДетка, я знаю, что\nТы прошла сквозь ад и обратно\nНо вот в чем дело\n\nО детка, вот ты где\nИди, иди и зажги, как суперзвезда\nИди, иди и сделай это ради своего разбитого сердца\nПотому что, детка, ты суперзвезда, суперзвезда\nА-га, а-га\nВот ты где\nИди, иди вперед и покажи всем свои шрамы\nИди, иди и покажи, кто ты на самом деле\nПусть они узнают, что ты суперзвезда, суперзвезда\n\n(Все парни в баре пьют прохладное шампанское)\n(Все девчонки на танцполе сходят с ума)\nТы суперзвезда\n\nО, детка, вот ты где\nИди, иди и зажги как суперзвезда\nИди, иди и сделай это ради своего разбитого сердца\nПотому что, детка, ты суперзвезда, суперзвезда\nА-га, а-га\nВот ты где\n(Все парни в баре пьют прохладное шампанское)\nИди, иди вперед и покажи всем свои шрамы\nИди, иди и покажи кто ты на самом деле\n(Все девчонки на танцполе сходят с ума)\nПусть они узнают, что ты суперзвезда, суперзвезда",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": ""
+    },
+    "round_sf": "SF1",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English",
+      "ru": "Английский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Pop",
+      "ru": "Поп"
+    },
+    "number_sf": 13,
+    "national_final_url": "https://www.youtube.com/watch?v=wOQe-fQSFxg",
+    "music_video_url": ""
+  },
+  {
+    "country_code": "UA",
+    "song_title": "Рідним",
+    "song_title_en": "Ridnym",
+    "song_title_ru": "Родным",
+    "lyrics_original": "[Verse]\nGreen into rust\nTrust in the change\nEverything fades\nBe that as it may\nRed into dust\nCut from the branch\nLeaves in the flames\nNothing is safe\n\n[Pre-Chorus]\nВиш'ю, виш’ю\nВиш'ю нову долю\nВиш'ю, виш’ю рідним\nНайріднішим\n\n[Chorus]\nWhen we oppose our fears\nAnd turn all our woes to cheers\nI know the roots\nStill carry water\nWhen all the seeds we've sown\nBlossom and lead us home\nWe'll see the trees\nGrow even taller\n\n[Bridge]\nНову долю виш'ю (Виш'ю, виш'ю)\nРідним, найріднішим (Виш'ю, виш'ю)\nWhen we oppose our fears\nAnd turn all our woes to cheers\nWe’ll see the trees grow even taller\nOoh…\n\n[Chorus]\nWhen we oppose our fears\nAnd turn all our woes to cheers\nI know the roots\nStill carry water\nWhen all the seeds we’ve sown\nBlossom and lead us home\nWe'll see the trees\nGrow even taller",
+    "translation_en": "[Verse]\nGreen into rust\nTrust in the change\nEverything fades\nBe that as it may\nRed into dust\nCut from the branch\nLeaves in the flames\nNothing is safe\n\n[Pre-Chorus]\nI’ll embroider, I’ll embroider\nI’ll embroider a new destiny\nI’ll embroider, I’ll embroider for my loved ones\nFor the dearest ones\n\n[Chorus]\nWhen we oppose our fears\nAnd turn all our woes to cheers\nI know the roots\nStill carry water\nWhen all the seeds we've sown\nBlossom and lead us home\nWe'll see the trees\nGrow even taller\n\n[Bridge]\nI’ll embroider a new destiny (I’ll embroider, I’ll embroider)\nFor my loved ones, for the dearest ones (I’ll embroider, I’ll embroider)\nWhen we oppose our fears\nAnd turn all our woes to cheers\nWe’ll see the trees grow even taller\nOoh…\n\n[Chorus]\nWhen we oppose our fears\nAnd turn all our woes to cheers\nI know the roots\nStill carry water\nWhen all the seeds we’ve sown\nBlossom and lead us home\nWe'll see the trees\nGrow even taller",
+    "translation_ru": "[Куплет]\nЗелёное становится ржавым,\nДоверься переменам\nВсё исчезает,\nБудь что будет\nКрасное становится пылью,\nСрезанные с ветки\nЛистья в огне,\nВсё в опасности\n\n[Предприпев]\nВышью, вышью\nВышью новую судьбу\nВышью, вышью родным\nСамым родным\n\n[Припев]\nКогда мы противостоим нашим страхам\nИ превращаем все наши беды в радость\nЯ знаю, что корни\nВсё ещё несут воду\nКогда все семена, что нами посеяны\nРасцветут и приведут нас домой\nМы увидим, как деревья\nВырастут ещё выше\n\n[Бридж]\nНовую судьбу вышью (Вышью, вышью)\nРодным, самым родным (Вышью, вышью)\nКогда мы противостоим нашим страхам\nИ превращаем все наши беды в радость\nМы увидим, как деревья вырастут ещё выше\nУ-у-у…\n\n[Припев]\nКогда мы противостоим нашим страхам\nИ превращаем все наши беды в радость\nЯ знаю, что корни\nВсё ещё несут воду\nКогда все семена, что нами посеяны\nРасцветут и приведут нас домой\nМы увидим, как деревья\nВырастут ещё выше",
+    "facts": {
+      "en": "TODO: перевести",
+      "ru": "В песне звучит самая длинная нота на Евровидении в этом году"
+    },
+    "round_sf": "SF2",
+    "qualified_to_final": "",
+    "langs": {
+      "en": "English, Ukrainian",
+      "ru": "Английский, Украинский"
+    },
+    "langs_minor": {
+      "en": "",
+      "ru": ""
+    },
+    "genre": {
+      "en": "Art pop, Folk jazz",
+      "ru": "Арт-поп, Фолк-джаз"
+    },
+    "number_sf": 12,
+    "national_final_url": "https://www.youtube.com/watch?v=SoEXezpblAc",
+    "music_video_url": ""
   }
 ]
-

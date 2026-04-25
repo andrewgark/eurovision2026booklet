@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{booklet}[2026/04/20 Eurovision booklet style]
+\ProvidesPackage{booklet}[2026/04/24 Eurovision booklet style]
 
 \RequirePackage{geometry}
 \RequirePackage{fontspec}
@@ -11,62 +11,493 @@
 \RequirePackage{parskip}
 \RequirePackage{fancyhdr}
 \RequirePackage{enumitem}
-\RequirePackage{microtype}
+\RequirePackage{tabularx}
+\RequirePackage{array}
+\RequirePackage{etoolbox}
+\RequirePackage{tcolorbox}
+\tcbuselibrary{skins}
+\RequirePackage{tikz}
+\usetikzlibrary{calc,positioning}
+% Full protrusion/expansion with \cyrillicfont (DejaVu Sans) can trigger
+% "invalid font identifier when asking 'fontsize'" under LuaLaTeX + fontspec.
+\RequirePackage[protrusion=false, expansion=false]{microtype}
 \RequirePackage{ragged2e}
 \RequirePackage{setspace}
 
 \geometry{
   a4paper,
-  top=18mm,
-  bottom=18mm,
-  left=18mm,
-  right=18mm
+  top=10.5mm,
+  bottom=10.5mm,
+  left=11.5mm,
+  right=11.5mm,
+  footskip=5.5mm
 }
+% Default article \flushbottom can stretch white space; song pages are fixed
+% blocks and we avoid arbitrary vertical stretch between hero and columns.
+\raggedbottom
 
-\setmainfont{Latin Modern Roman}
-\setsansfont{Latin Modern Sans}
-\setmonofont{Latin Modern Mono}
+\setmainfont{DejaVu Sans}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+\newfontfamily{\cyrillicfont}{DejaVu Sans}
+\newfontfamily{\cyrillicfontsf}{DejaVu Sans}
+\newfontfamily{\cyrillicfonttt}{DejaVu Sans Mono}
+\newfontfamily{\LyricsFont}{DejaVu Sans Condensed}
+% Default body uses the same sans everywhere — the cover, the intro "About"
+% page, and the lyrics all render with the same typeface as the info panels
+% and country pages. This avoids the jarring Computer-Modern-Roman fallback
+% that used to appear on the intro pages under the English variant.
+\renewcommand{\familydefault}{\sfdefault}
+% \MixedBody is a catch-all family that renders Latin + Cyrillic + Hebrew +
+% extended punctuation. Use it where data may contain unpredictable scripts
+% (artist bios/facts in untranslated placeholders, song titles in original, etc).
+\newfontfamily{\MixedFont}{DejaVu Sans}
+\newcommand{\MixedBody}[1]{{\MixedFont #1}}
+
+% Color emoji font for inline 🌈 / 🏳️‍🌈 / 📍-style icons. Noto Color Emoji
+% only works in LuaLaTeX with the HarfBuzz renderer. Used by \RainbowEmoji.
+\newfontface{\EmojiFont}{Noto Color Emoji}[Renderer=HarfBuzz, Scale=1.0]
 
 \setdefaultlanguage{english}
 \setotherlanguage{russian}
 
+%% ---- Design tokens ---------------------------------------------------------
+\definecolor{BookletInk}{HTML}{141922}         % deep near-black for body
+\definecolor{BookletAccent}{HTML}{1E3A8A}      % Eurovision-ish deep blue
+\definecolor{BookletAccent2}{HTML}{D72660}     % magenta accent
+\definecolor{BookletGold}{HTML}{D6A84B}        % odds pill
+\definecolor{BookletSoft}{HTML}{F3F4F9}        % panel background
+\definecolor{BookletRule}{HTML}{D9DDE5}        % hairline
+\definecolor{BookletMuted}{HTML}{5B6370}       % muted text
+\definecolor{BookletQueer}{HTML}{8B5CF6}       % soft violet for LGBTQ pill (less aggressive than red/magenta)
+\definecolor{BookletYT}{HTML}{C7172A}          % YouTube-ish red, slightly muted
+
+\hypersetup{colorlinks=true, linkcolor=BookletAccent, urlcolor=BookletAccent}
+
+%% ---- Page chrome ----------------------------------------------------------
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\color{BookletMuted}\footnotesize\sffamily\thepage}
 
+% Per-song-page right-footer holder. Song pages call \SetSongFooter before
+% \SongPage to drop their video links into the bottom-right of the page.
+\newcommand{\BookletPageFooterContent}{}
+\fancypagestyle{songpage}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+  \fancyfoot[C]{\color{BookletMuted}\footnotesize\sffamily\thepage}%
+  \fancyfoot[R]{\BookletPageFooterContent}%
+}
+\newcommand{\SetSongFooter}[1]{%
+  \def\BookletPageFooterContent{#1}%
+  \thispagestyle{songpage}%
+}
+
+%% ---- Typography helpers ---------------------------------------------------
 \newcommand{\BookletTitle}[1]{%
-  {\Huge\bfseries #1}\par\vspace{6mm}%
+  {\sffamily\fontsize{26pt}{30pt}\selectfont\bfseries\color{BookletAccent} #1}\par\vspace{1mm}%
+  {\color{BookletAccent2}\rule{28mm}{2pt}}\par\vspace{2.5mm}%
+}
+
+% \VariantPill{label} — prominent tag for the cover page identifying the variant.
+\newcommand{\VariantPill}[1]{%
+  \begin{tikzpicture}[baseline=(p.base)]
+    \node[
+      fill=BookletAccent, text=white, rounded corners=2.5pt,
+      inner xsep=8pt, inner ysep=3.5pt,
+      font=\sffamily\bfseries\small
+    ] (p) {#1};
+  \end{tikzpicture}%
 }
 
 \newcommand{\SectionTitle}[1]{%
-  {\Large\bfseries #1}\par\vspace{2mm}%
+  {\sffamily\Large\bfseries\color{BookletAccent} #1}\par
+  \vspace{1mm}%
+  {\color{BookletAccent}\rule{18mm}{1.2pt}}\par\vspace{2mm}%
 }
 
-\newcommand{\Muted}[1]{\textcolor{black!65}{#1}}
+% Tighter "Contents" head so the first page can list every country link
+% (see also compact \TocItemLink and spacing in main.tex.j2 before it).
+\newcommand{\TocSectionTitle}[1]{%
+  {\sffamily\large\bfseries\color{BookletAccent} #1}\par
+  \vspace{0.3mm}%
+  {\color{BookletAccent}\rule{16mm}{0.9pt}}\par\vspace{0.8mm}%
+}
 
-\newcommand{\ClampTextBlock}[2]{%
+% \TocItem{label} — arrow-led contents row with muted chevron.
+\newcommand{\TocItem}[1]{%
+  \noindent{\color{BookletAccent2}\small\textbullet}\hspace{2.2mm}{\normalsize #1}\par\vspace{1.2mm}%
+}
+
+% \TocItemLink{label}{text} — same layout as \TocItem, but the whole row links
+% to a \label{name} (see \phantomsection in main.tex and song page template).
+% Uses \hyperref so the anchor matches hyperref’s destination exactly.
+% Footnotesize + minimal vertical skip so a long list fits on the cover page.
+\newcommand{\TocItemLink}[2]{%
+  \noindent\RaggedRight\footnotesize
+  \hyperref[#1]{%
+    \strut{\color{BookletAccent2}\scriptsize\textbullet}\hspace{1.4mm}#2%
+  }\par\vspace{0.2mm}%
+}
+
+\newcommand{\Muted}[1]{\textcolor{BookletMuted}{#1}}
+
+% Lightly-emphasized label for small metadata rows. No CAPS.
+\newcommand{\Kicker}[1]{%
+  {\sffamily\scriptsize\bfseries #1}%
+}
+
+\newcommand{\Rule}{\par\noindent\textcolor{BookletRule}{\rule{\linewidth}{0.4pt}}\par}
+
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+
+%% ---- Small badges ---------------------------------------------------------
+% \PillBadge{fill-color}{text-color}{label} — tiny rounded label.
+\newcommand{\PillBadge}[3]{%
+  \begin{tikzpicture}[baseline=(p.base)]
+    \node[
+      fill=#1, text=#2, rounded corners=1.8pt,
+      inner xsep=3.5pt, inner ysep=1pt,
+      font=\sffamily\scriptsize\bfseries
+    ] (p) {#3};
+  \end{tikzpicture}%
+}
+
+% \RainbowEmoji — Unicode rainbow 🌈 rendered through the Noto Color Emoji
+% font. Sized down to fit a scriptsize pill (Noto Color Emoji's em is large).
+\newcommand{\RainbowEmoji}{%
+  {\EmojiFont\fontsize{6.5pt}{6.5pt}\selectfont🌈}%
+}
+
+% \LgbtqPill{label} — soft violet pill prefixed with the rainbow emoji.
+\newcommand{\LgbtqPill}[1]{%
+  \ifblank{#1}{}{%
+    \begin{tikzpicture}[baseline=(p.base)]
+      \node[
+        fill=BookletQueer!12, draw=BookletQueer!45, line width=0.3pt,
+        text=BookletQueer!75!black, rounded corners=2pt,
+        inner xsep=4pt, inner ysep=1.4pt,
+        font=\sffamily\scriptsize\bfseries
+      ] (p) {\RainbowEmoji\hspace{2.4pt}#1};
+    \end{tikzpicture}%
+  }%
+}
+
+% \PlaceMarker — tiny TikZ-drawn drop pin, used as inline emoji-substitute next
+% to a place name. Sized for scriptsize body text; baseline is set so the pin
+% sits naturally next to lowercase letters. Color matches the booklet's deep
+% blue accent so it reads as a place marker rather than a magenta alert.
+\newcommand{\PlaceMarker}{%
+  \begin{tikzpicture}[baseline=-0.3ex, x=1pt, y=1pt, line cap=round, line join=round]
+    \fill[BookletAccent!72]
+      (0,0)
+      .. controls (-0.5,0.6) and (-2.4,1.3) .. (-2.4,3.2)
+      arc[start angle=180, end angle=0, radius=2.4]
+      .. controls (2.4,1.3) and (0.5,0.6) .. (0,0)
+      -- cycle;
+    \fill[white] (0,3.5) circle (0.85);
+  \end{tikzpicture}%
+}
+
+% \YoutubeIcon — small red rounded badge with white play triangle.
+\newcommand{\YoutubeIcon}{%
+  \begin{tikzpicture}[baseline=-0.4ex, x=1pt, y=1pt]
+    \fill[BookletYT, rounded corners=0.9pt] (0,0) rectangle (8.4,5.8);
+    \fill[white] (3.0,1.4) -- (3.0,4.4) -- (5.6,2.9) -- cycle;
+  \end{tikzpicture}%
+}
+
+% \SongLangIcon / \SongGenreIcon — inline emoji (Noto Color Emoji) before
+% the language- / genre-pill rows; size matches \RainbowEmoji.
+\newcommand{\SongLangIcon}{%
+  {\EmojiFont\fontsize{6.5pt}{6.5pt}\selectfont🗣️}%
+}
+\newcommand{\SongGenreIcon}{%
+  {\EmojiFont\fontsize{6.5pt}{6.5pt}\selectfont🎵}%
+}
+
+%% ---- Thumbnail frame (fixed-height, missing-asset placeholder) ------------
+% \ThumbBox{height}{label-if-missing}{content}
+\newcommand{\ThumbBox}[3]{%
+  \begin{tikzpicture}[baseline=(box.north)]
+    \node[draw=BookletRule, line width=0.4pt, rounded corners=1.2pt,
+          inner sep=1.5pt, minimum height=#1, minimum width=\linewidth,
+          fill=white, anchor=north west] (box) at (0,0) {%
+      \ifblank{#3}{\color{BookletMuted}\scriptsize #2}{#3}%
+    };
+  \end{tikzpicture}%
+}
+
+%% ---- Hero band (country header) -------------------------------------------
+% \HeroBand{flag-path}{country}{context-tag}{number}{vote-label}
+% - flag-path: path to flag PDF or empty string (renders a flag-only left strip)
+% - country:   large country name
+% - context-tag: one line of context (variant-dependent), muted white
+% - number:    large running number (empty for pre/post variants)
+% - vote-label: word "Vote" / "Голосовать" (empty when number is empty)
+%
+% When `number` is empty the right pane collapses and the title pane widens,
+% so overall_pre / overall_post don't leave a visible chunk of empty blue.
+\newcommand{\HeroBand}[5]{%
+  \begin{tcolorbox}[
+    enhanced, sharp corners, colback=BookletAccent, colframe=BookletAccent,
+    left=4.6mm, right=4.6mm, top=3.0mm, bottom=3.0mm, boxrule=0pt,
+    borderline north={1.0pt}{0pt}{BookletAccent2},
+  ]
+    \color{white}
+    \noindent
+    \begin{minipage}[c]{0.12\linewidth}%
+      \ifblank{#1}{}{%
+        \includegraphics[width=\linewidth, height=13mm, keepaspectratio]{#1}%
+      }%
+    \end{minipage}\hspace{4mm}%
+    \ifblank{#4}{%
+      % No running number → title pane takes the remaining width.
+      \begin{minipage}[c]{\dimexpr0.88\linewidth-4mm\relax}%
+        {\sffamily\fontsize{21pt}{23pt}\selectfont\bfseries\MixedBody{#2}}\par
+        \ifblank{#3}{}{%
+          \vspace{1.2mm}%
+          {\sffamily\small\color{white!80}\MixedBody{#3}}\par
+        }%
+      \end{minipage}%
+    }{%
+      \begin{minipage}[c]{0.58\linewidth}%
+        {\sffamily\fontsize{21pt}{23pt}\selectfont\bfseries\MixedBody{#2}}\par
+        \ifblank{#3}{}{%
+          \vspace{1.2mm}%
+          {\sffamily\small\color{white!80}\MixedBody{#3}}\par
+        }%
+      \end{minipage}\hfill%
+      \begin{minipage}[c]{0.22\linewidth}%
+        \raggedleft
+        {\sffamily\fontsize{26pt}{28pt}\selectfont\bfseries\color{BookletGold} #4}%
+        \hspace{1.4mm}%
+        {\sffamily\small\color{white!85} #5}%
+      \end{minipage}%
+    }%
+  \end{tcolorbox}%
+}
+
+% \ProbPill{label}{percent} — implied-probability pill with a tiny label.
+% Example: \ProbPill{Win}{12%}  \ProbPill{Qualify}{87%}
+% The label identifies the bet type (winner vs qualifier). The bookmaker
+% itself is intentionally not shown (minimal design).
+\newcommand{\ProbPill}[2]{%
+  \ifblank{#2}{}{%
+    \begin{tikzpicture}[baseline=(pill.base)]
+      \node[
+        fill=BookletGold, text=BookletInk, rounded corners=2pt,
+        inner xsep=5pt, inner ysep=2.4pt,
+        font=\sffamily\bfseries\small
+      ] (pill) {{\scriptsize #1}\hspace{3pt}#2};
+    \end{tikzpicture}%
+  }%
+}
+
+% \MetaPill{label}  — tiny outlined pill for genres / languages / selection tags.
+\newcommand{\MetaPill}[1]{%
+  \ifblank{#1}{}{%
+    \begin{tikzpicture}[baseline=(p.base)]
+      \node[
+        draw=BookletRule, line width=0.3pt, fill=BookletSoft, text=BookletInk,
+        rounded corners=2pt, inner xsep=4pt, inner ysep=1.2pt,
+        font=\MixedFont\scriptsize
+      ] (p) {#1};
+    \end{tikzpicture}%
+  }%
+}
+
+% \MetaPillMuted{label}  — same as MetaPill but text is muted (used for minor langs).
+\newcommand{\MetaPillMuted}[1]{%
+  \ifblank{#1}{}{%
+    \begin{tikzpicture}[baseline=(p.base)]
+      \node[
+        draw=BookletRule, line width=0.3pt, fill=BookletSoft, text=BookletMuted,
+        rounded corners=2pt, inner xsep=4pt, inner ysep=1.2pt,
+        font=\MixedFont\scriptsize
+      ] (p) {#1};
+    \end{tikzpicture}%
+  }%
+}
+
+% \VideoLink{url}{label}  — small muted video/play link.
+\newcommand{\VideoLink}[2]{%
+  \ifblank{#1}{}{%
+    {\scriptsize\Muted{\textbullet\,\href{#1}{#2}}}%
+  }%
+}
+
+% \VideoLinkFooter{url}{label} — page-footer variant: YouTube icon + underlined,
+% colored, sans-serif label. Used by \SetSongFooter so the bottom-right of each
+% song page advertises the official video / national selection links.
+\newcommand{\VideoLinkFooter}[2]{%
+  \ifblank{#1}{}{%
+    \href{#1}{%
+      \YoutubeIcon\hspace{1.6pt}%
+      {\sffamily\scriptsize\color{BookletAccent}\underline{#2}}%
+    }%
+  }%
+}
+
+%% ---- Info panels ----------------------------------------------------------
+% \InfoPanel{title}{body}
+% `baseline=0pt` anchors the tcolorbox baseline at the top edge of the box so
+% `minipage[t]` columns containing an infopanel line up on the title row,
+% regardless of how tall each column's content is. Without it, panels drift
+% vertically based on first-line metrics of their first content element.
+\newtcolorbox{infopanel}[1]{%
+  enhanced, arc=2.4pt,
+  colback=BookletSoft, colframe=BookletRule,
+  boxrule=0.3pt, left=2.8mm, right=2.2mm, top=3.0mm, bottom=3.2mm,
+  baseline=0pt, before=\noindent, after=\relax,
+  fonttitle=\sffamily\footnotesize\bfseries\color{BookletAccent},
+  title={#1},
+  coltitle=BookletAccent,
+  attach boxed title to top left={yshift=-2.4pt, xshift=2.6mm},
+  boxed title style={colback=white, colframe=white, sharp corners,
+    size=minimal, top=0.5pt, bottom=0pt, left=2.4pt, right=2.4pt}
+}
+
+% \FactChip{text} — a single-line "fact card" rendered as a tiny rounded
+% white box on the soft-grey panel background. Used for bio / song-facts /
+% country-facts lines so each individual factoid reads as its own discrete
+% chip rather than one paragraph blob. Long lines wrap inside the chip.
+\newtcolorbox{factchip}{%
+  enhanced, arc=2.0pt,
+  colback=white, colframe=BookletRule,
+  boxrule=0.3pt,
+  % Full panel width: wrapping matches the infopanel; tight inner padding on the
+  % right so lines do not end short of the card edge.
+  width=\linewidth,
+  left=2.2pt, right=1.4pt, top=1.8pt, bottom=2.2pt,
+  before skip=0pt, after skip=1.4mm,
+  baseline=0pt, before=\noindent, after=\relax,
+}
+\newcommand{\FactChip}[1]{\begin{factchip}#1\end{factchip}}
+
+%% ---- Lyrics blocks --------------------------------------------------------
+% Lyrics live in a single tall column on the right side of the page (see the
+% \SongPage macro). The block is a 2-cell tabularx (original | translation)
+% running the full height of the page, so each line of the song is exactly
+% one row. Lines that don't fit horizontally are NOT wrapped — instead the
+% font size is chosen so that typical lines fit, and the few that don't are
+% expected to be edited at the source.
+%
+% \LyricsTall{rows}  — paired original | translation, full column width.
+% Inside lyrics, render Latin AND Cyrillic with DejaVu Sans Condensed.
+% Polyglossia's `\setdefaultlanguage{russian}` makes the document's default
+% script Cyrillic, which auto-swaps to the (regular-width) `\cyrillicfont`
+% for every glyph and silently overrides any local font selection. Wrapping
+% the lyrics block in `\foreignlanguage{english}{...}` switches the language
+% back to English; AFTER that switch we apply `\LyricsFont` (Condensed) so
+% all glyphs — including Cyrillic — are rendered narrower.
+% \LyricsTall{font-pt}{baseline-pt}{rows}
+\newcommand{\LyricsTall}[3]{%
   \begingroup
-  \setlength{\parskip}{0.6ex}%
-  \setstretch{0.98}%
-  \footnotesize
-  \RaggedRight
-  \begin{minipage}[t]{\linewidth}
-    \setlength{\baselineskip}{#1}%
-    #2%
-  \end{minipage}
+  \setlength{\tabcolsep}{7pt}%
+  \renewcommand{\arraystretch}{1.0}%
+  \foreignlanguage{english}{%
+    \LyricsFont
+    \fontsize{#1pt}{#2pt}%
+    \renewcommand{\baselinestretch}{1.0}%
+    \selectfont
+    \begin{tabularx}{\linewidth}{@{}Y Y@{}}#3\end{tabularx}%
+  }%
   \endgroup
 }
 
-\newcommand{\TwoColBlock}[2]{%
-  \begin{minipage}[t]{0.49\textwidth}#1\end{minipage}\hfill%
-  \begin{minipage}[t]{0.49\textwidth}#2\end{minipage}%
+% \LyricsTallSolo{font-pt}{baseline-pt}{rows}  — single-column (no translation), full width.
+\newcommand{\LyricsTallSolo}[3]{%
+  \begingroup
+  \setlength{\tabcolsep}{0pt}%
+  \renewcommand{\arraystretch}{1.0}%
+  \foreignlanguage{english}{%
+    \LyricsFont
+    \fontsize{#1pt}{#2pt}%
+    \renewcommand{\baselinestretch}{1.0}%
+    \selectfont
+    \begin{tabularx}{\linewidth}{@{}Y@{}}#3\end{tabularx}%
+  }%
+  \endgroup
 }
 
-\newcommand{\AssetBox}[2]{%
-  \begin{minipage}[t]{#1}
-    \centering
-    #2
-  \end{minipage}%
+% Stanza gap row in lyrics tables — renders as whitespace only.
+% A bit more generous than line spacing so stanza boundaries are visually
+% distinct from line breaks.
+\newcommand{\LyricsGap}{%
+  \noalign{\vspace{1.9mm}}%
 }
 
+\newcommand{\LyricsSoloGap}{%
+  \noalign{\vspace{1.9mm}}%
+}
+
+% Lyrics block header sitting at the top of the right column.
+% \LyricsHeader{orig-title}{trans-title} — two columns matching the lyrics
+% tabularx grid: the original-language song title sits over the original
+% column, and its translation sits over the translation column.
+\newcommand{\LyricsHeader}[2]{%
+  \begingroup
+  \setlength{\tabcolsep}{7pt}%
+  \renewcommand{\arraystretch}{1.0}%
+  \sffamily\footnotesize\bfseries\color{BookletAccent}%
+  \begin{tabularx}{\linewidth}{@{}Y Y@{}}%
+    \MixedBody{#1} & \MixedBody{#2}%
+  \end{tabularx}%
+  \endgroup\par
+  \vspace{1.4mm}%
+  {\color{BookletAccent!30}\rule{\linewidth}{0.3pt}}\par
+  \vspace{2.6mm}%
+}
+
+% \LyricsHeaderSolo{title} — same look, single column for solo (no-translation) songs.
+\newcommand{\LyricsHeaderSolo}[1]{%
+  {\sffamily\footnotesize\bfseries\color{BookletAccent}\MixedBody{#1}}\par
+  \vspace{1.4mm}%
+  {\color{BookletAccent!30}\rule{\linewidth}{0.3pt}}\par
+  \vspace{2.6mm}%
+}
+
+%% ---- Song page scaffold (force one country per page) ---------------------
+% \SongPage{hero}{panels-stack}{lyrics-tall}
+% Layout: hero, then a two-column body (left: info panels, right: aligned
+% lyrics tabular, both top-aligned). A page break ends each country. Avoid a
+% single outer minipage of \textheight — it can produce blank pages.
+% Widths are tuned so that lyric lines up to ~50 Latin / ~45 Cyrillic chars
+% fit per sub-column without wrapping at the chosen font size.
+% Do not use a \textheight-tall minipage here: a fixed-height outer box
+% interacts badly with the unbreakable inner layout (tcolorbox, tall lyrics
+% tabular) and with the page break at the end of each country, producing
+% an extra empty page after some country pages. Top-aligned natural-height
+% minipages + one \newpage keep
+% one country per page without stray blanks.
+\newcommand{\SongPage}[3]{%
+  \begingroup
+  \setlength{\parskip}{0pt}%
+  \noindent
+  % Keep the hero and the two body minipages in one unbreakable \vbox. If we
+  % do not, TeX is allowed to page-break between the short hero tcolorbox and
+  % the much taller minipages when the minipages do not fit the remainder of
+  % the current page. That looks like a half-empty (``blank'') first page
+  % with only the blue band, full content on the next page — and +1 per song
+  % when the left column and/or wrapped lyrics are taller (common in RU).
+  \vbox{%
+    #1\par
+    \vspace{2.2mm}%
+    \noindent
+    \begin{minipage}[t]{0.275\linewidth}\vspace*{0pt}%
+      #2%
+    \end{minipage}\hspace{0.015\linewidth}%
+    \begin{minipage}[t]{0.710\linewidth}\vspace*{0pt}%
+      #3%
+    \end{minipage}%
+  }%
+  \endgroup
+  % Next country on a fresh page. \newpage avoids the float-flush in
+  % \clearpage, which with this unbreakable \vbox layout can otherwise
+  % insert an extra nearly-empty page between countries under LuaLaTeX.
+  \newpage
+}

@@ -32,6 +32,10 @@ class CountryMapRef(BaseModel):
     iso_a2: str = Field(min_length=2, max_length=2)
 
 
+AutoQualify = Literal["", "HOST", "BIG_FIVE"]
+NationalQualifyType = Literal["", "PUBLIC_CONTEST", "INTERNAL_SELECTION"]
+
+
 class CountryModel(BaseModel):
     country_code: str = Field(min_length=2, max_length=2)
     country_name: LocalizedText
@@ -40,14 +44,27 @@ class CountryModel(BaseModel):
     flag: CountryFlagRef
     map: CountryMapRef
     sources_urls: list[HttpUrl] = []
+    # Structured stats from the Countries sheet (used by Block 2):
+    auto_qualify: AutoQualify = ""
+    qualify_streak: int = 0
+    non_qualify_streak: int = 0
+    last_participation: int = 0
+    won_times: int = 0
+    national_qualify_type: NationalQualifyType = ""
 
 
 class ArtistModel(BaseModel):
-    artist_id: str = Field(min_length=1)
+    country_code: str = Field(min_length=2, max_length=2)
     artist_name: str = Field(min_length=1)
     bio: LocalizedText
     facts: LocalizedText
     photo_file: str = ""
+    # Structured artist metadata (used by Block 3):
+    artist_real_name: LocalizedText = LocalizedText()
+    year_born: str = ""
+    place_born: LocalizedText = LocalizedText()
+    place_growup: LocalizedText = LocalizedText()
+    lgbt: str = ""
 
 
 class SongFacts(LocalizedText):
@@ -55,9 +72,7 @@ class SongFacts(LocalizedText):
 
 
 class SongModel(BaseModel):
-    entry_id: str = Field(min_length=1)
     country_code: str = Field(min_length=2, max_length=2)
-    artist_id: str = Field(min_length=1)
 
     song_title: str = Field(min_length=1)
     song_title_en: str = ""
@@ -72,10 +87,18 @@ class SongModel(BaseModel):
     round_sf: Round
     qualified_to_final: str = ""
 
+    # Structured song metadata (used by Block 4):
+    langs: LocalizedText = LocalizedText()
+    langs_minor: LocalizedText = LocalizedText()
+    genre: LocalizedText = LocalizedText()
+    number_sf: int = 0
+    national_final_url: str = ""
+    music_video_url: str = ""
+
 
 class RunningOrderRow(BaseModel):
     round: Round
-    entry_id: str
+    country_code: str = Field(min_length=2, max_length=2)
     order: int = Field(ge=1)
 
 
@@ -86,14 +109,14 @@ class RoundsModel(BaseModel):
 
 class OddsRow(BaseModel):
     round: Round
-    entry_id: str
+    country_code: str = Field(min_length=2, max_length=2)
     bookmaker: str
     odds: str
     as_of_date: date
 
 
 class ResultsSummary(BaseModel):
-    winner_entry_id: str = ""
+    winner_country_code: str = Field(default="", max_length=2)
 
 
 class ResultsModel(BaseModel):
