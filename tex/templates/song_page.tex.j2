@@ -66,8 +66,8 @@
 {% if e.qualify_percent or e.win_percent %}
 {\scriptsize\Muted{ {{ L_BOOKIES }} }}\par
 \vspace{0.52mm}\par
-{% if e.qualify_percent %}\ProbPill{ {{ L_QUALIFY }} }{ {{ e.qualify_percent }} }{% if e.win_percent %}\hspace{0.95mm}{% endif %}{% endif %}
-{% if e.win_percent %}\ProbPill{ {{ L_WIN }} }{ {{ e.win_percent }} }{% endif %}
+{% if e.qualify_percent %}\ProbPill{ {{- e.qualify_fill -}} }{ {{ L_QUALIFY }} }{ {{ e.qualify_percent }} }{% if e.win_percent %}\hspace{0.95mm}{% endif %}{% endif %}
+{% if e.win_percent %}\ProbPill{ {{- e.win_fill -}} }{ {{ L_WIN }} }{ {{ e.win_percent }} }{% endif %}
 \par
 {% endif %}
 {% if e.country_stats_lines %}

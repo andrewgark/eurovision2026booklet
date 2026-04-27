@@ -18,14 +18,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 Lang = Literal["en", "ru"]
 Variant = Literal["overall_pre", "sf1", "sf2", "final", "overall_post"]
 
-
-VARIANT_TITLES = {
-    "overall_pre": {"en": "Overall (pre-contest)", "ru": "Общий (до конкурса)"},
-    "sf1": {"en": "Semi-final 1", "ru": "Полуфинал 1"},
-    "sf2": {"en": "Semi-final 2", "ru": "Полуфинал 2"},
-    "final": {"en": "Final", "ru": "Финал"},
-    "overall_post": {"en": "Overall (results)", "ru": "Общий (результаты)"},
-}
+VARIANTS: tuple[str, ...] = ("overall_pre", "sf1", "sf2", "final", "overall_post")
 
 # config.json `subtitle_*` / `intro_text_*` keys for each PDF variant
 VARIANT_SUBTITLE_KEY: dict[Variant, str] = {
@@ -94,7 +87,9 @@ class EntryView:
     lyrics_font_pt: str
     lyrics_baseline_pt: str
     win_percent: str
+    win_fill: str
     qualify_percent: str
+    qualify_fill: str
     round_sf: str
     flag_path: str | None
     photo_path: str | None
@@ -649,6 +644,43 @@ def _odds_to_percent(raw: str) -> str:
     return f"{int(round(prob))}%"
 
 
+def _implied_percent_value(display: str) -> float | None:
+    """Map UI string from `_odds_to_percent` to a 0..100 value for color tiers."""
+    t = (display or "").strip()
+    if not t:
+        return None
+    if t.startswith("<"):
+        rest = t[1:].strip().rstrip("%").replace(",", ".")
+        try:
+            cap = float(rest)
+            return max(0.0, min(100.0, cap) * 0.5)
+        except ValueError:
+            return 0.5
+    t2 = t.rstrip("%").strip().replace(",", ".")
+    try:
+        return float(t2)
+    except ValueError:
+        return None
+
+
+def _prob_pill_fill(display: str, kind: Literal["qualify", "win"]) -> str:
+    """Background color name (BookletProb*) from thresholds. Defaults to Amber if unparseable."""
+    v = _implied_percent_value(display)
+    if v is None:
+        return "BookletProbAmber"
+    if kind == "qualify":
+        if v < 30:
+            return "BookletProbRed"
+        if v < 70:
+            return "BookletProbAmber"
+        return "BookletProbGreen"
+    if v < 1:
+        return "BookletProbRed"
+    if v < 10:
+        return "BookletProbAmber"
+    return "BookletProbGreen"
+
+
 def _pick_probs(
     *,
     country_code: str,
@@ -964,7 +996,13 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
                 lyrics_font_pt=lyrics_font,
                 lyrics_baseline_pt=lyrics_baseline,
                 win_percent=_safe_tex(probs["win_percent"]),
+                win_fill=_prob_pill_fill(probs["win_percent"], "win")
+                if probs["win_percent"]
+                else "",
                 qualify_percent=_safe_tex(probs["qualify_percent"]),
+                qualify_fill=_prob_pill_fill(probs["qualify_percent"], "qualify")
+                if probs["qualify_percent"]
+                else "",
                 round_sf=_safe_tex(str(s.get("round_sf") or "")),
                 flag_path=flag_path,
                 photo_path=photo_path,
@@ -1006,7 +1044,6 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
         lang=lang,
         variant=variant,
         mode=mode,
-        variant_title=VARIANT_TITLES[variant][lang],
         event_name=_safe_tex(config["event_name"][lang]),
         booklet_title=_safe_tex(config["booklet_title"][lang]),
         cover_subtitle=cover_subtitle,
@@ -1060,7 +1097,7 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--variant", required=True, choices=list(VARIANT_TITLES.keys()))
+    parser.add_argument("--variant", required=True, choices=list(VARIANTS))
     parser.add_argument("--lang", required=True, choices=["en", "ru"])
     parser.add_argument("--run-latex", action="store_true")
     args = parser.parse_args()

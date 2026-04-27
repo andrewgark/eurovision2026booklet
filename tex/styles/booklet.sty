@@ -83,7 +83,11 @@
 \definecolor{BookletInk}{HTML}{141922}         % deep near-black for body
 \definecolor{BookletAccent}{HTML}{1E3A8A}      % Eurovision-ish deep blue
 \definecolor{BookletAccent2}{HTML}{D72660}     % magenta accent
-\definecolor{BookletGold}{HTML}{D6A84B}        % odds pill
+\definecolor{BookletGold}{HTML}{D6A84B}        % hero band + legacy accent
+% Implied-odds pills (qualify / win): muted, one warm family, quiet on the page
+\definecolor{BookletProbRed}{HTML}{B87870}
+\definecolor{BookletProbAmber}{HTML}{C9B16A}
+\definecolor{BookletProbGreen}{HTML}{6E9A78}
 \definecolor{BookletSoft}{HTML}{F3F4F9}        % panel background
 \definecolor{BookletRule}{HTML}{D9DDE5}        % hairline
 \definecolor{BookletMuted}{HTML}{5B6370}       % muted text
@@ -391,18 +395,18 @@
   \end{tcolorbox}%
 }
 
-% \ProbPill{label}{percent} — implied-probability pill with a tiny label.
-% Example: \ProbPill{Win}{12%}  \ProbPill{Qualify}{87%}
+% \ProbPill{fill}{label}{percent} — implied-probability pill (fill = BookletProbRed|Amber|Green).
+% Example: \ProbPill{BookletProbRed}{Win}{1.2%}  \ProbPill{BookletProbGreen}{Qualify}{87%}
 % The label identifies the bet type (winner vs qualifier). The bookmaker
 % itself is intentionally not shown (minimal design).
-\newcommand{\ProbPill}[2]{%
-  \ifblank{#2}{}{%
+\newcommand{\ProbPill}[3]{%
+  \ifblank{#3}{}{%
     \begin{tikzpicture}[baseline=(pill.base)]
       \node[
-        fill=BookletGold, text=BookletInk, rounded corners=2pt,
+        fill=#1, text=BookletInk, rounded corners=2pt,
         inner xsep=4.0pt, inner ysep=1.55pt,
         font=\InfoColumnFont\selectfont\bfseries\small
-      ] (pill) {{\scriptsize #1}\hspace{2.1pt}#2};
+      ] (pill) {{\scriptsize #2}\hspace{2.1pt}#3};
     \end{tikzpicture}%
   }%
 }
