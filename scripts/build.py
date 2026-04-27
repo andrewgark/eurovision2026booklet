@@ -94,6 +94,13 @@ def _safe_tex(s: str) -> str:
     )
 
 
+def _safe_tex_country_stat_line(s: str) -> str:
+    """Like _safe_tex, but pass through lines that embed \\TrophyIcons{...} (Noto Color Emoji)."""
+    if s.startswith("\\TrophyIcons{"):
+        return s
+    return _safe_tex(s)
+
+
 def _safe_tex_multiline(s: str) -> str:
     s = _safe_tex(s)
     s = s.replace("\r\n", "\n").replace("\r", "\n")
@@ -371,10 +378,10 @@ def _country_stats_lines(c: dict[str, Any], lang: Lang, current_year: int) -> li
 
     if lang == "ru":
         if won >= 1:
-            parts.append(f"{'🏆' * won} {won} {_ru_pobedy_word(won)}")
+            parts.append(f"\\TrophyIcons{{{won}}} {won} {_ru_pobedy_word(won)}")
         if last and last != current_year and last != 2025:
             parts.append(
-                f"Возвращение на Евровидение, последний раз были в {last}"
+                f"Возвращение, последний раз были в {last}"
             )
         if qstreak >= 2:
             parts.append(f"в финале {qstreak}× подряд")
@@ -384,9 +391,9 @@ def _country_stats_lines(c: dict[str, Any], lang: Lang, current_year: int) -> li
         if won >= 1:
             parts.append(f"{won}× winner")
         if last and last != current_year and last != 2025:
-            parts.append(f"Return to Eurovision, last time in {last}")
+            parts.append(f"Return, last time in {last}")
         if qstreak >= 2:
-            parts.append(f"final {qstreak}× in a row")
+            parts.append(f"qualified for final {qstreak}× in a row")
         elif nqstreak >= 2:
             parts.append(f"missed final {nqstreak}× in a row")
     return parts
@@ -722,7 +729,7 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
                 bio_lines=_safe_tex_lines(bio),
                 facts=_safe_tex_multiline(song_facts),
                 facts_lines=_safe_tex_lines(song_facts),
-                country_stats_lines=[_safe_tex(s) for s in country_stats_lines],
+                country_stats_lines=[_safe_tex_country_stat_line(s) for s in country_stats_lines],
                 country_facts=_safe_tex_multiline(country_facts),
                 country_facts_lines=_safe_tex_lines(country_facts),
                 selection_tag=_safe_tex(selection_tag),

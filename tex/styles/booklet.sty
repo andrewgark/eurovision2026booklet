@@ -175,6 +175,19 @@
   {\EmojiFont\fontsize{6.5pt}{6.5pt}\selectfont🌈}%
 }
 
+% \TrophyIcons{n} — repeat 🏆 n times in Noto Color Emoji (DejaVu has no U+1F3C6).
+\newcommand{\TrophyEmoji}{%
+  {\EmojiFont\fontsize{6.5pt}{6.5pt}\selectfont🏆}%
+}
+\newcommand{\TrophyIcons}[1]{%
+  \ifnum#1<1\relax\else
+    \TrophyEmoji
+    \ifnum#1>1
+      \hspace{0.6pt}\expandafter\TrophyIcons\expandafter{\the\numexpr#1-1\relax}%
+    \fi
+  \fi
+}
+
 % \LgbtqPill{label} — soft violet pill prefixed with the rainbow emoji.
 \newcommand{\LgbtqPill}[1]{%
   \ifblank{#1}{}{%
