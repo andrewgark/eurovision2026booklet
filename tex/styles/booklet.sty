@@ -223,15 +223,16 @@
   \ifstrempty{#1}{}{{\EmojiFont\fontsize{7.4pt}{7.4pt}\selectfont #1}\hspace{1.5pt}}%
 }
 
-% \TocItemLink{label}{text} — same layout as \TocItem, but the whole row links
-% to a \label{name} (see \phantomsection in main.tex and song page template).
-% Uses \hyperref so the anchor matches hyperref’s destination exactly.
-% Footnotesize + minimal vertical skip so a long list fits on the cover page.
-\newcommand{\TocItemLink}[2]{%
+% \TocItemLink{label}{before}{linked} — arrow-led contents row; only `linked` is
+% wrapped in \hyperref. Keep regional-indicator flags in `before` (e.g.\
+% \TocFlagEmoji{…}): inside \hyperref, LuaLaTeX + fontspec often fail to render
+% Noto Color Emoji (two tofu boxes) and line breaks go wrong.
+\newcommand{\TocItemLink}[3]{%
   \noindent\RaggedRight\footnotesize
-  \hyperref[#1]{%
-    \strut{\color{BookletAccent2}\scriptsize\textbullet}\hspace{1.4mm}#2%
-  }\par\vspace{0.2mm}%
+  \strut{\color{BookletAccent2}\scriptsize\textbullet}\hspace{1.4mm}%
+  #2%
+  \hyperref[#1]{#3}%
+  \par\vspace{0.2mm}%
 }
 
 \newcommand{\Muted}[1]{\textcolor{BookletMuted}{#1}}
