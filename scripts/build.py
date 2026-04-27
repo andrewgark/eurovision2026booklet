@@ -173,11 +173,12 @@ def _lyrics_rows(*, original: str, translation: str) -> list[dict[str, str]]:
 
 # Approximate how many narrow-glyph units fit in one lyrics cell before wrapping
 # at the largest preset size (~8.4pt DejaVu Sans Condensed). Paired layout uses
-# two Y columns inside the 0.71\linewidth lyrics minipage; solo uses full width.
+# two Y columns inside the 0.685\linewidth lyrics minipage; solo uses full width.
+# Scaled with the minipage (was 44 / 90 at 0.71) so wrap heuristics match TeX.
 # Slightly below the ~50 Latin chars noted in `tex/styles/booklet.sty` so long
 # lines predict extra rows and we shrink the font before the page overflows.
-_LYRICS_WRAP_BUDGET_PAIR_COL = 44.0
-_LYRICS_WRAP_BUDGET_SOLO_COL = 90.0
+_LYRICS_WRAP_BUDGET_PAIR_COL = 42.0
+_LYRICS_WRAP_BUDGET_SOLO_COL = 87.0
 
 
 def _lyrics_tex_visual_units(s: str) -> float:

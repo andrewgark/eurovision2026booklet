@@ -35,6 +35,14 @@
 % Default article \flushbottom can stretch white space; song pages are fixed
 % blocks and we avoid arbitrary vertical stretch between hero and columns.
 \raggedbottom
+% Song pages use a very narrow left column (see \SongPage) with ragged
+% \RaggedRight text and RU/EN hyphenation. TeX’s default \hbadness=1000 then
+% emits a huge number of ``Underfull \hbox (badness 10000)'' log lines; the
+% output is still acceptable (ragged/short last lines, narrow measure). For
+% booklet-style sidebars, matching common practice: silence only these
+% cosmetic underfull messages (overfull/overflows still use \hfuzz / etc.).
+\hbadness=10000
+\vbadness=10000
 
 \setmainfont{DejaVu Sans}
 \setsansfont{DejaVu Sans}
@@ -43,6 +51,11 @@
 \newfontfamily{\cyrillicfontsf}{DejaVu Sans}
 \newfontfamily{\cyrillicfonttt}{DejaVu Sans Mono}
 \newfontfamily{\LyricsFont}{DejaVu Sans Condensed}
+% Iteration 2 (layout): the song-page *left* column is a very tight measure; the
+% same family in Condensed makes more break opportunities and pairs visually
+% with the lyrics column (which already uses \LyricsFont). Cover/TOC/hero keep
+% regular-width \MixedFont; only the three infopanels use this.
+\newfontfamily{\InfoColumnFont}{DejaVu Sans Condensed}
 % Default body uses the same sans everywhere — the cover, the intro "About"
 % page, and the lyrics all render with the same typeface as the info panels
 % and country pages. This avoids the jarring Computer-Modern-Roman fallback
@@ -53,6 +66,8 @@
 % (artist bios/facts in untranslated placeholders, song titles in original, etc).
 \newfontfamily{\MixedFont}{DejaVu Sans}
 \newcommand{\MixedBody}[1]{{\MixedFont #1}}
+\newcommand{\InfoMixedBody}[1]{{\InfoColumnFont #1}}
+\newcommand{\InfoNameLine}[1]{{\InfoColumnFont\bfseries\selectfont\normalsize #1}}
 
 % Color emoji font for inline 🌈 / 🏳️‍🌈 / 📍-style icons. Noto Color Emoji
 % only works in LuaLaTeX with the HarfBuzz renderer. Used by \RainbowEmoji.
@@ -189,6 +204,7 @@
 }
 
 % \LgbtqPill{label} — soft violet pill prefixed with the rainbow emoji.
+% Song-page only; use \InfoColumnFont to match the left sidebar.
 \newcommand{\LgbtqPill}[1]{%
   \ifblank{#1}{}{%
     \begin{tikzpicture}[baseline=(p.base)]
@@ -196,7 +212,7 @@
         fill=BookletQueer!12, draw=BookletQueer!45, line width=0.3pt,
         text=BookletQueer!75!black, rounded corners=2pt,
         inner xsep=4pt, inner ysep=1.4pt,
-        font=\sffamily\scriptsize\bfseries
+        font=\InfoColumnFont\selectfont\scriptsize\bfseries
       ] (p) {\RainbowEmoji\hspace{2.4pt}#1};
     \end{tikzpicture}%
   }%
@@ -308,20 +324,21 @@
       \node[
         fill=BookletGold, text=BookletInk, rounded corners=2pt,
         inner xsep=5pt, inner ysep=2.4pt,
-        font=\sffamily\bfseries\small
+        font=\InfoColumnFont\selectfont\bfseries\small
       ] (pill) {{\scriptsize #1}\hspace{3pt}#2};
     \end{tikzpicture}%
   }%
 }
 
 % \MetaPill{label}  — tiny outlined pill for genres / languages / selection tags.
+% Song-page only; \InfoColumnFont matches the left sidebar.
 \newcommand{\MetaPill}[1]{%
   \ifblank{#1}{}{%
     \begin{tikzpicture}[baseline=(p.base)]
       \node[
         draw=BookletRule, line width=0.3pt, fill=BookletSoft, text=BookletInk,
         rounded corners=2pt, inner xsep=4pt, inner ysep=1.2pt,
-        font=\MixedFont\scriptsize
+        font=\InfoColumnFont\selectfont\scriptsize
       ] (p) {#1};
     \end{tikzpicture}%
   }%
@@ -334,7 +351,7 @@
       \node[
         draw=BookletRule, line width=0.3pt, fill=BookletSoft, text=BookletMuted,
         rounded corners=2pt, inner xsep=4pt, inner ysep=1.2pt,
-        font=\MixedFont\scriptsize
+        font=\InfoColumnFont\selectfont\scriptsize
       ] (p) {#1};
     \end{tikzpicture}%
   }%
@@ -370,7 +387,9 @@
   colback=BookletSoft, colframe=BookletRule,
   boxrule=0.3pt, left=2.8mm, right=2.2mm, top=3.0mm, bottom=3.2mm,
   baseline=0pt, before=\noindent, after=\relax,
-  fonttitle=\sffamily\footnotesize\bfseries\color{BookletAccent},
+  % Ragged like the outer \RaggedRight (tcolorbox’s default is justified).
+  halign=flush left,
+  fonttitle={\InfoColumnFont\selectfont\footnotesize\bfseries\color{BookletAccent}},
   title={#1},
   coltitle=BookletAccent,
   attach boxed title to top left={yshift=-2.4pt, xshift=2.6mm},
@@ -392,6 +411,9 @@
   left=2.2pt, right=1.4pt, top=1.8pt, bottom=2.2pt,
   before skip=0pt, after skip=1.4mm,
   baseline=0pt, before=\noindent, after=\relax,
+  halign=flush left,
+  % Song page only: match \InfoColumnFont so tcolorbox does not force \sffamily.
+  fontupper={\InfoColumnFont\selectfont\scriptsize},
 }
 \newcommand{\FactChip}[1]{\begin{factchip}#1\end{factchip}}
 
@@ -484,7 +506,8 @@
 % lyrics tabular, both top-aligned). A page break ends each country. Avoid a
 % single outer minipage of \textheight — it can produce blank pages.
 % Widths are tuned so that lyric lines up to ~50 Latin / ~45 Cyrillic chars
-% fit per sub-column without wrapping at the chosen font size.
+% fit per sub-column without wrapping at the chosen font size (see
+% scripts/build.py: _LYRICS_WRAP_BUDGET_* (paired with the lyrics minipage width).
 % Do not use a \textheight-tall minipage here: a fixed-height outer box
 % interacts badly with the unbreakable inner layout (tcolorbox, tall lyrics
 % tabular) and with the page break at the end of each country, producing
@@ -505,10 +528,12 @@
     #1\par
     \vspace{2.2mm}%
     \noindent
-    \begin{minipage}[t]{0.275\linewidth}\vspace*{0pt}%
+    % Iteration 1: widen info column (was 0.275) — fewer short, high-badness
+    % lines. Lyrics column and Python wrap budgets are adjusted to match.
+    \begin{minipage}[t]{0.30\linewidth}\vspace*{0pt}%
       #2%
     \end{minipage}\hspace{0.015\linewidth}%
-    \begin{minipage}[t]{0.710\linewidth}\vspace*{0pt}%
+    \begin{minipage}[t]{0.685\linewidth}\vspace*{0pt}%
       #3%
     \end{minipage}%
   }%
