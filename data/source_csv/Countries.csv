@@ -1,39 +1,44 @@
 country_code,country_name_en,country_name_ru,auto_qualify,qualify_streak,non_qualify_streak,last_participation,won_times,national_qualify_type,country_facts_en,country_facts_ru
-AL,Albania,Албания,,1,,2025,0,PUBLIC_CONTEST,TODO: перевести,
-AM,Armenia,Армения,,4,,2025,0,INTERNAL_SELECTION,TODO: перевести,
-AT,Austria,Австрия,HOST,3,,2025,3,PUBLIC_CONTEST,TODO: перевести,"Австрия победила в прошлом году, набрав также топ-1 голосов среди жюри.
+AL,Albania,Албания,,1,,2025,0,PUBLIC_CONTEST,,
+AM,Armenia,Армения,,4,,2025,0,INTERNAL_SELECTION,,
+AT,Austria,Австрия,HOST,3,,2025,3,PUBLIC_CONTEST,"Austria won last year, also coming first in the jury vote.
+This year, Austria is hosting Eurovision in Vienna.","Австрия победила в прошлом году, набрав также топ-1 голосов среди жюри.
 В этом году Австрия принимает Евровидение в Вене."
-AU,Australia,Австралия,,,2,2025,0,INTERNAL_SELECTION,TODO: перевести,"В случае победы Австралии, Евровидение не пройдёт там, так как это будет неудобно для большинства европейских зрителей."
-AZ,Azerbaijan,Азербайджан,,,3,2025,1,INTERNAL_SELECTION,TODO: перевести,
-BE,Belgium,Бельгия,,,2,2025,1,INTERNAL_SELECTION,TODO: перевести,Бельгийского участника выбирают по очереди валлонский броадкастер RTBF и фламандский броадкастер VRT. В прошлом году любимец фанатов фламандец Red Sebastian не смог пройти в финал. В этом году пришла очередь Валлонии.
-BG,Bulgaria,Болгария,,,1,2022,0,PUBLIC_CONTEST,TODO: перевести,
-CH,Switzerland,Швейцария,,5,,2025,3,INTERNAL_SELECTION,TODO: перевести,"В 2024 году Швейцария выиграла, набрав больше всех голосов жюри.
+AU,Australia,Австралия,,,2,2025,0,INTERNAL_SELECTION,"If Australia wins, Eurovision will not be held there, as that would be inconvenient for most European viewers.","В случае победы Австралии, Евровидение не пройдёт там, так как это будет неудобно для большинства европейских зрителей."
+AZ,Azerbaijan,Азербайджан,,,3,2025,1,INTERNAL_SELECTION,,
+BE,Belgium,Бельгия,,,2,2025,1,INTERNAL_SELECTION,"The Belgian participant is chosen alternately by the Walloon broadcaster RTBF and the Flemish broadcaster VRT. Last year, the Flemish fan favourite Red Sebastian failed to qualify for the final. This year, it is Wallonia’s turn.",Бельгийского участника выбирают по очереди валлонский броадкастер RTBF и фламандский броадкастер VRT. В прошлом году любимец фанатов фламандец Red Sebastian не смог пройти в финал. В этом году пришла очередь Валлонии.
+BG,Bulgaria,Болгария,,,1,2022,0,PUBLIC_CONTEST,,
+CH,Switzerland,Швейцария,,5,,2025,3,INTERNAL_SELECTION,"In 2024, Switzerland won after receiving the highest score from the juries.
+In 2025, Switzerland came second in the jury vote, but received 0 points from the viewers.","В 2024 году Швейцария выиграла, набрав больше всех голосов жюри.
 В 2025 году Швейцария стала топ-2 по голосам жюри, но при этом набрала 0 голосов зрителей."
-CY,Cyprus,Кипр,,,1,2025,0,INTERNAL_SELECTION,TODO: перевести,"По традиции, Кипр почти всегда отдаёт 12 баллов Греции"
-CZ,Czechia,Чехия,,,2,2025,0,INTERNAL_SELECTION,TODO: перевести,
-DE,Germany,Германия,BIG_FIVE,,,2025,2,PUBLIC_CONTEST,TODO: перевести,
-DK,Denmark,Дания,,1,,2025,3,PUBLIC_CONTEST,TODO: перевести,
-EE,Estonia,Эстония,,4,,2025,1,PUBLIC_CONTEST,TODO: перевести,
-FI,Finland,Финляндия,,5,,2025,1,PUBLIC_CONTEST,TODO: перевести,
-FR,France,Франция,BIG_FIVE,,,2025,5,INTERNAL_SELECTION,TODO: перевести,
-GB,United Kingdom,Великобритания,BIG_FIVE,,,2025,5,INTERNAL_SELECTION,TODO: перевести,"В Великобритании большая фан-база конкурса, однако их песни обычно не пользуются популярностью, британские участники даже сами шутят, что едут получать 0 баллов"
-GE,Georgia,Грузия,,,1,2025,0,INTERNAL_SELECTION,TODO: перевести,
-GR,Greece,Греция,,2,,2025,1,PUBLIC_CONTEST,TODO: перевести,
-HR,Croatia,Хорватия,,,1,2025,0,PUBLIC_CONTEST,TODO: перевести,
-IL,Israel,Израиль,,3,,2025,4,PUBLIC_CONTEST,TODO: перевести,"Из-за участия Израиля в этом году Ирландия, Исландия, Испания, Нидерланды и Словения бойкотируют Евровидение.
+CY,Cyprus,Кипр,,,1,2025,0,INTERNAL_SELECTION,"Traditionally, Cyprus almost always gives 12 points to Greece.
+","По традиции, Кипр почти всегда отдаёт 12 баллов Греции"
+CZ,Czechia,Чехия,,,2,2025,0,INTERNAL_SELECTION,,
+DE,Germany,Германия,BIG_FIVE,,,2025,2,PUBLIC_CONTEST,,
+DK,Denmark,Дания,,1,,2025,3,PUBLIC_CONTEST,,
+EE,Estonia,Эстония,,4,,2025,1,PUBLIC_CONTEST,,
+FI,Finland,Финляндия,,5,,2025,1,PUBLIC_CONTEST,,
+FR,France,Франция,BIG_FIVE,,,2025,5,INTERNAL_SELECTION,,
+GB,United Kingdom,Великобритания,BIG_FIVE,,,2025,5,INTERNAL_SELECTION,"The United Kingdom has a large Eurovision fan base, but its songs are usually not very popular. British participants even joke themselves that they are going to Eurovision to receive 0 points.
+","В Великобритании большая фан-база конкурса, однако их песни обычно не пользуются популярностью, британские участники даже сами шутят, что едут получать 0 баллов"
+GE,Georgia,Грузия,,,1,2025,0,INTERNAL_SELECTION,,
+GR,Greece,Греция,,2,,2025,1,PUBLIC_CONTEST,,
+HR,Croatia,Хорватия,,,1,2025,0,PUBLIC_CONTEST,,
+IL,Israel,Израиль,,3,,2025,4,PUBLIC_CONTEST,"Due to Israel’s participation this year, Ireland, Iceland, Spain, the Netherlands, and Slovenia are boycotting Eurovision.
+Last year, Israel received the highest number of televote points.","Из-за участия Израиля в этом году Ирландия, Исландия, Испания, Нидерланды и Словения бойкотируют Евровидение.
 В прошлом году Израиль набрал больше всех зрительских голосов."
-IT,Italy,Италия,BIG_FIVE,,,2025,3,PUBLIC_CONTEST,TODO: перевести,"Последний раз, когда Италия не попала в топ-7, был в 2016 году."
-LT,Lithuania,Литва,,5,,2025,0,PUBLIC_CONTEST,TODO: перевести,
-LU,Luxembourg,Люксембург,,2,,2025,5,PUBLIC_CONTEST,TODO: перевести,"Люксембург был очень сильной страной в XX веке, но сделал большой перерыв с 1995 до 2023 года."
-LV,Latvia,Латвия,,2,,2025,1,PUBLIC_CONTEST,TODO: перевести,
-MD,Moldova,Молдова,,,1,2024,0,PUBLIC_CONTEST,TODO: перевести,"Молдова — любимчик фанатов, делает упор не на сильный вокал, а на весёлые и живые песни."
-ME,Montenegro,Черногория,,,6,2025,0,PUBLIC_CONTEST,TODO: перевести,
-MT,Malta,Мальта,,1,,2025,0,PUBLIC_CONTEST,TODO: перевести,
-NO,Norway,Норвегия,,8,,2025,3,PUBLIC_CONTEST,TODO: перевести,"Норвегию в этом году мог представлять Александр Рыбак, выигравший в 2009 году. Однако в этот раз он занял второе место в национальном отборе"
-PL,Poland,Польша,,1,,2025,0,PUBLIC_CONTEST,TODO: перевести,Среди фанатов Польша славится избыточными спецэффектами и сексуализацией на сцене
-PT,Portugal,Португалия,,5,,2025,1,PUBLIC_CONTEST,TODO: перевести,Португалия на Евровидении часто очень отличается по звучанию от других. Эта страна выбирает мелодичные спокойные песни на португальском
-RO,Romania,Румыния,,,1,2023,0,PUBLIC_CONTEST,TODO: перевести,
-RS,Serbia,Сербия,,,1,2025,1,PUBLIC_CONTEST,TODO: перевести,
-SE,Sweden,Швеция,,11,,2025,7,PUBLIC_CONTEST,TODO: перевести,Швеция считается одной из самых сильных стран в истории Евровидения
-SM,San Marino,Сан Марино,,1,,2025,0,PUBLIC_CONTEST,TODO: перевести,
-UA,Ukraine,Украина,,15,,2025,3,PUBLIC_CONTEST,TODO: перевести,Украина участвовала в 15 полуфиналах и все 15 раз проходила в финал.
+IT,Italy,Италия,BIG_FIVE,,,2025,3,PUBLIC_CONTEST,The last time Italy failed to reach the top 7 was in 2016.,"Последний раз, когда Италия не попала в топ-7, был в 2016 году."
+LT,Lithuania,Литва,,5,,2025,0,PUBLIC_CONTEST,,
+LU,Luxembourg,Люксембург,,2,,2025,5,PUBLIC_CONTEST,"Luxembourg was a very strong Eurovision country in the 20th century, but then took a long break from 1995 to 2023.","Люксембург был очень сильной страной в XX веке, но сделал большой перерыв с 1995 до 2023 года."
+LV,Latvia,Латвия,,2,,2025,1,PUBLIC_CONTEST,,
+MD,Moldova,Молдова,,,1,2024,0,PUBLIC_CONTEST,"Moldova is a fan favourite. It focuses not on powerful vocals, but on fun and lively songs.","Молдова — любимчик фанатов, делает упор не на сильный вокал, а на весёлые и живые песни."
+ME,Montenegro,Черногория,,,6,2025,0,PUBLIC_CONTEST,,
+MT,Malta,Мальта,,1,,2025,0,PUBLIC_CONTEST,,
+NO,Norway,Норвегия,,8,,2025,3,PUBLIC_CONTEST,"Norway could have been represented this year by Alexander Rybak, who won Eurovision in 2009. However, this time he finished second in the national selection.","Норвегию в этом году мог представлять Александр Рыбак, выигравший в 2009 году. Однако в этот раз он занял второе место в национальном отборе"
+PL,Poland,Польша,,1,,2025,0,PUBLIC_CONTEST,"Among Eurovision fans, Poland is known for excessive special effects and sexualisation on stage.",Среди фанатов Польша славится избыточными спецэффектами и сексуализацией на сцене
+PT,Portugal,Португалия,,5,,2025,1,PUBLIC_CONTEST,"Portugal often sounds very different from other countries at Eurovision. It tends to choose melodic, calm songs in Portuguese.",Португалия на Евровидении часто очень отличается по звучанию от других. Эта страна выбирает мелодичные спокойные песни на португальском
+RO,Romania,Румыния,,,1,2023,0,PUBLIC_CONTEST,,
+RS,Serbia,Сербия,,,1,2025,1,PUBLIC_CONTEST,,
+SE,Sweden,Швеция,,11,,2025,7,PUBLIC_CONTEST,Sweden is considered one of the strongest countries in Eurovision history.,Швеция считается одной из самых сильных стран в истории Евровидения
+SM,San Marino,Сан Марино,,1,,2025,0,PUBLIC_CONTEST,,
+UA,Ukraine,Украина,,15,,2025,3,PUBLIC_CONTEST,Ukraine has taken part in 15 semi-finals and has qualified for the final all 15 times.,Украина участвовала в 15 полуфиналах и все 15 раз проходила в финал.
