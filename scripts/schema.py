@@ -56,6 +56,7 @@ class CountryModel(BaseModel):
 class ArtistModel(BaseModel):
     country_code: str = Field(min_length=2, max_length=2)
     artist_name: str = Field(min_length=1)
+    artist_name_ru: str = ""
     bio: LocalizedText
     facts: LocalizedText
     photo_file: str = ""

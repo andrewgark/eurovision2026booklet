@@ -305,6 +305,7 @@ def pull_booklet(
             {
                 "country_code": code,
                 "artist_name": _nonempty(r["artist_name_en"]) or _nonempty(r["artist_name_ru"]),
+                "artist_name_ru": _nonempty(r["artist_name_ru"]),
                 "bio": {"en": _nonempty(r["bio_en"]), "ru": _nonempty(r["bio_ru"])},
                 "facts": {"en": facts_en, "ru": facts_ru},
                 "photo_file": _nonempty(r["photo_file"]),

@@ -27,10 +27,10 @@
 \geometry{
   a4paper,
   top=10.5mm,
-  bottom=10.5mm,
+  bottom=12.5mm,
   left=11.5mm,
   right=11.5mm,
-  footskip=5.5mm
+  footskip=7.0mm
 }
 % Default article \flushbottom can stretch white space; song pages are fixed
 % blocks and we avoid arbitrary vertical stretch between hero and columns.
@@ -91,8 +91,11 @@
   \fancyfoot[C]{\color{BookletMuted}\footnotesize\sffamily\thepage}%
   \fancyfoot[R]{\BookletPageFooterContent}%
 }
+% \gdef (not \def): \SongPage wraps body in \begingroup...\endgroup before
+% \newpage; a local \def would revert \BookletPageFooterContent to empty when
+% the page ships, so the YouTube links would never appear in the PDF footer.
 \newcommand{\SetSongFooter}[1]{%
-  \def\BookletPageFooterContent{#1}%
+  \gdef\BookletPageFooterContent{#1}%
   \thispagestyle{songpage}%
 }
 
@@ -237,7 +240,8 @@
 % - country:   large country name
 % - context-tag: one line of context (variant-dependent), muted white
 % - number:    large running number (empty for pre/post variants)
-% - vote-label: word "Vote" / "Голосовать" (empty when number is empty)
+% - vote-label: word "Vote" / "Голосовать" (empty when number is empty), shown
+%   before the number, same gold/sans/bold family as the digit
 %
 % When `number` is empty the right pane collapses and the title pane widens,
 % so overall_pre / overall_post don't leave a visible chunk of empty blue.
@@ -273,9 +277,9 @@
       \end{minipage}\hfill%
       \begin{minipage}[c]{0.22\linewidth}%
         \raggedleft
+        {\sffamily\fontsize{15.5pt}{18.5pt}\selectfont\bfseries\color{BookletGold} #5}%
+        \hspace{2.4mm}%
         {\sffamily\fontsize{26pt}{28pt}\selectfont\bfseries\color{BookletGold} #4}%
-        \hspace{1.4mm}%
-        {\sffamily\small\color{white!85} #5}%
       \end{minipage}%
     }%
   \end{tcolorbox}%
@@ -336,8 +340,8 @@
 \newcommand{\VideoLinkFooter}[2]{%
   \ifblank{#1}{}{%
     \href{#1}{%
-      \YoutubeIcon\hspace{1.6pt}%
-      {\sffamily\scriptsize\color{BookletAccent}\underline{#2}}%
+      \raisebox{-0.06ex}{\YoutubeIcon}\hspace{2.0pt}%
+      {\sffamily\footnotesize\bfseries\color{BookletAccent}\underline{#2}}%
     }%
   }%
 }

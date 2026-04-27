@@ -2,10 +2,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import os
 import re
 import shutil
 import subprocess
+import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Literal
@@ -162,17 +164,70 @@ def _lyrics_rows(*, original: str, translation: str) -> list[dict[str, str]]:
     return rows
 
 
-def _lyrics_font_pt(rows: list[dict[str, str]]) -> tuple[str, str]:
-    """Pick a font size for the tall lyrics column based on row count.
+# Approximate how many narrow-glyph units fit in one lyrics cell before wrapping
+# at the largest preset size (~8.4pt DejaVu Sans Condensed). Paired layout uses
+# two Y columns inside the 0.71\linewidth lyrics minipage; solo uses full width.
+# Slightly below the ~50 Latin chars noted in `tex/styles/booklet.sty` so long
+# lines predict extra rows and we shrink the font before the page overflows.
+_LYRICS_WRAP_BUDGET_PAIR_COL = 44.0
+_LYRICS_WRAP_BUDGET_SOLO_COL = 90.0
+
+
+def _lyrics_tex_visual_units(s: str) -> float:
+    """Rough horizontal width for wrap heuristics (TeX-safe string, not source)."""
+    total = 0.0
+    for ch in s:
+        ew = unicodedata.east_asian_width(ch)
+        if ew in ("F", "W"):
+            total += 2.0
+        else:
+            total += 1.0
+    return total
+
+
+def _lyrics_wrapped_lines_in_cell(text: str, char_budget: float) -> int:
+    """How many stacked wrap lines this cell needs at the reference font size."""
+    u = _lyrics_tex_visual_units(text.strip())
+    if u <= 0:
+        return 0
+    return max(1, math.ceil(u / char_budget))
+
+
+def _lyrics_layout_units(rows: list[dict[str, str]], *, has_translation: bool) -> float:
+    """Effective 'line count' including multi-line wraps inside tabular cells."""
+    col_budget = _LYRICS_WRAP_BUDGET_PAIR_COL if has_translation else _LYRICS_WRAP_BUDGET_SOLO_COL
+    n_gaps = sum(1 for r in rows if r["kind"] == "gap")
+    units = 0.0
+    for r in rows:
+        if r["kind"] != "line":
+            continue
+        orig = r.get("orig", "")
+        trans = r.get("trans", "")
+        if has_translation:
+            wo = _lyrics_wrapped_lines_in_cell(orig, col_budget)
+            wt = _lyrics_wrapped_lines_in_cell(trans, col_budget)
+            row_h = max(wo, wt)
+            if row_h == 0:
+                row_h = 1
+        else:
+            row_h = _lyrics_wrapped_lines_in_cell(orig, col_budget)
+            if row_h == 0:
+                row_h = 1
+        units += row_h
+    return units + 0.6 * n_gaps
+
+
+def _lyrics_font_pt(rows: list[dict[str, str]], *, has_translation: bool) -> tuple[str, str]:
+    """Pick a font size for the tall lyrics column based on effective line count.
 
     The right-hand lyrics column is constrained to one page (`\\textheight`),
-    so songs with many lyric lines need a smaller font to fit. Tuned so that
-    most entries (≤55 lines) get a comfortable ~6.6pt and the longest songs
-    (Georgia, UK, Greece) shrink to ~5pt rather than overflow.
+    so songs with many lyric lines need a smaller font to fit. Rows in the
+    `tabularx` can grow vertically when a long original or translation wraps,
+    so we estimate wrapped lines using a per-column character budget tuned at
+    the largest preset size (conservative: fewer chars per line → more predicted
+    wraps → smaller font before overflow).
     """
-    n_lines = sum(1 for r in rows if r["kind"] == "line")
-    n_gaps = sum(1 for r in rows if r["kind"] == "gap")
-    units = n_lines + 0.6 * n_gaps
+    units = _lyrics_layout_units(rows, has_translation=has_translation)
     if units <= 50:
         return ("8.4", "10.0")
     if units <= 60:
@@ -284,6 +339,16 @@ def _split_real_name_lines(raw: str) -> list[str]:
     return out if out else [s]
 
 
+def _ru_pobedy_word(n: int) -> str:
+    """Склонение существительного «победа» для числительного n (1 победа, 3 победы, 7 побед)."""
+    n = abs(int(n))
+    if n % 10 == 1 and n % 100 != 11:
+        return "победа"
+    if 2 <= n % 10 <= 4 and not (12 <= n % 100 <= 14):
+        return "победы"
+    return "побед"
+
+
 def _sentence_case(token: str) -> str:
     """Capitalize the first character of a token, leave the rest as-is.
     Source data mixes capitalized ("Литовский") and lowercase ("английский")
@@ -306,7 +371,7 @@ def _country_stats_lines(c: dict[str, Any], lang: Lang, current_year: int) -> li
 
     if lang == "ru":
         if won >= 1:
-            parts.append(f"{won}× победитель")
+            parts.append(f"{'🏆' * won} {won} {_ru_pobedy_word(won)}")
         if last and last != current_year and last != 2025:
             parts.append(
                 f"Возвращение на Евровидение, последний раз были в {last}"
@@ -608,16 +673,9 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
 
         number_label = ""
         if variant in ("sf1", "sf2"):
-            # Prefer the explicit number_sf column from the sheet; fall back to
-            # the derived running-order index when it isn't filled in.
             n_sf = int(s.get("number_sf") or 0)
             if n_sf:
                 number_label = str(n_sf)
-            else:
-                rnd = "SF1" if variant == "sf1" else "SF2"
-                n = running_order.get((rnd, cc))
-                if n is not None:
-                    number_label = str(n)
         elif variant == "final":
             n = running_order.get(("F", cc))
             if n is not None:
@@ -634,12 +692,18 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
         if song_title_translated.strip() == song_title_original.strip():
             song_title_translated = ""
 
-        artist_name_raw = str(a.get("artist_name", "") or "")
+        artist_name_fallback = str(a.get("artist_name", "") or "")
+        artist_name_ru = str(a.get("artist_name_ru", "") or "").strip()
+        if lang == "ru" and artist_name_ru:
+            artist_name_raw = artist_name_ru
+        else:
+            artist_name_raw = artist_name_fallback
         artist_name_lines = [_safe_tex(x) for x in _split_stage_name_lines(artist_name_raw)]
         if not artist_name_lines and artist_name_raw.strip():
             artist_name_lines = [_safe_tex(artist_name_raw.strip())]
         artist_birth_name_lines = [_safe_tex(x) for x in _split_real_name_lines(artist_birth_name)]
 
+        lyrics_font, lyrics_baseline = _lyrics_font_pt(rows, has_translation=has_tr)
         entries.append(
             EntryView(
                 country_code=cc,
@@ -674,8 +738,8 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
                 lyrics_rows_right=right_rows,
                 lyrics_short=short,
                 has_translation=has_tr,
-                lyrics_font_pt=_lyrics_font_pt(rows)[0],
-                lyrics_baseline_pt=_lyrics_font_pt(rows)[1],
+                lyrics_font_pt=lyrics_font,
+                lyrics_baseline_pt=lyrics_baseline,
                 win_percent=_safe_tex(probs["win_percent"]),
                 qualify_percent=_safe_tex(probs["qualify_percent"]),
                 round_sf=_safe_tex(str(s.get("round_sf") or "")),

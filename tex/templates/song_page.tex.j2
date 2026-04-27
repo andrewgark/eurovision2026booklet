@@ -8,9 +8,7 @@
 {%- set L_NF            = "Нацотбор"     if lang == "ru" else "National selection" -%}
 {%- set L_MV            = "Клип"         if lang == "ru" else "Official video" -%}
 \SongPage{
-{%- if e.national_final_url or e.music_video_url %}
-\SetSongFooter{ {%- if e.national_final_url %}\VideoLinkFooter{ {{ e.national_final_url }} }{ {{ L_NF }} }{% endif %}{% if e.national_final_url and e.music_video_url %}\hspace{2.0mm}{\color{BookletMuted}\scriptsize\textbullet}\hspace{2.0mm}{% endif %}{% if e.music_video_url %}\VideoLinkFooter{ {{ e.music_video_url }} }{ {{ L_MV }} }{% endif -%} }
-{%- endif %}
+\SetSongFooter{ {%- if e.national_final_url or e.music_video_url %}{%- if e.national_final_url %}\VideoLinkFooter{ {{- e.national_final_url -}} }{ {{ L_NF }} }{% endif %}{% if e.national_final_url and e.music_video_url %}\hspace{2.0mm}{\color{BookletMuted}\scriptsize\textbullet}\hspace{2.0mm}{% endif %}{% if e.music_video_url %}\VideoLinkFooter{ {{- e.music_video_url -}} }{ {{ L_MV }} }{% endif %}{%- endif %} }
 \leavevmode\phantomsection\label{song-{{ e.country_code }}}%
   \HeroBand
     { {{ e.flag_path or "" }} }
@@ -34,10 +32,10 @@
 {\sffamily\normalsize\bfseries\MixedBody{ {{ line }} }}\par
 {% if not loop.last %}\vspace{0.3mm}{% endif %}
 {% endfor %}
-{% if e.artist_birth_name_lines %}\vspace{0.12mm}{% endif %}
+{% if e.artist_birth_name_lines %}\vspace{-0.30\baselineskip}{% endif %}
 {% for line in e.artist_birth_name_lines %}
 {\scriptsize\Muted{\MixedBody{ {{ line }} }}}\par
-{% if not loop.last %}\vspace{0.1mm}{% endif %}
+{% if not loop.last %}\vspace{-0.24\baselineskip}{% endif %}
 {% endfor %}
 {% if e.artist_birth_year or e.artist_birth_place or e.artist_grew_up or e.artist_lgbtq %}
 \vspace{1.1mm}\par
@@ -79,7 +77,7 @@
 \begin{infopanel}{ {{ L_ABOUT_SONG }} }
 \MixedFont\setstretch{1.22}\RaggedRight
 {\sffamily\normalsize\bfseries\MixedBody{ {{ e.song_title }} }}\par
-{% if e.song_title_translation %}\vspace{0.1mm}{\scriptsize\Muted{\MixedBody{ {{ e.song_title_translation }} }}}\par{% endif %}
+{% if e.song_title_translation %}\vspace{-0.30\baselineskip}{\scriptsize\Muted{\MixedBody{ {{ e.song_title_translation }} }}}\par{% endif %}
 {% if e.langs_major or e.langs_minor %}
 \vspace{1.8mm}\par\noindent
 \raisebox{0.05ex}{\SongLangIcon}\hspace{2.0mm}%

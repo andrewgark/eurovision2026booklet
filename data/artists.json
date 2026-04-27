@@ -2,6 +2,7 @@
   {
     "country_code": "AL",
     "artist_name": "Alis",
+    "artist_name_ru": "Алис",
     "bio": {
       "en": "TODO: перевести",
       "ru": "В 2024 году победил в албанском X Factor."
@@ -29,6 +30,7 @@
   {
     "country_code": "AM",
     "artist_name": "Simón",
+    "artist_name_ru": "Симон",
     "bio": {
       "en": "TODO: перевести",
       "ru": ""
@@ -56,6 +58,7 @@
   {
     "country_code": "AT",
     "artist_name": "Cosmó",
+    "artist_name_ru": "",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Один из самых молодых участников конкурса в этом году.\nПрошёл в финал немецкого The Voice Kids в 2022 году, где спел две песни Фрэнка Синатры."
@@ -83,6 +86,7 @@
   {
     "country_code": "AU",
     "artist_name": "Delta Goodrem",
+    "artist_name_ru": "Дельта Гудрем",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Самая успешная среди музыкантов этого года.\nСтала известной в 2002 году, сыграв школьницу Нину в мыльной опере \"Соседи\", которая идёт с 1985 года,\nВ 2003 году у Дельты была диагностирована Лимфома Ходжкина, редкая форма рака.\nВ том же году она выпускает альбом, который теперь входит в топ-10 самых продаваемых альбомов Австралии.\nНесмотря на борьбу с раком, Дельта построила успешную карьеру: 7 студийных альбомов, 9 топ-1 песен в австралийских чартах, выиграно 3 World Music Awards, 12 ARIA Music Awards, MTV Video Music Award и много чего ещё.\nВ 2011-2012 годах встречалась с Ником Джонасом , который младше её на 8 лет.\n20 лет занимается благотворительностью, написала книгу, играла в Cats, снялась в нескольких фильмах, тренировала начинающих звёзд в The Voice Australia и The Voice Kids."
@@ -110,6 +114,7 @@
   {
     "country_code": "AZ",
     "artist_name": "Jiva",
+    "artist_name_ru": "",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Победительница The Voice of Azerbaijan в 2025 году."
@@ -137,6 +142,7 @@
   {
     "country_code": "BE",
     "artist_name": "Essyla",
+    "artist_name_ru": "",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Участвовала во втором и пока последнем \"Евровидение: Хор\" в 2019 году.\nЗаняла второе место на The Voice Belgique в 2020 году, проиграв Жереми Макиесе, который представил Бельгию на Евровидении в 2022 году.\nПсевдоним \"Essyla\" появился как перевернутое имя певицы \"Alice\"."
@@ -164,6 +170,7 @@
   {
     "country_code": "BG",
     "artist_name": "Dara",
+    "artist_name_ru": "Дара",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Заняла третье место на болгарском The X Factor в 2015 году.\nТренер на The Voice of Bulgaria с 2021 года, её подопечные выиграли 2 сезона из этих 4.\nАвтор 2 студийных альбомов и больше 30 синглов."
@@ -191,6 +198,7 @@
   {
     "country_code": "CH",
     "artist_name": "Veronica Fusaro",
+    "artist_name_ru": "Вероника Фусаро",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Участница The Voice of Switzerland в 2014 году.\nВыступала на Гластонбери, а также на разогреве у Марка Нопфлера.\nАвтор 2 студийных альбомов и 20 синглов."
@@ -218,6 +226,7 @@
   {
     "country_code": "CY",
     "artist_name": "Antigoni",
+    "artist_name_ru": "Антигони",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Мать Антигони - повар Тоня Бакстон, она ведёт телешоу My Greek Kitchen и My Cypriot Kitchen.\nАнтигони участвовала в реалити-шоу Love Island.\nОна училась в BRIT School, а начала музыкальную карьеру с загрузки треков на SoundCloud и, позже, YouTube.\nВыпустила уже больше 20 синглов."
@@ -245,6 +254,7 @@
   {
     "country_code": "CZ",
     "artist_name": "Daniel Zizka",
+    "artist_name_ru": "Даниэль Жижка",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Изучает эстрадное пение и композицию в пражской консерватории им. Ярослава Ежека."
@@ -272,6 +282,7 @@
   {
     "country_code": "DE",
     "artist_name": "Sarah Engels",
+    "artist_name_ru": "Сара Энгельс",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Стала популярной в 2011 году после занятия 2 места в Deutschland sucht den Superstar.\nТакже заняла 2 место в шоу Let's Dance и выиграла шоу Das große Promibacken, The Masked Singer и Dancing on Ice.\nАвтор 6 студийных альбомов и более 30 синглов."
@@ -299,6 +310,7 @@
   {
     "country_code": "DK",
     "artist_name": "Søren Torpegaard Lund",
+    "artist_name_ru": "Сёрен Торпегор Лунн",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Символ Сёрена -- птица зимородок"
@@ -326,6 +338,7 @@
   {
     "country_code": "EE",
     "artist_name": "Vanilla Ninja",
+    "artist_name_ru": "",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Эстонская группа с 2002 года, популярная и на родине, и в Европе.\nГруппа представляла Швейцарию на Евровидении-2005 и заняла 8-ое место.\nГруппа прекратила существовать в 2008 году из-за финансовых проблем, музыкантки занялись сольными карьерами.\nНо в 2020 году группа вернулась."
@@ -353,6 +366,7 @@
   {
     "country_code": "FI",
     "artist_name": "Linda Lampenius and Pete Parkkonen",
+    "artist_name_ru": "Линда Лампениус и Пете Паркконен",
     "bio": {
       "en": "TODO: перевести",
       "ru": ""
@@ -380,6 +394,7 @@
   {
     "country_code": "FR",
     "artist_name": "Monroe",
+    "artist_name_ru": "Монро",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Самая молодая участница этого года"
@@ -407,6 +422,7 @@
   {
     "country_code": "GB",
     "artist_name": "Look Mum No Computer",
+    "artist_name_ru": "",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Много лет ведёт блог с музыкальными экспериментами на ютубе"
@@ -434,6 +450,7 @@
   {
     "country_code": "GE",
     "artist_name": "Bzikebi",
+    "artist_name_ru": "Бзикеби",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Победители Детского Евровидения в 2008 году с пчелиной песней «Bzz…»."
@@ -461,6 +478,7 @@
   {
     "country_code": "GR",
     "artist_name": "Akylas",
+    "artist_name_ru": "Акилас",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Два года работал певцом на круизных лайнерах"
@@ -488,6 +506,7 @@
   {
     "country_code": "HR",
     "artist_name": "Lelek",
+    "artist_name_ru": "",
     "bio": {
       "en": "TODO: перевести",
       "ru": ""
@@ -515,6 +534,7 @@
   {
     "country_code": "IL",
     "artist_name": "Noam Bettan",
+    "artist_name_ru": "Ноам Беттан",
     "bio": {
       "en": "TODO: перевести",
       "ru": ""
@@ -542,6 +562,7 @@
   {
     "country_code": "IT",
     "artist_name": "Sal Da Vinci",
+    "artist_name_ru": "Саль да Винчи",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Самый возрастной участник этого года"
@@ -569,6 +590,7 @@
   {
     "country_code": "LT",
     "artist_name": "Lion Ceccah",
+    "artist_name_ru": "Лион Чекках",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Развивает драг-культуру в Литве"
@@ -596,6 +618,7 @@
   {
     "country_code": "LU",
     "artist_name": "Eva Marija",
+    "artist_name_ru": "Ева Мария",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Вдохновилась стать скрипачкой, увидев выступление Александра Рыбака на Евровидении в 2009 году"
@@ -623,6 +646,7 @@
   {
     "country_code": "LV",
     "artist_name": "Atvara",
+    "artist_name_ru": "",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Несколько лет входила в команды участников Евровидения, но занималась там маркетингом и была среди авторов песен"
@@ -650,6 +674,7 @@
   {
     "country_code": "MD",
     "artist_name": "Satoshi",
+    "artist_name_ru": "",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Одна из участниц группы, Алёна Мун, уже дважды была на Евровидении. В 2012 в роли бэк вокалистки, а в 2013 с сольным номером"
@@ -677,6 +702,7 @@
   {
     "country_code": "ME",
     "artist_name": "Tamara Živković",
+    "artist_name_ru": "Тамара Живкович",
     "bio": {
       "en": "TODO: перевести",
       "ru": ""
@@ -704,6 +730,7 @@
   {
     "country_code": "MT",
     "artist_name": "Aidan",
+    "artist_name_ru": "Эйдан",
     "bio": {
       "en": "TODO: перевести",
       "ru": ""
@@ -731,6 +758,7 @@
   {
     "country_code": "NO",
     "artist_name": "Jonas Lovv",
+    "artist_name_ru": "Йонас Ловв",
     "bio": {
       "en": "TODO: перевести",
       "ru": ""
@@ -758,6 +786,7 @@
   {
     "country_code": "PL",
     "artist_name": "Alicja",
+    "artist_name_ru": "Алиция",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Должна была представлять Польшу на отменённом Евровидении-2020."
@@ -785,6 +814,7 @@
   {
     "country_code": "PT",
     "artist_name": "Bandidos do Cante",
+    "artist_name_ru": "",
     "bio": {
       "en": "TODO: перевести",
       "ru": ""
@@ -812,6 +842,7 @@
   {
     "country_code": "RO",
     "artist_name": "Alexandra Căpitănescu",
+    "artist_name_ru": "Александра Кэпитэнеску",
     "bio": {
       "en": "TODO: перевести",
       "ru": ""
@@ -839,6 +870,7 @@
   {
     "country_code": "RS",
     "artist_name": "Lavina",
+    "artist_name_ru": "Лавина",
     "bio": {
       "en": "TODO: перевести",
       "ru": ""
@@ -866,6 +898,7 @@
   {
     "country_code": "SE",
     "artist_name": "Felicia",
+    "artist_name_ru": "Фелисия",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Фелисия скрывает нижнюю часть лица маской или надевает большие солнцезащитные очки"
@@ -893,6 +926,7 @@
   {
     "country_code": "SM",
     "artist_name": "Senhit",
+    "artist_name_ru": "Сенит",
     "bio": {
       "en": "TODO: перевести",
       "ru": "Уже представляла Сан-Марино в 2011 (не вышла в финал), в 2020 (конкурс отменили) и в 2021 (22 место в финале)."
@@ -920,6 +954,7 @@
   {
     "country_code": "UA",
     "artist_name": "Leléka",
+    "artist_name_ru": "Лелека",
     "bio": {
       "en": "TODO: перевести",
       "ru": "«Лелека» переводится с укранского как «Аист»"
