@@ -40,7 +40,7 @@
 {\InfoNameLine{ {{ line }} }}\par
 {% if not loop.last %}\vspace{0.10mm}{% endif %}
 {% endfor %}
-{% if e.artist_birth_name_lines %}\vspace{-0.42\baselineskip}{% endif %}
+{% if e.artist_birth_name_lines %}\vspace{-0.30\baselineskip}{% endif %}
 {% for line in e.artist_birth_name_lines %}
 {\scriptsize\Muted{\InfoMixedBody{ {{ line }} }}}\par
 {% if not loop.last %}\vspace{-0.34\baselineskip}{% endif %}
@@ -85,7 +85,7 @@
 \begin{infopanel}{ {{ L_ABOUT_SONG }} }
 \setstretch{1.06}\RaggedRight
 {\InfoNameLine{ {{ e.song_title }} }}\par
-{% if e.song_title_translation %}\vspace{-0.38\baselineskip}{\scriptsize\Muted{\InfoMixedBody{ {{ e.song_title_translation }} }}}\par{% endif %}
+{% if e.song_title_translation %}\vspace{-0.26\baselineskip}{\setstretch{0.88}\scriptsize\Muted{\InfoMixedBody{ {{ e.song_title_translation }} }}\par}{% endif %}
 {% if e.langs_major or e.langs_minor %}
 \vspace{1.05mm}\par\noindent
 \raisebox{0.05ex}{\SongLangIcon}\hspace{1.5mm}%

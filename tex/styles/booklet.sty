@@ -492,7 +492,7 @@
   \renewcommand{\arraystretch}{1.0}%
   \sffamily\footnotesize\bfseries\color{BookletAccent}%
   \begin{tabularx}{\linewidth}{@{}Y Y@{}}%
-    \MixedBody{#1} & \MixedBody{#2}%
+    {\setstretch{0.90}\RaggedRight\MixedBody{#1}} & {\setstretch{0.84}\RaggedRight\MixedBody{#2}}%
   \end{tabularx}%
   \endgroup\par
   \vspace{1.15mm}%

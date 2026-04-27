@@ -276,7 +276,7 @@
     "number_sf": 8,
     "national_final_url": "",
     "music_video_url": "https://www.youtube.com/watch?v=TzSs51BiQrE",
-    "lyrics_size_modifier": 2.0
+    "lyrics_size_modifier": 1.0
   },
   {
     "country_code": "CZ",
@@ -338,7 +338,7 @@
     "number_sf": 0,
     "national_final_url": "https://www.youtube.com/watch?v=cv0N_jCx-nA",
     "music_video_url": "https://www.youtube.com/watch?v=AzvRc3eH_rA",
-    "lyrics_size_modifier": 0.0
+    "lyrics_size_modifier": 1.0
   },
   {
     "country_code": "DK",
@@ -524,7 +524,7 @@
     "number_sf": 6,
     "national_final_url": "",
     "music_video_url": "https://www.youtube.com/watch?v=coh-lygCINY",
-    "lyrics_size_modifier": 2.0
+    "lyrics_size_modifier": 1.0
   },
   {
     "country_code": "GR",
@@ -555,7 +555,7 @@
     "number_sf": 4,
     "national_final_url": "https://www.youtube.com/watch?v=j_tDJ77ntPE",
     "music_video_url": "https://www.youtube.com/watch?v=NGwNTd_DA9s",
-    "lyrics_size_modifier": 2.0
+    "lyrics_size_modifier": 1.0
   },
   {
     "country_code": "HR",
