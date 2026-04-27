@@ -517,6 +517,7 @@ def generate(*, out_dir: Path, year: int = 2026) -> None:
         "facts_ru",
         "round_sf",
         "qualified_to_final",
+        "lyrics_size_modifier",
         "artist_name",
         "country_name_en",
     ]
@@ -560,6 +561,7 @@ def generate(*, out_dir: Path, year: int = 2026) -> None:
                 "facts_ru": f"Шаблон фактов о песне {song_title}.",
                 "round_sf": round_sf,
                 "qualified_to_final": "",
+                "lyrics_size_modifier": "",
                 "artist_name": artist_name,
                 "country_name_en": e.country_name_en,
             }

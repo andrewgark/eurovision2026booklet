@@ -145,6 +145,16 @@ def _to_int(s: str) -> int:
         return 0
 
 
+def _to_float(s: str) -> float:
+    s = _nonempty(s).replace(",", ".")
+    if not s:
+        return 0.0
+    try:
+        return float(s)
+    except ValueError:
+        return 0.0
+
+
 def _qualified_flag(raw: str) -> str:
     v = _nonempty(raw).lower()
     if v in {"yes", "true", "1", "y", "auto"}:
@@ -357,6 +367,7 @@ def pull_booklet(
                 "order_sf",
                 "number_sf",
                 "qualified_to_final",
+                "lyrics_size_modifier",
             ],
             tab="Songs",
         )
@@ -388,6 +399,7 @@ def pull_booklet(
                 "number_sf": _to_int(r["number_sf"]),
                 "national_final_url": _nonempty(r["national_final_url"]),
                 "music_video_url": _nonempty(r["music_video_url"]),
+                "lyrics_size_modifier": _to_float(r.get("lyrics_size_modifier", "") or ""),
             }
         )
         order_raw = _nonempty(r.get("order_sf", ""))
@@ -568,6 +580,7 @@ def pull_template(
                 "facts_ru",
                 "round_sf",
                 "qualified_to_final",
+                "lyrics_size_modifier",
             ],
             tab="Songs",
         )
@@ -586,6 +599,7 @@ def pull_template(
                 "facts": {"en": r.get("facts_en", ""), "ru": r.get("facts_ru", "")},
                 "round_sf": _normalize_sf_round(r["round_sf"]),
                 "qualified_to_final": _qualified_flag(r.get("qualified_to_final", "") or ""),
+                "lyrics_size_modifier": _to_float(r.get("lyrics_size_modifier", "") or ""),
             }
         )
     (out_data_dir / "songs.json").write_text(json.dumps(songs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

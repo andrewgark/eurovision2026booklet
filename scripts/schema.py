@@ -95,6 +95,8 @@ class SongModel(BaseModel):
     number_sf: int = 0
     national_final_url: str = ""
     music_video_url: str = ""
+    # Added to the base font from `_lyrics_font_pt` (pt); use when the auto heuristic is too small.
+    lyrics_size_modifier: float = 0.0
 
 
 class RunningOrderRow(BaseModel):

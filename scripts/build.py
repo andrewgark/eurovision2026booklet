@@ -235,18 +235,48 @@ def _lyrics_font_pt(rows: list[dict[str, str]], *, has_translation: bool) -> tup
     the largest preset size (conservative: fewer chars per line → more predicted
     wraps → smaller font before overflow).
     """
+    # Thresholds are slightly loose: the wrap heuristic over-counts lines, so we
+    # nudge bands upward vs raw unit totals; use `lyrics_size_modifier` on a song
+    # to add pt when it still prints too small.
     units = _lyrics_layout_units(rows, has_translation=has_translation)
-    if units <= 50:
+    if units <= 52:
         return ("8.4", "10.0")
-    if units <= 60:
+    if units <= 62:
         return ("7.5", "9.0")
-    if units <= 70:
+    if units <= 72:
         return ("6.8", "8.2")
-    if units <= 80:
+    if units <= 82:
         return ("6.0", "7.3")
-    if units <= 90:
+    if units <= 92:
         return ("5.4", "6.5")
     return ("4.9", "5.9")
+
+
+def _apply_lyrics_size_modifier(
+    font_pt: str, baseline_pt: str, delta_pt: float
+) -> tuple[str, str]:
+    """Add a sheet-specified delta (pt) to auto-chosen font and baselineskip."""
+    if delta_pt == 0.0:
+        return (font_pt, baseline_pt)
+    try:
+        f = float(font_pt) + delta_pt
+        b = float(baseline_pt) + delta_pt
+    except ValueError:
+        return (font_pt, baseline_pt)
+    # Keep within sensible bounds so we do not break the one-page lyrics column.
+    f = max(4.5, min(10.0, f))
+    b = max(5.4, min(11.0, b))
+    return (f"{f:.1f}", f"{b:.1f}")
+
+
+def _lyrics_size_modifier_from_song(s: dict[str, Any]) -> float:
+    raw = s.get("lyrics_size_modifier", 0)
+    if raw is None or raw == "":
+        return 0.0
+    try:
+        return float(raw)
+    except (TypeError, ValueError):
+        return 0.0
 
 
 def _split_rows_for_twoup(rows: list[dict[str, str]]) -> tuple[list[dict[str, str]], list[dict[str, str]]]:
@@ -712,6 +742,10 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
         artist_birth_name_lines = [_safe_tex(x) for x in _split_real_name_lines(artist_birth_name)]
 
         lyrics_font, lyrics_baseline = _lyrics_font_pt(rows, has_translation=has_tr)
+        mod = _lyrics_size_modifier_from_song(s)
+        lyrics_font, lyrics_baseline = _apply_lyrics_size_modifier(
+            lyrics_font, lyrics_baseline, mod
+        )
         entries.append(
             EntryView(
                 country_code=cc,

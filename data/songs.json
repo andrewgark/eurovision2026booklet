@@ -27,7 +27,8 @@
     },
     "number_sf": 13,
     "national_final_url": "https://www.youtube.com/watch?v=-2cZ-Ba6ygg",
-    "music_video_url": "https://www.youtube.com/watch?v=b9AdRrA554o"
+    "music_video_url": "https://www.youtube.com/watch?v=b9AdRrA554o",
+    "lyrics_size_modifier": 1.0
   },
   {
     "country_code": "AM",
@@ -57,7 +58,8 @@
     },
     "number_sf": 6,
     "national_final_url": "",
-    "music_video_url": "https://www.youtube.com/watch?v=5EXoK-lgocw"
+    "music_video_url": "https://www.youtube.com/watch?v=5EXoK-lgocw",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "AT",
@@ -87,7 +89,8 @@
     },
     "number_sf": 0,
     "national_final_url": "https://www.youtube.com/watch?v=SPpL_ZuRTZY",
-    "music_video_url": "https://www.youtube.com/watch?v=zPGP9ZphxiY"
+    "music_video_url": "https://www.youtube.com/watch?v=zPGP9ZphxiY",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "AU",
@@ -117,7 +120,8 @@
     },
     "number_sf": 11,
     "national_final_url": "",
-    "music_video_url": "https://www.youtube.com/watch?v=EUMCr1pnaMY"
+    "music_video_url": "https://www.youtube.com/watch?v=EUMCr1pnaMY",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "AZ",
@@ -147,7 +151,8 @@
     },
     "number_sf": 2,
     "national_final_url": "",
-    "music_video_url": "https://www.youtube.com/watch?v=iMDBPe25JhM"
+    "music_video_url": "https://www.youtube.com/watch?v=iMDBPe25JhM",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "BE",
@@ -177,7 +182,8 @@
     },
     "number_sf": 11,
     "national_final_url": "",
-    "music_video_url": "https://www.youtube.com/watch?v=9sfI4g6DWTU"
+    "music_video_url": "https://www.youtube.com/watch?v=9sfI4g6DWTU",
+    "lyrics_size_modifier": 1.0
   },
   {
     "country_code": "BG",
@@ -207,7 +213,8 @@
     },
     "number_sf": 1,
     "national_final_url": "https://www.youtube.com/watch?v=_pkC9J6BPFY",
-    "music_video_url": "https://www.youtube.com/watch?v=J3oGYo_mekw"
+    "music_video_url": "https://www.youtube.com/watch?v=J3oGYo_mekw",
+    "lyrics_size_modifier": 1.0
   },
   {
     "country_code": "CH",
@@ -237,7 +244,8 @@
     },
     "number_sf": 7,
     "national_final_url": "",
-    "music_video_url": "https://www.youtube.com/watch?v=PfpYGAzW5dM"
+    "music_video_url": "https://www.youtube.com/watch?v=PfpYGAzW5dM",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "CY",
@@ -267,7 +275,8 @@
     },
     "number_sf": 8,
     "national_final_url": "",
-    "music_video_url": "https://www.youtube.com/watch?v=TzSs51BiQrE"
+    "music_video_url": "https://www.youtube.com/watch?v=TzSs51BiQrE",
+    "lyrics_size_modifier": 2.0
   },
   {
     "country_code": "CZ",
@@ -297,7 +306,8 @@
     },
     "number_sf": 5,
     "national_final_url": "",
-    "music_video_url": "https://www.youtube.com/watch?v=6ea25aRGpLo"
+    "music_video_url": "https://www.youtube.com/watch?v=6ea25aRGpLo",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "DE",
@@ -327,7 +337,8 @@
     },
     "number_sf": 0,
     "national_final_url": "https://www.youtube.com/watch?v=cv0N_jCx-nA",
-    "music_video_url": "https://www.youtube.com/watch?v=AzvRc3eH_rA"
+    "music_video_url": "https://www.youtube.com/watch?v=AzvRc3eH_rA",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "DK",
@@ -357,7 +368,8 @@
     },
     "number_sf": 10,
     "national_final_url": "https://www.youtube.com/watch?v=xKzEP9dwoss",
-    "music_video_url": ""
+    "music_video_url": "",
+    "lyrics_size_modifier": 1.0
   },
   {
     "country_code": "EE",
@@ -387,7 +399,8 @@
     },
     "number_sf": 9,
     "national_final_url": "https://www.youtube.com/watch?v=iXVguLuMwkI",
-    "music_video_url": "https://www.youtube.com/watch?v=lOiWuol3t3o"
+    "music_video_url": "https://www.youtube.com/watch?v=lOiWuol3t3o",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "FI",
@@ -417,7 +430,8 @@
     },
     "number_sf": 7,
     "national_final_url": "https://www.youtube.com/watch?v=9bfwNIYb96Q",
-    "music_video_url": ""
+    "music_video_url": "",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "FR",
@@ -447,7 +461,8 @@
     },
     "number_sf": 0,
     "national_final_url": "",
-    "music_video_url": "https://www.youtube.com/watch?v=ujoCYrvvTYQ"
+    "music_video_url": "https://www.youtube.com/watch?v=ujoCYrvvTYQ",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "GB",
@@ -477,7 +492,8 @@
     },
     "number_sf": 0,
     "national_final_url": "",
-    "music_video_url": "https://www.youtube.com/watch?v=niMKvJ-Itq8"
+    "music_video_url": "https://www.youtube.com/watch?v=niMKvJ-Itq8",
+    "lyrics_size_modifier": 1.0
   },
   {
     "country_code": "GE",
@@ -507,7 +523,8 @@
     },
     "number_sf": 6,
     "national_final_url": "",
-    "music_video_url": "https://www.youtube.com/watch?v=coh-lygCINY"
+    "music_video_url": "https://www.youtube.com/watch?v=coh-lygCINY",
+    "lyrics_size_modifier": 2.0
   },
   {
     "country_code": "GR",
@@ -537,7 +554,8 @@
     },
     "number_sf": 4,
     "national_final_url": "https://www.youtube.com/watch?v=j_tDJ77ntPE",
-    "music_video_url": "https://www.youtube.com/watch?v=NGwNTd_DA9s"
+    "music_video_url": "https://www.youtube.com/watch?v=NGwNTd_DA9s",
+    "lyrics_size_modifier": 2.0
   },
   {
     "country_code": "HR",
@@ -567,7 +585,8 @@
     },
     "number_sf": 3,
     "national_final_url": "https://www.youtube.com/watch?v=OMCR-8gmgso",
-    "music_video_url": "https://www.youtube.com/watch?v=vl7Jqnw10sU"
+    "music_video_url": "https://www.youtube.com/watch?v=vl7Jqnw10sU",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "IL",
@@ -597,7 +616,8 @@
     },
     "number_sf": 10,
     "national_final_url": "",
-    "music_video_url": "https://www.youtube.com/watch?v=xWCnWSoG8nI"
+    "music_video_url": "https://www.youtube.com/watch?v=xWCnWSoG8nI",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "IT",
@@ -627,7 +647,8 @@
     },
     "number_sf": 0,
     "national_final_url": "https://www.youtube.com/watch?v=kA7pS6kaTpg",
-    "music_video_url": "https://www.youtube.com/watch?v=V406FAGkhyQ"
+    "music_video_url": "https://www.youtube.com/watch?v=V406FAGkhyQ",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "LT",
@@ -657,7 +678,8 @@
     },
     "number_sf": 12,
     "national_final_url": "https://www.youtube.com/watch?v=nWwMMMVkwRU",
-    "music_video_url": "https://www.youtube.com/watch?v=0H-PXnbhG7A"
+    "music_video_url": "https://www.youtube.com/watch?v=0H-PXnbhG7A",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "LU",
@@ -687,7 +709,8 @@
     },
     "number_sf": 4,
     "national_final_url": "https://www.youtube.com/watch?v=DmVfJSRqgnI",
-    "music_video_url": ""
+    "music_video_url": "",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "LV",
@@ -717,7 +740,8 @@
     },
     "number_sf": 9,
     "national_final_url": "https://www.youtube.com/watch?v=6C2ivaB5D00",
-    "music_video_url": ""
+    "music_video_url": "",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "MD",
@@ -747,7 +771,8 @@
     },
     "number_sf": 1,
     "national_final_url": "https://www.youtube.com/watch?v=1JEmuzqob8c",
-    "music_video_url": "https://www.youtube.com/watch?v=SViojHjNSzc"
+    "music_video_url": "https://www.youtube.com/watch?v=SViojHjNSzc",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "ME",
@@ -777,7 +802,8 @@
     },
     "number_sf": 8,
     "national_final_url": "https://www.youtube.com/watch?v=59hsYOMCQGY",
-    "music_video_url": "https://www.youtube.com/watch?v=nuvy2d60HbI"
+    "music_video_url": "https://www.youtube.com/watch?v=nuvy2d60HbI",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "MT",
@@ -807,7 +833,8 @@
     },
     "number_sf": 14,
     "national_final_url": "https://www.youtube.com/watch?v=zpnUWz6NKMw",
-    "music_video_url": "https://www.youtube.com/watch?v=CW6mQLBh6Js"
+    "music_video_url": "https://www.youtube.com/watch?v=CW6mQLBh6Js",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "NO",
@@ -837,7 +864,8 @@
     },
     "number_sf": 15,
     "national_final_url": "https://www.youtube.com/watch?v=MasllzWk_bQ",
-    "music_video_url": ""
+    "music_video_url": "",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "PL",
@@ -867,7 +895,8 @@
     },
     "number_sf": 14,
     "national_final_url": "https://www.youtube.com/watch?v=q78cnYIoF9Y",
-    "music_video_url": ""
+    "music_video_url": "",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "PT",
@@ -897,7 +926,8 @@
     },
     "number_sf": 5,
     "national_final_url": "https://www.youtube.com/watch?v=jyHaE6GqaaQ",
-    "music_video_url": ""
+    "music_video_url": "",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "RO",
@@ -927,7 +957,8 @@
     },
     "number_sf": 3,
     "national_final_url": "https://www.youtube.com/watch?v=JrSl0sTX5W4",
-    "music_video_url": "https://www.youtube.com/watch?v=yn0YmI0dPb8"
+    "music_video_url": "https://www.youtube.com/watch?v=yn0YmI0dPb8",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "RS",
@@ -957,7 +988,8 @@
     },
     "number_sf": 15,
     "national_final_url": "https://www.youtube.com/watch?v=FJTLKBOOE98",
-    "music_video_url": ""
+    "music_video_url": "",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "SE",
@@ -987,7 +1019,8 @@
     },
     "number_sf": 2,
     "national_final_url": "https://www.youtube.com/watch?v=ibbfS8iG450",
-    "music_video_url": ""
+    "music_video_url": "",
+    "lyrics_size_modifier": 0.0
   },
   {
     "country_code": "SM",
@@ -1017,7 +1050,8 @@
     },
     "number_sf": 13,
     "national_final_url": "https://www.youtube.com/watch?v=wOQe-fQSFxg",
-    "music_video_url": ""
+    "music_video_url": "",
+    "lyrics_size_modifier": 1.0
   },
   {
     "country_code": "UA",
@@ -1047,6 +1081,7 @@
     },
     "number_sf": 12,
     "national_final_url": "https://www.youtube.com/watch?v=SoEXezpblAc",
-    "music_video_url": ""
+    "music_video_url": "",
+    "lyrics_size_modifier": 0.0
   }
 ]
