@@ -27,6 +27,27 @@ VARIANT_TITLES = {
     "overall_post": {"en": "Overall (results)", "ru": "Общий (результаты)"},
 }
 
+# config.json `subtitle_*` / `intro_text_*` keys for each PDF variant
+VARIANT_SUBTITLE_KEY: dict[Variant, str] = {
+    "overall_pre": "subtitle_pre",
+    "sf1": "subtitle_sf1",
+    "sf2": "subtitle_sf2",
+    "final": "subtitle_final",
+    "overall_post": "subtitle_post",
+}
+VARIANT_INTRO_KEY: dict[Variant, str] = {
+    "overall_pre": "intro_text_pre",
+    "sf1": "intro_text_sf1",
+    "sf2": "intro_text_sf2",
+    "final": "intro_text_final",
+    "overall_post": "intro_text_post",
+}
+
+
+def _config_lang_value(config: dict[str, Any], key: str, lang: Lang) -> str:
+    block = config.get(key) or {}
+    return str(block.get(lang) or "").strip()
+
 
 @dataclass(frozen=True)
 class EntryView:
@@ -136,6 +157,46 @@ def _is_section_line(line: str) -> bool:
     return ln.startswith("[") and ln.endswith("]") and len(ln) >= 2
 
 
+def _is_hebrew_script_char(ch: str) -> bool:
+    o = ord(ch)
+    if 0x0590 <= o <= 0x05FF:
+        return True
+    # Hebrew presentation forms (e.g. ligatures) in Alphabetic Presentation Forms
+    if 0xFB1D <= o <= 0xFB4F:
+        return True
+    return False
+
+
+def _lyrics_orig_line_tex(ol: str) -> str:
+    """TeX-escape an original-lyrics line; wrap Hebrew runs in ``\\HebrewRun`` for RTL."""
+    if not any(_is_hebrew_script_char(c) for c in ol):
+        return _safe_tex(ol)
+    segs: list[tuple[str, bool]] = []
+    buf: list[str] = []
+    current: bool | None = None
+    for c in ol:
+        h = _is_hebrew_script_char(c)
+        if current is None:
+            current = h
+            buf.append(c)
+        elif h == current:
+            buf.append(c)
+        else:
+            segs.append(("".join(buf), current))
+            buf = [c]
+            current = h
+    if buf:
+        segs.append(("".join(buf), current if current is not None else False))
+    parts: list[str] = []
+    for text, is_heb in segs:
+        t = _safe_tex(text)
+        if is_heb:
+            parts.append("\\HebrewRun{" + t + "}")
+        else:
+            parts.append(t)
+    return "".join(parts)
+
+
 def _lyrics_rows(*, original: str, translation: str) -> list[dict[str, str]]:
     """
     Produce rows for a paired lyrics table.
@@ -158,7 +219,7 @@ def _lyrics_rows(*, original: str, translation: str) -> list[dict[str, str]]:
             rows.append(
                 {
                     "kind": "line",
-                    "orig": _safe_tex(ol),
+                    "orig": _lyrics_orig_line_tex(ol),
                     "trans": _safe_tex(tl),
                 }
             )
@@ -629,6 +690,15 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
     L_VOTE = "Голосовать" if lang == "ru" else "Vote"
     current_year = int(config.get("year") or 0)
 
+    cover_subtitle_key = VARIANT_SUBTITLE_KEY[variant]
+    intro_key = VARIANT_INTRO_KEY[variant]
+    cover_subtitle_raw = _config_lang_value(config, cover_subtitle_key, lang)
+    intro_raw = _config_lang_value(config, intro_key, lang)
+    if not intro_raw:
+        intro_raw = str((config.get("about_text") or {}).get(lang) or "").strip()
+    cover_subtitle = _safe_tex_multiline(cover_subtitle_raw) if cover_subtitle_raw else ""
+    intro_text = _safe_tex_multiline(intro_raw) if intro_raw else ""
+
     entries: list[EntryView] = []
     for s in songs_included:
         cc = s["country_code"]
@@ -827,7 +897,8 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
         variant_title=VARIANT_TITLES[variant][lang],
         event_name=_safe_tex(config["event_name"][lang]),
         booklet_title=_safe_tex(config["booklet_title"][lang]),
-        about_text=_safe_tex(config["about_text"][lang]),
+        cover_subtitle=cover_subtitle,
+        intro_text=intro_text,
         entries=entries,
         TEX_DASH=r"\Muted{—}",
     )

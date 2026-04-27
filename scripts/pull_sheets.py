@@ -19,6 +19,34 @@ if str(REPO_ROOT) not in sys.path:
 
 from scripts.schema import validate_local_snapshots
 
+# Config tab keys that map to `{"en": ..., "ru": ...}` in config.json
+_CONFIG_LOCALIZED_KEYS: frozenset[str] = frozenset(
+    {
+        "event_name",
+        "booklet_title",
+        "about_text",
+        "subtitle_pre",
+        "subtitle_sf1",
+        "subtitle_sf2",
+        "subtitle_final",
+        "subtitle_post",
+        "intro_text_pre",
+        "intro_text_sf1",
+        "intro_text_sf2",
+        "intro_text_final",
+        "intro_text_post",
+    }
+)
+
+
+def _config_shell(*, year: int) -> dict[str, Any]:
+    """Default config object: all localized keys start as empty en/ru strings."""
+    d: dict[str, Any] = {"year": year}
+    for k in _CONFIG_LOCALIZED_KEYS:
+        d[k] = {"en": "", "ru": ""}
+    return d
+
+
 # Public "Eurovision Booklet Content" sheet (CSV export; sheet must be viewable without login).
 BOOKLET_SPREADSHEET_ID = "1INXyh8glLCOrtI_M-cV_gZ7LXcr5mBm0ffeVhYXQIVc"
 BOOKLET_GIDS: dict[str, str] = {
@@ -185,12 +213,7 @@ def pull_booklet(
 
     # --- Config ---
     config_rows = list(csv.DictReader(io.StringIO(tab_raw("Config"))))
-    config: dict[str, Any] = {
-        "year": year,
-        "event_name": {"en": "", "ru": ""},
-        "booklet_title": {"en": "", "ru": ""},
-        "about_text": {"en": "", "ru": ""},
-    }
+    config: dict[str, Any] = _config_shell(year=year)
     for r in config_rows:
         _require_cols(r, ["key", "value_en", "value_ru"], tab="Config")
         key = _nonempty(r["key"])
@@ -198,7 +221,7 @@ def pull_booklet(
             continue
         if key == "year":
             config["year"] = int(_nonempty(r["value_en"]) or _nonempty(r["value_ru"]) or str(year))
-        elif key in {"event_name", "booklet_title", "about_text"}:
+        elif key in _CONFIG_LOCALIZED_KEYS:
             config[key] = {"en": _nonempty(r["value_en"]), "ru": _nonempty(r["value_ru"])}
         elif key == "intro_text":
             config["about_text"] = {"en": _nonempty(r["value_en"]), "ru": _nonempty(r["value_ru"])}
@@ -488,12 +511,7 @@ def pull_template(
     out_data_dir.mkdir(parents=True, exist_ok=True)
 
     config_rows = _download_csv(spreadsheet_id, gid_config)
-    config = {
-        "year": 2026,
-        "event_name": {"en": "", "ru": ""},
-        "booklet_title": {"en": "", "ru": ""},
-        "about_text": {"en": "", "ru": ""},
-    }
+    config: dict[str, Any] = _config_shell(year=2026)
     for r in config_rows:
         _require_cols(r, ["key", "value_en", "value_ru"], tab="Config")
         key = _nonempty(r["key"])
@@ -501,7 +519,7 @@ def pull_template(
             continue
         if key == "year":
             config["year"] = int(_nonempty(r["value_en"]) or _nonempty(r["value_ru"]) or "2026")
-        elif key in {"event_name", "booklet_title", "about_text"}:
+        elif key in _CONFIG_LOCALIZED_KEYS:
             config[key] = {"en": _nonempty(r["value_en"]), "ru": _nonempty(r["value_ru"])}
         elif key == "intro_text":
             config["about_text"] = {"en": _nonempty(r["value_en"]), "ru": _nonempty(r["value_ru"])}

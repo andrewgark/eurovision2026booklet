@@ -20,6 +20,17 @@ class ConfigModel(BaseModel):
     event_name: LocalizedText
     booklet_title: LocalizedText
     about_text: LocalizedText
+    # Per-booklet-variant cover tagline and intro (see scripts/build.py mapping).
+    subtitle_pre: LocalizedText = LocalizedText()
+    subtitle_sf1: LocalizedText = LocalizedText()
+    subtitle_sf2: LocalizedText = LocalizedText()
+    subtitle_final: LocalizedText = LocalizedText()
+    subtitle_post: LocalizedText = LocalizedText()
+    intro_text_pre: LocalizedText = LocalizedText()
+    intro_text_sf1: LocalizedText = LocalizedText()
+    intro_text_sf2: LocalizedText = LocalizedText()
+    intro_text_final: LocalizedText = LocalizedText()
+    intro_text_post: LocalizedText = LocalizedText()
 
 
 class CountryFlagRef(BaseModel):

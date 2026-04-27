@@ -22,7 +22,12 @@
 \BookletTitle{ {{ event_name }} }
 \VariantPill{ {{ variant_title }} }\hspace{2mm}%
 \Muted{\small {{ booklet_title }}}\par
+{% if cover_subtitle %}
+\vspace{1.2mm}
+\VariantBookletSubtitle{ {{ cover_subtitle }} }
+{% else %}
 \vspace{2.5mm}
+{% endif %}
 
 \begingroup
 \setstretch{0.9}%
@@ -37,10 +42,14 @@
 \endgroup
 \newpage
 
-% Page 2: about text
+% Page 2: intro (variant-specific intro_text_* with fallback to legacy about_text)
 \leavevmode\phantomsection\label{toc-about}%
 \SectionTitle{ {% if lang == "ru" %}О проекте{% else %}About{% endif %} }
-{{ about_text }}
+{% if intro_text %}
+\begin{introtextbox}
+{{ intro_text }}
+\end{introtextbox}
+{% endif %}
 \newpage
 
 % Song pages (\SongPage ends with \newpage for the next country).

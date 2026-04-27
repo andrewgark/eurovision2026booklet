@@ -75,6 +75,9 @@
 
 \setdefaultlanguage{english}
 \setotherlanguage{russian}
+% Hebrew RTL in lyrics: avoid polyglossia's `hebrew` (it pulls in `luabidi`, not always
+% installed). LuaTeX's \textdir is enough for correct glyph order in \LyricsFont.
+\newcommand{\HebrewRun}[1]{\begingroup\LyricsFont\selectfont\textdir TRT #1\endgroup}
 
 %% ---- Design tokens ---------------------------------------------------------
 \definecolor{BookletInk}{HTML}{141922}         % deep near-black for body
@@ -135,6 +138,24 @@
   {\sffamily\Large\bfseries\color{BookletAccent} #1}\par
   \vspace{1mm}%
   {\color{BookletAccent}\rule{18mm}{1.2pt}}\par\vspace{2mm}%
+}
+
+% Cover-page tagline for the active variant (config: subtitle_pre, subtitle_sf1, …).
+\newcommand{\VariantBookletSubtitle}[1]{%
+  {\sffamily\color{BookletAccent2}\fontsize{12.2pt}{15.0pt}\selectfont\bfseries #1}\par
+  \vspace{1.5mm}%
+  {\color{BookletAccent}\rule{20mm}{0.7pt}}\par
+  \vspace{2.2mm}%
+}
+
+% About-page body: soft panel, subtle frame, full-width (intro_text_* or about_text).
+\newtcolorbox{introtextbox}{%
+  enhanced, arc=2.8pt,
+  colback=BookletSoft, colframe=BookletRule,
+  boxrule=0.35pt, left=3.0mm, right=2.8mm, top=2.6mm, bottom=2.8mm,
+  before skip=0pt, after skip=0pt,
+  halign=flush left,
+  fontupper={\sffamily\small\color{BookletInk}\selectfont}
 }
 
 % Tighter "Contents" head so the first page can list every country link
