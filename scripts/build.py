@@ -98,6 +98,8 @@ class EntryView:
     vote_label: str
     # UTF-8 flag emoji for TOC only (not TeX-escaped; rendered via \\TocFlagEmoji).
     toc_flag_emoji: str
+    # SF1/SF2/final: optional "[N]\\," before flag when number_sf / number_f is set in data.
+    toc_index_prefix: str
 
 
 def _read_json(path: Path) -> Any:
@@ -118,6 +120,20 @@ def _safe_tex(s: str) -> str:
         .replace("~", "\\textasciitilde{}")
         .replace("^", "\\textasciicircum{}")
     )
+
+
+def _toc_index_prefix(*, variant: Variant, song: dict[str, Any]) -> str:
+    """Contents line: show '[N]\\,' before the flag only when the draw number exists in data."""
+    n = 0
+    if variant in ("sf1", "sf2"):
+        n = int(song.get("number_sf") or 0)
+    elif variant == "final":
+        n = int(song.get("number_f") or 0)
+    else:
+        return ""
+    if n <= 0:
+        return ""
+    return _safe_tex(f"[{n}]") + r"\,"
 
 
 def _safe_tex_country_stat_line(s: str) -> str:
@@ -448,9 +464,9 @@ def _split_rows_for_twoup(rows: list[dict[str, str]]) -> tuple[list[dict[str, st
 
 
 LYRICS_TWOUP_THRESHOLD = 12
-BIO_MAX_CHARS = 440
-FACTS_MAX_CHARS = 440
-COUNTRY_FACTS_MAX_CHARS = 280
+BIO_MAX_CHARS = 1320
+FACTS_MAX_CHARS = 1320
+COUNTRY_FACTS_MAX_CHARS = 840
 
 
 def _split_csv_tokens(s: str) -> list[str]:
@@ -1010,6 +1026,7 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
                 number_label=_safe_tex(number_label),
                 vote_label=_safe_tex(vote_label),
                 toc_flag_emoji=_regional_flag_emoji(cc),
+                toc_index_prefix=_toc_index_prefix(variant=variant, song=s),
             )
         )
 

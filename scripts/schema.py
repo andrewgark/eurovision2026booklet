@@ -104,6 +104,7 @@ class SongModel(BaseModel):
     langs_minor: LocalizedText = LocalizedText()
     genre: LocalizedText = LocalizedText()
     number_sf: int = 0
+    number_f: int = 0
     national_final_url: str = ""
     music_video_url: str = ""
     # Added to the base font from `_lyrics_font_pt` (pt); use when the auto heuristic is too small.

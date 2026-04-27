@@ -37,7 +37,7 @@
 {% else %}\TocItemLink{toc-about}{About}
 {% endif %}
 {% for e in entries %}
-\TocItemLink{song-{{ e.country_code }}}{\TocFlagEmoji{ {{ e.toc_flag_emoji }} }{{ e.country_name }} — {{ e.song_title }} }
+\TocItemLink{song-{{ e.country_code }}}{% if e.toc_index_prefix %}{{ e.toc_index_prefix }}{% endif %}\TocFlagEmoji{ {{ e.toc_flag_emoji }} }{{ e.country_name }} — {{ e.song_title }} }
 {% endfor %}
 {% if mode == "post" %}{% if lang == "ru" %}\TocItemLink{toc-results}{Результаты}{% else %}\TocItemLink{toc-results}{Results}{% endif %}{% endif %}
 \endgroup

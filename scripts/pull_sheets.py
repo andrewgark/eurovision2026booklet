@@ -420,6 +420,7 @@ def pull_booklet(
                 },
                 "genre": {"en": _nonempty(r["genre_en"]), "ru": _nonempty(r["genre_ru"])},
                 "number_sf": _to_int(r["number_sf"]),
+                "number_f": _to_int(r.get("number_f", "") or ""),
                 "national_final_url": _nonempty(r["national_final_url"]),
                 "music_video_url": _nonempty(r["music_video_url"]),
                 "lyrics_size_modifier": _to_float(r.get("lyrics_size_modifier", "") or ""),
