@@ -372,8 +372,8 @@
       "ru": "Пете занял 3-е место в Idol.\nЛинда Брава — одна из самых возрастных и уже успешных участниц этого года с почти полувековой карьерой.\nЛинда стала известной финской скрипачкой ещё в детстве в 1970-ые.\nЛинда исполняла камерную музыку по всему миру, включая многие благотворительные концерты.\nЛинда была моделью, играла в кино, жюрила X Factor, открыл производство сидра, написала книгу, участвовала в гонках, катается на горных лыжах, занимается боксом, дайвингом, стрельбой из лука и бальными танцами."
     },
     "facts": {
-      "en": "Type: DUO. Birth name: . Born: 1970, 1990. LGBTQ+: BISEXUAL (Pete). Born in: . Grew up in: Helsinki and Pihtipudas.",
-      "ru": "Тип: DUO. Имя при рождении: . Год рождения: 1970, 1990. LGBTQ+: BISEXUAL (Pete). Место рождения: . Вырос(ла): Хельсинки и Пихтипудас."
+      "en": "Type: DUO. Birth name: . Born: 1970, 1990. LGBTQ+: . Born in: . Grew up in: Helsinki and Pihtipudas.",
+      "ru": "Тип: DUO. Имя при рождении: . Год рождения: 1970, 1990. LGBTQ+: . Место рождения: . Вырос(ла): Хельсинки и Пихтипудас."
     },
     "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/linda_lampenius_x_pete_parkkonen_music_video_still_credit_nelli_kentta_lcyg46bjpg/Linda_Lampenius_x_Pete_Parkkonen_music_video_still_Credit_Nelli_kentta_LCYG46b-fill_size%3D2560x1600-focal_point%3D2546x913-focal_size%3D968x704-fill_size%3D2560x1600-focal_point%3D2546x913-focal_size%3D968x704.jpg",
     "artist_real_name": {
@@ -389,7 +389,7 @@
       "en": "Helsinki and Pihtipudas",
       "ru": "Хельсинки и Пихтипудас"
     },
-    "lgbt": "BISEXUAL (Pete)"
+    "lgbt": ""
   },
   {
     "country_code": "FR",
