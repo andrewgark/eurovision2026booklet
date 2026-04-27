@@ -17,26 +17,28 @@
 
 \begin{document}
 
-% Page 1: Title + contents
+% Page 1: Cover (centered) + contents
 \thispagestyle{empty}
-\BookletTitle{ {{ event_name }} }
-\VariantPill{ {{ variant_title }} }\hspace{2mm}%
-\Muted{\small {{ booklet_title }}}\par
+\noindent
+\begin{minipage}{\linewidth}
+\centering
+\CoverBookletLabel{ {{ booklet_title }} }\\[0.9em]
+\CoverEventHeadline{ {{ event_name }} }
+\CoverVariantRow{ {{ variant_title }} }%
 {% if cover_subtitle %}
-\vspace{1.2mm}
-\VariantBookletSubtitle{ {{ cover_subtitle }} }
-{% else %}
-\vspace{2.5mm}
+\par\vspace{0.5em}
+\CoverSubtagline{ {{ cover_subtitle }} }%
 {% endif %}
-
+\end{minipage}
+\vspace{2.8mm}
 \begingroup
 \setstretch{0.9}%
 \TocSectionTitle{ {% if lang == "ru" %}Содержание{% else %}Contents{% endif %} }
-{% if lang == "ru" %}\TocItemLink{toc-about}{О проекте}
+{% if lang == "ru" %}\TocItemLink{toc-about}{Про Евровидение}
 {% else %}\TocItemLink{toc-about}{About}
 {% endif %}
 {% for e in entries %}
-\TocItemLink{song-{{ e.country_code }}}{ {{ e.country_name }} — {{ e.song_title }} }
+\TocItemLink{song-{{ e.country_code }}}{\TocFlagEmoji{ {{ e.toc_flag_emoji }} }{{ e.country_name }} — {{ e.song_title }} }
 {% endfor %}
 {% if mode == "post" %}{% if lang == "ru" %}\TocItemLink{toc-results}{Результаты}{% else %}\TocItemLink{toc-results}{Results}{% endif %}{% endif %}
 \endgroup
@@ -44,7 +46,7 @@
 
 % Page 2: intro (variant-specific intro_text_* with fallback to legacy about_text)
 \leavevmode\phantomsection\label{toc-about}%
-\SectionTitle{ {% if lang == "ru" %}О проекте{% else %}About{% endif %} }
+\SectionTitle{ {% if lang == "ru" %}Про Евровидение{% else %}About{% endif %} }
 {% if intro_text %}
 \begin{introtextbox}
 {{ intro_text }}

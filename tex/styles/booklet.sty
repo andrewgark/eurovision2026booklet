@@ -118,12 +118,13 @@
 }
 
 %% ---- Typography helpers ---------------------------------------------------
+% (Legacy) Old cover title stack — kept for compatibility; not used in main template.
 \newcommand{\BookletTitle}[1]{%
   {\sffamily\fontsize{26pt}{30pt}\selectfont\bfseries\color{BookletAccent} #1}\par\vspace{1mm}%
   {\color{BookletAccent2}\rule{28mm}{2pt}}\par\vspace{2.5mm}%
 }
 
-% \VariantPill{label} — prominent tag for the cover page identifying the variant.
+% \VariantPill{label} — pill badge (cover + reuse elsewhere if needed).
 \newcommand{\VariantPill}[1]{%
   \begin{tikzpicture}[baseline=(p.base)]
     \node[
@@ -134,28 +135,70 @@
   \end{tikzpicture}%
 }
 
+% ---- Cover page (page 1): centered booklet / event / variant + optional tagline ----
+% Top line: small letterspaced label (“Booklet” / “Буклет”).
+\newcommand{\CoverBookletLabel}[1]{%
+  {\sffamily\color{BookletMuted}
+   \fontsize{8.8pt}{11.5pt}\selectfont\bfseries
+   \addfontfeature{LetterSpace=2.2}\MakeUppercase{#1}}%
+}
+% Main headline: event name.
+\newcommand{\CoverEventHeadline}[1]{%
+  \begingroup\centering
+  {\sffamily\bfseries\fontsize{24pt}{28.5pt}\selectfont\color{BookletAccent} #1}\par
+  \nointerlineskip\relax\vspace{0.65mm}%
+  \nointerlineskip{\color{BookletAccent2!88!BookletGold}\rule{42mm}{1.3pt}}\par
+  \nointerlineskip\relax\vspace{0.25mm}%
+  \nointerlineskip{\color{BookletAccent!55}\rule{22mm}{0.5pt}}\par
+  \vspace{0.5em}
+  \endgroup
+}
+% Centred row with the phase pill (Semi-final, Overall, …).
+\newcommand{\CoverVariantRow}[1]{%
+  \begingroup\centering\nointerlineskip\relax
+  \VariantPill{#1}\par
+  \endgroup
+}
+% Optional per-variant text from sheets (can be multiline; already TeX-escaped in build).
+\newcommand{\CoverSubtagline}[1]{%
+  \begingroup\centering\color{BookletAccent2}
+  \sffamily\fontseries{bf}\selectfont\fontsize{10.6pt}{13.0pt}
+  #1\par
+  \endgroup
+}
+
 \newcommand{\SectionTitle}[1]{%
   {\sffamily\Large\bfseries\color{BookletAccent} #1}\par
   \vspace{1mm}%
   {\color{BookletAccent}\rule{18mm}{1.2pt}}\par\vspace{2mm}%
 }
 
-% Cover-page tagline for the active variant (config: subtitle_pre, subtitle_sf1, …).
+% (Legacy) Was used for cover tagline; \CoverSubtagline supersedes it.
 \newcommand{\VariantBookletSubtitle}[1]{%
-  {\sffamily\color{BookletAccent2}\fontsize{12.2pt}{15.0pt}\selectfont\bfseries #1}\par
-  \vspace{1.5mm}%
-  {\color{BookletAccent}\rule{20mm}{0.7pt}}\par
-  \vspace{2.2mm}%
+  \CoverSubtagline{#1}%
 }
 
-% About-page body: soft panel, subtle frame, full-width (intro_text_* or about_text).
+% About-page / intro: bullet lists and spacing come from \IntroItemize in scripts/build.py.
+\newenvironment{IntroItemize}{%
+  \begin{itemize}[
+    leftmargin=1.1em, rightmargin=0pt, labelwidth=0.65em, labelsep=0.35em,
+    itemsep=0.2em, parsep=0pt, partopsep=0pt, topsep=0.12em, listparindent=0pt,
+    label={\color{BookletAccent2}\textbullet}
+  ]%
+}{%
+  \end{itemize}%
+}
+
+% About-page body: soft panel, accent rail, full-width (intro_text_* or about_text).
 \newtcolorbox{introtextbox}{%
-  enhanced, arc=2.8pt,
+  enhanced, arc=3.1pt,
   colback=BookletSoft, colframe=BookletRule,
-  boxrule=0.35pt, left=3.0mm, right=2.8mm, top=2.6mm, bottom=2.8mm,
+  boxrule=0.4pt, left=3.2mm, right=3.0mm, top=3.0mm, bottom=3.2mm,
+  borderline west={2.4pt}{0pt}{BookletAccent},
   before skip=0pt, after skip=0pt,
   halign=flush left,
-  fontupper={\sffamily\small\color{BookletInk}\selectfont}
+  fontupper={\sffamily\small\color{BookletInk}\selectfont\setstretch{1.09}},
+  before upper={\RaggedRight\setlength{\parskip}{0.48em}\setlength{\parindent}{0pt}}%
 }
 
 % Tighter "Contents" head so the first page can list every country link
@@ -169,6 +212,11 @@
 % \TocItem{label} — arrow-led contents row with muted chevron.
 \newcommand{\TocItem}[1]{%
   \noindent{\color{BookletAccent2}\small\textbullet}\hspace{2.2mm}{\normalsize #1}\par\vspace{1.2mm}%
+}
+
+% Country flag in contents (regional-indicator pair; must use Noto Color Emoji).
+\newcommand{\TocFlagEmoji}[1]{%
+  \ifstrempty{#1}{}{{\EmojiFont\fontsize{7.4pt}{7.4pt}\selectfont #1}\hspace{1.5pt}}%
 }
 
 % \TocItemLink{label}{text} — same layout as \TocItem, but the whole row links

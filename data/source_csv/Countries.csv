@@ -1,14 +1,15 @@
 country_code,country_name_en,country_name_ru,auto_qualify,qualify_streak,non_qualify_streak,last_participation,won_times,national_qualify_type,country_facts_en,country_facts_ru
 AL,Albania,Албания,,1,,2025,0,PUBLIC_CONTEST,TODO: перевести,
 AM,Armenia,Армения,,4,,2025,0,INTERNAL_SELECTION,TODO: перевести,
-AT,Austria,Австрия,HOST,3,,2025,3,PUBLIC_CONTEST,TODO: перевести,
-AU,Australia,Австралия,,,2,2025,0,INTERNAL_SELECTION,TODO: перевести,
+AT,Austria,Австрия,HOST,3,,2025,3,PUBLIC_CONTEST,TODO: перевести,"Австрия победила в прошлом году, набрав также топ-1 голосов среди жюри.
+В этом году Австрия принимает Евровидение в Вене."
+AU,Australia,Австралия,,,2,2025,0,INTERNAL_SELECTION,TODO: перевести,"В случае победы Австралии, Евровидение не пройдёт там, так как это будет неудобно для большинства европейских зрителей."
 AZ,Azerbaijan,Азербайджан,,,3,2025,1,INTERNAL_SELECTION,TODO: перевести,
 BE,Belgium,Бельгия,,,2,2025,1,INTERNAL_SELECTION,TODO: перевести,Бельгийского участника выбирают по очереди валлонский броадкастер RTBF и фламандский броадкастер VRT. В прошлом году любимец фанатов фламандец Red Sebastian не смог пройти в финал. В этом году пришла очередь Валлонии.
 BG,Bulgaria,Болгария,,,1,2022,0,PUBLIC_CONTEST,TODO: перевести,
 CH,Switzerland,Швейцария,,5,,2025,3,INTERNAL_SELECTION,TODO: перевести,"В 2024 году Швейцария выиграла, набрав больше всех голосов жюри.
 В 2025 году Швейцария стала топ-2 по голосам жюри, но при этом набрала 0 голосов зрителей."
-CY,Cyprus,Кипр,,,1,2025,0,INTERNAL_SELECTION,TODO: перевести,
+CY,Cyprus,Кипр,,,1,2025,0,INTERNAL_SELECTION,TODO: перевести,"По традиции, Кипр почти всегда отдаёт 12 баллов Греции"
 CZ,Czechia,Чехия,,,2,2025,0,INTERNAL_SELECTION,TODO: перевести,
 DE,Germany,Германия,BIG_FIVE,,,2025,2,PUBLIC_CONTEST,TODO: перевести,
 DK,Denmark,Дания,,1,,2025,3,PUBLIC_CONTEST,TODO: перевести,
@@ -21,18 +22,18 @@ GR,Greece,Греция,,2,,2025,1,PUBLIC_CONTEST,TODO: перевести,
 HR,Croatia,Хорватия,,,1,2025,0,PUBLIC_CONTEST,TODO: перевести,
 IL,Israel,Израиль,,3,,2025,4,PUBLIC_CONTEST,TODO: перевести,"Из-за участия Израиля в этом году Ирландия, Исландия, Испания, Нидерланды и Словения бойкотируют Евровидение.
 В прошлом году Израиль набрал больше всех зрительских голосов."
-IT,Italy,Италия,BIG_FIVE,,,2025,3,PUBLIC_CONTEST,TODO: перевести,
+IT,Italy,Италия,BIG_FIVE,,,2025,3,PUBLIC_CONTEST,TODO: перевести,"Последний раз, когда Италия не попала в топ-7, был в 2016 году."
 LT,Lithuania,Литва,,5,,2025,0,PUBLIC_CONTEST,TODO: перевести,
-LU,Luxembourg,Люксембург,,2,,2025,5,PUBLIC_CONTEST,TODO: перевести,
+LU,Luxembourg,Люксембург,,2,,2025,5,PUBLIC_CONTEST,TODO: перевести,"Люксембург был очень сильной страной в XX веке, но сделал большой перерыв с 1995 до 2023 года."
 LV,Latvia,Латвия,,2,,2025,1,PUBLIC_CONTEST,TODO: перевести,
-MD,Moldova,Молдова,,,1,2024,0,PUBLIC_CONTEST,TODO: перевести,
+MD,Moldova,Молдова,,,1,2024,0,PUBLIC_CONTEST,TODO: перевести,"Молдова — любимчик фанатов, делает упор не на сильный вокал, а на весёлые и живые песни."
 ME,Montenegro,Черногория,,,6,2025,0,PUBLIC_CONTEST,TODO: перевести,
 MT,Malta,Мальта,,1,,2025,0,PUBLIC_CONTEST,TODO: перевести,
 NO,Norway,Норвегия,,8,,2025,3,PUBLIC_CONTEST,TODO: перевести,"Норвегию в этом году мог представлять Александр Рыбак, выигравший в 2009 году. Однако в этот раз он занял второе место в национальном отборе"
-PL,Poland,Польша,,1,,2025,0,PUBLIC_CONTEST,TODO: перевести,
+PL,Poland,Польша,,1,,2025,0,PUBLIC_CONTEST,TODO: перевести,Среди фанатов Польша славится избыточными спецэффектами и сексуализацией на сцене
 PT,Portugal,Португалия,,5,,2025,1,PUBLIC_CONTEST,TODO: перевести,Португалия на Евровидении часто очень отличается по звучанию от других. Эта страна выбирает мелодичные спокойные песни на португальском
 RO,Romania,Румыния,,,1,2023,0,PUBLIC_CONTEST,TODO: перевести,
 RS,Serbia,Сербия,,,1,2025,1,PUBLIC_CONTEST,TODO: перевести,
-SE,Sweden,Швеция,,11,,2025,7,PUBLIC_CONTEST,TODO: перевести,
+SE,Sweden,Швеция,,11,,2025,7,PUBLIC_CONTEST,TODO: перевести,Швеция считается одной из самых сильных стран в истории Евровидения
 SM,San Marino,Сан Марино,,1,,2025,0,PUBLIC_CONTEST,TODO: перевести,
 UA,Ukraine,Украина,,15,,2025,3,PUBLIC_CONTEST,TODO: перевести,Украина участвовала в 15 полуфиналах и все 15 раз проходила в финал.

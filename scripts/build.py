@@ -49,6 +49,14 @@ def _config_lang_value(config: dict[str, Any], key: str, lang: Lang) -> str:
     return str(block.get(lang) or "").strip()
 
 
+def _regional_flag_emoji(iso2: str) -> str:
+    """ISO 3166-1 alpha-2 → regional-indicator flag emoji (e.g. SE → 🇸🇪). Empty if invalid."""
+    s = (iso2 or "").strip().upper()
+    if len(s) != 2 or not s.isalpha():
+        return ""
+    return "".join(chr(0x1F1E6 + ord(c) - ord("A")) for c in s)
+
+
 @dataclass(frozen=True)
 class EntryView:
     country_code: str
@@ -93,6 +101,8 @@ class EntryView:
     context_tag: str
     number_label: str
     vote_label: str
+    # UTF-8 flag emoji for TOC only (not TeX-escaped; rendered via \\TocFlagEmoji).
+    toc_flag_emoji: str
 
 
 def _read_json(path: Path) -> Any:
@@ -128,6 +138,76 @@ def _safe_tex_multiline(s: str) -> str:
     # Use paragraph breaks instead of "\\" to avoid "There's no line here to end"
     # in cases where the final rendered line break lands in vertical mode.
     return s.replace("\n", "\\par\n")
+
+
+_INTRO_BULLET_LINE = re.compile(r"^\s*\*\s+(.+)$")
+
+# Sheet convention: lines like "* 12 May — …" are rendered as a styled LaTeX list.
+def _intro_text_to_tex(raw: str) -> str:
+    if not raw or not str(raw).strip():
+        return ""
+    text = str(raw).replace("\r\n", "\n").replace("\r", "\n")
+    lines = text.split("\n")
+    # Blocks: ("p", [lines...]) for plain paragraphs, ("ul", [item strings...]) for * lists.
+    blocks: list[tuple[str, list[str]]] = []
+    para: list[str] = []
+    lst: list[str] | None = None
+
+    def flush_para() -> None:
+        nonlocal para
+        if para:
+            blocks.append(("p", list(para)))
+            para = []
+
+    def flush_list() -> None:
+        nonlocal lst
+        if lst is not None:
+            blocks.append(("ul", list(lst)))
+            lst = None
+
+    for line in lines:
+        m = _INTRO_BULLET_LINE.match(line)
+        if m is not None:
+            flush_para()
+            if lst is None:
+                lst = []
+            lst.append(m.group(1).strip())
+            continue
+        if not line.strip():
+            flush_para()
+            flush_list()
+            continue
+        flush_list()
+        para.append(line.strip())
+    flush_para()
+    flush_list()
+
+    if not blocks:
+        return ""
+    out: list[str] = []
+    last: str | None = None
+    for kind, chunk in blocks:
+        if not chunk:
+            continue
+        if kind == "p":
+            if last == "p":
+                out.append("\\vspace{0.5em}\n")
+            elif last == "ul":
+                out.append("\\vspace{0.55em}\n")
+            for ln in chunk:
+                out.append(_safe_tex(ln) + "\\par\n")
+            last = "p"
+        else:
+            if last == "p":
+                out.append("\\vspace{0.55em}\n")
+            elif last == "ul":
+                out.append("\\vspace{0.4em}\n")
+            out.append("\\begin{IntroItemize}\n")
+            for it in chunk:
+                out.append("\\item " + _safe_tex(it) + "\n")
+            out.append("\\end{IntroItemize}\n")
+            last = "ul"
+    return "".join(out).rstrip()
 
 
 def _safe_tex_lines(s: str) -> list[str]:
@@ -697,7 +777,7 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
     if not intro_raw:
         intro_raw = str((config.get("about_text") or {}).get(lang) or "").strip()
     cover_subtitle = _safe_tex_multiline(cover_subtitle_raw) if cover_subtitle_raw else ""
-    intro_text = _safe_tex_multiline(intro_raw) if intro_raw else ""
+    intro_text = _intro_text_to_tex(intro_raw) if intro_raw else ""
 
     entries: list[EntryView] = []
     for s in songs_included:
@@ -860,6 +940,7 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
                 context_tag=_safe_tex(context_tag),
                 number_label=_safe_tex(number_label),
                 vote_label=_safe_tex(vote_label),
+                toc_flag_emoji=_regional_flag_emoji(cc),
             )
         )
 
