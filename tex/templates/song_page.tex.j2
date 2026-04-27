@@ -28,77 +28,77 @@
 \tolerance=3000
 % --- Artist -------------------------------------------------------------
 \begin{infopanel}{ {{ L_ABOUT_ARTIST }} }
-\setstretch{1.22}\RaggedRight
+\setstretch{1.06}\RaggedRight
 {% if e.photo_path %}
 \begin{minipage}[t]{\linewidth}\vspace*{0pt}
 \includegraphics[width=\linewidth, height=44mm, keepaspectratio]{ {{ e.photo_path }} }
 \end{minipage}
-\par\vspace{2.2mm}
+\par\vspace{1.45mm}
 {% endif %}
 \begin{minipage}[t]{\linewidth}\vspace*{0pt}
 {% for line in e.artist_name_lines %}
 {\InfoNameLine{ {{ line }} }}\par
-{% if not loop.last %}\vspace{0.3mm}{% endif %}
+{% if not loop.last %}\vspace{0.10mm}{% endif %}
 {% endfor %}
-{% if e.artist_birth_name_lines %}\vspace{-0.30\baselineskip}{% endif %}
+{% if e.artist_birth_name_lines %}\vspace{-0.42\baselineskip}{% endif %}
 {% for line in e.artist_birth_name_lines %}
 {\scriptsize\Muted{\InfoMixedBody{ {{ line }} }}}\par
-{% if not loop.last %}\vspace{-0.24\baselineskip}{% endif %}
+{% if not loop.last %}\vspace{-0.34\baselineskip}{% endif %}
 {% endfor %}
 {% if e.artist_birth_year or e.artist_birth_place or e.artist_grew_up or e.artist_lgbtq %}
-\vspace{1.1mm}\par
+\vspace{0.55mm}\par
 {% elif e.artist_birth_name_lines %}
-\vspace{0.6mm}\par
+\vspace{0.32mm}\par
 {% endif %}
 {% if e.artist_birth_year %}{\scriptsize\Muted{ {{ L_BORN }}\,{{ e.artist_birth_year }} }}\par{% endif %}
 {% if e.artist_birth_place %}{\scriptsize\Muted{\PlaceMarker\,\InfoMixedBody{ {{ e.artist_birth_place }} }}}\par{% endif %}
 {% if e.artist_grew_up and e.artist_grew_up != e.artist_birth_place %}{\scriptsize\Muted{\textrightarrow\,\InfoMixedBody{ {{ e.artist_grew_up }} }}}\par{% endif %}
-{% if e.artist_lgbtq %}\vspace{1.2mm}\LgbtqPill{ {{ e.artist_lgbtq }} }\par{% endif %}
+{% if e.artist_lgbtq %}\vspace{0.62mm}\LgbtqPill{ {{ e.artist_lgbtq }} }\par{% endif %}
 \end{minipage}
-{% if e.bio_lines %}\par\vspace{2.2mm}\scriptsize\setstretch{1.20}\RaggedRight
+{% if e.bio_lines %}\par\vspace{1.45mm}\scriptsize\setstretch{1.06}\RaggedRight
 {% for line in e.bio_lines %}\FactChip{ {{ line }} }
 {% endfor %}{% endif %}
 \end{infopanel}
-\par\vspace{2.8mm}
+\par\vspace{1.85mm}
 % --- Country ------------------------------------------------------------
 \begin{infopanel}{ {{ L_ABOUT_COUNTRY }} }
-\scriptsize\setstretch{1.25}\RaggedRight
+\scriptsize\setstretch{1.06}\RaggedRight
 {% if e.qualify_percent or e.win_percent %}
 {\scriptsize\Muted{ {{ L_BOOKIES }} }}\par
-\vspace{1.0mm}\par
-{% if e.qualify_percent %}\ProbPill{ {{ L_QUALIFY }} }{ {{ e.qualify_percent }} }{% if e.win_percent %}\hspace{1.6mm}{% endif %}{% endif %}
+\vspace{0.52mm}\par
+{% if e.qualify_percent %}\ProbPill{ {{ L_QUALIFY }} }{ {{ e.qualify_percent }} }{% if e.win_percent %}\hspace{0.95mm}{% endif %}{% endif %}
 {% if e.win_percent %}\ProbPill{ {{ L_WIN }} }{ {{ e.win_percent }} }{% endif %}
 \par
 {% endif %}
 {% if e.country_stats_lines %}
-\vspace{1.6mm}\par
+\vspace{0.92mm}\par
 {% for s in e.country_stats_lines %}{\color{BookletAccent!50}\textbullet}\,{\Muted{ {{ s }} }}\par
 {% endfor %}
 {% endif %}
-{% if e.selection_tag %}\vspace{1.4mm}\MetaPill{ {{ e.selection_tag }} }\par{% endif %}
-{% if e.country_facts_lines %}\vspace{2.0mm}\par\setstretch{1.20}\RaggedRight
+{% if e.selection_tag %}\vspace{0.72mm}\MetaPill{ {{ e.selection_tag }} }\par{% endif %}
+{% if e.country_facts_lines %}\vspace{1.25mm}\par\setstretch{1.06}\RaggedRight
 {% for line in e.country_facts_lines %}\FactChip{ {{ line }} }
 {% endfor %}{% endif %}
 \end{infopanel}
-\par\vspace{2.8mm}
+\par\vspace{1.85mm}
 % --- Song ---------------------------------------------------------------
 \begin{infopanel}{ {{ L_ABOUT_SONG }} }
-\setstretch{1.22}\RaggedRight
+\setstretch{1.06}\RaggedRight
 {\InfoNameLine{ {{ e.song_title }} }}\par
-{% if e.song_title_translation %}\vspace{-0.30\baselineskip}{\scriptsize\Muted{\InfoMixedBody{ {{ e.song_title_translation }} }}}\par{% endif %}
+{% if e.song_title_translation %}\vspace{-0.38\baselineskip}{\scriptsize\Muted{\InfoMixedBody{ {{ e.song_title_translation }} }}}\par{% endif %}
 {% if e.langs_major or e.langs_minor %}
-\vspace{1.8mm}\par\noindent
-\raisebox{0.05ex}{\SongLangIcon}\hspace{2.0mm}%
-{% for t in e.langs_major %}\MetaPill{ {{ t }} }\hspace{1.2mm}{% endfor %}{% for t in e.langs_minor %}\MetaPillMuted{ {{ t }} }\hspace{1.2mm}{% endfor %}
+\vspace{1.05mm}\par\noindent
+\raisebox{0.05ex}{\SongLangIcon}\hspace{1.5mm}%
+{% for t in e.langs_major %}\MetaPill{ {{ t }} }\hspace{0.68mm}{% endfor %}{% for t in e.langs_minor %}\MetaPillMuted{ {{ t }} }\hspace{0.68mm}{% endfor %}
 \par
 {% endif %}
 {% if e.genres %}
-\vspace{1.4mm}\par\noindent
-\raisebox{0.05ex}{\SongGenreIcon}\hspace{2.0mm}%
-{% for t in e.genres %}\MetaPill{ {{ t }} }\hspace{1.2mm}{% endfor %}
+\vspace{0.78mm}\par\noindent
+\raisebox{0.05ex}{\SongGenreIcon}\hspace{1.5mm}%
+{% for t in e.genres %}\MetaPill{ {{ t }} }\hspace{0.68mm}{% endfor %}
 \par
 {% endif %}
-{% if e.facts_lines %}\vspace{2.0mm}\par\scriptsize\setstretch{1.20}\RaggedRight
+{% if e.facts_lines %}\vspace{1.25mm}\par\scriptsize\setstretch{1.06}\RaggedRight
 {% for line in e.facts_lines %}\FactChip{ {{ line }} }
 {% endfor %}{% endif %}
 \end{infopanel}

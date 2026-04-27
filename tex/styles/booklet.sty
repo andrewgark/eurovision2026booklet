@@ -178,7 +178,7 @@
   \begin{tikzpicture}[baseline=(p.base)]
     \node[
       fill=#1, text=#2, rounded corners=1.8pt,
-      inner xsep=3.5pt, inner ysep=1pt,
+      inner xsep=2.9pt, inner ysep=0.68pt,
       font=\sffamily\scriptsize\bfseries
     ] (p) {#3};
   \end{tikzpicture}%
@@ -211,9 +211,9 @@
       \node[
         fill=BookletQueer!12, draw=BookletQueer!45, line width=0.3pt,
         text=BookletQueer!75!black, rounded corners=2pt,
-        inner xsep=4pt, inner ysep=1.4pt,
+        inner xsep=3.1pt, inner ysep=0.82pt,
         font=\InfoColumnFont\selectfont\scriptsize\bfseries
-      ] (p) {\RainbowEmoji\hspace{2.4pt}#1};
+      ] (p) {\RainbowEmoji\hspace{1.65pt}#1};
     \end{tikzpicture}%
   }%
 }
@@ -277,7 +277,7 @@
 \newcommand{\HeroBand}[5]{%
   \begin{tcolorbox}[
     enhanced, sharp corners, colback=BookletAccent, colframe=BookletAccent,
-    left=4.6mm, right=4.6mm, top=3.0mm, bottom=3.0mm, boxrule=0pt,
+    left=4.6mm, right=4.6mm, top=2.7mm, bottom=2.7mm, boxrule=0pt,
     borderline north={1.0pt}{0pt}{BookletAccent2},
   ]
     \color{white}
@@ -292,23 +292,31 @@
       \begin{minipage}[c]{\dimexpr0.88\linewidth-4mm\relax}%
         {\sffamily\fontsize{21pt}{23pt}\selectfont\bfseries\MixedBody{#2}}\par
         \ifblank{#3}{}{%
-          \vspace{1.2mm}%
+          \vspace{0.95mm}%
           {\sffamily\small\color{white!80}\MixedBody{#3}}\par
         }%
       \end{minipage}%
     }{%
-      \begin{minipage}[c]{0.58\linewidth}%
+      \begin{minipage}[c]{0.52\linewidth}%
         {\sffamily\fontsize{21pt}{23pt}\selectfont\bfseries\MixedBody{#2}}\par
         \ifblank{#3}{}{%
-          \vspace{1.2mm}%
+          \vspace{0.95mm}%
           {\sffamily\small\color{white!80}\MixedBody{#3}}\par
         }%
       \end{minipage}\hfill%
-      \begin{minipage}[c]{0.22\linewidth}%
+      % Vote word + running number: `m` columns vertically center the smaller
+      % label against the tall digit; a wider pane fits ``Голосовать'' on one line.
+      \begin{minipage}[c]{0.28\linewidth}%
         \raggedleft
-        {\sffamily\fontsize{15.5pt}{18.5pt}\selectfont\bfseries\color{BookletGold} #5}%
-        \hspace{2.4mm}%
-        {\sffamily\fontsize{26pt}{28pt}\selectfont\bfseries\color{BookletGold} #4}%
+        \begin{tabular}{@{}%
+          >{\sffamily\bfseries\color{BookletGold}\raggedleft\arraybackslash}%
+            m{\dimexpr\linewidth-2.85em\relax}%
+          @{\hspace{2.4mm}}%
+          >{\sffamily\bfseries\color{BookletGold}\centering\arraybackslash}%
+            m{2.85em}@{}}
+          \fontsize{15.5pt}{18.5pt}\selectfont #5 &
+          \fontsize{26pt}{28pt}\selectfont #4
+        \end{tabular}%
       \end{minipage}%
     }%
   \end{tcolorbox}%
@@ -323,9 +331,9 @@
     \begin{tikzpicture}[baseline=(pill.base)]
       \node[
         fill=BookletGold, text=BookletInk, rounded corners=2pt,
-        inner xsep=5pt, inner ysep=2.4pt,
+        inner xsep=4.0pt, inner ysep=1.55pt,
         font=\InfoColumnFont\selectfont\bfseries\small
-      ] (pill) {{\scriptsize #1}\hspace{3pt}#2};
+      ] (pill) {{\scriptsize #1}\hspace{2.1pt}#2};
     \end{tikzpicture}%
   }%
 }
@@ -337,7 +345,7 @@
     \begin{tikzpicture}[baseline=(p.base)]
       \node[
         draw=BookletRule, line width=0.3pt, fill=BookletSoft, text=BookletInk,
-        rounded corners=2pt, inner xsep=4pt, inner ysep=1.2pt,
+        rounded corners=2pt, inner xsep=3.15pt, inner ysep=0.75pt,
         font=\InfoColumnFont\selectfont\scriptsize
       ] (p) {#1};
     \end{tikzpicture}%
@@ -350,7 +358,7 @@
     \begin{tikzpicture}[baseline=(p.base)]
       \node[
         draw=BookletRule, line width=0.3pt, fill=BookletSoft, text=BookletMuted,
-        rounded corners=2pt, inner xsep=4pt, inner ysep=1.2pt,
+        rounded corners=2pt, inner xsep=3.15pt, inner ysep=0.75pt,
         font=\InfoColumnFont\selectfont\scriptsize
       ] (p) {#1};
     \end{tikzpicture}%
@@ -385,16 +393,16 @@
 \newtcolorbox{infopanel}[1]{%
   enhanced, arc=2.4pt,
   colback=BookletSoft, colframe=BookletRule,
-  boxrule=0.3pt, left=2.8mm, right=2.2mm, top=3.0mm, bottom=3.2mm,
+  boxrule=0.3pt, left=2.8mm, right=2.2mm, top=2.35mm, bottom=2.45mm,
   baseline=0pt, before=\noindent, after=\relax,
   % Ragged like the outer \RaggedRight (tcolorbox’s default is justified).
   halign=flush left,
   fonttitle={\InfoColumnFont\selectfont\footnotesize\bfseries\color{BookletAccent}},
   title={#1},
   coltitle=BookletAccent,
-  attach boxed title to top left={yshift=-2.4pt, xshift=2.6mm},
+  attach boxed title to top left={yshift=-2.1pt, xshift=2.5mm},
   boxed title style={colback=white, colframe=white, sharp corners,
-    size=minimal, top=0.5pt, bottom=0pt, left=2.4pt, right=2.4pt}
+    size=minimal, top=0.35pt, bottom=0pt, left=2.1pt, right=2.1pt}
 }
 
 % \FactChip{text} — a single-line "fact card" rendered as a tiny rounded
@@ -408,8 +416,8 @@
   % Full panel width: wrapping matches the infopanel; tight inner padding on the
   % right so lines do not end short of the card edge.
   width=\linewidth,
-  left=2.2pt, right=1.4pt, top=1.8pt, bottom=2.2pt,
-  before skip=0pt, after skip=1.4mm,
+  left=2.0pt, right=1.3pt, top=1.15pt, bottom=1.45pt,
+  before skip=0pt, after skip=0.78mm,
   baseline=0pt, before=\noindent, after=\relax,
   halign=flush left,
   % Song page only: match \InfoColumnFont so tcolorbox does not force \sffamily.
@@ -467,11 +475,11 @@
 % A bit more generous than line spacing so stanza boundaries are visually
 % distinct from line breaks.
 \newcommand{\LyricsGap}{%
-  \noalign{\vspace{1.9mm}}%
+  \noalign{\vspace{1.65mm}}%
 }
 
 \newcommand{\LyricsSoloGap}{%
-  \noalign{\vspace{1.9mm}}%
+  \noalign{\vspace{1.65mm}}%
 }
 
 % Lyrics block header sitting at the top of the right column.
@@ -487,17 +495,17 @@
     \MixedBody{#1} & \MixedBody{#2}%
   \end{tabularx}%
   \endgroup\par
-  \vspace{1.4mm}%
+  \vspace{1.15mm}%
   {\color{BookletAccent!30}\rule{\linewidth}{0.3pt}}\par
-  \vspace{2.6mm}%
+  \vspace{2.25mm}%
 }
 
 % \LyricsHeaderSolo{title} — same look, single column for solo (no-translation) songs.
 \newcommand{\LyricsHeaderSolo}[1]{%
   {\sffamily\footnotesize\bfseries\color{BookletAccent}\MixedBody{#1}}\par
-  \vspace{1.4mm}%
+  \vspace{1.15mm}%
   {\color{BookletAccent!30}\rule{\linewidth}{0.3pt}}\par
-  \vspace{2.6mm}%
+  \vspace{2.25mm}%
 }
 
 %% ---- Song page scaffold (force one country per page) ---------------------
@@ -526,7 +534,7 @@
   % when the left column and/or wrapped lyrics are taller (common in RU).
   \vbox{%
     #1\par
-    \vspace{2.2mm}%
+    \vspace{1.85mm}%
     \noindent
     % Iteration 1: widen info column (was 0.275) — fewer short, high-badness
     % lines. Lyrics column and Python wrap budgets are adjusted to match.
