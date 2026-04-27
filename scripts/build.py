@@ -571,13 +571,41 @@ def _country_stats_lines(c: dict[str, Any], lang: Lang, current_year: int) -> li
     return parts
 
 
+def _parse_lgbtq_tag(raw: str) -> tuple[str, str]:
+    """Split `lgbt` field into a known uppercase tag and optional suffix, e.g. ``BISEXUAL (Pete)``."""
+    s = (raw or "").strip()
+    if not s:
+        return ("", "")
+    u = s.upper()
+    # Longer tags first (BI is a prefix of BISEXUAL).
+    for tag in ("BISEXUAL", "QUEER", "GAY", "LESBIAN", "BI", "TRANS"):
+        if u.startswith(tag) and (len(s) == len(tag) or not s[len(tag) : len(tag) + 1].isalnum()):
+            extra = s[len(tag) :].strip()
+            return (tag, f" {extra}" if extra else extra)
+    return ("", s)
+
+
 def _lgbtq_label(value: str, lang: Lang) -> str:
     """Localized, sentence-case label for the LGBTQ tag (e.g. Квир/Гей, Queer/Gay)."""
     v = (value or "").upper().strip()
     if not v:
         return ""
-    table_ru = {"QUEER": "Квир", "GAY": "Гей", "LESBIAN": "Лесбиянка", "BI": "Би", "TRANS": "Транс"}
-    table_en = {"QUEER": "Queer", "GAY": "Gay", "LESBIAN": "Lesbian", "BI": "Bi", "TRANS": "Trans"}
+    table_ru = {
+        "QUEER": "Квир",
+        "GAY": "Гей",
+        "BISEXUAL": "Бисексуал",
+        "LESBIAN": "Лесбиянка",
+        "BI": "Би",
+        "TRANS": "Транс",
+    }
+    table_en = {
+        "QUEER": "Queer",
+        "GAY": "Gay",
+        "BISEXUAL": "Bisexual",
+        "LESBIAN": "Lesbian",
+        "BI": "Bi",
+        "TRANS": "Trans",
+    }
     if lang == "ru":
         return table_ru.get(v, v.title())
     return table_en.get(v, v.title())
@@ -804,8 +832,11 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
         artist_grew_up = (a.get("place_growup", {}) or {}).get(lang, "") or ""
         if artist_grew_up.strip() and artist_grew_up.strip() == artist_birth_place.strip():
             artist_grew_up = ""
-        lgbt_raw = (a.get("lgbt") or "").upper()
-        artist_lgbtq = _lgbtq_label(lgbt_raw, lang) if lgbt_raw in {"QUEER", "GAY"} else ""
+        lgbt_tag, lgbt_extra = _parse_lgbtq_tag(a.get("lgbt") or "")
+        if lgbt_tag in {"QUEER", "GAY", "BISEXUAL"}:
+            artist_lgbtq = _lgbtq_label(lgbt_tag, lang) + lgbt_extra
+        else:
+            artist_lgbtq = ""
 
         langs_major = _split_csv_tokens((s.get("langs", {}) or {}).get(lang, "") or "")
         langs_minor = _split_csv_tokens((s.get("langs_minor", {}) or {}).get(lang, "") or "")
