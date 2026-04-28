@@ -406,6 +406,7 @@ def pull_booklet(
                 "country_code": code,
                 "song_title": title,
                 "song_title_en": title_en,
+                "song_title_translation_en": _nonempty(r["song_title_translation_en"]),
                 "song_title_ru": title_ru,
                 "lyrics_original": r.get("lyrics_original", "") or "",
                 "translation_en": r.get("lyrics_en", "") or "",

@@ -75,9 +75,16 @@
 
 \setdefaultlanguage{english}
 \setotherlanguage{russian}
-% Hebrew RTL in lyrics: avoid polyglossia's `hebrew` (it pulls in `luabidi`, not always
-% installed). LuaTeX's \textdir is enough for correct glyph order in \LyricsFont.
-\newcommand{\HebrewRun}[1]{\begingroup\LyricsFont\selectfont\textdir TRT #1\endgroup}
+% Hebrew in lyrics: LuaHBTeX needs Script=Hebrew + HarfBuzz for correct shaping; \LyricsFont
+% alone with \textdir TRT often reverses word order. Same Condensed family with explicit script.
+\newfontfamily{\HebrewLyricsFont}{DejaVu Sans Condensed}[Renderer=HarfBuzz,Script=Hebrew]
+\newcommand{\HebrewRun}[1]{%
+  \begingroup
+  \pardir TRT\textdir TRT
+  \HebrewLyricsFont\selectfont
+  #1%
+  \endgroup
+}
 
 %% ---- Design tokens ---------------------------------------------------------
 \definecolor{BookletInk}{HTML}{141922}         % deep near-black for body

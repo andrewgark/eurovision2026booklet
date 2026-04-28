@@ -88,6 +88,7 @@ class SongModel(BaseModel):
 
     song_title: str = Field(min_length=1)
     song_title_en: str = ""
+    song_title_translation_en: str = ""
     song_title_ru: str = ""
 
     lyrics_original: str = ""

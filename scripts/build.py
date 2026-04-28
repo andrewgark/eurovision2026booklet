@@ -258,33 +258,76 @@ def _is_hebrew_script_char(ch: str) -> bool:
     return False
 
 
+def _neutral_between_hebrew_words(c: str) -> bool:
+    """Space/punctuation/digits that belong inside one RTL Hebrew sentence."""
+    o = ord(c)
+    if c in " \t":
+        return True
+    if c in ",.;:!?'\"()[]{}«»–—":
+        return True
+    if o == 0x200C or o == 0x200D:  # ZWJ / ZWNJ
+        return True
+    if c.isdigit():
+        return True
+    return False
+
+
+def _is_latin_lyrics_letter(c: str) -> bool:
+    """Letters for FR/EN lyric lines (boundary before switching back to Hebrew)."""
+    if len(c) != 1:
+        return False
+    if _is_hebrew_script_char(c):
+        return False
+    return c.isalpha()
+
+
+def _find_hebrew_cluster_end(ol: str, first_hebrew: int) -> int:
+    """Exclusive end index of one Hebrew cluster; ``ol[first_hebrew]`` must be Hebrew."""
+    n = len(ol)
+    j = first_hebrew + 1
+    while j < n:
+        if _is_hebrew_script_char(ol[j]):
+            j += 1
+            continue
+        if _neutral_between_hebrew_words(ol[j]):
+            k = j
+            while k < n and _neutral_between_hebrew_words(ol[k]):
+                k += 1
+            if k >= n:
+                return n
+            if _is_hebrew_script_char(ol[k]):
+                j = k + 1
+                continue
+            if _is_latin_lyrics_letter(ol[k]):
+                return k
+            break
+        break
+    return j
+
+
 def _lyrics_orig_line_tex(ol: str) -> str:
     """TeX-escape an original-lyrics line; wrap Hebrew runs in ``\\HebrewRun`` for RTL."""
     if not any(_is_hebrew_script_char(c) for c in ol):
         return _safe_tex(ol)
-    segs: list[tuple[str, bool]] = []
-    buf: list[str] = []
-    current: bool | None = None
-    for c in ol:
-        h = _is_hebrew_script_char(c)
-        if current is None:
-            current = h
-            buf.append(c)
-        elif h == current:
-            buf.append(c)
-        else:
-            segs.append(("".join(buf), current))
-            buf = [c]
-            current = h
-    if buf:
-        segs.append(("".join(buf), current if current is not None else False))
+
     parts: list[str] = []
-    for text, is_heb in segs:
-        t = _safe_tex(text)
-        if is_heb:
-            parts.append("\\HebrewRun{" + t + "}")
+    i = 0
+    n = len(ol)
+    while i < n:
+        fh = next((idx for idx in range(i, n) if _is_hebrew_script_char(ol[idx])), None)
+        if fh is None:
+            parts.append(_safe_tex(ol[i:]))
+            break
+        if fh > i:
+            mid = ol[i:fh]
+            if mid and not all(_neutral_between_hebrew_words(c) for c in mid):
+                parts.append(_safe_tex(mid))
+            cluster_start = i if mid and all(_neutral_between_hebrew_words(c) for c in mid) else fh
         else:
-            parts.append(t)
+            cluster_start = fh
+        he = _find_hebrew_cluster_end(ol, fh)
+        parts.append("\\HebrewRun{" + _safe_tex(ol[cluster_start:he]) + "}")
+        i = he
     return "".join(parts)
 
 
@@ -950,13 +993,23 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
 
         vote_label = L_VOTE if number_label else ""
 
-        song_title_original = (
-            s.get("song_title") or s.get("song_title_en") or s.get("song_title_ru") or ""
+        base_title = (
+            (s.get("song_title") or s.get("song_title_en") or s.get("song_title_ru") or "")
+            .strip()
         )
-        song_title_translated = (
-            s.get("song_title_ru") if lang == "ru" else s.get("song_title_en")
-        ) or ""
-        if song_title_translated.strip() == song_title_original.strip():
+        roman = str(s.get("song_title_en") or "").strip()
+        if roman and roman != base_title:
+            song_title_original = f"{base_title} ({roman})"
+        else:
+            song_title_original = base_title
+
+        if lang == "ru":
+            song_title_translated = str(s.get("song_title_ru") or "").strip()
+        else:
+            song_title_translated = str(s.get("song_title_translation_en") or "").strip()
+
+        st = song_title_translated
+        if not st or st == base_title or st == song_title_original.strip():
             song_title_translated = ""
 
         artist_name_fallback = str(a.get("artist_name", "") or "")
