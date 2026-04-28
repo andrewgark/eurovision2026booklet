@@ -372,8 +372,8 @@
       "ru": "Пете занял 3-е место в Idol.\nЛинда Брава — одна из самых возрастных и уже успешных участниц этого года с почти полувековой карьерой.\nЛинда стала известной финской скрипачкой ещё в детстве в 1970-ые.\nЛинда исполняла камерную музыку по всему миру, включая многие благотворительные концерты.\nЛинда была моделью, играла в кино, жюрила X Factor, открыл производство сидра, написала книгу, участвовала в гонках, катается на горных лыжах, занимается боксом, дайвингом, стрельбой из лука и бальными танцами."
     },
     "facts": {
-      "en": "Type: DUO. Birth name: . Born: 1970, 1990. LGBTQ+: . Born in: . Grew up in: Helsinki and Pihtipudas.",
-      "ru": "Тип: DUO. Имя при рождении: . Год рождения: 1970, 1990. LGBTQ+: . Место рождения: . Вырос(ла): Хельсинки и Пихтипудас."
+      "en": "Type: DUO. Birth name: . Born: 1970, 1990. LGBTQ+: . Born in: Helsinki and Pihtipudas. Grew up in: .",
+      "ru": "Тип: DUO. Имя при рождении: . Год рождения: 1970, 1990. LGBTQ+: . Место рождения: Хельсинки и Пихтипудас. Вырос(ла): ."
     },
     "photo_file": "https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/linda_lampenius_x_pete_parkkonen_music_video_still_credit_nelli_kentta_lcyg46bjpg/Linda_Lampenius_x_Pete_Parkkonen_music_video_still_Credit_Nelli_kentta_LCYG46b-fill_size%3D2560x1600-focal_point%3D2546x913-focal_size%3D968x704-fill_size%3D2560x1600-focal_point%3D2546x913-focal_size%3D968x704.jpg",
     "artist_real_name": {
@@ -382,12 +382,12 @@
     },
     "year_born": "1970, 1990",
     "place_born": {
-      "en": "",
-      "ru": ""
-    },
-    "place_growup": {
       "en": "Helsinki and Pihtipudas",
       "ru": "Хельсинки и Пихтипудас"
+    },
+    "place_growup": {
+      "en": "",
+      "ru": ""
     },
     "lgbt": ""
   },
@@ -564,17 +564,17 @@
     "artist_name": "Sal Da Vinci",
     "artist_name_ru": "Саль да Винчи",
     "bio": {
-      "en": "The oldest participant this year.",
-      "ru": "Самый возрастной участник этого года"
+      "en": "The oldest participant this year.\nSon of Mario Da Vinci, a classical Neapolitan singer.\nHe has released 25 studio albums, 9 of them together with his father.",
+      "ru": "Самый возрастной участник этого года.\nСын Марио Да Винчи, классического неаполитанского певца.\nАвтор 25 студийных альбомов, 9 из которых совместно с отцом."
     },
     "facts": {
-      "en": "Type: SINGER. Birth name: . Born: 1969. LGBTQ+: . Born in: New York City, USA. Grew up in: Неаполь, Италия.",
-      "ru": "Тип: SINGER. Имя при рождении: . Год рождения: 1969. LGBTQ+: . Место рождения: Нью-Йорк, США. Вырос(ла): Naples, Italy."
+      "en": "Type: SINGER. Birth name: Salvatore Sorrentino. Born: 1969. LGBTQ+: . Born in: New York City, USA. Grew up in: Naples, Italy.",
+      "ru": "Тип: SINGER. Имя при рождении: Сальваторе Соррентино. Год рождения: 1969. LGBTQ+: . Место рождения: Нью-Йорк, США. Вырос(ла): Неаполь, Италия."
     },
     "photo_file": "https://www.raiplay.it/dl/img/2026/02/28/1772314075053_saldavinci-1152.jpg",
     "artist_real_name": {
-      "en": "",
-      "ru": ""
+      "en": "Salvatore Sorrentino",
+      "ru": "Сальваторе Соррентино"
     },
     "year_born": "1969",
     "place_born": {
@@ -582,8 +582,8 @@
       "ru": "Нью-Йорк, США"
     },
     "place_growup": {
-      "en": "Неаполь, Италия",
-      "ru": "Naples, Italy"
+      "en": "Naples, Italy",
+      "ru": "Неаполь, Италия"
     },
     "lgbt": ""
   },
@@ -873,7 +873,7 @@
     "artist_name_ru": "Лавина",
     "bio": {
       "en": "The band spent a long time looking for a name, until Andrija finally opened one of the books from The Witcher series and pointed to the word “avalanche”.",
-      "ru": "Группа долгно искала название, пока наконец Андрия не открыл одну из книг серии про Ведьмака и не показал на слово «лавина»."
+      "ru": "Группа долго искала название, пока наконец Андрия не открыл одну из книг серии про Ведьмака и не показал на слово «лавина»."
     },
     "facts": {
       "en": "Type: BAND. Birth name: Luka Aranđelović, Pavle Aranđelović, Pavle Samardžić, Andrija Cvetanović, Nikola Petrović, Bojan Ilić. Born: . LGBTQ+: . Born in: . Grew up in: .",
@@ -926,7 +926,7 @@
   {
     "country_code": "SM",
     "artist_name": "Senhit (feat. Boy George)",
-    "artist_name_ru": "Сенит",
+    "artist_name_ru": "Сенит (feat. Boy George)",
     "bio": {
       "en": "She has already represented San Marino in 2011, when she did not qualify for the final; in 2020, when the contest was cancelled; and in 2021, when she finished 22nd in the final.",
       "ru": "Уже представляла Сан-Марино в 2011 (не вышла в финал), в 2020 (конкурс отменили) и в 2021 (22 место в финале)."
@@ -953,7 +953,7 @@
   },
   {
     "country_code": "UA",
-    "artist_name": "s",
+    "artist_name": "Leléka",
     "artist_name_ru": "Лелека",
     "bio": {
       "en": "“Leleka” means “stork” in Ukrainian.\nBesides LELÉKA, she was known in 2024 as DONBA₴GRL.",
