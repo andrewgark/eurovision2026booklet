@@ -107,6 +107,26 @@ _RE_ODDS_COL = re.compile(
 )
 
 
+def _odds_wide_columns_from_header(row_keys: list[str]) -> list[str]:
+    """Wide `odds_*` columns from the sheet header; if several snapshot dates exist, keep only the newest."""
+    cols = [k for k in row_keys if k and _RE_ODDS_COL.match(k)]
+    if not cols:
+        return cols
+
+    def snapshot_ymd(name: str) -> tuple[str, str, str] | None:
+        m = _RE_ODDS_COL.match(name)
+        if not m:
+            return None
+        return (m.group("yyyy"), m.group("mm"), m.group("dd"))
+
+    dates = {snapshot_ymd(c) for c in cols}
+    dates.discard(None)
+    if not dates:
+        return cols
+    newest = max(dates)
+    return [c for c in cols if snapshot_ymd(c) == newest]
+
+
 def _download_csv_raw(spreadsheet_id: str, gid: str) -> str:
     url = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}/export"
     params = {"format": "csv", "gid": gid}
@@ -439,7 +459,7 @@ def pull_booklet(
     odds_rows = list(csv.DictReader(io.StringIO(tab_raw("Odds"))))
     odds: list[dict[str, Any]] = []
     if odds_rows:
-        odds_cols = [k for k in (odds_rows[0].keys() or []) if k and _RE_ODDS_COL.match(k)]
+        odds_cols = _odds_wide_columns_from_header(list(odds_rows[0].keys() or []))
         for r in odds_rows:
             cid = _to_iso2(r.get("country_id", "") or r.get("country_code", ""))
             if not cid:

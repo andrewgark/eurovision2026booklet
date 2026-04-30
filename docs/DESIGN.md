@@ -174,6 +174,8 @@ The booklet is generated from the `Eurovision Booklet Content` Google Sheet (see
 | `odds_<DD_MM_YYYY>_<BOOKMAKER>_qualify` | Block 2 — converted to *Qualify %* (round = `SF1` / `SF2`). |
 | `odds_type`, `country_name` | *Unused.* Informational only; the per-column suffix already encodes bet type and the join uses `country_id`. |
 
+When several snapshot dates exist on the same tab, `pull_sheets.py` keeps only the **newest** `DD_MM_YYYY` (for example `odds_30_04_2026_*` over `odds_23_04_2026_*`), so `odds.json` has a single row per country and round.
+
 ### 6.5 `Config` tab
 
 | Column | Render slot |
