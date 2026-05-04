@@ -36,6 +36,19 @@ VARIANT_INTRO_KEY: dict[Variant, str] = {
     "overall_post": "intro_text_post",
 }
 
+# LuaLaTeX output basename via `latexmk -jobname=` (distinct from `.tex` source name).
+_VARIANT_PDF_STEM: dict[Variant, str] = {
+    "overall_pre": "eurovision2026",
+    "overall_post": "eurovision2026_results",
+    "sf1": "eurovision2026_sf1",
+    "sf2": "eurovision2026_sf2",
+    "final": "eurovision2026_final",
+}
+
+
+def _pdf_jobname(variant: Variant, lang: Lang) -> str:
+    return f"{_VARIANT_PDF_STEM[variant]}_{lang}"
+
 
 def _config_lang_value(config: dict[str, Any], key: str, lang: Lang) -> str:
     block = config.get(key) or {}
@@ -1131,13 +1144,15 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
                 "latexmk not found. Install TeX Live + latexmk, or run without --run-latex to only generate .tex."
             )
         env_texinputs = f"{tex_styles_dir}{os.pathsep}" + os.environ.get("TEXINPUTS", "")
-        stem = f"booklet_{variant}_{lang}"
+        stem = _pdf_jobname(variant, lang)
+        legacy_tex_stem = f"booklet_{variant}_{lang}"
         # Clean per-variant intermediates so each run is deterministic and doesn't
         # reuse stale aux/log from previous (possibly errored) builds.
         for ext in ("aux", "log", "out", "fls", "fdb_latexmk", "synctex.gz", "toc", "pdf"):
-            p = build_dir / f"{stem}.{ext}"
-            if p.exists():
-                p.unlink()
+            for s in (stem, legacy_tex_stem):
+                p = build_dir / f"{s}.{ext}"
+                if p.exists():
+                    p.unlink()
         # Keep LuaTeX / fontspec / luaotfload caches inside the workspace so
         # builds are self-contained and don't fight external filesystem state.
         cache_dir = repo / ".texcache"
@@ -1149,7 +1164,13 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
             "TEXMFCACHE": str(cache_dir),
         }
         proc = subprocess.run(
-            ["latexmk", "-lualatex", "-interaction=nonstopmode", out_tex.name],
+            [
+                "latexmk",
+                "-lualatex",
+                "-interaction=nonstopmode",
+                f"-jobname={stem}",
+                out_tex.name,
+            ],
             cwd=str(build_dir),
             check=False,
             env=run_env,
