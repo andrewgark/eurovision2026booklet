@@ -444,6 +444,7 @@ def pull_booklet(
                 "number_f": _to_int(r.get("number_f", "") or ""),
                 "national_final_url": _nonempty(r["national_final_url"]),
                 "music_video_url": _nonempty(r["music_video_url"]),
+                "unofficial_live_url": _nonempty(r.get("unofficial_live_url", "") or ""),
                 "lyrics_size_modifier": _to_float(r.get("lyrics_size_modifier", "") or ""),
             }
         )

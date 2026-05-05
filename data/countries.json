@@ -62,8 +62,8 @@
       "ru": "Австрия"
     },
     "basic_stats": {
-      "en": "Austria won last year, also coming first in the jury vote.\nThis year, Austria is hosting Eurovision in Vienna.",
-      "ru": "Австрия победила в прошлом году, набрав также топ-1 голосов среди жюри.\nВ этом году Австрия принимает Евровидение в Вене."
+      "en": "Austria won the contest last year, finishing first in the jury vote. This year, Austria is hosting Eurovision in Vienna.",
+      "ru": "Австрия выиграла конкурс в прошлом году, заняв первое место по итогам голосования жюри. В этом году Австрия принимает Евровидение в Вене."
     },
     "eurovision_stats": {
       "en": "Auto-qualify: HOST. Qualify streak: 3. Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: PUBLIC_CONTEST.",
@@ -90,8 +90,8 @@
       "ru": "Австралия"
     },
     "basic_stats": {
-      "en": "If Australia wins, Eurovision will not be held there, as that would be inconvenient for most European viewers.",
-      "ru": "В случае победы Австралии, Евровидение не пройдёт там, так как это будет неудобно для большинства европейских зрителей."
+      "en": "If Australia wins, Eurovision will not be held there, because it would be inconvenient for most European viewers.",
+      "ru": "В случае победы Австралии, Евровидение не будет проводиться там, потому что это неудобно для большинства европейских зрителей."
     },
     "eurovision_stats": {
       "en": "Auto-qualify: . Qualify streak: . Non-qualify streak: 2. Last participation: 2025. Wins: 0. National selection: INTERNAL_SELECTION.",
@@ -202,8 +202,8 @@
       "ru": "Швейцария"
     },
     "basic_stats": {
-      "en": "In 2024, Switzerland won after receiving the highest score from the juries.\nIn 2025, Switzerland came second in the jury vote, but received 0 points from the viewers.",
-      "ru": "В 2024 году Швейцария выиграла, набрав больше всех голосов жюри.\nВ 2025 году Швейцария стала топ-2 по голосам жюри, но при этом набрала 0 голосов зрителей."
+      "en": "In 2024, Switzerland won the contest, becoming the leader of the jury vote. A year later, it once again became one of the jury favourites, finishing second, but received no televote points.",
+      "ru": "В 2024 году Швейцария выиграла конкурс, став лидером голосования жюри. Год спустя она вновь вошла в число фаворитов жюри, заняв второе место, но при этом не набрала ни одного зрительского балла."
     },
     "eurovision_stats": {
       "en": "Auto-qualify: . Qualify streak: 5. Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: INTERNAL_SELECTION.",
@@ -426,8 +426,8 @@
       "ru": "Великобритания"
     },
     "basic_stats": {
-      "en": "The United Kingdom has a large Eurovision fan base, but its songs are usually not very popular. British participants even joke themselves that they are going to Eurovision to receive 0 points.",
-      "ru": "В Великобритании большая фан-база конкурса, однако их песни обычно не пользуются популярностью, британские участники даже сами шутят, что едут получать 0 баллов"
+      "en": "In the United Kingdom, the contest has a large fan base, but the country’s songs are rarely popular. The phrase “0 points to the United Kingdom” has become a meme.",
+      "ru": "В Великобритании у конкурса большая фан-база, однако песни страны редко пользуются популярностью. Фраза «0 баллов Великобритании» стала мемом."
     },
     "eurovision_stats": {
       "en": "Auto-qualify: BIG_FIVE. Qualify streak: . Non-qualify streak: . Last participation: 2025. Wins: 5. National selection: INTERNAL_SELECTION.",
@@ -622,8 +622,8 @@
       "ru": "Люксембург"
     },
     "basic_stats": {
-      "en": "Luxembourg was a very strong Eurovision country in the 20th century, but then took a long break from 1995 to 2023.",
-      "ru": "Люксембург был очень сильной страной в XX веке, но сделал большой перерыв с 1995 до 2023 года."
+      "en": "In the 20th century, Luxembourg was one of the most successful participants, but from 1995 to 2023 the country was absent from the contest.",
+      "ru": "В XX веке Люксембург входил в число наиболее успешных участников, но в период с 1995 по 2023 год страна отсутствовала на конкурсе."
     },
     "eurovision_stats": {
       "en": "Auto-qualify: . Qualify streak: 2. Non-qualify streak: . Last participation: 2025. Wins: 5. National selection: PUBLIC_CONTEST.",
@@ -762,8 +762,8 @@
       "ru": "Норвегия"
     },
     "basic_stats": {
-      "en": "Norway could have been represented this year by Alexander Rybak, who won Eurovision in 2009. However, this time he finished second in the national selection.",
-      "ru": "Норвегию в этом году мог представлять Александр Рыбак, выигравший в 2009 году. Однако в этот раз он занял второе место в национальном отборе"
+      "en": "This year, Norway could have been represented by Alexander Rybak, the winner of the 2009 contest. However, this time he finished only second in the national selection.",
+      "ru": "В этом году Норвегию мог представить Александр Рыбак, победитель конкурса 2009 года. Однако на этот раз он занял лишь второе место в национальном отборе."
     },
     "eurovision_stats": {
       "en": "Auto-qualify: . Qualify streak: 8. Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: PUBLIC_CONTEST.",
@@ -818,8 +818,8 @@
       "ru": "Португалия"
     },
     "basic_stats": {
-      "en": "Portugal often sounds very different from other countries at Eurovision. It tends to choose melodic, calm songs in Portuguese.",
-      "ru": "Португалия на Евровидении часто очень отличается по звучанию от других. Эта страна выбирает мелодичные спокойные песни на португальском"
+      "en": "Portugal often sounds noticeably different from other Eurovision participants. The country often relies on melodic, calm songs in Portuguese.",
+      "ru": "Португалия на Евровидении часто заметно отличается по звучанию от других участников. Страна нередко делает ставку на мелодичные, спокойные песни на португальском языке."
     },
     "eurovision_stats": {
       "en": "Auto-qualify: . Qualify streak: 5. Non-qualify streak: . Last participation: 2025. Wins: 1. National selection: PUBLIC_CONTEST.",

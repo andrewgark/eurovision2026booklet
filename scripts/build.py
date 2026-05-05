@@ -18,6 +18,14 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 Lang = Literal["en", "ru"]
 Variant = Literal["overall_pre", "sf1", "sf2", "final", "overall_post"]
 
+
+@dataclass(frozen=True)
+class ArtistBioChunk:
+    """One artist bio fact chip: optional intro paragraph(s) plus optional trailing ``*`` list."""
+
+    intro: str
+    bullets: tuple[str, ...]
+
 VARIANTS: tuple[str, ...] = ("overall_pre", "sf1", "sf2", "final", "overall_post")
 
 # config.json `subtitle_*` / `intro_text_*` keys for each PDF variant
@@ -78,7 +86,7 @@ class EntryView:
     song_title: str
     song_title_translation: str
     bio: str
-    bio_lines: list[str]
+    bio_chunks: list[ArtistBioChunk]
     facts: str
     facts_lines: list[str]
     country_stats_lines: list[str]
@@ -90,6 +98,7 @@ class EntryView:
     genres: list[str]
     national_final_url: str
     music_video_url: str
+    unofficial_live_url: str
     lyrics_original: str
     translation: str
     lyrics_rows: list[dict[str, str]]
@@ -165,6 +174,112 @@ def _safe_tex_multiline(s: str) -> str:
 
 
 _INTRO_BULLET_LINE = re.compile(r"^\s*\*\s+(.+)$")
+_RE_INTRO_BOLD = re.compile(r"\*\*(.+?)\*\*")
+_INTRO_NUM_ROW_HIGHLIGHT = frozenset({"8", "10", "12"})
+
+
+def _is_intro_number_row_line(s: str) -> bool:
+    """A line that is only whitespace-separated integers (two or more), e.g. voting ladder."""
+    s = (s or "").strip()
+    if not s:
+        return False
+    parts = s.split()
+    if len(parts) < 2:
+        return False
+    return all(p.isdigit() for p in parts)
+
+
+def _intro_inline_to_tex(s: str) -> str:
+    """Escape `s` for LaTeX and turn ``**bold**`` into ``\\textbf{...}``."""
+    out: list[str] = []
+    pos = 0
+    for m in _RE_INTRO_BOLD.finditer(s):
+        out.append(_safe_tex(s[pos : m.start()]))
+        out.append("\\textbf{" + _safe_tex(m.group(1)) + "}")
+        pos = m.end()
+    out.append(_safe_tex(s[pos:]))
+    return "".join(out)
+
+
+def _artist_bio_bullet_body(line: str) -> str | None:
+    """If ``line`` is a markdown-style bullet (`* item`), return the item text; else ``None``."""
+    m = _INTRO_BULLET_LINE.match(line.strip())
+    if m is None:
+        return None
+    return m.group(1).strip()
+
+
+def _artist_bio_to_chunks(raw: str) -> list[ArtistBioChunk]:
+    """Turn artist bio text into fact chips.
+
+    - A non-bullet line followed (after optional extra non-bullet lines) by ``*`` items
+      becomes one chip: those lines as intro + bullet list.
+    - Consecutive non-bullet lines with **no** ``*`` block ahead become **separate** chips
+      (one line per chip), so plain facts stay one card each.
+    - A leading ``*`` block (no intro) becomes a list-only chip.
+    """
+    if not raw or not str(raw).strip():
+        return []
+    text = str(raw).replace("\r\n", "\n").replace("\r", "\n")
+    lines = [ln.strip() for ln in text.split("\n") if ln.strip()]
+    out: list[ArtistBioChunk] = []
+    i = 0
+    n = len(lines)
+
+    def collect_bullets_from(idx: int) -> tuple[list[str], int]:
+        acc: list[str] = []
+        j = idx
+        while j < n:
+            b = _artist_bio_bullet_body(lines[j])
+            if b is None:
+                break
+            acc.append(b)
+            j += 1
+        return acc, j
+
+    while i < n:
+        b0 = _artist_bio_bullet_body(lines[i])
+        if b0 is not None:
+            bullets_src, i = collect_bullets_from(i)
+            bullets_tex = tuple(_intro_inline_to_tex(x) for x in bullets_src)
+            out.append(ArtistBioChunk(intro="", bullets=bullets_tex))
+            continue
+
+        start = i
+        i += 1
+        k = i
+        while k < n and _artist_bio_bullet_body(lines[k]) is None:
+            k += 1
+        has_bullets = k < n
+        if has_bullets:
+            intro_parts = lines[start:k]
+            i = k
+            bullets_src, i = collect_bullets_from(i)
+            intro_tex = "\\par\n".join(_intro_inline_to_tex(p) for p in intro_parts)
+            bullets_tex = tuple(_intro_inline_to_tex(b) for b in bullets_src)
+            out.append(ArtistBioChunk(intro=intro_tex, bullets=bullets_tex))
+        else:
+            intro_tex = _intro_inline_to_tex(lines[start])
+            out.append(ArtistBioChunk(intro=intro_tex, bullets=()))
+    return out
+
+
+def _intro_number_row_tex(nums: list[str]) -> str:
+    """One-row table of point values; 8 / 10 / 12 get a light highlight (Eurovision top-three scores)."""
+    cells: list[str] = []
+    for n in nums:
+        esc = _safe_tex(n)
+        if n in _INTRO_NUM_ROW_HIGHLIGHT:
+            cells.append(f"\\IntroNumCellHi{{{esc}}}")
+        else:
+            cells.append(f"\\IntroNumCell{{{esc}}}")
+    if not cells:
+        return ""
+    ncols = len(cells)
+    sep = "@{\\hspace{1.35pt}}"
+    colspec = "@{}" + sep.join(["c"] * ncols) + "@{}"
+    return f"\\noindent\\begin{{tabular}}{{{colspec}}}\n" + " & ".join(cells) + "\\end{tabular}"
+
 
 # Sheet convention: lines like "* 12 May — …" are rendered as a styled LaTeX list.
 def _intro_text_to_tex(raw: str) -> str:
@@ -219,7 +334,11 @@ def _intro_text_to_tex(raw: str) -> str:
             elif last == "ul":
                 out.append("\\vspace{0.55em}\n")
             for ln in chunk:
-                out.append(_safe_tex(ln) + "\\par\n")
+                stripped = ln.strip()
+                if _is_intro_number_row_line(stripped):
+                    out.append(_intro_number_row_tex(stripped.split()) + "\\par\n")
+                else:
+                    out.append(_intro_inline_to_tex(ln) + "\\par\n")
             last = "p"
         else:
             if last == "p":
@@ -228,7 +347,15 @@ def _intro_text_to_tex(raw: str) -> str:
                 out.append("\\vspace{0.4em}\n")
             out.append("\\begin{IntroItemize}\n")
             for it in chunk:
-                out.append("\\item " + _safe_tex(it) + "\n")
+                it_st = it.strip()
+                if _is_intro_number_row_line(it_st):
+                    out.append(
+                        "\\item\\leavevmode\\par\\noindent"
+                        + _intro_number_row_tex(it_st.split())
+                        + "\n"
+                    )
+                else:
+                    out.append("\\item " + _intro_inline_to_tex(it) + "\n")
             out.append("\\end{IntroItemize}\n")
             last = "ul"
     return "".join(out).rstrip()
@@ -947,6 +1074,7 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
         genres = _split_csv_tokens((s.get("genre", {}) or {}).get(lang, "") or "")
         national_final_url = str(s.get("national_final_url") or "").strip()
         music_video_url = str(s.get("music_video_url") or "").strip()
+        unofficial_live_url = str(s.get("unofficial_live_url") or "").strip()
 
         translation = s.get("translation_ru") if lang == "ru" else s.get("translation_en")
         translation = translation or ""
@@ -1056,7 +1184,7 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
                 song_title=_safe_tex(song_title_original),
                 song_title_translation=_safe_tex(song_title_translated),
                 bio=_safe_tex_multiline(bio),
-                bio_lines=_safe_tex_lines(bio),
+                bio_chunks=_artist_bio_to_chunks(bio),
                 facts=_safe_tex_multiline(song_facts),
                 facts_lines=_safe_tex_lines(song_facts),
                 country_stats_lines=[_safe_tex_country_stat_line(s) for s in country_stats_lines],
@@ -1068,6 +1196,7 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
                 genres=[_safe_tex(_sentence_case(t)) for t in genres],
                 national_final_url=national_final_url,
                 music_video_url=music_video_url,
+                unofficial_live_url=unofficial_live_url,
                 lyrics_original=_safe_tex_multiline(str(s.get("lyrics_original") or "")),
                 translation=_safe_tex_multiline(str(translation)),
                 lyrics_rows=rows,

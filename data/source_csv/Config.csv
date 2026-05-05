@@ -2,221 +2,374 @@ key,value_en,value_ru
 year,2026,2026
 event_name,Eurovision Song Contest 2026,Евровидение 2026
 booklet_title,Booklet,Буклет
-subtitle_pre,,
-subtitle_sf1,Semi-Final 1,Полуфинал 1
-subtitle_sf2,Semi-Final 2,Полуфинал 2
+subtitle_pre,All countries,Все страны
+subtitle_sf1,First Semi-Final,Первый полуфинал
+subtitle_sf2,Second Semi-Final,Второй полуфинал
 subtitle_final,Final,Финал
 subtitle_post,With results,С результатами
-intro_text_pre,"Eurovision 2026 will take place across 3 shows:
-* 12 May — Semi-Final 1
-* 14 May — Semi-Final 2
-* 16 May — Grand Final
+intro_text_pre,"**When is Eurovision?**
+Eurovision 2026 will take place in 3 stages:
+* May 12 — First Semi-Final
+* May 14 — Second Semi-Final
+* May 16 — Final
 
-A total of 35 countries are taking part, five of which qualify for the Grand Final automatically:
-* members of the Big Five: the United Kingdom, Germany, Italy, France, and Spain — although Spain is not participating this year
-* last year’s winner and the host country of Eurovision 2026: Austria
+**Who qualifies for the final?**
+This year, 35 countries are taking part. Five of them automatically qualify for the final:
+* members of the Big Five: the United Kingdom, Germany, Italy, France and Spain (Spain is part of the Big Five, but is not participating this year)
+* last year’s winning country: Austria
+We will see performances by these countries in the semi-finals, but since their place in the final is guaranteed, it will not be possible to vote for them.  
 
-The remaining 30 countries are split between two semi-finals. Each semi-final features 15 countries, with the top 10 qualifying for the Grand Final.
+The remaining 30 participating countries are split evenly between the two semi-finals. 10 of them will qualify for the final from each semi-final. 
 
-In the first semi-final, Italy and Germany will also perform and vote, although they cannot receive votes: they have already qualified for the Grand Final automatically.
+**How does the voting work?**
+Voting at Eurovision consists of two parts:
+* televote
+* jury vote
 
-In the second semi-final, Austria, the United Kingdom, and France will also perform and vote, although they cannot receive votes: they have already qualified for the Grand Final automatically.
+Viewers in each participating country vote for the songs they like. The 10 most popular songs receive points on this scale: 
+1 2 3 4 5 6 7 8 10 12
 
-Eurovision voting is based on two sources:
-* televoting
-* jury voting
-
-Countries independently award other countries 12, 10, 8, 7, 6, 5, 4, 3, 2, and 1 point for their top 1, top 2, ..., top 10 in the televote. The jury points are awarded in the same way: 12, 10, ..., 2, and 1 point.
+The jury from each country gives votes using the same principle. 
+Then the televote points and jury points are added together.
+The country with the most points wins.
 
 Countries cannot vote for themselves.
+In addition, viewers from countries that are not participating in the contest can also vote. Their votes are combined into one separate “country” called “Rest of the World”.
 
-In addition, viewers from countries not participating in the contest can also vote. Their votes are combined into one separate “country” called “Rest of the World”.","Евровидение-2026 пройдёт в 3 этапа:
-* 12 мая — Полуфинал 1
-* 14 мая — Полуфинал 2
+**What is the Big Five?**
+The Big Five are the United Kingdom, Germany, Italy, France and Spain. Because these countries make the largest financial contribution to the European Broadcasting Union, which helps fund the production of the show, they automatically qualify for the final.
+
+**How do countries choose their songs?**
+There are two main ways to choose a song:
+* National selection, where a contest is held in the country and the winner becomes the country’s representative
+* Internal selection, where representatives of the national broadcaster / TV channel or a professional jury choose which entry to send as the country’s representative","**Когда Евровидение?**
+Евровидение-2026 пройдёт в 3 этапа:
+* 12 мая — Первый полуфинал
+* 14 мая — Второй полуфинал
 * 16 мая — Финал
 
-Всего участвует 35 стран, пять из которых проходят в финал автоматически:
-* члены Большой Пятёрки: Великобритания, Германия, Италия, Франция и Испания — при этом Испания в этом году не участвует
-* победитель прошлого года и страна проведения Евровидения-2026: Австрия
+**Кто попадает в финал?**
+В этом году участвует 35 стран. Пять из них автоматически проходят в финал:
+* члены Большой Пятёрки: Великобритания, Германия, Италия, Франция и Испания (входит в Большую Пятёрку, но не участвует в этом году)
+* страна-победительница прошлого года: Австрия
+Мы увидим выступления этих стран в полуфиналах, но, так как выход в финал им гарантирован, голосовать за них будет нельзя.  
 
-Остальные 30 стран поделены на два полуфинала. В каждом из них выступают 15 стран, из которых 10 лучших проходят в финал.
+Оставшиеся 30 стран-участниц поровну распределены на два полуфинала. В финал пройдут по 10 из них. 
 
-В первом полуфинале также выступают и голосуют Италия и Германия, хотя за них голосовать нельзя: они уже автоматически прошли в финал.
-
-Во втором полуфинале также выступают и голосуют Австрия, Великобритания и Франция, хотя за них голосовать нельзя: они уже автоматически прошли в финал.
-
-Голосование на Евровидении складывается из двух источников:
+**Как проходит голосование?**
+Голосование на Евровидении состоит из двух частей:
 * голоса телезрителей
 * голоса жюри
 
-Страны независимо присуждают другим странам 12, 10, 8, 7, 6, 5, 4, 3, 2 и 1 очко за топ-1, топ-2, ..., топ-10 среди голосов телезрителей. По такой же системе — 12, 10, ..., 2 и 1 очко — распределяются баллы жюри.
+Зрители каждой страны-участницы отправляют голоса за понравившиеся песни. Самые популярные 10 песен получают баллы по такой шкале: 
+1 2 3 4 5 6 7 8 10 12
+
+Жюри от каждой страны выставляют голоса по тому же принципу. 
+Потом баллы телезрителей и жюри суммируются.
+Выигрывает страна набравшая больше всего баллов.
 
 Страны не могут голосовать за себя.
+Также дополнительно голосуют телезрители из стран, которые не участвуют в конкурсе. Их голоса объединяются в одну отдельную «страну» под названием «Остальной мир».
 
-Также дополнительно голосуют телезрители из стран, не участвующих в конкурсе. Их голоса объединяются в одну отдельную «страну» под названием «Остальной мир»."
-intro_text_sf1,"Semi-Final 1 will take place on 12 May.
+**Что такое Большая Пятёрка?**
+Это Великобритания, Германия, Италия, Франция и Испания. Благодаря самому высокому финансовому вкладу в Европейский вещательный союз, который обеспечивает производство шоу, эти страны автоматически проходят в финал.
+
+**Как страны выбирают песни?**
+Два основных способа выбора песни:
+* Открытый отбор, когда в стране проводится конкурс, победитель которого становится  представителем страны
+* Внутренний отбор, когда представители национального телевещателя/телеканала или профессиональное жюри выбирает, какую из заявку выбрать как представителя страны"
+intro_text_sf1,"**When is Eurovision?**
+The First Semi-Final will take place on May 12.
 
 After that:
-* 14 May — Semi-Final 2
-* 16 May — Grand Final
+* May 14 — Second Semi-Final
+* May 16 — Final
 
-Out of 15 countries in the semi-final, the top 10 qualify for the Grand Final.
+**Who qualifies for the final?**
+This year, 35 countries are taking part. Five of them automatically qualify for the final:
+* members of the Big Five: the United Kingdom, Germany, Italy, France and Spain (Spain is part of the Big Five, but is not participating this year)
+* last year’s winning country: Austria
+We will see performances by these countries in the semi-finals, but since their place in the final is guaranteed, it will not be possible to vote for them.  
 
-In the second semi-final, Austria, the United Kingdom, and France will also perform and vote, although they cannot receive votes: they have already qualified for the Grand Final automatically.
+The remaining 30 participating countries are split evenly between the two semi-finals. 10 of them will qualify for the final from each semi-final. 
 
-Eurovision voting is based on two sources:
-* televoting
-* jury voting
+**How does the voting work?**
+Voting at Eurovision consists of two parts:
+* televote
+* jury vote
 
-Countries independently award other countries 12, 10, 8, 7, 6, 5, 4, 3, 2, and 1 point for their top 1, top 2, ..., top 10 in the televote. The jury points are awarded in the same way: 12, 10, ..., 2, and 1 point.
+Viewers in each participating country vote for the songs they like. The 10 most popular songs receive points on this scale: 
+1 2 3 4 5 6 7 8 10 12
+
+The jury from each country gives votes using the same principle. 
+Then the televote points and jury points are added together.
+The country with the most points wins.
 
 Countries cannot vote for themselves.
+In addition, viewers from countries that are not participating in the contest can also vote. Their votes are combined into one separate “country” called “Rest of the World”.
 
-In addition, viewers from countries not participating in the contest can also vote. Their votes are combined into one separate “country” called “Rest of the World”.","Полуфинал 1 пройдёт 12 мая.
+**What is the Big Five?**
+The Big Five are the United Kingdom, Germany, Italy, France and Spain. Because these countries make the largest financial contribution to the European Broadcasting Union, which helps fund the production of the show, they automatically qualify for the final.
+
+**How do countries choose their songs?**
+There are two main ways to choose a song:
+* National selection, where a contest is held in the country and the winner becomes the country’s representative
+* Internal selection, where representatives of the national broadcaster / TV channel or a professional jury choose which entry to send as the country’s representative","**Когда Евровидение?**
+Первый полуфинал пройдёт 12 мая.
 
 После него:
-* 14 мая — Полуфинал 2 
+* 14 мая — Второй полуфинал
 * 16 мая — Финал
 
-Из 15 стран в полуфинале в финал проходят 10 лучших.
+**Кто попадает в финал?**
+В этом году участвует 35 стран. Пять из них автоматически проходят в финал:
+* члены Большой Пятёрки: Великобритания, Германия, Италия, Франция и Испания (входит в Большую Пятёрку, но не участвует в этом году)
+* страна-победительница прошлого года: Австрия
+Мы увидим выступления этих стран в полуфиналах, но, так как выход в финал им гарантирован, голосовать за них будет нельзя.  
 
-Во втором полуфинале также выступают и голосуют Австрия, Великобритания и Франция, хотя за них голосовать нельзя: они уже автоматически прошли в финал.
+Оставшиеся 30 стран-участниц поровну распределены на два полуфинала. В финал пройдут по 10 из них. 
 
-Голосование на Евровидении складывается из двух источников:
+**Как проходит голосование?**
+Голосование на Евровидении состоит из двух частей:
 * голоса телезрителей
 * голоса жюри
 
-Страны независимо присуждают другим странам 12, 10, 8, 7, 6, 5, 4, 3, 2 и 1 очко за топ-1, топ-2, ..., топ-10 среди голосов телезрителей. По такой же системе — 12, 10, ..., 2 и 1 очко — распределяются баллы жюри.
+Зрители каждой страны-участницы отправляют голоса за понравившиеся песни. Самые популярные 10 песен получают баллы по такой шкале: 
+1 2 3 4 5 6 7 8 10 12
+
+Жюри от каждой страны выставляют голоса по тому же принципу. 
+Потом баллы телезрителей и жюри суммируются.
+Выигрывает страна набравшая больше всего баллов.
 
 Страны не могут голосовать за себя.
+Также дополнительно голосуют телезрители из стран, которые не участвуют в конкурсе. Их голоса объединяются в одну отдельную «страну» под названием «Остальной мир».
 
-Также дополнительно голосуют телезрители из стран, не участвующих в конкурсе. Их голоса объединяются в одну отдельную «страну» под названием «Остальной мир»."
-intro_text_sf2,"Semi-Final 2 will take place on 14 May.
+**Что такое Большая Пятёрка?**
+Это Великобритания, Германия, Италия, Франция и Испания. Благодаря самому высокому финансовому вкладу в Европейский вещательный союз, который обеспечивает производство шоу, эти страны автоматически проходят в финал.
 
-Before it:
-* 12 May — Semi-Final 1
+**Как страны выбирают песни?**
+Два основных способа выбора песни:
+* Открытый отбор, когда в стране проводится конкурс, победитель которого становится  представителем страны
+* Внутренний отбор, когда представители национального телевещателя/телеканала или профессиональное жюри выбирает, какую из заявку выбрать как представителя страны"
+intro_text_sf2,"**When is Eurovision?**
+The Second Semi-Final will take place on May 14.
 
-After it:
-* 16 May — Grand Final
+Before that:
+* May 12 — First Semi-Final
 
-Out of 15 countries in the semi-final, the top 10 qualify for the Grand Final.
+After that:
+* May 16 — Final
 
-In the second semi-final, Austria, the United Kingdom, and France will also perform and vote, although they cannot receive votes, as they are already automatically in the Grand Final.
+**Who qualifies for the final?**
+This year, 35 countries are taking part. Five of them automatically qualify for the final:
+* members of the Big Five: the United Kingdom, Germany, Italy, France and Spain (Spain is part of the Big Five, but is not participating this year)
+* last year’s winning country: Austria
+We will see performances by these countries in the semi-finals, but since their place in the final is guaranteed, it will not be possible to vote for them.  
 
-Eurovision voting is based on two sources:
-* televoting
-* jury voting
+The remaining 30 participating countries are split evenly between the two semi-finals. 10 of them will qualify for the final from each semi-final. 
 
-Countries independently award other countries 12, 10, 8, 7, 6, 5, 4, 3, 2, and 1 point for their top 1, top 2, ..., top 10 in the televote, and likewise 12, 10, ..., 2, and 1 point for their top 1, top 2, ..., top 10 in the jury vote.
+**How does the voting work?**
+Voting at Eurovision consists of two parts:
+* televote
+* jury vote
+
+Viewers in each participating country vote for the songs they like. The 10 most popular songs receive points on this scale: 
+1 2 3 4 5 6 7 8 10 12
+
+The jury from each country gives votes using the same principle. 
+Then the televote points and jury points are added together.
+The country with the most points wins.
 
 Countries cannot vote for themselves.
+In addition, viewers from countries that are not participating in the contest can also vote. Their votes are combined into one separate “country” called “Rest of the World”.
 
-In addition, viewers from countries not participating in the contest can also vote. Their votes are combined into one “country” called “Rest of the World”.","Полуфинал 2 пройдёт 14 мая.
+**What is the Big Five?**
+The Big Five are the United Kingdom, Germany, Italy, France and Spain. Because these countries make the largest financial contribution to the European Broadcasting Union, which helps fund the production of the show, they automatically qualify for the final.
 
-До него прошел:
-* 12 мая — Полуфинал 1
+**How do countries choose their songs?**
+There are two main ways to choose a song:
+* National selection, where a contest is held in the country and the winner becomes the country’s representative
+* Internal selection, where representatives of the national broadcaster / TV channel or a professional jury choose which entry to send as the country’s representative","**Когда Евровидение?**
+Второй полуфинал пройдёт 14 мая.
+
+До него:
+* 12 мая — Первый полуфинал
 
 После него:
 * 16 мая — Финал
 
-Из 15 стран в полуфинале в финал проходят 10 лучших.
+**Кто попадает в финал?**
+В этом году участвует 35 стран. Пять из них автоматически проходят в финал:
+* члены Большой Пятёрки: Великобритания, Германия, Италия, Франция и Испания (входит в Большую Пятёрку, но не участвует в этом году)
+* страна-победительница прошлого года: Австрия
+Мы увидим выступления этих стран в полуфиналах, но, так как выход в финал им гарантирован, голосовать за них будет нельзя.  
 
-Во втором полуфинале исполняют и голосуют также Австрия, Великобритания и Франция, хотя голосовать за них нельзя, они автоматически в финале.
+Оставшиеся 30 стран-участниц поровну распределены на два полуфинала. В финал пройдут по 10 из них. 
 
-Голосование в Евровидении складывается из двух источников:
+**Как проходит голосование?**
+Голосование на Евровидении состоит из двух частей:
 * голоса телезрителей
 * голоса жюри
 
-Страны независимо отдают другим странам 12, 10, 8, 7, 6, 5, 4, 3, 2, 1 очко топ-1, топ-2, ..., топ-10 среди голосов телезрителей и так же 12, 10, ..., 2, 1 очко топ-1, топ-2, ..., топ-10 среди голосов жюри.
+Зрители каждой страны-участницы отправляют голоса за понравившиеся песни. Самые популярные 10 песен получают баллы по такой шкале: 
+1 2 3 4 5 6 7 8 10 12
 
-Странам нельзя голосовать за себя.
+Жюри от каждой страны выставляют голоса по тому же принципу. 
+Потом баллы телезрителей и жюри суммируются.
+Выигрывает страна набравшая больше всего баллов.
 
-Также дополнительно голосуют телезрители стран, не участвующих в конкурсе, но объединённые в одну «страну» под названием «Остальной мир»."
-intro_text_final,"The Grand Final will take place on 16 May.
+Страны не могут голосовать за себя.
+Также дополнительно голосуют телезрители из стран, которые не участвуют в конкурсе. Их голоса объединяются в одну отдельную «страну» под названием «Остальной мир».
+
+**Что такое Большая Пятёрка?**
+Это Великобритания, Германия, Италия, Франция и Испания. Благодаря самому высокому финансовому вкладу в Европейский вещательный союз, который обеспечивает производство шоу, эти страны автоматически проходят в финал.
+
+**Как страны выбирают песни?**
+Два основных способа выбора песни:
+* Открытый отбор, когда в стране проводится конкурс, победитель которого становится  представителем страны
+* Внутренний отбор, когда представители национального телевещателя/телеканала или профессиональное жюри выбирает, какую из заявку выбрать как представителя страны"
+intro_text_final,"**When is Eurovision?**
+The Final will take place on May 16.
 
 Before it:
-* 12 May — Semi-Final 1
-* 14 May — Semi-Final 2
+* May 12 — First Semi-Final
+* May 14 — Second Semi-Final
 
-The following countries automatically qualify for the Grand Final:
-* members of the Big Five: the United Kingdom, Germany, Italy, France, and Spain — although Spain is not participating this year
-* last year’s winner and the host country of Eurovision 2026: Austria
+**Who qualifies for the final?**
+This year, 35 countries are taking part. Five of them automatically qualify for the final:
+* members of the Big Five: the United Kingdom, Germany, Italy, France and Spain (Spain is part of the Big Five, but is not participating this year)
+* last year’s winning country: Austria
+We will see performances by these countries in the semi-finals, but since their place in the final is guaranteed, it will not be possible to vote for them.  
 
-The Grand Final will also include 10 countries from Semi-Final 1 and 10 countries from Semi-Final 2.
+The remaining 30 participating countries are split evenly between the two semi-finals. 10 of them will qualify for the final from each semi-final. 
 
-Eurovision voting is based on two sources:
-* televoting
-* jury voting
+**How does the voting work?**
+Voting at Eurovision consists of two parts:
+* televote
+* jury vote
 
-Countries independently award other countries 12, 10, 8, 7, 6, 5, 4, 3, 2, and 1 point for their top 1, top 2, ..., top 10 in the televote, and likewise 12, 10, ..., 2, and 1 point for their top 1, top 2, ..., top 10 in the jury vote.
+Viewers in each participating country vote for the songs they like. The 10 most popular songs receive points on this scale: 
+1 2 3 4 5 6 7 8 10 12
+
+The jury from each country gives votes using the same principle. 
+Then the televote points and jury points are added together.
+The country with the most points wins.
 
 Countries cannot vote for themselves.
+In addition, viewers from countries that are not participating in the contest can also vote. Their votes are combined into one separate “country” called “Rest of the World”.
 
-In addition, viewers from countries not participating in the contest can also vote. Their votes are combined into one “country” called “Rest of the World”.","Финал пройдет 16 мая.
+**What is the Big Five?**
+The Big Five are the United Kingdom, Germany, Italy, France and Spain. Because these countries make the largest financial contribution to the European Broadcasting Union, which helps fund the production of the show, they automatically qualify for the final.
+
+**How do countries choose their songs?**
+There are two main ways to choose a song:
+* National selection, where a contest is held in the country and the winner becomes the country’s representative
+* Internal selection, where representatives of the national broadcaster / TV channel or a professional jury choose which entry to send as the country’s representative","**Когда Евровидение?**
+Финал пройдет 16 мая.
 
 До него прошли:
-* 12 мая — Полуфинал 1
-* 14 мая — Полуфинал 2 
+* 12 мая — Первый полуфинал
+* 14 мая — Второй полуфинал
 
-В финале автоматически участвуют:
-* члены Большой Пятёрки: Великобритания, Германия, Италия, Франция и Испания — при этом Испания в этом году не участвует
-* победитель прошлого года и страна проведения Евровидения-2026: Австрия
+**Кто попадает в финал?**
+В этом году участвует 35 стран. Пять из них автоматически проходят в финал:
+* члены Большой Пятёрки: Великобритания, Германия, Италия, Франция и Испания (входит в Большую Пятёрку, но не участвует в этом году)
+* страна-победительница прошлого года: Австрия
+Мы увидим выступления этих стран в полуфиналах, но, так как выход в финал им гарантирован, голосовать за них будет нельзя.  
 
-Также прошли 10 стран из Полуфинала 1 и 10 стран из Полуфинала 2.
+Оставшиеся 30 стран-участниц поровну распределены на два полуфинала. В финал пройдут по 10 из них. 
 
-Голосование в Евровидении складывается из двух источников:
+**Как проходит голосование?**
+Голосование на Евровидении состоит из двух частей:
 * голоса телезрителей
 * голоса жюри
 
-Страны независимо отдают другим странам 12, 10, 8, 7, 6, 5, 4, 3, 2, 1 очко топ-1, топ-2, ..., топ-10 среди голосов телезрителей и так же 12, 10, ..., 2, 1 очко топ-1, топ-2, ..., топ-10 среди голосов жюри.
+Зрители каждой страны-участницы отправляют голоса за понравившиеся песни. Самые популярные 10 песен получают баллы по такой шкале: 
+1 2 3 4 5 6 7 8 10 12
 
-Странам нельзя голосовать за себя.
+Жюри от каждой страны выставляют голоса по тому же принципу. 
+Потом баллы телезрителей и жюри суммируются.
+Выигрывает страна набравшая больше всего баллов.
 
-Также дополнительно голосуют телезрители стран, не участвующих в конкурсе, но объединённые в одну «страну» под названием «Остальной мир»."
-intro_text_post,"Eurovision 2026 took place across 3 shows:
-* 12 May — Semi-Final 1
-* 14 May — Semi-Final 2
-* 16 May — Grand Final
+Страны не могут голосовать за себя.
+Также дополнительно голосуют телезрители из стран, которые не участвуют в конкурсе. Их голоса объединяются в одну отдельную «страну» под названием «Остальной мир».
 
-A total of 35 countries took part, five of which qualified for the Grand Final automatically:
-* members of the Big Five: the United Kingdom, Germany, Italy, France, and Spain — although Spain did not participate this year
-* last year’s winner and the host country of Eurovision 2026: Austria
+**Что такое Большая Пятёрка?**
+Это Великобритания, Германия, Италия, Франция и Испания. Благодаря самому высокому финансовому вкладу в Европейский вещательный союз, который обеспечивает производство шоу, эти страны автоматически проходят в финал.
 
-The remaining 30 countries were split between two semi-finals, where the top 10 out of 15 countries qualified for the Grand Final.
+**Как страны выбирают песни?**
+Два основных способа выбора песни:
+* Открытый отбор, когда в стране проводится конкурс, победитель которого становится  представителем страны
+* Внутренний отбор, когда представители национального телевещателя/телеканала или профессиональное жюри выбирает, какую из заявку выбрать как представителя страны"
+intro_text_post,"**When was Eurovision?**
+Eurovision 2026 took place in 3 stages:
+* May 12 — First Semi-Final
+* May 14 — Second Semi-Final
+* May 16 — Final
 
-In the first semi-final, Italy and Germany also performed and voted, although they could not receive votes, as they were already automatically in the Grand Final.
+**Who qualified for the final?**
+This year, 35 countries took part. Five of them automatically qualified for the final:
+* members of the Big Five: the United Kingdom, Germany, Italy, France and Spain (Spain is part of the Big Five, but did not participate this year)
+* last year’s winning country: Austria
+We saw performances by these countries in the semi-finals, but since their place in the final was guaranteed, it was not possible to vote for them.  
 
-In the second semi-final, Austria, the United Kingdom, and France also performed and voted, although they could not receive votes, as they were already automatically in the Grand Final.
+The remaining 30 participating countries were split evenly between the two semi-finals. 10 of them qualified for the final from each semi-final. 
 
-Eurovision voting is based on two sources:
-* televoting
-* jury voting
+**How did the voting work?**
+Voting at Eurovision consisted of two parts:
+* televote
+* jury vote
 
-Countries independently award other countries 12, 10, 8, 7, 6, 5, 4, 3, 2, and 1 point for their top 1, top 2, ..., top 10 in the televote, and likewise 12, 10, ..., 2, and 1 point for their top 1, top 2, ..., top 10 in the jury vote.
+Viewers in each participating country voted for the songs they liked. The 10 most popular songs received points on this scale: 
+1 2 3 4 5 6 7 8 10 12
 
-Countries cannot vote for themselves.
+The jury from each country gave votes using the same principle. 
+Then the televote points and jury points were added together.
+The country with the most points won.
 
-In addition, viewers from countries not participating in the contest can also vote. Their votes are combined into one “country” called “Rest of the World”.","Евровидение-2026 прошло в 3 этапа:
-* 12 мая — Полуфинал 1
-* 14 мая — Полуфинал 2 
+Countries could not vote for themselves.
+In addition, viewers from countries that did not participate in the contest also voted. Their votes were combined into one separate “country” called “Rest of the World”.
+
+**What is the Big Five?**
+The Big Five are the United Kingdom, Germany, Italy, France and Spain. Because these countries make the largest financial contribution to the European Broadcasting Union, which helps fund the production of the show, they automatically qualified for the final.
+
+**How did countries choose their songs?**
+There were two main ways to choose a song:
+* National selection, where a contest was held in the country and the winner became the country’s representative
+* Internal selection, where representatives of the national broadcaster / TV channel or a professional jury chose which entry to send as the country’s representative","**Когда было Евровидение?**
+Евровидение-2026 прошло в 3 этапа:
+* 12 мая — Первый полуфинал
+* 14 мая — Второй полуфинал
 * 16 мая — Финал
 
-Всего участвовало 35 стран, пять из которых попало в финал автоматически:
-* члены Большой Пятёрки: Великобритания, Германия, Италия, Франция и Испания — при этом Испания в этом году не участвует
-* победитель прошлого года и страна проведения Евровидения-2026: Австрия
+**Кто попал в финал?**
+В этом году участвовало 35 стран. Пять из них автоматически прошли в финал:
+* члены Большой Пятёрки: Великобритания, Германия, Италия, Франция и Испания (входит в Большую Пятёрку, но не участвовала в этом году)
+* страна-победительница прошлого года: Австрия
+Мы увидели выступления этих стран в полуфиналах, но, так как выход в финал им был гарантирован, голосовать за них было нельзя.  
 
-Остальные 30 стран были поделены на два полуфинала, где из 15 стран в финал прошли 10 лучших.
+Оставшиеся 30 стран-участниц были поровну распределены на два полуфинала. В финал прошли по 10 из них. 
 
-В первом полуфинале исполняли и голосовали также Италия и Германия, хотя голосовать за них нельзя, они автоматически в финале.
-
-Во втором полуфинале исполняют и голосовали также Австрия, Великобритания и Франция, хотя голосовать за них нельзя, они автоматически в финале.
-
-Голосование в Евровидении складывается из двух источников:
+**Как проходило голосование?**
+Голосование на Евровидении состояло из двух частей:
 * голоса телезрителей
 * голоса жюри
 
-Страны независимо отдают другим странам 12, 10, 8, 7, 6, 5, 4, 3, 2, 1 очко топ-1, топ-2, ..., топ-10 среди голосов телезрителей и так же 12, 10, ..., 2, 1 очко топ-1, топ-2, ..., топ-10 среди голосов жюри.
+Зрители каждой страны-участницы отправляли голоса за понравившиеся песни. Самые популярные 10 песен получали баллы по такой шкале: 
+1 2 3 4 5 6 7 8 10 12
 
-Странам нельзя голосовать за себя.
+Жюри от каждой страны выставляло голоса по тому же принципу. 
+Потом баллы телезрителей и жюри суммировались.
+Выиграла страна, набравшая больше всего баллов.
 
-Также дополнительно голосуют телезрители стран, не участвующих в конкурсе, но объединённые в одну «страну» под названием «Остальной мир»."
+Страны не могли голосовать за себя.
+Также дополнительно голосовали телезрители из стран, которые не участвовали в конкурсе. Их голоса объединялись в одну отдельную «страну» под названием «Остальной мир».
+
+**Что такое Большая Пятёрка?**
+Это Великобритания, Германия, Италия, Франция и Испания. Благодаря самому высокому финансовому вкладу в Европейский вещательный союз, который обеспечивает производство шоу, эти страны автоматически проходили в финал.
+
+**Как страны выбирали песни?**
+Два основных способа выбора песни:
+* Открытый отбор, когда в стране проводился конкурс, победитель которого становился представителем страны
+* Внутренний отбор, когда представители национального телевещателя/телеканала или профессиональное жюри выбирали, какую из заявок отправить на конкурс как представителя страны
+"

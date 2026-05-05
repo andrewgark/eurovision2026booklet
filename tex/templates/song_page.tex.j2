@@ -7,8 +7,15 @@
 {%- set L_BOOKIES       = "Букмекеры считают:" if lang == "ru" else "Bookies expect:" -%}
 {%- set L_NF            = "Нацотбор"     if lang == "ru" else "National selection" -%}
 {%- set L_MV            = "Клип"         if lang == "ru" else "Official video" -%}
+{%- set L_UL            = "Лайв" if lang == "ru" else "Live" -%}
 \SongPage{
-\SetSongFooter{ {%- if e.national_final_url or e.music_video_url %}{%- if e.national_final_url %}\VideoLinkFooter{ {{- e.national_final_url -}} }{ {{ L_NF }} }{% endif %}{% if e.national_final_url and e.music_video_url %}\hspace{2.0mm}{\color{BookletMuted}\scriptsize\textbullet}\hspace{2.0mm}{% endif %}{% if e.music_video_url %}\VideoLinkFooter{ {{- e.music_video_url -}} }{ {{ L_MV }} }{% endif %}{%- endif %} }
+\SetSongFooter{ {%- if e.national_final_url or e.music_video_url or e.unofficial_live_url -%}
+{%- if e.national_final_url -%}\VideoLinkFooter{ {{- e.national_final_url -}} }{ {{ L_NF }} }{%- endif -%}
+{%- if e.national_final_url and (e.music_video_url or e.unofficial_live_url) -%}\hspace{2.0mm}{\color{BookletMuted}\scriptsize\textbullet}\hspace{2.0mm}{%- endif -%}
+{%- if e.music_video_url -%}\VideoLinkFooter{ {{- e.music_video_url -}} }{ {{ L_MV }} }{%- endif -%}
+{%- if e.music_video_url and e.unofficial_live_url -%}\hspace{2.0mm}{\color{BookletMuted}\scriptsize\textbullet}\hspace{2.0mm}{%- endif -%}
+{%- if e.unofficial_live_url -%}\VideoLinkFooterMuted{ {{- e.unofficial_live_url -}} }{ {{ L_UL }} }{%- endif -%}
+{%- endif -%} }
 \leavevmode\phantomsection\label{song-{{ e.country_code }}}%
   \HeroBand
     { {{ e.flag_path or "" }} }
@@ -55,8 +62,19 @@
 {% if e.artist_grew_up and e.artist_grew_up != e.artist_birth_place %}{\scriptsize\Muted{\textrightarrow\,\InfoMixedBody{ {{ e.artist_grew_up }} }}}\par{% endif %}
 {% if e.artist_lgbtq %}\vspace{0.62mm}\LgbtqPill{ {{ e.artist_lgbtq }} }\par{% endif %}
 \end{minipage}
-{% if e.bio_lines %}\par\vspace{1.45mm}\scriptsize\setstretch{1.06}\RaggedRight
-{% for line in e.bio_lines %}\FactChip{ {{ line }} }
+{% if e.bio_chunks %}\par\vspace{1.45mm}\scriptsize\setstretch{1.06}\RaggedRight
+{% for chunk in e.bio_chunks %}
+{% if chunk.bullets %}
+\begin{factchip}
+{% if chunk.intro %}{{ chunk.intro }}\par\vspace{0.38mm}{% endif %}
+\begin{BioFactItemize}
+{% for b in chunk.bullets %}\item {{ b }}
+{% endfor %}
+\end{BioFactItemize}
+\end{factchip}
+{% else %}
+\FactChip{ {{ chunk.intro }} }
+{% endif %}
 {% endfor %}{% endif %}
 \end{infopanel}
 \par\vspace{1.85mm}
@@ -79,13 +97,21 @@
 {%- endif -%}
 \par
 {% endif %}
-{% if e.country_stats_lines %}
-\vspace{0.92mm}\par
+{% set has_bookies = e.qualify_percent or e.win_percent %}
+{% set has_country_stats = e.country_stats_lines %}
+{% set has_selection = e.selection_tag %}
+{% set has_country_facts = e.country_facts_lines %}
+{% if has_bookies and (has_country_stats or has_selection or has_country_facts) %}\par\vspace{0.85mm}{% endif %}
+{% if has_country_stats %}
+{% if not has_bookies %}\vspace{0.2mm}{% else %}\vspace{0.1mm}{% endif %}
 {% for s in e.country_stats_lines %}{\color{BookletAccent!50}\textbullet}\,{\Muted{ {{ s }} }}\par
 {% endfor %}
 {% endif %}
-{% if e.selection_tag %}\vspace{0.72mm}\MetaPill{ {{ e.selection_tag }} }\par{% endif %}
-{% if e.country_facts_lines %}\vspace{1.25mm}\par\setstretch{1.06}\RaggedRight
+{% if has_country_stats and (has_selection or has_country_facts) %}\par\vspace{0.85mm}{% endif %}
+{% if has_selection %}\vspace{0.1mm}\MetaPill{ {{ e.selection_tag }} }\par{% endif %}
+{% if has_selection and has_country_facts %}\par\vspace{0.85mm}{% endif %}
+{% if has_country_facts %}
+{% if has_bookies or has_country_stats or has_selection %}\vspace{0.35mm}{% else %}\vspace{1.25mm}{% endif %}\par\setstretch{1.06}\RaggedRight
 {% for line in e.country_facts_lines %}\FactChip{ {{ line }} }
 {% endfor %}{% endif %}
 \end{infopanel}
