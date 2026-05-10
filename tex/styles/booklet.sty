@@ -400,7 +400,12 @@
     \noindent
     \begin{minipage}[c]{0.12\linewidth}%
       \ifblank{#1}{}{%
-        \includegraphics[width=\linewidth, height=13mm, keepaspectratio]{#1}%
+        \begingroup
+        \setlength{\fboxsep}{0pt}%
+        \colorbox{BookletAccent}{%
+          \includegraphics[width=\linewidth, height=13mm, keepaspectratio]{#1}%
+        }%
+        \endgroup
       }%
     \end{minipage}\hspace{4mm}%
     \ifblank{#4}{%
