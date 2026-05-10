@@ -59,6 +59,12 @@ BOOKLET_GIDS: dict[str, str] = {
     "Results": "1574072165",
 }
 
+# Wide Odds tab: exact columns written into odds.json. Empty tuple falls back to newest snapshot date.
+BOOKLET_ODDS_WIDE_COLUMNS_PINNED: tuple[str, ...] = (
+    "odds_10_05_2026_BETSSON_winner",
+    "odds_10_05_2026_BETSSON_qualify",
+)
+
 # ISO 3166-1 alpha-2 → Wikidata country QID (flags). Fallback when the sheet has no QID column.
 WIKIDATA_QID_BY_ISO2: dict[str, str] = {
     "AL": "Q222",
@@ -126,6 +132,18 @@ def _odds_wide_columns_from_header(row_keys: list[str]) -> list[str]:
         return cols
     newest = max(dates)
     return [c for c in cols if snapshot_ymd(c) == newest]
+
+
+def _booklet_odds_wide_columns(row_keys: list[str]) -> list[str]:
+    if BOOKLET_ODDS_WIDE_COLUMNS_PINNED:
+        missing = [c for c in BOOKLET_ODDS_WIDE_COLUMNS_PINNED if c not in row_keys]
+        if missing:
+            raise ValueError(
+                f"Odds tab: pinned columns missing from header: {missing}. "
+                f"Expected all of {list(BOOKLET_ODDS_WIDE_COLUMNS_PINNED)}."
+            )
+        return list(BOOKLET_ODDS_WIDE_COLUMNS_PINNED)
+    return _odds_wide_columns_from_header(row_keys)
 
 
 def _download_csv_raw(spreadsheet_id: str, gid: str) -> str:
@@ -481,7 +499,7 @@ def pull_booklet(
     odds_rows = list(csv.DictReader(io.StringIO(tab_raw("Odds"))))
     odds: list[dict[str, Any]] = []
     if odds_rows:
-        odds_cols = _odds_wide_columns_from_header(list(odds_rows[0].keys() or []))
+        odds_cols = _booklet_odds_wide_columns(list(odds_rows[0].keys() or []))
         for r in odds_rows:
             cid = _to_iso2(r.get("country_id", "") or r.get("country_code", ""))
             if not cid:
