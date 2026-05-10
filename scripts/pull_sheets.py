@@ -9,6 +9,7 @@ import sys
 from datetime import date
 from pathlib import Path
 from typing import Any
+from urllib.parse import parse_qs, unquote, urlparse
 
 import requests
 
@@ -156,6 +157,26 @@ def _require_cols(row: dict[str, str], cols: list[str], *, tab: str) -> None:
 
 def _nonempty(s: str) -> str:
     return (s or "").strip()
+
+
+def _normalize_photo_file_url(raw: str) -> str:
+    """Expand reddit.com/media?url=… links to the wrapped image URL (direct i.redd.it, etc.)."""
+    s = _nonempty(raw)
+    if not s:
+        return s
+    try:
+        parsed = urlparse(s)
+        host = (parsed.netloc or "").lower()
+        path = (parsed.path or "").rstrip("/")
+        if "reddit.com" in host and path == "/media":
+            inner_list = parse_qs(parsed.query).get("url") or []
+            if inner_list:
+                inner = unquote(inner_list[0])
+                if inner.lower().startswith(("http://", "https://")):
+                    return inner
+    except Exception:
+        pass
+    return s
 
 
 def _to_iso2(s: str) -> str:
@@ -361,7 +382,7 @@ def pull_booklet(
                 "artist_name_ru": _nonempty(r["artist_name_ru"]),
                 "bio": {"en": _nonempty(r["bio_en"]), "ru": _nonempty(r["bio_ru"])},
                 "facts": {"en": facts_en, "ru": facts_ru},
-                "photo_file": _nonempty(r["photo_file"]),
+                "photo_file": _normalize_photo_file_url(_nonempty(r["photo_file"])),
                 "artist_real_name": {
                     "en": _nonempty(r["artist_real_name_en"]),
                     "ru": _nonempty(r["artist_real_name_ru"]),
@@ -599,7 +620,7 @@ def pull_template(
                 "artist_name": _nonempty(r["artist_name"]),
                 "bio": {"en": _nonempty(r["bio_en"]), "ru": _nonempty(r["bio_ru"])},
                 "facts": {"en": _nonempty(r["facts_en"]), "ru": _nonempty(r["facts_ru"])},
-                "photo_file": _nonempty(r["photo_file"]),
+                "photo_file": _normalize_photo_file_url(_nonempty(r["photo_file"])),
             }
         )
     (out_data_dir / "artists.json").write_text(json.dumps(artists, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
