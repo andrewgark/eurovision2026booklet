@@ -16,9 +16,10 @@ def _require_cmd(cmd: str) -> None:
 
 def convert_svg_to_pdf(*, in_svg_dir: Path, out_pdf_dir: Path) -> None:
     """
-    Convert SVG flags to PDF for LaTeX inclusion.
+    Legacy: convert locally cached SVG flags to PDF.
 
-    Uses Inkscape CLI if available.
+    The default booklet pipeline includes `assets/flags/png/*.png` directly; use this only if
+    you maintain SVGs under `assets/flags/src_svg/`. Requires Inkscape.
     """
     _require_cmd("inkscape")
 

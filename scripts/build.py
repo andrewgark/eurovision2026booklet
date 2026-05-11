@@ -1082,9 +1082,16 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
         flag_path = None
         photo_path = None
 
-        flag_pdf = repo / "assets" / "flags" / "pdf" / f"{cc.upper()}.pdf"
-        if flag_pdf.exists():
-            flag_path = os.path.relpath(flag_pdf, build_dir)
+        cc_up = cc.upper()
+        for flag_asset in (
+            repo / "assets" / "flags" / "png" / f"{cc_up}.png",
+            repo / "assets" / "flags" / "png" / f"{cc_up}.jpg",
+            repo / "assets" / "flags" / "png" / f"{cc_up}.jpeg",
+            repo / "assets" / "flags" / "pdf" / f"{cc_up}.pdf",
+        ):
+            if flag_asset.exists():
+                flag_path = os.path.relpath(flag_asset, build_dir)
+                break
 
         # Photo resolution: prefer an explicit local file listed in photo_file,
         # then fall back to the conventional assets/artists/artist_<CC>.<ext>.

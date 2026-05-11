@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 - `latexmk`
 - `lualatex`
-- (optional) `inkscape` for converting SVG flags to PDF
+- (optional) `inkscape` only if you use the legacy SVG→PDF flag conversion script
 
 On Ubuntu/WSL you can install them with:
 
@@ -89,7 +89,9 @@ python scripts/assets_flags.py
 python scripts/assets_maps.py
 ```
 
-Convert flags to PDF (optional; requires Inkscape):
+Flags are cached as **PNG/JPEG** under `assets/flags/png/` (SVG flags are rasterized on Wikimedia Commons up to `--svg-width` pixels wide, default 4096). LaTeX uses those files directly.
+
+Legacy: convert **SVG**s under `assets/flags/src_svg/` to PDF (requires Inkscape) if you still maintain that folder:
 
 ```bash
 python scripts/assets_convert_flags.py
@@ -106,7 +108,7 @@ See `assets/sources.md` for the approved sources.
 ## Folder layout
 
 - `data/`: JSON snapshots (config, countries, artists, songs, rounds, odds, results) and optional `data/source_csv/` exports
-- `assets/`: flags, maps, artist photos
+- `assets/`: booklet assets — flags (`flags/png/` raster, optional legacy `flags/pdf/`), maps, artist photos
 - `scripts/`: sync/build pipelines
 - `tex/`: LaTeX styles + templates
 - `build/`: generated TeX intermediates

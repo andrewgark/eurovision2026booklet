@@ -106,7 +106,7 @@ Small block, dedicated to the country itself.
 
 ## 5. Assets
 
-- **Flags** — downloaded and cached under `assets/`, rendered from PDF in-page.
+- **Flags** — downloaded and cached under `assets/` as high-resolution PNG (or JPEG when the Commons file is raster), included directly in-page (PDF remains supported as a fallback path).
 - **Artist photos** — downloaded and cached under `assets/`, rendered from a local file in-page.
 - **Maps** — not used anywhere in the page layout.
 
