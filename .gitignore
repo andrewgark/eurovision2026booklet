@@ -2,8 +2,10 @@
 __pycache__/
 *.pyc
 build/
-# Versioned booklets: only the ten PDFs; other scratch (previews, png) stays local
+# Versioned booklets: PDFs + static HTML under dist/html/; other scratch stays local
 dist/*
 !dist/*.pdf
+!dist/html/
+!dist/html/**
 assets/cache/
 .texcache/
