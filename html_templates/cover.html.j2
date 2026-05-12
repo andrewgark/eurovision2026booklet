@@ -16,6 +16,7 @@
   {% for item in toc_nav_items %}
   <li>
     <a href="{{ item.href }}" class="toc-row">
+      <span class="toc-row__num{% if not item.toc_index_display %} toc-row__num--empty{% endif %}"{% if not item.toc_index_display %} aria-hidden="true"{% endif %}>{% if item.toc_index_display %}{{ item.toc_index_display }}{% endif %}</span>
       {% if item.flag_url %}
       <span class="toc-flag-slot" aria-hidden="true">
         <img src="{{ item.flag_url }}" alt="" class="toc-flag" loading="lazy" decoding="async" />

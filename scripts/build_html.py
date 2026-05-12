@@ -46,6 +46,23 @@ def _repo_media_url(*, repo: Path, build_dir: Path, rel: str | None, depth: int)
     return prefix + rel_to_repo
 
 
+def _toc_index_display(tex_prefix: str) -> str:
+    """PDF uses ``[N]\\,`` before the flag; HTML shows plain ``[N]``."""
+    if not (tex_prefix or "").strip():
+        return ""
+    return tex_prefix.removesuffix(r"\,").strip()
+
+
+def _toc_index_display_for_html(e: BookletEntryRaw, *, variant: Variant) -> str:
+    """TOC running-order label: same TeX prefix as PDF when set; else final uses song badge number."""
+    t = _toc_index_display(e.toc_index_prefix)
+    if t:
+        return t
+    if variant == "final" and (e.number_label or "").strip():
+        return f"[{e.number_label.strip()}]"
+    return ""
+
+
 def _cover_lines_html(raw: str) -> str:
     if not (raw or "").strip():
         return ""
@@ -187,6 +204,7 @@ def build_html_one(variant: Variant, lang: Lang, *, repo: Path | None = None) ->
                 "country": e.country_name,
                 "artists_joined": ", ".join(e.artist_name_lines),
                 "song": e.song_title,
+                "toc_index_display": _toc_index_display_for_html(e, variant=ctx.variant),
             }
         )
 

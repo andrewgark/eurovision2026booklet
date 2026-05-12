@@ -248,6 +248,24 @@ a.toc-row {
   text-align: left;
 }
 
+/* Running-order column: fixed width so flags + country names align when some rows have no [N] */
+.toc-row__num {
+  flex: 0 0 3rem;
+  width: 3rem;
+  box-sizing: border-box;
+  text-align: right;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--gold);
+  font-size: 0.88em;
+  letter-spacing: 0.02em;
+}
+
+.toc-row__num--empty {
+  /* same width as filled column; no visible content */
+  visibility: hidden;
+}
+
 /* Fixed slot so flags keep intrinsic ratio (CH square, BE narrow, etc.) */
 .toc-flag-slot {
   flex: 0 0 auto;
@@ -386,18 +404,44 @@ a.toc-row {
 }
 
 .song-hero-aside {
-  text-align: right;
-  font-size: 0.85rem;
-  font-weight: 600;
+  flex: 0 1 auto;
   align-self: center;
+  text-align: center;
+  min-width: min(42vw, 10.5rem);
 }
 
-.song-hero-aside .vote {
-  display: block;
-  font-size: 0.72rem;
-  font-weight: 400;
-  opacity: 0.9;
-  margin-top: 0.15rem;
+/* Semi / final: vote word + running number — two bold gold lines like PDF \HeroBand */
+.song-hero-pdf-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+  flex-wrap: wrap;
+}
+
+.song-hero-pdf-num__vote {
+  font-size: clamp(1rem, 2.5vw, 1.18rem);
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.song-hero-pdf-num__digit {
+  font-size: clamp(1.65rem, 4.2vw, 2.25rem);
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  min-width: 1.5em;
+}
+
+.song-hero-pdf-num__digit--solo {
+  font-size: clamp(1.65rem, 4.2vw, 2.25rem);
+  font-weight: 700;
+  color: var(--gold);
 }
 
 /* Info + lyrics layout */
@@ -647,7 +691,22 @@ a.toc-row {
   margin-right: 0.65rem;
 }
 .footer-links a.yt {
+  display: inline-flex;
+  align-items: center;
   color: var(--youtube);
+}
+
+/* YouTube mark (links to youtube.com / youtu.be) */
+.footer-links a.yt::before {
+  content: "";
+  flex-shrink: 0;
+  display: inline-block;
+  width: 1.1em;
+  height: 0.78em;
+  margin-right: 0.38em;
+  vertical-align: middle;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FF0033' d='M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1 31.7 31.7 0 0 0 .5-5.8 31.7 31.7 0 0 0-.5-5.8z'/%3E%3Cpath fill='%23fff' d='M9.8 15.5V8.5l6.4 3.5-6.4 3.5z'/%3E%3C/svg%3E")
+    center / contain no-repeat;
 }
 
 .results-placeholder {

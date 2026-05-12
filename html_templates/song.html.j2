@@ -13,8 +13,14 @@
     </div>
     {% if number_html %}
     <div class="song-hero-aside">
-      {{ number_html }}
-      {% if vote_html %}<span class="vote">{{ vote_html }}</span>{% endif %}
+      {% if vote_html %}
+      <div class="song-hero-pdf-num">
+        <span class="song-hero-pdf-num__vote">{{ vote_html }}</span>
+        <span class="song-hero-pdf-num__digit">{{ number_html }}</span>
+      </div>
+      {% else %}
+      <span class="song-hero-pdf-num__digit song-hero-pdf-num__digit--solo">{{ number_html }}</span>
+      {% endif %}
     </div>
     {% endif %}
   </header>
@@ -174,7 +180,7 @@
 
   {% if nf_url or mv_url %}
   <div class="footer-links">
-    {% if nf_url %}<a href="{{ nf_url }}">{{ labels.nf }}</a>{% endif %}
+    {% if nf_url %}<a href="{{ nf_url }}"{% if 'youtu' in nf_url|lower %} class="yt"{% endif %}>{{ labels.nf }}</a>{% endif %}
     {% if mv_url %}<a class="yt" href="{{ mv_url }}">{{ labels.mv }}</a>{% endif %}
   </div>
   {% endif %}
