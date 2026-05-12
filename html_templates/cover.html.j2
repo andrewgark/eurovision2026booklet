@@ -1,0 +1,32 @@
+{% extends "layout.html.j2" %}
+{% block content %}
+<article class="cover-stack">
+  <div class="cover-label">{{ booklet_title_html }}</div>
+  <h1 class="cover-title">{{ event_name_html }}</h1>
+  <div class="cover-rules" aria-hidden="true"></div>
+  <div class="cover-rules cover-rules--narrow" aria-hidden="true"></div>
+  {% if cover_subtitle_html %}
+  <div class="cover-sub">{{ cover_subtitle_html | safe }}</div>
+  {% endif %}
+</article>
+
+<h2 class="toc-title">{{ labels.toc }}</h2>
+<ol class="toc-list">
+  <li><a href="./page-002-about.html">{{ labels.contents_link_about }}</a></li>
+  {% for item in toc_nav_items %}
+  <li>
+    <a href="{{ item.href }}" class="toc-row">
+      {% if item.flag_url %}
+      <span class="toc-flag-slot" aria-hidden="true">
+        <img src="{{ item.flag_url }}" alt="" class="toc-flag" loading="lazy" decoding="async" />
+      </span>
+      {% endif %}
+      <span class="toc-row__text">{{ item.country }}: {{ item.artists_joined }} – {{ item.song }}</span>
+    </a>
+  </li>
+  {% endfor %}
+  {% if mode == 'post' %}
+  <li><a href="./page-{{ '%03d'|format(page_total) }}-results.html">{{ labels.results }}</a></li>
+  {% endif %}
+</ol>
+{% endblock %}

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import math
 import os
@@ -22,6 +23,14 @@ Variant = Literal["overall_pre", "sf1", "sf2", "final", "overall_post"]
 @dataclass(frozen=True)
 class ArtistBioChunk:
     """One artist bio fact chip: optional intro paragraph(s) plus optional trailing ``*`` list."""
+
+    intro: str
+    bullets: tuple[str, ...]
+
+
+@dataclass(frozen=True)
+class ArtistBioChunkPlain:
+    """Plain-text bio chip before TeX / HTML escaping."""
 
     intro: str
     bullets: tuple[str, ...]
@@ -124,6 +133,57 @@ class EntryView:
     toc_index_prefix: str
 
 
+@dataclass(frozen=True)
+class BookletEntryRaw:
+    """One booklet row from JSON before TeX/HTML escaping (shared source for PDF + HTML)."""
+
+    country_code: str
+    country_name: str
+    artist_name: str
+    artist_birth_name: str
+    artist_name_lines: list[str]
+    artist_birth_name_lines: list[str]
+    artist_birth_year: str
+    artist_birth_place: str
+    artist_grew_up: str
+    artist_lgbtq: str
+    song_title: str
+    song_title_translation: str
+    bio: str
+    bio_chunks_plain: list[ArtistBioChunkPlain]
+    facts: str
+    facts_lines: list[str]
+    country_stats_lines_plain: list[str]
+    country_facts: str
+    country_facts_lines: list[str]
+    selection_tag: str
+    langs_major: list[str]
+    langs_minor: list[str]
+    genres: list[str]
+    national_final_url: str
+    music_video_url: str
+    unofficial_live_url: str
+    lyrics_original: str
+    translation: str
+    lyrics_rows_source: list[dict[str, str]]
+    lyrics_short: bool
+    has_translation: bool
+    lyrics_font_pt: str
+    lyrics_baseline_pt: str
+    win_percent: str
+    win_fill: str
+    qualify_percent: str
+    qualify_fill: str
+    round_sf: str
+    flag_path: str | None
+    photo_path: str | None
+    context_tag: str
+    number_label: str
+    vote_label: str
+    toc_flag_emoji: str
+    toc_index_prefix: str
+
+
 def _read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -201,6 +261,18 @@ def _intro_inline_to_tex(s: str) -> str:
     return "".join(out)
 
 
+def _intro_inline_to_html(s: str) -> str:
+    """Escape for HTML and turn ``**bold**`` into ``<strong>...</strong>``."""
+    out: list[str] = []
+    pos = 0
+    for m in _RE_INTRO_BOLD.finditer(s):
+        out.append(html.escape(s[pos : m.start()]))
+        out.append("<strong>" + html.escape(m.group(1)) + "</strong>")
+        pos = m.end()
+    out.append(html.escape(s[pos:]))
+    return "".join(out)
+
+
 def _artist_bio_bullet_body(line: str) -> str | None:
     """If ``line`` is a markdown-style bullet (`* item`), return the item text; else ``None``."""
     m = _INTRO_BULLET_LINE.match(line.strip())
@@ -261,6 +333,51 @@ def _artist_bio_to_chunks(raw: str) -> list[ArtistBioChunk]:
         else:
             intro_tex = _intro_inline_to_tex(lines[start])
             out.append(ArtistBioChunk(intro=intro_tex, bullets=()))
+    return out
+
+
+def _artist_bio_to_chunks_plain(raw: str) -> list[ArtistBioChunkPlain]:
+    """Same grouping as `_artist_bio_to_chunks`, but Unicode source (``**bold**`` preserved)."""
+    if not raw or not str(raw).strip():
+        return []
+    text = str(raw).replace("\r\n", "\n").replace("\r", "\n")
+    lines = [ln.strip() for ln in text.split("\n") if ln.strip()]
+    out: list[ArtistBioChunkPlain] = []
+    i = 0
+    n = len(lines)
+
+    def collect_bullets_from(idx: int) -> tuple[list[str], int]:
+        acc: list[str] = []
+        j = idx
+        while j < n:
+            b = _artist_bio_bullet_body(lines[j])
+            if b is None:
+                break
+            acc.append(b)
+            j += 1
+        return acc, j
+
+    while i < n:
+        b0 = _artist_bio_bullet_body(lines[i])
+        if b0 is not None:
+            bullets_src, i = collect_bullets_from(i)
+            out.append(ArtistBioChunkPlain(intro="", bullets=tuple(bullets_src)))
+            continue
+
+        start = i
+        i += 1
+        k = i
+        while k < n and _artist_bio_bullet_body(lines[k]) is None:
+            k += 1
+        has_bullets = k < n
+        if has_bullets:
+            intro_parts = lines[start:k]
+            i = k
+            bullets_src, i = collect_bullets_from(i)
+            intro_plain = "\n".join(intro_parts)
+            out.append(ArtistBioChunkPlain(intro=intro_plain, bullets=tuple(bullets_src)))
+        else:
+            out.append(ArtistBioChunkPlain(intro=lines[start], bullets=()))
     return out
 
 
@@ -361,6 +478,86 @@ def _intro_text_to_tex(raw: str) -> str:
     return "".join(out).rstrip()
 
 
+def _intro_number_row_html(nums: list[str]) -> str:
+    """HTML row for intro voting ladder (highlights 8 / 10 / 12)."""
+    parts: list[str] = []
+    for n in nums:
+        cls = "intro-num intro-num--hi" if n in _INTRO_NUM_ROW_HIGHLIGHT else "intro-num"
+        parts.append(f'<span class="{cls}">{html.escape(n)}</span>')
+    return '<div class="intro-num-row">' + " ".join(parts) + "</div>"
+
+
+def _intro_text_to_html(raw: str) -> str:
+    """Mirror `_intro_text_to_tex` block structure as semantic HTML."""
+    if not raw or not str(raw).strip():
+        return ""
+    text = str(raw).replace("\r\n", "\n").replace("\r", "\n")
+    lines = text.split("\n")
+    blocks: list[tuple[str, list[str]]] = []
+    para: list[str] = []
+    lst: list[str] | None = None
+
+    def flush_para() -> None:
+        nonlocal para
+        if para:
+            blocks.append(("p", list(para)))
+            para = []
+
+    def flush_list() -> None:
+        nonlocal lst
+        if lst is not None:
+            blocks.append(("ul", list(lst)))
+            lst = None
+
+    for line in lines:
+        m = _INTRO_BULLET_LINE.match(line)
+        if m is not None:
+            flush_para()
+            if lst is None:
+                lst = []
+            lst.append(m.group(1).strip())
+            continue
+        if not line.strip():
+            flush_para()
+            flush_list()
+            continue
+        flush_list()
+        para.append(line.strip())
+    flush_para()
+    flush_list()
+
+    if not blocks:
+        return ""
+    parts: list[str] = []
+    last: str | None = None
+    for kind, chunk in blocks:
+        if not chunk:
+            continue
+        if kind == "p":
+            if last is not None:
+                parts.append('<div class="intro-block-gap"></div>')
+            for ln in chunk:
+                stripped = ln.strip()
+                if _is_intro_number_row_line(stripped):
+                    parts.append(_intro_number_row_html(stripped.split()))
+                else:
+                    parts.append("<p>" + _intro_inline_to_html(ln) + "</p>")
+            last = "p"
+        else:
+            if last is not None:
+                parts.append('<div class="intro-block-gap intro-block-gap--list"></div>')
+            parts.append("<ul>")
+            for it in chunk:
+                it_st = it.strip()
+                if _is_intro_number_row_line(it_st):
+                    parts.append("<li>" + _intro_number_row_html(it_st.split()) + "</li>")
+                else:
+                    parts.append("<li>" + _intro_inline_to_html(it) + "</li>")
+            parts.append("</ul>")
+            last = "ul"
+    return "\n".join(parts)
+
+
 def _safe_tex_lines(s: str) -> list[str]:
     """Split a multiline string into per-line tex-safe fact tokens.
 
@@ -377,6 +574,14 @@ def _safe_tex_lines(s: str) -> list[str]:
         if t:
             out.append(_safe_tex(t))
     return out
+
+
+def _split_nonempty_lines(s: str) -> list[str]:
+    """Non-empty trimmed lines (plain text, no TeX escaping)."""
+    if not s:
+        return []
+    raw = (s or "").replace("\r\n", "\n").replace("\r", "\n")
+    return [line.strip() for line in raw.split("\n") if line.strip()]
 
 
 def _split_lines(s: str) -> list[str]:
@@ -471,6 +676,71 @@ def _lyrics_orig_line_tex(ol: str) -> str:
     return "".join(parts)
 
 
+def _lyrics_orig_line_html(ol: str) -> str:
+    """HTML-escape a lyrics line; wrap Hebrew runs in a RTL span (parallel to ``\\HebrewRun``)."""
+    if not any(_is_hebrew_script_char(c) for c in ol):
+        return html.escape(ol)
+
+    parts: list[str] = []
+    i = 0
+    n = len(ol)
+    while i < n:
+        fh = next((idx for idx in range(i, n) if _is_hebrew_script_char(ol[idx])), None)
+        if fh is None:
+            parts.append(html.escape(ol[i:]))
+            break
+        if fh > i:
+            mid = ol[i:fh]
+            if mid and not all(_neutral_between_hebrew_words(c) for c in mid):
+                parts.append(html.escape(mid))
+            cluster_start = i if mid and all(_neutral_between_hebrew_words(c) for c in mid) else fh
+        else:
+            cluster_start = fh
+        he = _find_hebrew_cluster_end(ol, fh)
+        esc = html.escape(ol[cluster_start:he])
+        parts.append(f'<span class="lyrics-hebrew" dir="rtl" lang="he">{esc}</span>')
+        i = he
+    return "".join(parts)
+
+
+def _lyrics_rows_source(*, original: str, translation: str) -> list[dict[str, str]]:
+    """Pair lyrics lines as Unicode strings (shared step for TeX + HTML)."""
+    orig_struct = [ln for ln in _split_lines(original or "") if not _is_section_line(ln)]
+    tr_struct = [ln for ln in _split_lines(translation or "") if not _is_section_line(ln)]
+
+    rows: list[dict[str, str]] = []
+    for i, ol in enumerate(orig_struct):
+        tl = tr_struct[i] if i < len(tr_struct) else ""
+        if not ol.strip() and not tl.strip():
+            rows.append({"kind": "gap", "orig": "", "trans": ""})
+        else:
+            rows.append({"kind": "line", "orig": ol, "trans": tl})
+
+    while rows and rows[0]["kind"] == "gap":
+        rows.pop(0)
+    while rows and rows[-1]["kind"] == "gap":
+        rows.pop()
+
+    return rows
+
+
+def _lyrics_rows_tex_from_source(source: list[dict[str, str]]) -> list[dict[str, str]]:
+    """TeX-safe lyric rows from paired Unicode source lines."""
+    rows: list[dict[str, str]] = []
+    for r in source:
+        if r["kind"] == "gap":
+            rows.append({"kind": "gap", "orig": "", "trans": ""})
+        else:
+            rows.append(
+                {
+                    "kind": "line",
+                    "orig": _lyrics_orig_line_tex(str(r["orig"])),
+                    "trans": _safe_tex(str(r["trans"])),
+                }
+            )
+    return rows
+
+
 def _lyrics_rows(*, original: str, translation: str) -> list[dict[str, str]]:
     """
     Produce rows for a paired lyrics table.
@@ -481,29 +751,7 @@ def _lyrics_rows(*, original: str, translation: str) -> list[dict[str, str]]:
     - Blank rows are marked with kind="gap" so the template can render them as
       a subtle separator rather than an empty table row.
     """
-    orig_struct = [ln for ln in _split_lines(original or "") if not _is_section_line(ln)]
-    tr_struct = [ln for ln in _split_lines(translation or "") if not _is_section_line(ln)]
-
-    rows: list[dict[str, str]] = []
-    for i, ol in enumerate(orig_struct):
-        tl = tr_struct[i] if i < len(tr_struct) else ""
-        if not ol.strip() and not tl.strip():
-            rows.append({"kind": "gap", "orig": "", "trans": ""})
-        else:
-            rows.append(
-                {
-                    "kind": "line",
-                    "orig": _lyrics_orig_line_tex(ol),
-                    "trans": _safe_tex(tl),
-                }
-            )
-
-    while rows and rows[0]["kind"] == "gap":
-        rows.pop(0)
-    while rows and rows[-1]["kind"] == "gap":
-        rows.pop()
-
-    return rows
+    return _lyrics_rows_tex_from_source(_lyrics_rows_source(original=original, translation=translation))
 
 
 # Approximate how many narrow-glyph units fit in one lyrics cell before wrapping
@@ -765,6 +1013,36 @@ def _country_stats_lines(c: dict[str, Any], lang: Lang, current_year: int) -> li
     return parts
 
 
+def _country_stats_lines_plain(c: dict[str, Any], lang: Lang, current_year: int) -> list[str]:
+    """Same facts as `_country_stats_lines`, but Unicode trophies instead of ``\\TrophyIcons``."""
+    parts: list[str] = []
+    won = int(c.get("won_times") or 0)
+    last = int(c.get("last_participation") or 0)
+    qstreak = int(c.get("qualify_streak") or 0)
+    nqstreak = int(c.get("non_qualify_streak") or 0)
+    trophy = "\U0001f3c6"
+
+    if lang == "ru":
+        if won >= 1:
+            parts.append(f"{trophy * won} {won} {_ru_pobedy_word(won)}")
+        if last and last != current_year and last != 2025:
+            parts.append(f"Возвращение, последний раз были в {last}")
+        if qstreak >= 2:
+            parts.append(f"в финале {qstreak}× подряд")
+        elif nqstreak >= 2:
+            parts.append(f"мимо финала {nqstreak}× подряд")
+    else:
+        if won >= 1:
+            parts.append(f"{won}× winner")
+        if last and last != current_year and last != 2025:
+            parts.append(f"Return, last time in {last}")
+        if qstreak >= 2:
+            parts.append(f"qualified for final {qstreak}× in a row")
+        elif nqstreak >= 2:
+            parts.append(f"missed final {nqstreak}× in a row")
+    return parts
+
+
 def _parse_lgbtq_tag(raw: str) -> tuple[str, str]:
     """Split `lgbt` field into a known uppercase tag and optional suffix, e.g. ``BISEXUAL (Pete)``."""
     s = (raw or "").strip()
@@ -997,16 +1275,120 @@ def _filter_country_codes(variant: Variant, songs: list[dict[str, Any]]) -> set[
     raise ValueError(f"Unknown variant: {variant}")
 
 
-def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
+def _country_stats_tex_from_plain(lines_plain: list[str], lang: Lang) -> list[str]:
+    """Rebuild TeX country stat lines from Unicode-plain equivalents (trophy emoji → ``\\TrophyIcons``)."""
+    trophy = "\U0001f3c6"
+    out: list[str] = []
+    for line in lines_plain:
+        if lang == "ru" and line.startswith(trophy):
+            n = 0
+            i = 0
+            while i < len(line) and line[i] == trophy:
+                n += 1
+                i += 1
+            rest = line[i:].strip()
+            out.append(f"\\TrophyIcons{{{n}}} {rest}")
+        else:
+            out.append(line)
+    return out
+
+
+def entry_raw_to_entry_view(raw: BookletEntryRaw, *, lang: Lang) -> EntryView:
+    """Apply TeX escaping and lyric segmentation used by the LuaLaTeX templates."""
+    rows = _lyrics_rows_tex_from_source(raw.lyrics_rows_source)
+    has_tr = raw.has_translation
+    short = has_tr and len(rows) <= LYRICS_TWOUP_THRESHOLD
+    left_rows, right_rows = _split_rows_for_twoup(rows)
+
+    bio_chunks_tex: list[ArtistBioChunk] = []
+    for ch in raw.bio_chunks_plain:
+        if ch.bullets:
+            intro_tex = ""
+            if ch.intro.strip():
+                intro_tex = "\\par\n".join(_intro_inline_to_tex(p) for p in ch.intro.split("\n"))
+            bullets_tex = tuple(_intro_inline_to_tex(b) for b in ch.bullets)
+            bio_chunks_tex.append(ArtistBioChunk(intro=intro_tex, bullets=bullets_tex))
+        else:
+            bio_chunks_tex.append(ArtistBioChunk(intro=_intro_inline_to_tex(ch.intro), bullets=()))
+
+    country_stats_lines_final = [
+        _safe_tex_country_stat_line(s)
+        for s in _country_stats_tex_from_plain(raw.country_stats_lines_plain, lang)
+    ]
+
+    return EntryView(
+        country_code=raw.country_code,
+        country_name=_safe_tex(raw.country_name),
+        artist_name=_safe_tex(raw.artist_name),
+        artist_birth_name=_safe_tex(raw.artist_birth_name),
+        artist_name_lines=[_safe_tex(x) for x in raw.artist_name_lines],
+        artist_birth_name_lines=[_safe_tex(x) for x in raw.artist_birth_name_lines],
+        artist_birth_year=_safe_tex(raw.artist_birth_year),
+        artist_birth_place=_safe_tex(raw.artist_birth_place),
+        artist_grew_up=_safe_tex(raw.artist_grew_up),
+        artist_lgbtq=_safe_tex(raw.artist_lgbtq),
+        song_title=_safe_tex(raw.song_title),
+        song_title_translation=_safe_tex(raw.song_title_translation),
+        bio=_safe_tex_multiline(raw.bio),
+        bio_chunks=bio_chunks_tex,
+        facts=_safe_tex_multiline(raw.facts),
+        facts_lines=_safe_tex_lines(raw.facts),
+        country_stats_lines=country_stats_lines_final,
+        country_facts=_safe_tex_multiline(raw.country_facts),
+        country_facts_lines=_safe_tex_lines(raw.country_facts),
+        selection_tag=_safe_tex(raw.selection_tag),
+        langs_major=[_safe_tex(_sentence_case(t)) for t in raw.langs_major],
+        langs_minor=[_safe_tex(_sentence_case(t)) for t in raw.langs_minor],
+        genres=[_safe_tex(_sentence_case(t)) for t in raw.genres],
+        national_final_url=raw.national_final_url,
+        music_video_url=raw.music_video_url,
+        unofficial_live_url=raw.unofficial_live_url,
+        lyrics_original=_safe_tex_multiline(raw.lyrics_original),
+        translation=_safe_tex_multiline(raw.translation),
+        lyrics_rows=rows,
+        lyrics_rows_left=left_rows,
+        lyrics_rows_right=right_rows,
+        lyrics_short=short,
+        has_translation=has_tr,
+        lyrics_font_pt=raw.lyrics_font_pt,
+        lyrics_baseline_pt=raw.lyrics_baseline_pt,
+        win_percent=_safe_tex(raw.win_percent),
+        win_fill=raw.win_fill,
+        qualify_percent=_safe_tex(raw.qualify_percent),
+        qualify_fill=raw.qualify_fill,
+        round_sf=_safe_tex(raw.round_sf),
+        flag_path=raw.flag_path,
+        photo_path=raw.photo_path,
+        context_tag=_safe_tex(raw.context_tag),
+        number_label=_safe_tex(raw.number_label),
+        vote_label=_safe_tex(raw.vote_label),
+        toc_flag_emoji=raw.toc_flag_emoji,
+        toc_index_prefix=raw.toc_index_prefix,
+    )
+
+
+@dataclass(frozen=True)
+class BookletRawContext:
+    """Shared JSON → entries pipeline for LaTeX and static HTML outputs."""
+
+    variant: Variant
+    lang: Lang
+    config: dict[str, Any]
+    event_name: str
+    booklet_title: str
+    cover_subtitle_raw: str
+    intro_raw: str
+    raw_entries: list[BookletEntryRaw]
+    build_dir: Path
+    repo: Path
+
+
+def load_booklet_raw_context(variant: Variant, lang: Lang) -> BookletRawContext:
+    """Load config and build sorted `BookletEntryRaw` list (same source data as the PDF)."""
     repo = Path(__file__).resolve().parents[1]
     data_dir = repo / "data"
     build_dir = repo / "build"
-    dist_dir = repo / "dist"
-    tex_styles_dir = repo / "tex" / "styles"
-    templates_dir = repo / "tex" / "templates"
-
     build_dir.mkdir(parents=True, exist_ok=True)
-    dist_dir.mkdir(parents=True, exist_ok=True)
 
     config = _read_json(data_dir / "config.json")
     countries = {c["country_code"]: c for c in _read_json(data_dir / "countries.json")}
@@ -1035,10 +1417,11 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
     intro_raw = _config_lang_value(config, intro_key, lang)
     if not intro_raw:
         intro_raw = str((config.get("about_text") or {}).get(lang) or "").strip()
-    cover_subtitle = _safe_tex_multiline(cover_subtitle_raw) if cover_subtitle_raw else ""
-    intro_text = _intro_text_to_tex(intro_raw) if intro_raw else ""
 
-    entries: list[EntryView] = []
+    event_name = str(config["event_name"][lang])
+    booklet_title = str(config["booklet_title"][lang])
+
+    raw_entries: list[BookletEntryRaw] = []
     for s in songs_included:
         cc = s["country_code"]
         c = countries.get(cc, {})
@@ -1052,7 +1435,7 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
         song_facts_raw = (s.get("facts", {}) or {}).get(lang, "") or ""
         song_facts = _smart_truncate(song_facts_raw, FACTS_MAX_CHARS)
 
-        country_stats_lines = _country_stats_lines(c, lang, current_year)
+        country_stats_lines_plain = _country_stats_lines_plain(c, lang, current_year)
         country_facts_raw = (c.get("basic_stats", {}) or {}).get(lang, "") or ""
         country_facts = _smart_truncate(country_facts_raw, COUNTRY_FACTS_MAX_CHARS)
         selection_tag = _selection_tag(c, lang)
@@ -1106,13 +1489,13 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
                 photo_path = os.path.relpath(p, build_dir)
                 break
 
-        rows = _lyrics_rows(
+        lyrics_rows_source = _lyrics_rows_source(
             original=str(s.get("lyrics_original") or ""),
             translation=str(translation or ""),
         )
+        rows = _lyrics_rows_tex_from_source(lyrics_rows_source)
         has_tr = bool(str(translation or "").strip())
         short = has_tr and len(rows) <= LYRICS_TWOUP_THRESHOLD
-        left_rows, right_rows = _split_rows_for_twoup(rows)
 
         probs = _pick_probs(
             country_code=cc,
@@ -1166,89 +1549,114 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
             artist_name_raw = artist_name_ru
         else:
             artist_name_raw = artist_name_fallback
-        artist_name_lines = [_safe_tex(x) for x in _split_stage_name_lines(artist_name_raw)]
-        if not artist_name_lines and artist_name_raw.strip():
-            artist_name_lines = [_safe_tex(artist_name_raw.strip())]
-        artist_birth_name_lines = [_safe_tex(x) for x in _split_real_name_lines(artist_birth_name)]
+        artist_name_lines_plain = _split_stage_name_lines(artist_name_raw)
+        if not artist_name_lines_plain and artist_name_raw.strip():
+            artist_name_lines_plain = [artist_name_raw.strip()]
+        artist_birth_name_lines_plain = _split_real_name_lines(artist_birth_name)
 
         lyrics_font, lyrics_baseline = _lyrics_font_pt(rows, has_translation=has_tr)
         mod = _lyrics_size_modifier_from_song(s)
         lyrics_font, lyrics_baseline = _apply_lyrics_size_modifier(
             lyrics_font, lyrics_baseline, mod
         )
-        entries.append(
-            EntryView(
+        raw_entries.append(
+            BookletEntryRaw(
                 country_code=cc,
-                country_name=_safe_tex(country_name),
-                artist_name=_safe_tex(artist_name_raw),
-                artist_birth_name=_safe_tex(artist_birth_name),
-                artist_name_lines=artist_name_lines,
-                artist_birth_name_lines=artist_birth_name_lines,
-                artist_birth_year=_safe_tex(artist_birth_year),
-                artist_birth_place=_safe_tex(artist_birth_place),
-                artist_grew_up=_safe_tex(artist_grew_up),
-                artist_lgbtq=_safe_tex(artist_lgbtq),
-                song_title=_safe_tex(song_title_original),
-                song_title_translation=_safe_tex(song_title_translated),
-                bio=_safe_tex_multiline(bio),
-                bio_chunks=_artist_bio_to_chunks(bio),
-                facts=_safe_tex_multiline(song_facts),
-                facts_lines=_safe_tex_lines(song_facts),
-                country_stats_lines=[_safe_tex_country_stat_line(s) for s in country_stats_lines],
-                country_facts=_safe_tex_multiline(country_facts),
-                country_facts_lines=_safe_tex_lines(country_facts),
-                selection_tag=_safe_tex(selection_tag),
-                langs_major=[_safe_tex(_sentence_case(t)) for t in langs_major],
-                langs_minor=[_safe_tex(_sentence_case(t)) for t in langs_minor],
-                genres=[_safe_tex(_sentence_case(t)) for t in genres],
+                country_name=country_name,
+                artist_name=artist_name_raw,
+                artist_birth_name=artist_birth_name,
+                artist_name_lines=artist_name_lines_plain,
+                artist_birth_name_lines=artist_birth_name_lines_plain,
+                artist_birth_year=artist_birth_year,
+                artist_birth_place=artist_birth_place,
+                artist_grew_up=artist_grew_up,
+                artist_lgbtq=artist_lgbtq,
+                song_title=song_title_original,
+                song_title_translation=song_title_translated,
+                bio=bio,
+                bio_chunks_plain=_artist_bio_to_chunks_plain(bio),
+                facts=song_facts,
+                facts_lines=_split_nonempty_lines(song_facts),
+                country_stats_lines_plain=country_stats_lines_plain,
+                country_facts=country_facts,
+                country_facts_lines=_split_nonempty_lines(country_facts),
+                selection_tag=selection_tag,
+                langs_major=[_sentence_case(t) for t in langs_major],
+                langs_minor=[_sentence_case(t) for t in langs_minor],
+                genres=[_sentence_case(t) for t in genres],
                 national_final_url=national_final_url,
                 music_video_url=music_video_url,
                 unofficial_live_url=unofficial_live_url,
-                lyrics_original=_safe_tex_multiline(str(s.get("lyrics_original") or "")),
-                translation=_safe_tex_multiline(str(translation)),
-                lyrics_rows=rows,
-                lyrics_rows_left=left_rows,
-                lyrics_rows_right=right_rows,
+                lyrics_original=str(s.get("lyrics_original") or ""),
+                translation=str(translation),
+                lyrics_rows_source=lyrics_rows_source,
                 lyrics_short=short,
                 has_translation=has_tr,
                 lyrics_font_pt=lyrics_font,
                 lyrics_baseline_pt=lyrics_baseline,
-                win_percent=_safe_tex(probs["win_percent"]),
+                win_percent=probs["win_percent"],
                 win_fill=_prob_pill_fill(probs["win_percent"], "win")
                 if probs["win_percent"]
                 else "",
-                qualify_percent=_safe_tex(probs["qualify_percent"]),
+                qualify_percent=probs["qualify_percent"],
                 qualify_fill=_prob_pill_fill(probs["qualify_percent"], "qualify")
                 if probs["qualify_percent"]
                 else "",
-                round_sf=_safe_tex(str(s.get("round_sf") or "")),
+                round_sf=str(s.get("round_sf") or ""),
                 flag_path=flag_path,
                 photo_path=photo_path,
-                context_tag=_safe_tex(context_tag),
-                number_label=_safe_tex(number_label),
-                vote_label=_safe_tex(vote_label),
+                context_tag=context_tag,
+                number_label=number_label,
+                vote_label=vote_label,
                 toc_flag_emoji=_regional_flag_emoji(cc),
                 toc_index_prefix=_toc_index_prefix(variant=variant, song=s),
             )
         )
 
     # Order entries per variant.
-    def _sort_key(e: EntryView) -> tuple[int, Any, str]:
+    def _sort_key_raw(e: BookletEntryRaw) -> tuple[int, Any, str]:
         if variant in ("sf1", "sf2"):
             rnd = "SF1" if variant == "sf1" else "SF2"
             n = running_order.get((rnd, e.country_code))
-            # auto-qualifiers (no running order in this SF) go to the end, alphabetical.
             return (0, n, e.country_name) if n is not None else (1, 0, e.country_name)
         if variant == "final":
             n = running_order.get(("F", e.country_code))
             return (0, n, e.country_name) if n is not None else (1, 0, e.country_name)
         if variant == "overall_post":
-            # Final placement isn't in data yet; fall back to alphabetical.
             return (0, 0, e.country_name)
         return (0, 0, e.country_name)
 
-    entries.sort(key=_sort_key)
+    raw_entries.sort(key=_sort_key_raw)
 
+    return BookletRawContext(
+        variant=variant,
+        lang=lang,
+        config=config,
+        event_name=event_name,
+        booklet_title=booklet_title,
+        cover_subtitle_raw=cover_subtitle_raw,
+        intro_raw=intro_raw,
+        raw_entries=raw_entries,
+        build_dir=build_dir,
+        repo=repo,
+    )
+
+
+def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
+    repo = Path(__file__).resolve().parents[1]
+    build_dir = repo / "build"
+    dist_dir = repo / "dist"
+    tex_styles_dir = repo / "tex" / "styles"
+    templates_dir = repo / "tex" / "templates"
+
+    build_dir.mkdir(parents=True, exist_ok=True)
+    dist_dir.mkdir(parents=True, exist_ok=True)
+
+    ctx = load_booklet_raw_context(variant, lang)
+    cover_subtitle = _safe_tex_multiline(ctx.cover_subtitle_raw) if ctx.cover_subtitle_raw else ""
+    intro_text = _intro_text_to_tex(ctx.intro_raw) if ctx.intro_raw else ""
+
+    entries = [entry_raw_to_entry_view(r, lang=lang) for r in ctx.raw_entries]
 
     env = Environment(
         loader=FileSystemLoader(str(templates_dir)),
@@ -1263,15 +1671,15 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
         lang=lang,
         variant=variant,
         mode=mode,
-        event_name=_safe_tex(config["event_name"][lang]),
-        booklet_title=_safe_tex(config["booklet_title"][lang]),
+        event_name=_safe_tex(ctx.config["event_name"][lang]),
+        booklet_title=_safe_tex(ctx.config["booklet_title"][lang]),
         cover_subtitle=cover_subtitle,
         intro_text=intro_text,
         entries=entries,
         TEX_DASH=r"\Muted{—}",
     )
 
-    out_tex = build_dir / f"booklet_{variant}_{lang}.tex"
+    out_tex = ctx.build_dir / f"booklet_{variant}_{lang}.tex"
     out_tex.write_text(tex, encoding="utf-8")
 
     if run_latex:

@@ -9,6 +9,7 @@ if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
 from scripts.build import build_one
+from scripts.build_html import build_html_one
 
 
 def main() -> None:
@@ -18,8 +19,10 @@ def main() -> None:
     for v in variants:
         for l in langs:
             # Run LaTeX by default for the "build all" command.
-            out = build_one(v, l, run_latex=True)
-            print(out)
+            pdf = build_one(v, l, run_latex=True)
+            print("pdf", pdf)
+            html_dir = build_html_one(v, l)
+            print("html", html_dir)
 
 
 if __name__ == "__main__":

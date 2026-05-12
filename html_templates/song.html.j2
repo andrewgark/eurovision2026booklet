@@ -1,0 +1,182 @@
+{% extends "layout.html.j2" %}
+{% block content %}
+<article>
+  <header class="song-hero">
+    {% if flag_url %}
+    <span class="song-hero-flag-slot" aria-hidden="true">
+      <img class="flag" src="{{ flag_url }}" alt="" loading="lazy" decoding="async" />
+    </span>
+    {% endif %}
+    <div class="song-hero-main">
+      <h1>{{ country_name_html }}</h1>
+      {% if context_html %}<span class="tag">{{ context_html }}</span>{% endif %}
+    </div>
+    {% if number_html %}
+    <div class="song-hero-aside">
+      {{ number_html }}
+      {% if vote_html %}<span class="vote">{{ vote_html }}</span>{% endif %}
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="song-body">
+    <div class="song-panels">
+      <section class="panel">
+        <h2>{{ labels.artist }}</h2>
+        {% if photo_url %}
+        <img class="photo" src="{{ photo_url }}" alt="" loading="lazy" />
+        {% endif %}
+        {% for line in artist_lines_html %}
+        <div class="name-line">{{ line }}</div>
+        {% endfor %}
+        {% for line in birth_lines_html %}
+        <div class="sub-line">{{ line }}</div>
+        {% endfor %}
+        {% if artist_birth_year_html %}
+        <div class="sub-line">{{ labels.born }} {{ artist_birth_year_html }}</div>
+        {% endif %}
+        {% if artist_birth_place_html %}
+        <div class="sub-line">📍 {{ artist_birth_place_html }}</div>
+        {% endif %}
+        {% if artist_grew_up_html %}
+        <div class="sub-line">→ {{ artist_grew_up_html }}</div>
+        {% endif %}
+        {% if artist_lgbtq_html %}
+        <div class="lgbt-pill"><span class="lgbt-pill__rainbow" aria-hidden="true">🌈</span><span class="lgbt-pill__text">{{ artist_lgbtq_html }}</span></div>
+        {% endif %}
+
+        {% for chip in bio_chunks_html %}
+          {% if chip.has_bullets %}
+          <div class="fact-chip">
+            {% if chip.intro_html %}{{ chip.intro_html | safe }}<br />{% endif %}
+            <ul>
+              {% for b in chip.bullets_html %}<li>{{ b | safe }}</li>{% endfor %}
+            </ul>
+          </div>
+          {% else %}
+          <div class="fact-chip">{{ chip.intro_html | safe }}</div>
+          {% endif %}
+        {% endfor %}
+      </section>
+
+      <section class="panel">
+        <h2>{{ labels.country }}</h2>
+        {% if win_pct_html or qual_pct_html %}
+        <div class="sub-line">{{ labels.bookies }}</div>
+        <div class="pill-row">
+          {% if qual_pct_html %}
+          <span class="prob-pill {{ qual_fill_class }}">{{ labels.qualify }} {{ qual_pct_html }}</span>
+          {% endif %}
+          {% if win_pct_html %}
+          <span class="prob-pill {{ win_fill_class }}">{{ labels.win }} {{ win_pct_html }}</span>
+          {% endif %}
+        </div>
+        {% endif %}
+        {% for line in country_stats_html %}
+        <div class="country-dot-line">{{ line | safe }}</div>
+        {% endfor %}
+        {% if selection_html %}
+        <div class="pill-row"><span class="meta-pill">{{ selection_html }}</span></div>
+        {% endif %}
+        {% for line in country_facts_lines_html %}
+        <div class="fact-chip">{{ line | safe }}</div>
+        {% endfor %}
+      </section>
+
+      <section class="panel">
+        <h2>{{ labels.song }}</h2>
+        <div class="name-line">{{ song_title_html }}</div>
+        {% if song_trans_html %}<div class="sub-line">{{ song_trans_html }}</div>{% endif %}
+        {% if langs_major_html or langs_minor_html %}
+        <div class="pill-row pill-row--iconed">
+          <span class="pill-row__icon" aria-hidden="true">🗣️</span>
+          <div class="pill-row__pills">
+            {% for t in langs_major_html %}<span class="meta-pill">{{ t }}</span>{% endfor %}
+            {% for t in langs_minor_html %}<span class="meta-pill meta-pill--muted">{{ t }}</span>{% endfor %}
+          </div>
+        </div>
+        {% endif %}
+        {% if genres_html %}
+        <div class="pill-row pill-row--iconed">
+          <span class="pill-row__icon" aria-hidden="true">🎵</span>
+          <div class="pill-row__pills">
+            {% for t in genres_html %}<span class="meta-pill">{{ t }}</span>{% endfor %}
+          </div>
+        </div>
+        {% endif %}
+        {% for line in facts_lines_html %}
+        <div class="fact-chip">{{ line | safe }}</div>
+        {% endfor %}
+      </section>
+    </div>
+
+    <div class="lyrics-wrap" style="--lyrics-font-size: {{ lyrics_font_pt }}pt;">
+      {% if lyrics.mode == 'solo' %}
+        <div class="lyrics-head"><div class="t1">{{ song_title_html }}</div></div>
+        <table class="lyrics-table" role="presentation">
+          {% for row in lyrics.rows %}
+            {% if row.kind == 'gap' %}
+            <tr class="lyrics-gap-row"><td colspan="2"></td></tr>
+            {% else %}
+            <tr><td>{{ row.orig | safe }}</td></tr>
+            {% endif %}
+          {% endfor %}
+        </table>
+      {% elif lyrics.mode == 'pair' %}
+        <div class="lyrics-head">
+          <div class="t1">{{ song_title_html }}</div>
+          {% if song_trans_html %}<div class="t2">{{ song_trans_html }}</div>{% endif %}
+        </div>
+        <table class="lyrics-table" role="presentation">
+          {% for row in lyrics.rows %}
+            {% if row.kind == 'gap' %}
+            <tr class="lyrics-gap-row"><td colspan="2"></td></tr>
+            {% else %}
+            <tr>
+              <td>{{ row.orig | safe }}</td>
+              <td class="trans">{{ row.trans | safe }}</td>
+            </tr>
+            {% endif %}
+          {% endfor %}
+        </table>
+      {% else %}
+        <div class="lyrics-twoup">
+          <div class="lyrics-col lyrics-wrap" style="--lyrics-font-size: {{ lyrics_font_pt }}pt;">
+            <div class="lyrics-head">
+              <div class="t1">{{ song_title_html }}</div>
+              {% if song_trans_html %}<div class="t2">{{ song_trans_html }}</div>{% endif %}
+            </div>
+            <table class="lyrics-table">
+              {% for row in lyrics.left %}
+                {% if row.kind == 'gap' %}
+                <tr class="lyrics-gap-row"><td colspan="2"></td></tr>
+                {% else %}
+                <tr><td>{{ row.orig | safe }}</td><td class="trans">{{ row.trans | safe }}</td></tr>
+                {% endif %}
+              {% endfor %}
+            </table>
+          </div>
+          <div class="lyrics-col lyrics-wrap" style="--lyrics-font-size: {{ lyrics_font_pt }}pt;">
+            <table class="lyrics-table">
+              {% for row in lyrics.right %}
+                {% if row.kind == 'gap' %}
+                <tr class="lyrics-gap-row"><td colspan="2"></td></tr>
+                {% else %}
+                <tr><td>{{ row.orig | safe }}</td><td class="trans">{{ row.trans | safe }}</td></tr>
+                {% endif %}
+              {% endfor %}
+            </table>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if nf_url or mv_url %}
+  <div class="footer-links">
+    {% if nf_url %}<a href="{{ nf_url }}">{{ labels.nf }}</a>{% endif %}
+    {% if mv_url %}<a class="yt" href="{{ mv_url }}">{{ labels.mv }}</a>{% endif %}
+  </div>
+  {% endif %}
+</article>
+{% endblock %}

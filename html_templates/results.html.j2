@@ -1,0 +1,13 @@
+{% extends "layout.html.j2" %}
+{% block content %}
+<article>
+  <h1 class="section-title">{{ labels.results }}</h1>
+  <p class="results-placeholder">
+    {% if lang == 'ru' %}
+    Данные из базы знаний. Заполните таблицу results в Google Sheets.
+    {% else %}
+    Data comes from the knowledge base. Fill the results tab in Google Sheets.
+    {% endif %}
+  </p>
+</article>
+{% endblock %}

@@ -7,14 +7,11 @@
 {%- set L_BOOKIES       = "Букмекеры считают:" if lang == "ru" else "Bookies expect:" -%}
 {%- set L_NF            = "Нацотбор"     if lang == "ru" else "National selection" -%}
 {%- set L_MV            = "Клип"         if lang == "ru" else "Official video" -%}
-{%- set L_UL            = "Лайв" if lang == "ru" else "Live" -%}
 \SongPage{
-\SetSongFooter{ {%- if e.national_final_url or e.music_video_url or e.unofficial_live_url -%}
+\SetSongFooter{ {%- if e.national_final_url or e.music_video_url -%}
 {%- if e.national_final_url -%}\VideoLinkFooter{ {{- e.national_final_url -}} }{ {{ L_NF }} }{%- endif -%}
-{%- if e.national_final_url and (e.music_video_url or e.unofficial_live_url) -%}\hspace{2.0mm}{\color{BookletMuted}\scriptsize\textbullet}\hspace{2.0mm}{%- endif -%}
+{%- if e.national_final_url and e.music_video_url -%}\hspace{2.0mm}{\color{BookletMuted}\scriptsize\textbullet}\hspace{2.0mm}{%- endif -%}
 {%- if e.music_video_url -%}\VideoLinkFooter{ {{- e.music_video_url -}} }{ {{ L_MV }} }{%- endif -%}
-{%- if e.music_video_url and e.unofficial_live_url -%}\hspace{2.0mm}{\color{BookletMuted}\scriptsize\textbullet}\hspace{2.0mm}{%- endif -%}
-{%- if e.unofficial_live_url -%}\VideoLinkFooterMuted{ {{- e.unofficial_live_url -}} }{ {{ L_UL }} }{%- endif -%}
 {%- endif -%} }
 \leavevmode\phantomsection\label{song-{{ e.country_code }}}%
   \HeroBand

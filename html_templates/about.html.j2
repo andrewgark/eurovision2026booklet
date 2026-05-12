@@ -1,0 +1,9 @@
+{% extends "layout.html.j2" %}
+{% block content %}
+<article>
+  <h1 class="section-title">{{ labels.about }}</h1>
+  {% if intro_html %}
+  <div class="intro-box">{{ intro_html | safe }}</div>
+  {% endif %}
+</article>
+{% endblock %}
