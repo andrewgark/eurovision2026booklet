@@ -131,6 +131,7 @@ def _lang_labels(lang: Lang) -> dict[str, str]:
             "bookies": "Букмекеры считают:",
             "nf": "Нацотбор",
             "mv": "Клип",
+            "sf": "Полуфинал",
             "results": "Результаты",
             "prev": "Назад",
             "next": "Дальше",
@@ -152,6 +153,7 @@ def _lang_labels(lang: Lang) -> dict[str, str]:
         "bookies": "Bookies expect:",
         "nf": "National selection",
         "mv": "Official video",
+        "sf": "Semi-Final",
         "results": "Results",
         "prev": "Previous",
         "next": "Next",
@@ -287,6 +289,7 @@ def build_html_one(variant: Variant, lang: Lang, *, repo: Path | None = None) ->
                     "lyrics_baseline_pt": raw_e.lyrics_baseline_pt,
                     "nf_url": raw_e.national_final_url,
                     "mv_url": raw_e.music_video_url,
+                    "sf_url": raw_e.semi_final_video_url,
                 }
             )
 

@@ -107,6 +107,7 @@ class EntryView:
     genres: list[str]
     national_final_url: str
     music_video_url: str
+    semi_final_video_url: str
     unofficial_live_url: str
     lyrics_original: str
     translation: str
@@ -180,6 +181,7 @@ class BookletEntryRaw:
     genres: list[str]
     national_final_url: str
     music_video_url: str
+    semi_final_video_url: str
     unofficial_live_url: str
     lyrics_original: str
     translation: str
@@ -1373,6 +1375,7 @@ def entry_raw_to_entry_view(raw: BookletEntryRaw, *, lang: Lang) -> EntryView:
         genres=[_safe_tex(_sentence_case(t)) for t in raw.genres],
         national_final_url=raw.national_final_url,
         music_video_url=raw.music_video_url,
+        semi_final_video_url=raw.semi_final_video_url,
         unofficial_live_url=raw.unofficial_live_url,
         lyrics_original=_safe_tex_multiline(raw.lyrics_original),
         translation=_safe_tex_multiline(raw.translation),
@@ -1492,6 +1495,7 @@ def load_booklet_raw_context(variant: Variant, lang: Lang) -> BookletRawContext:
         genres = _split_csv_tokens((s.get("genre", {}) or {}).get(lang, "") or "")
         national_final_url = str(s.get("national_final_url") or "").strip()
         music_video_url = str(s.get("music_video_url") or "").strip()
+        semi_final_video_url = str(s.get("semi_final_video_url") or "").strip()
         unofficial_live_url = str(s.get("unofficial_live_url") or "").strip()
 
         translation = s.get("translation_ru") if lang == "ru" else s.get("translation_en")
@@ -1624,6 +1628,7 @@ def load_booklet_raw_context(variant: Variant, lang: Lang) -> BookletRawContext:
                 genres=[_sentence_case(t) for t in genres],
                 national_final_url=national_final_url,
                 music_video_url=music_video_url,
+                semi_final_video_url=semi_final_video_url,
                 unofficial_live_url=unofficial_live_url,
                 lyrics_original=str(s.get("lyrics_original") or ""),
                 translation=str(translation),

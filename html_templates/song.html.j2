@@ -190,9 +190,12 @@
     </div>
   </div>
 
-  {% if nf_url or mv_url %}
+  {% if sf_url or nf_url or mv_url %}
   <div class="footer-links">
+    {% if sf_url %}<a class="yt yt--sf" href="{{ sf_url }}">{{ labels.sf }}</a>{% endif %}
+    {% if sf_url and (nf_url or mv_url) %}<span class="footer-links__sep" aria-hidden="true">·</span>{% endif %}
     {% if nf_url %}<a href="{{ nf_url }}"{% if 'youtu' in nf_url|lower %} class="yt"{% endif %}>{{ labels.nf }}</a>{% endif %}
+    {% if nf_url and mv_url %}<span class="footer-links__sep" aria-hidden="true">·</span>{% endif %}
     {% if mv_url %}<a class="yt" href="{{ mv_url }}">{{ labels.mv }}</a>{% endif %}
   </div>
   {% endif %}

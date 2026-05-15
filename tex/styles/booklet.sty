@@ -559,6 +559,15 @@
     }%
   }%
 }
+% Stronger footer link (semi-final performance): heavier emphasis than NF/MV.
+\newcommand{\VideoLinkFooterBold}[2]{%
+  \ifblank{#1}{}{%
+    \href{#1}{%
+      \raisebox{-0.06ex}{\YoutubeIcon}\hspace{2.0pt}%
+      {\sffamily\small\bfseries\color{BookletAccent}\underline{#2}}%
+    }%
+  }%
+}
 % Same layout as \VideoLinkFooter but muted grey label (unofficial / fan live takes).
 \newcommand{\VideoLinkFooterMuted}[2]{%
   \ifblank{#1}{}{%

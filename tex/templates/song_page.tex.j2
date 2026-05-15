@@ -7,6 +7,7 @@
 {%- set L_BOOKIES       = "Букмекеры считают:" if lang == "ru" else "Bookies expect:" -%}
 {%- set L_NF            = "Нацотбор"     if lang == "ru" else "National selection" -%}
 {%- set L_MV            = "Клип"         if lang == "ru" else "Official video" -%}
+{%- set L_SF            = "Полуфинал"    if lang == "ru" else "Semi-Final" -%}
 {%- if e.qual_stamp_label and e.qual_stamp_kind == "qualified" -%}
 \SetQualStamp{\QualStampGraphic{BookletStampGreen}{ {{ e.qual_stamp_label }} }}
 {%- elif e.qual_stamp_label and e.qual_stamp_kind == "not-qualified" -%}
@@ -15,7 +16,9 @@
 \SetQualStamp{}
 {%- endif -%}
 \SongPage{
-\SetSongFooter{ {%- if e.national_final_url or e.music_video_url -%}
+\SetSongFooter{ {%- if e.semi_final_video_url or e.national_final_url or e.music_video_url -%}
+{%- if e.semi_final_video_url -%}\VideoLinkFooterBold{ {{- e.semi_final_video_url -}} }{ {{ L_SF }} }{%- endif -%}
+{%- if e.semi_final_video_url and (e.national_final_url or e.music_video_url) -%}\hspace{2.0mm}{\color{BookletMuted}\scriptsize\textbullet}\hspace{2.0mm}{%- endif -%}
 {%- if e.national_final_url -%}\VideoLinkFooter{ {{- e.national_final_url -}} }{ {{ L_NF }} }{%- endif -%}
 {%- if e.national_final_url and e.music_video_url -%}\hspace{2.0mm}{\color{BookletMuted}\scriptsize\textbullet}\hspace{2.0mm}{%- endif -%}
 {%- if e.music_video_url -%}\VideoLinkFooter{ {{- e.music_video_url -}} }{ {{ L_MV }} }{%- endif -%}

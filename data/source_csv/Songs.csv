@@ -1,4 +1,4 @@
-country_code,song_title,song_title_en,song_title_translation_en,song_title_translation_ru,langs_en,langs_en_minor,langs_ru,langs_ru_minor,lyrics_original,lyrics_en,lyrics_ru,lyrics_size_modifier,genre_en,genre_ru,facts_en,facts_ru,national_final_url,music_video_url,unofficial_live_url,round_sf,order_sf,number_sf,qualified_to_final,number_final
+country_code,song_title,song_title_en,song_title_translation_en,song_title_translation_ru,langs_en,langs_en_minor,langs_ru,langs_ru_minor,lyrics_original,lyrics_en,lyrics_ru,lyrics_size_modifier,genre_en,genre_ru,facts_en,facts_ru,national_final_url,music_video_url,unofficial_live_url,semi_final_video_url,round_sf,order_sf,number_sf,qualified_to_final,number_final
 DK,Før vi går hjem,,Before We Go Home,Прежде чем мы разойдёмся по домам,Danish,,Датский,,"[Vers 1]
 Min krop den skriger
 Ka' du høre den?
@@ -186,7 +186,7 @@ Before we go, before we go home","[Куплет 1]
 Мы будем в объятиях друг друга, пока не сгорим
 Забыв о том, что проснёмся и будем снова сожалеть
 Прежде чем, прежде чем,
-Прежде чем, прежде чем мы разойдёмся по домам",1,Electropop,Электро-поп,,,https://www.youtube.com/watch?v=xKzEP9dwoss,,,SF2,12,10,YES,1
+Прежде чем, прежде чем мы разойдёмся по домам",1,Electropop,Электро-поп,,,https://www.youtube.com/watch?v=xKzEP9dwoss,,,https://www.youtube.com/watch?v=lqXYe1SHNZA,SF2,12,10,YES,1
 DE,Fire,,,Огонь / В ударе,English,,Английский,,"[Intro]
 Stop denyin', -nyin', no lyin', lyin' no more
 
@@ -301,7 +301,7 @@ Stop denyin', -nyin', no lyin', lyin' no more",,"Хватит отрицать-�
 Как вампир, ты прячешься, а потом появляешься в ночи,
 Хватит отрицать-цать, не нужно обманывать-обманывать больше.",1,Power pop,Пауэр-поп,"Although the song could be described as feminist, Sarah said in an interview that she does not consider herself a feminist.
 Songs with titles meaning “fire” have already appeared at Eurovision: Germany 1978 (Feuer), Cyprus 2018 (Fuego), and Albania 2025 (Zjerm).","Несмотря на то, что песню можно назвать феминистской, Сара сказала в интервью, что себя феминисткой не считает.
-Песни с названием, означающим «огонь», уже были на Евровидении: Германия-1978 («Feuer»), Кипр-2018 («Fuego») и Албания-2025 («Zjerm»).",https://www.youtube.com/watch?v=cv0N_jCx-nA,https://www.youtube.com/watch?v=AzvRc3eH_rA,,SF1_AUTO,12,,AUTO,2
+Песни с названием, означающим «огонь», уже были на Евровидении: Германия-1978 («Feuer»), Кипр-2018 («Fuego») и Албания-2025 («Zjerm»).",https://www.youtube.com/watch?v=cv0N_jCx-nA,https://www.youtube.com/watch?v=AzvRc3eH_rA,,https://www.youtube.com/watch?v=FpGjPN1E2DE,SF1_AUTO,12,,AUTO,2
 IL,Michelle,,,Мишель,"French, Hebrew, English",,"Французский, Иврит, Английский",,"[Intro]
 Mm-mm
 Mm-mm
@@ -522,7 +522,7 @@ Michelle, Michelle, Michelle, Michelle","Мм-мм
 
 О, я люблю тебя,
 Королева всех моих проблем –
-Мишель, Мишель, Мишель, Мишель.",,"Pop, Chanson, Ballad","Поп, Шансон, Баллада","One of the song’s co-writers is Yuval Raphael, last year’s contestant from Israel.","Один из соавторов песни — Юваль Рафаэль, прошлогодняя участница от Израиля.",,https://www.youtube.com/watch?v=xWCnWSoG8nI,,SF1,11,10,YES,3
+Мишель, Мишель, Мишель, Мишель.",,"Pop, Chanson, Ballad","Поп, Шансон, Баллада","One of the song’s co-writers is Yuval Raphael, last year’s contestant from Israel.","Один из соавторов песни — Юваль Рафаэль, прошлогодняя участница от Израиля.",,https://www.youtube.com/watch?v=xWCnWSoG8nI,,https://www.youtube.com/watch?v=L9JVTSHKeqc,SF1,11,10,YES,3
 BE,Dancing on the Ice,,,Танец на льду,English,,Английский,,"[Verse 1]
 I got that summer on my skin
 It burns, it lives, it burns within
@@ -663,7 +663,7 @@ Keep dancing on the ice (Hey)",,"[Куплет 1]
 Зови меня королевой
 (Продолжаю танцевать, продолжаю танцевать на льду)
 Хочу уйти (Эй)
-Продолжаю танцевать на льду (Эй)",1,Pop,Поп,,,,https://www.youtube.com/watch?v=9sfI4g6DWTU,https://www.youtube.com/watch?v=WIyJdk4o19k,SF1,13,11,YES,4
+Продолжаю танцевать на льду (Эй)",1,Pop,Поп,,,,https://www.youtube.com/watch?v=9sfI4g6DWTU,https://www.youtube.com/watch?v=WIyJdk4o19k,https://www.youtube.com/watch?v=hz8CWouTIoo,SF1,13,11,YES,4
 AL,Nân,,Mother,Мама,Albanian,,Албанский,,"[Hyrja]
 Ta dish se nana po ju pret
 E nana ju po ju përcjell
@@ -834,7 +834,7 @@ Mother will be waiting for you","Знай, что мама ждёт тебя,
 Когда ты вернёшься, дитя моё?
 Эта тоска сжигает изнутри.
 Но не беспокойся,
-Мама будет ждать тебя.",1,"Pop, Ballad","Поп, Баллада","The song is accompanied entirely by English subtitles, even though this was still prohibited just a few years ago.","Песня полностью сопровождается субтитрами на английском языке, хотя ещё несколько лет назад это было запрещено.",https://www.youtube.com/watch?v=-2cZ-Ba6ygg,https://www.youtube.com/watch?v=b9AdRrA554o,,SF2,16,13,YES,5
+Мама будет ждать тебя.",1,"Pop, Ballad","Поп, Баллада","The song is accompanied entirely by English subtitles, even though this was still prohibited just a few years ago.","Песня полностью сопровождается субтитрами на английском языке, хотя ещё несколько лет назад это было запрещено.",https://www.youtube.com/watch?v=-2cZ-Ba6ygg,https://www.youtube.com/watch?v=b9AdRrA554o,,https://www.youtube.com/watch?v=FBoF2J8Mrbw,SF2,16,13,YES,5
 GR,Φέρτο,Ferto,Bring it,Неси,Greek,"English, French, Spanish",Греческий,"Английский, Французский, Испанский","[Verse 1]
 Πρέπει να παίξω, δεν θα πάω πάσο
 Mi ambicion es fuego, nunca fracaso
@@ -1094,7 +1094,7 @@ I told you, bring it","[Куплет 1]
 In an interview, Akylas said that he does not like the tuna sashimi mentioned in the song.
 One of the song’s co-writers is Theo Pouzbouris, who represented Greece at Eurovision 2014 as part of the duo Freaky Fortune.","Для эффекта ""телепортации"" на платформу в начале серьёзной части песни в одном кадре на сцене используется двойник, стоящий спиной.
 Акилас в интервью говорил, что не любит упоминаемый в песне сашими с тунцом.
-Один из соавторов песни — Тео Пузбурис, представлявший Грецию на Евровидении-2014 в составе дуэта Freaky Fortune.",https://www.youtube.com/watch?v=j_tDJ77ntPE,https://www.youtube.com/watch?v=NGwNTd_DA9s,,SF1,4,4,YES,6
+Один из соавторов песни — Тео Пузбурис, представлявший Грецию на Евровидении-2014 в составе дуэта Freaky Fortune.",https://www.youtube.com/watch?v=j_tDJ77ntPE,https://www.youtube.com/watch?v=NGwNTd_DA9s,,https://www.youtube.com/watch?v=G0y1sZ4CxaE,SF1,4,4,YES,6
 UA,Рідним,Ridnym,To Loved Ones,Родным,"English, Ukrainian",,"Английский, Украинский",,"[Verse]
 Green into rust
 Trust in the change
@@ -1221,7 +1221,7 @@ Grow even taller","[Куплет]
 Когда все семена, что нами посеяны
 Расцветут и приведут нас домой
 Мы увидим, как деревья
-Вырастут ещё выше",,"Art pop, Folk jazz","Арт-поп, Фолк-джаз",The song includes a vocal phrase sung in one breath lasting about 30 seconds — the longest in Eurovision history.,В песне звучит вокальная фраза на одном дыхании длительностью около 30 секунд — самая длинная в истории Евровидения.,https://www.youtube.com/watch?v=SoEXezpblAc,,,SF2,14,12,YES,7
+Вырастут ещё выше",,"Art pop, Folk jazz","Арт-поп, Фолк-джаз",The song includes a vocal phrase sung in one breath lasting about 30 seconds — the longest in Eurovision history.,В песне звучит вокальная фраза на одном дыхании длительностью около 30 секунд — самая длинная в истории Евровидения.,https://www.youtube.com/watch?v=SoEXezpblAc,,,https://www.youtube.com/watch?v=oSUIylL64XU,SF2,14,12,YES,7
 AU,Eclipse,,,Затмение,English,,Английский,,"[Verse 1]
 Shadows in the moonlight
 Dancing with the sun
@@ -1335,7 +1335,7 @@ When we eclipse (Oh-oh-oh-oh)",,"Тени от лунного света
 Когда случается наше затмение (о-о-о-о),
 Когда случается наше затмение (о-о-о-о),
 Когда случается наше затмение (о-о-о-о),
-Когда случается наше затмение (о-о-о-о).",,"Pop, Power pop","Поп, Пауэр-поп",The song was released during an eclipse.,Песню выпустили во время затмения.,,https://www.youtube.com/watch?v=EUMCr1pnaMY,https://www.youtube.com/watch?v=WmwWEhrwqSo,SF2,13,11,YES,8
+Когда случается наше затмение (о-о-о-о).",,"Pop, Power pop","Поп, Пауэр-поп",The song was released during an eclipse.,Песню выпустили во время затмения.,,https://www.youtube.com/watch?v=EUMCr1pnaMY,https://www.youtube.com/watch?v=WmwWEhrwqSo,https://www.youtube.com/watch?v=xlze1NdwlII,SF2,13,11,YES,8
 RS,Крај мене,Kraj mene,Next to Me,Рядом со мной,Serbian,,Сербский,,"[Uvod]
 (Ja još ti čuvam mesto kraj sebe)
 (A ova jednostrana ljubav ubija me)
@@ -1472,7 +1472,7 @@ The more I give, the less you want me","(Я все еще приберегаю �
 Я все еще приберегаю для тебя место рядом со мной,
 И эта безответная любовь убивает меня.
 Разве ты не видишь, как сильно я ломаюсь?
-Чем больше я отдаю, тем меньше я тебе нужен.",,Progressive metal,Прогрессивный метал,,,https://www.youtube.com/watch?v=FJTLKBOOE98,,,SF1,17,15,YES,9
+Чем больше я отдаю, тем меньше я тебе нужен.",,Progressive metal,Прогрессивный метал,,,https://www.youtube.com/watch?v=FJTLKBOOE98,,,https://www.youtube.com/watch?v=uyfdKvR1nJM,SF1,17,15,YES,9
 MT,Bella,,Beautiful,Красавица,"English, Maltese",,"Английский, Мальтийский",,"[Verse]
 Hello, my friend, is it the end?
 I don't recall the time you said goodbye
@@ -1616,7 +1616,7 @@ What a beauty","[Куплет]
 В конце концов, всё это оказалось лишь…
 Какая красавица",,"Pop, Ballad","Поп, Баллада","During the promotional campaign, a large number of billboards across Europe were bought, featuring the singer and a call to vote for the song.
 One of the song’s co-writers is Sarah Bonnici, who represented Malta at Eurovision 2014.","В ходе рекламной кампании было скуплено очень много биллбордов по всей Европе с изображением певца и призывом голосовать за эту песню.
-Один из соавторов песни - Сара Бонничи, представлявшая Мальту на Евровидении-2014.",https://www.youtube.com/watch?v=zpnUWz6NKMw,https://www.youtube.com/watch?v=CW6mQLBh6Js,,SF2,17,14,YES,10
+Один из соавторов песни - Сара Бонничи, представлявшая Мальту на Евровидении-2014.",https://www.youtube.com/watch?v=zpnUWz6NKMw,https://www.youtube.com/watch?v=CW6mQLBh6Js,,https://www.youtube.com/watch?v=FpG_DV2jAQo,SF2,17,14,YES,10
 CZ,Crossroads,,,Перекрёстки,English,,Английский,,"[Verse 1]
 Follow a voice unknown
 Learn how to swim in open waters on your own
@@ -1678,7 +1678,7 @@ Yeah, yeah",,"Я иду на зов неизвестного голоса,
 
 О, перекрёстки.
 
-Да, да.",,"Pop, Ballad","Поп, Баллада",,,,https://www.youtube.com/watch?v=6ea25aRGpLo,https://www.youtube.com/watch?v=3Kn6OPONE-g,SF2,5,5,YES,11
+Да, да.",,"Pop, Ballad","Поп, Баллада",,,,https://www.youtube.com/watch?v=6ea25aRGpLo,https://www.youtube.com/watch?v=3Kn6OPONE-g,https://www.youtube.com/watch?v=MNfJxo04M5I,SF2,5,5,YES,11
 BG,Bangaranga,,,Бунтарка,English,Jamaican Patois,Английский,Ямайский креольский,"[Pre-Chorus]
 Come alive
 Surrender to the blinding lights
@@ -1818,7 +1818,7 @@ Come on, let me pull you in so deep, I'm gon' leave you weak
 (Бунтарка, бунтарка, бунтарка, я бунтар—)
 (Бунтарка, бунтарка, бунтарка; я знаю) Я бунтар— (Оо)",1,"Dark-pop, EDM","Дарк-поп, EDM","For Bulgaria, the United Kingdom, and Switzerland, the staging and choreography are directed by Fredrik Rydman, who previously directed Sweden in 2015 (“Heroes”, 1st place), Finland in 2023 (“Cha Cha Cha”, 2nd place), and Switzerland in 2024 (“The Code”, 1st place).
 One of the song’s co-writers is Dimitris Kontopoulos, who often writes and produces songs for Eurovision, including “Work Your Magic” (Belarus 2007, top 6), “Shady Lady” (Ukraine 2008, top 2), “Hold Me” (Azerbaijan 2013, top 2), “Shine” (Russia 2014, top 7), “You Are the Only One” (Russia 2016, top 3), and “Scream” (Russia 2019, top 3).","Для Болгарии, Великобритании и Швейцарии режиссирует стейджинг и хореографию Фредрик Ридман, ранее режиссировавший Швецию в 2015 («Heroes», топ-1), Финляндию в 2023 («Cha Cha Cha», топ-2) и Швейцарию в 2024 («The Code», топ-1).
-Один из соавторов песни — Димитрис Контопулос, часто пишущий и продюсирующий песни для Евровидения, в том числе «Work your Magic» (Беларусь-2007, топ-6), «Shady Lady» (Украина-2008, топ-2), «Hold Me» (Азербайджан-2013, топ-2), «Shine» (Россия-2014, топ-7), «You Are The Only One» (Россия-2016, топ-3), «Scream» (Россия-2019, топ-3).",https://www.youtube.com/watch?v=_pkC9J6BPFY,https://www.youtube.com/watch?v=J3oGYo_mekw,,SF2,1,1,YES,12
+Один из соавторов песни — Димитрис Контопулос, часто пишущий и продюсирующий песни для Евровидения, в том числе «Work your Magic» (Беларусь-2007, топ-6), «Shady Lady» (Украина-2008, топ-2), «Hold Me» (Азербайджан-2013, топ-2), «Shine» (Россия-2014, топ-7), «You Are The Only One» (Россия-2016, топ-3), «Scream» (Россия-2019, топ-3).",https://www.youtube.com/watch?v=_pkC9J6BPFY,https://www.youtube.com/watch?v=J3oGYo_mekw,,https://www.youtube.com/watch?v=4Mxq2WCAhT4,SF2,1,1,YES,12
 HR,Andromeda,,,Андромеда,Croatian,,Хорватский,,"[Strofa 1: Korina Olivia Rogić, Lelek]
 Dok pališ svijeću, pitaj svoju baku
 Zašto je kćeri rađala u strahu
@@ -1984,7 +1984,7 @@ Andromeda","[Куплет 1]
 Андромеда",,Folk-pop,Фолк-поп,"The performers use traditional Croatian tattoos known as sikanje. They were used to mark a child as Christian, so that they could not be kidnapped and converted to Islam.
 In Turkey, the song and music video caused a scandal: the lyrics and visuals were seen as criticism of the Ottoman Empire and as a depiction of Croatian women being enslaved by Turks.
 ","Исполнительницы используют традиционные хорватские татуировки, называемые сиканье. Они использовались для обозначения, что ребёнок — христанин, и его не могли украсть и обратить в ислам.
-В Турции песня и клип вызвали скандал: слова и визуал восприняли как критику Османской империи и изображение порабощения хорваток турками.",https://www.youtube.com/watch?v=OMCR-8gmgso,https://www.youtube.com/watch?v=vl7Jqnw10sU,,SF1,3,3,YES,13
+В Турции песня и клип вызвали скандал: слова и визуал восприняли как критику Османской империи и изображение порабощения хорваток турками.",https://www.youtube.com/watch?v=OMCR-8gmgso,https://www.youtube.com/watch?v=vl7Jqnw10sU,,https://www.youtube.com/watch?v=-qtoDzlS-rk,SF1,3,3,YES,13
 GB,"Eins, Zwei, Drei",,"Eins, Zwei, Drei","Раз, два, три",English,German,Английский,Немецкий,"[Verse 1]
 So sick of doing the whole 9 to 5
 I pay my dues, I'm just stayin' alive
@@ -2165,7 +2165,7 @@ I'm comin' back to life",,"[Куплет 1:]
 Айнс, цвай, драй!
 Я возвращаюсь к жизни.",1,Synth-pop,Синти-поп,"For Bulgaria, the United Kingdom, and Switzerland, the staging and choreography are directed by Fredrik Rydman, who previously directed Sweden in 2015 (“Heroes”, 1st place), Finland in 2023 (“Cha Cha Cha”, 2nd place), and Switzerland in 2024 (“The Code”, 1st place).
 Kill J, who has previously written many other Eurovision songs, is a co-writer on this year’s entries for the United Kingdom, Luxembourg, and San Marino.","Для Болгарии, Великобритании и Швейцарии режиссирует стейджинг и хореографию Фредрик Ридман, ранее режиссировавший Швецию в 2015 («Heroes», топ-1), Финляндию в 2023 («Cha Cha Cha», топ-2) и Швейцарию в 2024 («The Code», топ-1).
-Соавтором песен для Великобритании, Люксембурга и Сан-Марино в этом году стала Kill J, ранее написавшая много других песен для Евровидения.",,https://www.youtube.com/watch?v=niMKvJ-Itq8,https://www.youtube.com/watch?v=-iZ909rc9iI,SF2_AUTO,15,,AUTO,14
+Соавтором песен для Великобритании, Люксембурга и Сан-Марино в этом году стала Kill J, ранее написавшая много других песен для Евровидения.",,https://www.youtube.com/watch?v=niMKvJ-Itq8,https://www.youtube.com/watch?v=-iZ909rc9iI,https://www.youtube.com/watch?v=xnls0LHAJLg,SF2_AUTO,15,,AUTO,14
 FR,Regarde !,,Look!,Посмотри!,French,,Французский,,"[Couplet 1]
 Quand tout s'illumine dans tout Paris
 Que les rues se vident, je reste ici
@@ -2300,7 +2300,7 @@ Look at me","[Куплет 1]
 Эта любовь подобна молнии
 Посмотри на меня",,"Orchestral Pop, Classical Crossover","Оркестровый поп, Классический кроссовер","Yes, in French, a space is placed before an exclamation mark.
 A distinctive feature of the song is its combination of operatic and pop vocals.","Да, во французском языке перед восклицательным знаком ставится пробел.
-Особенность песни — сочетание оперного и эстрадного вокала",,https://www.youtube.com/watch?v=ujoCYrvvTYQ,https://www.youtube.com/watch?v=7vDCPPxA_bE,SF2_AUTO,6,,AUTO,15
+Особенность песни — сочетание оперного и эстрадного вокала",,https://www.youtube.com/watch?v=ujoCYrvvTYQ,https://www.youtube.com/watch?v=7vDCPPxA_bE,https://www.youtube.com/watch?v=YwwE7zqQ6XM,SF2_AUTO,6,,AUTO,15
 MD,"Viva, Moldova!",,Long live Moldova!,Да здравствует Молдова!,Romanian,"Spanish, English, French, Italian, Hawaiian and Latin",Румынский,"Испанский, Английский, Французский, Итальянский, Гавайский, Латынь","[Refren: Satoshi]
 Viva Moldova, aloha, adio, vida loca
 Soroca, Europa, Palma de Mallorca
@@ -2483,7 +2483,7 @@ Welcome to Moldova","[Припев]
 Добро пожаловать в Молдову
 Добро пожаловать в Молдову",,Pop rap,Поп-рэп,"The song mentions many Moldovan cultural references: the city of Soroca, the song genre doina, the hora dance, the Soviet film Maria, Mirabela, the song “Focul Din Vatră”, composer Eugen Doga, poet Grigore Vieru, and more.
 One of the backing vocalists, Aliona Moon, has already been to Eurovision twice: in 2012, also as a backing vocalist, and in 2013 with a solo performance.","В песне упоминается много молдавских культурных моментов: город Сороки, песенный жанр дойна, танец хора, советский фильм «Мария, Мирабела», песня «Focul Din Vatră», композитор Евгений Дога, поэт Григорий Виеру...
-Одна из бэк-вокалисток, Алёна Мун, уже дважды была на Евровидении. В 2012 тоже в роли бэк-вокалистки, а в 2013 с сольным номером.",https://www.youtube.com/watch?v=1JEmuzqob8c,https://www.youtube.com/watch?v=SViojHjNSzc,,SF1,1,1,YES,16
+Одна из бэк-вокалисток, Алёна Мун, уже дважды была на Евровидении. В 2012 тоже в роли бэк-вокалистки, а в 2013 с сольным номером.",https://www.youtube.com/watch?v=1JEmuzqob8c,https://www.youtube.com/watch?v=SViojHjNSzc,,https://www.youtube.com/watch?v=sJjTOalT4DY,SF1,1,1,YES,16
 FI,Liekinheitin,,Flamethrower,Огнемёт,Finnish,English,Финский,Английский,"[Intro]
 Ois viisaampi häipyy täält
 Miten tunteet vois jäädyttää?
@@ -2602,7 +2602,7 @@ Flamethrower","Я должен быть мудрее, я должен уйти
 Но ты никогда не будешь полностью моим
 О, так жарко, но холодно, как лед
 Ты, ты огнемет, огнемет
-Огнемет",,"Pop-rock, Classical Crossover","Поп-рок, Классический кроссовер","At Eurovision, live performance is only allowed for vocals, but Linda was granted special permission to play the violin into a microphone for at least part of this song.","На Евровидении вживую разрешено только петь, но Линде выдали специальное разрешение играть на скрипке в микрофон как минимум в части этой песни.",https://www.youtube.com/watch?v=9bfwNIYb96Q,,,SF1,8,7,YES,17
+Огнемет",,"Pop-rock, Classical Crossover","Поп-рок, Классический кроссовер","At Eurovision, live performance is only allowed for vocals, but Linda was granted special permission to play the violin into a microphone for at least part of this song.","На Евровидении вживую разрешено только петь, но Линде выдали специальное разрешение играть на скрипке в микрофон как минимум в части этой песни.",https://www.youtube.com/watch?v=9bfwNIYb96Q,,,https://www.youtube.com/watch?v=i8vlDO89YQA,SF1,8,7,YES,17
 PL,Pray,,,Молись,English,,Английский,,"[Verse 1]
 Freedom, just freedom
 Won't you give it all to me?
@@ -2710,7 +2710,7 @@ Pray",,"Свобода, просто свобода
 Молись (Молись)
 Молись, да (Молись, молись)
 Молись",,"R&B, Gospel, Hip-hop","R&B, Госпел, Хип-Хоп","Fans hear a very strong Beyoncé influence in this song.
-",Фанаты слышат очень большое влияние Beyoncé в этой песне,https://www.youtube.com/watch?v=q78cnYIoF9Y,,,SF1,16,14,YES,18
+",Фанаты слышат очень большое влияние Beyoncé в этой песне,https://www.youtube.com/watch?v=q78cnYIoF9Y,,,https://www.youtube.com/watch?v=WsmVIlscdJU,SF1,16,14,YES,18
 LT,Sólo quiero más,,I just want more,Я просто хочу большего,"Lithuanian, English, Spanish","German, French, Italian","Литовский, Английский, испанский","Немецкий, Французский, Итальянский","[Verse 1]
 Tai gąsdina, vaidenasi visur kur aš esu
 Kas drįsta, tas klausia dėl ko aš gyvenu?
@@ -2849,10 +2849,10 @@ I just want more","Это пугает, это преследует, где бы
 Я просто хочу большего.
 (Даже если мы стоим, когда небо падает.)
 Я просто хочу большего.",,"Art pop, Classical Crossover","Арт-поп, Классический кроссовер","At the end of the song, Lion sings “I just want more” in five languages: Spanish, German, French, Italian, and Lithuanian.
-In French, “Je veux juste plus” can mean both “I just want more” and “I just don’t want more,” depending on whether the “s” in “plus” is pronounced. In the studio recording, the singer pronounces the “s,” but at Eurovision he corrected the mistake and stopped pronouncing it.
+“Je veux juste plus” can mean either “I just want more” or “I just don’t want it anymore,” depending on whether the s in plus is pronounced. In the studio version, the singer pronounces it, but at Eurovision he corrected it and stopped doing so.
 The song ends with Lion touching his hands together 2–3 times while forming an “O” shape with them; in International Sign, this means the word “more.”","В конце песни Лион на 5 языках поёт «Я просто хочу большего»: на испанском, немецком, французском, итальянском и литовском.
-С французского «Je veux juste plus» можно перевести как «Я просто хочу большего», так и как «Я просто НЕ хочу большего», в зависимости от того, произносить ли звук «s» в слове «plus». В студийной записи певец пропевает «s», но на Евровидении уже поправил ошибку и перестал её произносить.
-Песня заканчивается на том, что Лион дотрогивается согнутыми в «о» руками друг до друга 2-3 раза, на Международном жестовом языке это означает слово «больше».",https://www.youtube.com/watch?v=nWwMMMVkwRU,https://www.youtube.com/watch?v=0H-PXnbhG7A,,SF1,14,12,YES,19
+«Je veux juste plus» можно понять как «я просто хочу большего» или «я просто больше не хочу» — зависит от того, произносится ли s в plus. В студийке певец её спел, а на Евровидении уже исправил.
+Песня заканчивается на том, что Лион дотрогивается согнутыми в «о» руками друг до друга 2-3 раза, на Международном жестовом языке это означает слово «больше».",https://www.youtube.com/watch?v=nWwMMMVkwRU,https://www.youtube.com/watch?v=0H-PXnbhG7A,,https://www.youtube.com/watch?v=_0kkvvTc3hQ,SF1,14,12,YES,19
 SE,My System,,,Моя система,English,,Английский,,"[Verse 1]
 I don't even want you (Want you)
 No, you don't take up space
@@ -2961,7 +2961,7 @@ No, I can't get you out of my system",,"Я даже не хочу тебя (Хо
 Нет, я никак не могу вывести тебя из своей системы.",,"Pop, EDM,         
 Tech house","Поп, EDM, Тек-хаус","Rumor has it that Felicia lost her voice after the semifinal.
 The song has five co-writers from three countries: Sweden, Norway, and Denmark.","По слухам, Фелисия потеряла голос после полуфинала.
-У песни пять соавторов из трёх стран: Швеции, Норвегии и Дании.",https://www.youtube.com/watch?v=ibbfS8iG450,,,SF1,2,2,YES,20
+У песни пять соавторов из трёх стран: Швеции, Норвегии и Дании.",https://www.youtube.com/watch?v=ibbfS8iG450,,,https://www.youtube.com/watch?v=az6XIorzZxM,SF1,2,2,YES,20
 CY,Jalla,,More,Больше,"English, Cypriot Greek",,"Английский, Кипрский греческий",,"[Intro]
 I'm dancing on the table, baby
 Shake my hips to τσιφτετέλι
@@ -3214,7 +3214,7 @@ More, more, they want","[Интро]
 Больше, больше, они хотят больше (Больше, больше)
 Я танцую на столе, детка
 Покачиваю бёдрами в такт танцу цифтетели
-Больше, больше, они хотят",1,Dance-Pop,Дэнс-поп,The song features Cypriot instruments such as the lute and the çifteli.,"В песне звучат такие кипрские инструменты, как лютня и чифтели.",,https://www.youtube.com/watch?v=TzSs51BiQrE,https://www.youtube.com/watch?v=ZjPVIPb86WA,SF2,9,8,YES,21
+Больше, больше, они хотят",1,Dance-Pop,Дэнс-поп,The song features Cypriot instruments such as the lute and the çifteli.,"В песне звучат такие кипрские инструменты, как лютня и чифтели.",,https://www.youtube.com/watch?v=TzSs51BiQrE,https://www.youtube.com/watch?v=ZjPVIPb86WA,https://www.youtube.com/watch?v=QMjGilVXpD0,SF2,9,8,YES,21
 IT,Per sempre sì,,Forever Yes,Да — навсегда,Italian,Neapolitan,Итальянский,Неаполитанский,"[Strofa 1]
 È cominciato tutto quanto dal principio
 Io che per te ero solo un uomo sconosciuto
@@ -3389,7 +3389,7 @@ And so it will forever be ""Yes""","[Куплет 1]
 С рукой на сердце
 Я клянусь тебе пред Богом
 Будем только ты и я
-И с этого дня — навечно «да»",,"Disco funk, Canzone napoletana","Диско-фанк, Неаполитанская песня","This wedding song, in the style of 1980s Italian music, unexpectedly won the Sanremo Festival, one of the toughest Eurovision selections.","Эта свадебная песня в духе итальянсекой музыки 80-ых довольно неожиданно выиграла Фестиваль в Сан-Ремо, один из самых сложных отборов на Евровидении.",https://www.youtube.com/watch?v=kA7pS6kaTpg,https://www.youtube.com/watch?v=V406FAGkhyQ,,SF1_AUTO,7,,AUTO,22
+И с этого дня — навечно «да»",,"Disco funk, Canzone napoletana","Диско-фанк, Неаполитанская песня","This wedding song, in the style of 1980s Italian music, unexpectedly won the Sanremo Festival, one of the toughest Eurovision selections.","Эта свадебная песня в духе итальянсекой музыки 80-ых довольно неожиданно выиграла Фестиваль в Сан-Ремо, один из самых сложных отборов на Евровидении.",https://www.youtube.com/watch?v=kA7pS6kaTpg,https://www.youtube.com/watch?v=V406FAGkhyQ,,https://www.youtube.com/watch?v=OknnSe8SG8Q,SF1_AUTO,7,,AUTO,22
 NO,Ya Ya Ya,,,Йа-йа-йа,English,,Английский,,"[Intro]
 (Ah, ya-ya-ya-ya)
 (Ah, ya-ya-ya-ya)
@@ -3453,7 +3453,7 @@ Ya-ya-ya-ya
 Не отпущу (Йа-йа-йа-йа-йа-йа)
 Йа-йа-йа-йа
 (Йа-йа-йа-йа-йа-йа)
-(Йа-йа-йа-йа-йа-йа-йа)",,Pop,Поп,,,https://www.youtube.com/watch?v=MasllzWk_bQ,,,SF2,18,15,YES,23
+(Йа-йа-йа-йа-йа-йа-йа)",,Pop,Поп,,,https://www.youtube.com/watch?v=MasllzWk_bQ,,,https://www.youtube.com/watch?v=FcFaMMTz5-M,SF2,18,15,YES,23
 RO,Choke Me,,,Души меня,English,,Английский,,"[Verse 1]
 Phantom, you feel like a phantom
 Why do you wanna tame me?
@@ -3563,7 +3563,7 @@ Ch-ch-ch-choke me, ch-ch-ch-choke me",,"Ты как будто фантом,
 Ду-ду-ду-души меня, ду-ду-ду-души меня.
 Люби так, пусть лёгкие взорвутся,
 Мне нужна только твоя любовь, пусть она задушит меня,
-Ду-ду-ду-души меня, ду-ду-ду-души меня.",,Nu metal,Ню-метал,,,https://www.youtube.com/watch?v=JrSl0sTX5W4,https://www.youtube.com/watch?v=yn0YmI0dPb8,,SF2,3,3,YES,24
+Ду-ду-ду-души меня, ду-ду-ду-души меня.",,Nu metal,Ню-метал,,,https://www.youtube.com/watch?v=JrSl0sTX5W4,https://www.youtube.com/watch?v=yn0YmI0dPb8,,https://www.youtube.com/watch?v=xJgWNtg6YPo,SF2,3,3,YES,24
 AT,Tanzschein,,Dance License,Танцевальная лицензия,German,,Немецкий,,"[Strophe 1]
 Steh' vor dem Club (Ey), bin schon gespannt
 Sag, hast du Lust auf einen Tanz?
@@ -3732,7 +3732,7 @@ Do you have a dance license? This isn't a joke
 И все хотят получить танцевальную лицензию, хотят быть как мы
 Но без танцевальной лицензии они останутся животными
 У вас есть танцевальная лицензия? Я не шучу
-Потому что без танцевальной лицензии вы сюда не попадёте",,Dance-Pop,Дэнс-поп,The idea for the song came when Cosmó went to a club and saw that nobody was dancing.,"Идея песни появилась, когда Космо пришёл в клуб и увидел, что никто не танцует.",https://www.youtube.com/watch?v=SPpL_ZuRTZY,https://www.youtube.com/watch?v=zPGP9ZphxiY,,SF2_AUTO,10,,AUTO,25
+Потому что без танцевальной лицензии вы сюда не попадёте",,Dance-Pop,Дэнс-поп,The idea for the song came when Cosmó went to a club and saw that nobody was dancing.,"Идея песни появилась, когда Космо пришёл в клуб и увидел, что никто не танцует.",https://www.youtube.com/watch?v=SPpL_ZuRTZY,https://www.youtube.com/watch?v=zPGP9ZphxiY,,https://www.youtube.com/watch?v=F9YqxdIzPQk,SF2_AUTO,10,,AUTO,25
 PT,Rosa,,Rose,Роза,Portuguese,,Португальский,,"[Intro]
 No silêncio do luar
 Sopra o vento devagar
@@ -3847,7 +3847,7 @@ Whom sprouted in Alentejo","В тишине лунного света
 Которая расцвела к югу от реки.
 
 Ты — самая красивая роза,
-Которая когда-то расцвела в Алентежу.",,"Cante Alentejano, Pop","Канте Алентеджано, Поп","The song is written in the traditional genre of Cante Alentejano, with its characteristic polyphonic vocals and almost no instrumental accompaniment.",Песня написана в традиционном жанре Канте Алентеджано с характерным полифоническим вокалом с почти полным отсутствием музыки.,https://www.youtube.com/watch?v=jyHaE6GqaaQ,,,SF1,5,5,NO,
+Которая когда-то расцвела в Алентежу.",,"Cante Alentejano, Pop","Канте Алентеджано, Поп","The song is written in the traditional genre of Cante Alentejano, with its characteristic polyphonic vocals and almost no instrumental accompaniment.",Песня написана в традиционном жанре Канте Алентеджано с характерным полифоническим вокалом с почти полным отсутствием музыки.,https://www.youtube.com/watch?v=jyHaE6GqaaQ,,,https://www.youtube.com/watch?v=kWXyEWtB7KM,SF1,5,5,NO,
 GE,On Replay,,,На повторе,English,,Английский,,"[Intro]
 Tam, ta-ra-ram-tam, tam-tam, pai
 Tam, ta-ra-ram-tam, tam-tam, pai
@@ -4026,7 +4026,7 @@ Keep me on replay, okay",,"Там, та-ра-рам-там, там-там, па�
 Ла-ла-ла-ла-ла-ла-ла,
 Оставь меня на повторе, окей",1,Electropop,Электро-поп,"The yellow-and-black costumes reference the band’s bee identity.
 One of the song’s co-writers is Lizi Pop, who represented Georgia at Junior Eurovision in 2014 and co-hosted Junior Eurovision in 2017.","Жёлто-чёрные костюмы отсылают к пчелиной идентичности группы.
-Один из соавторов песни — Lizi Pop, представлявшая Грузию на Детском Евровидении в 2014 году и соведущая Детского Евровидения в 2017 году.",,https://www.youtube.com/watch?v=coh-lygCINY,https://www.youtube.com/watch?v=NCmeuN9Z7GI,SF1,6,6,NO,
+Один из соавторов песни — Lizi Pop, представлявшая Грузию на Детском Евровидении в 2014 году и соведущая Детского Евровидения в 2017 году.",,https://www.youtube.com/watch?v=coh-lygCINY,https://www.youtube.com/watch?v=NCmeuN9Z7GI,https://www.youtube.com/watch?v=6LzvIh9FQ0Q,SF1,6,6,NO,
 ME,Нова зора,Nova zora,New dawn,Новая заря,Montenegrin,English,Черногорский,Английский,"[Strofa 1]
 Ko je ovdje ko? Ma kraj je
 Moj je jači hod (Jači hod), za dalje
@@ -4182,7 +4182,7 @@ Behind the mountains, behind the seas, a new dawn is born
 [Аутро]
 (Новая заря)",,"Electropop, Dance-Pop","Электропоп, Дэнс-поп","The music video, released on March 8, depicts women’s domestic labor and liberation from it.
 One of the song’s co-writers is Boris Subotić, who also wrote Montenegro’s song “Dobrodošli” last year.","В клипе, вышедшем 8 марта, показаны женский домашний труд и освобождение от него.
-Один из соавторов песни — Борис Суботич, также написавший прошлогоднюю песню Черногории Dobrodošli.",https://www.youtube.com/watch?v=59hsYOMCQGY,https://www.youtube.com/watch?v=nuvy2d60HbI,,SF1,9,8,NO,
+Один из соавторов песни — Борис Суботич, также написавший прошлогоднюю песню Черногории Dobrodošli.",https://www.youtube.com/watch?v=59hsYOMCQGY,https://www.youtube.com/watch?v=nuvy2d60HbI,,https://www.youtube.com/watch?v=_Xo12vfHqtk,SF1,9,8,NO,
 EE,Too Epic to Be True,,,"Слишком эпично, чтобы быть правдой",English,,Английский,,"[Intro]
 Too epic to be true
 But here I am with you
@@ -4297,7 +4297,7 @@ Too epic to be true",,"[Интро]
 Слишком эпично, слишком эпично, слишком эпично, чтобы быть правдой
 Слишком эпично, слишком эпично, слишком эпично, чтобы быть правдой
 Искра между нами создала целый сюжет
-Слишком эпично, чтобы быть правдой",,Pop-rock,Поп-рок,"This song was written by producer Sven Lõhmus who created the band. Besides that, he also created and wrote songs for the groups Suntribe (Estonia 2005) and Urban Symphony (Estonia 2009), and has also produced and written songs for singers Getter Jaani (Estonia 2011) and Laura Põldvere (Estonia 2017, together with Koit Toome).","Эту песню написал продюсер Свен Лыхмус, создавший Vanilla Ninja. Помимо этого, он также создал и написал песни для групп Suntribe (Эстония-2005), Urban Symphony (Эстония-2009), а также продюсирует и написал песни для певиц Геттер Яани (Эстония-2011) и Лауры Пылдвере (Эстония-2017 вместе с Койтом Тооме).",https://www.youtube.com/watch?v=iXVguLuMwkI,https://www.youtube.com/watch?v=lOiWuol3t3o,,SF1,10,9,NO,
+Слишком эпично, чтобы быть правдой",,Pop-rock,Поп-рок,"This song was written by producer Sven Lõhmus who created the band. Besides that, he also created and wrote songs for the groups Suntribe (Estonia 2005) and Urban Symphony (Estonia 2009), and has also produced and written songs for singers Getter Jaani (Estonia 2011) and Laura Põldvere (Estonia 2017, together with Koit Toome).","Эту песню написал продюсер Свен Лыхмус, создавший Vanilla Ninja. Помимо этого, он также создал и написал песни для групп Suntribe (Эстония-2005), Urban Symphony (Эстония-2009), а также продюсирует и написал песни для певиц Геттер Яани (Эстония-2011) и Лауры Пылдвере (Эстония-2017 вместе с Койтом Тооме).",https://www.youtube.com/watch?v=iXVguLuMwkI,https://www.youtube.com/watch?v=lOiWuol3t3o,,https://www.youtube.com/watch?v=FfvawqmkXnA,SF1,10,9,NO,
 SM,Superstar,,,Суперзвезда,English,,Английский,,"[Verse 1]
 All the boys in the back
 Wearing black
@@ -4423,7 +4423,7 @@ Let them know you're a superstar, superѕtаr",,"Все парни сзади
 (Все девчонки на танцполе сходят с ума)
 Пусть они узнают, что ты суперзвезда, суперзвезда",1,Pop,Поп,"The song was co-written by Anders Wrethov, who also co-wrote “Bara bada bastu” (Sweden 2025, 4th place), “Voices” (Sweden 2021, 7th place), “Fuego” (Cyprus 2018, 2nd place), and “Always” (Azerbaijan 2009, 3rd place).
 Kill J, who has previously written many other Eurovision songs, is a co-writer on this year’s entries for the United Kingdom, Luxembourg, and San Marino.","Соавтор песни — Андерс Вретов, соавтор песен Bara bada bastu (Швеция-2025, 4 место), Voices (Швеция-2021, 7 место), Fuego (Кипр-2018, 2 место) и Always (Азербайджан-2009, 3 место). 
-Соавтором песен для Великобритании, Люксембурга и Сан-Марино в этом году стала Kill J, ранее написавшая много других песен для Евровидения.",https://www.youtube.com/watch?v=wOQe-fQSFxg,,,SF1,15,13,NO,
+Соавтором песен для Великобритании, Люксембурга и Сан-Марино в этом году стала Kill J, ранее написавшая много других песен для Евровидения.",https://www.youtube.com/watch?v=wOQe-fQSFxg,,,https://www.youtube.com/watch?v=VhwoT8ah9R8,SF1,15,13,NO,
 AZ,Just Go,,,Просто уходи,"English, Azerbaijani",,"Английский, Азербайджанский",,"[Verse 1]
 I carried your love
 Inside my heart each day
@@ -4561,7 +4561,7 @@ Go","Я берегла твою любовь
 
 Уходи,
 Уходи.
-",,"Pop, Ballad","Поп, Баллада",,,,https://www.youtube.com/watch?v=iMDBPe25JhM,https://www.youtube.com/watch?v=Bw1U21prBv0,SF2,2,2,NO,
+",,"Pop, Ballad","Поп, Баллада",,,,https://www.youtube.com/watch?v=iMDBPe25JhM,https://www.youtube.com/watch?v=Bw1U21prBv0,https://www.youtube.com/watch?v=LQDvYwYIT54,SF2,2,2,NO,
 LU,Mother Nature,,,Мать-природа,English,,Английский,,"[Verse 1]
 From the start
 When all was fun and games
@@ -4678,7 +4678,7 @@ Mhm, Mother Nature, she knows",,"[Куплет 1]
 Among the song’s co-writers is Thomas Stengaard, a co-writer of “Only Teardrops,” the song with which Denmark won Eurovision in 2013.
 Kill J, who has previously written many other Eurovision songs, is a co-writer on this year’s entries for the United Kingdom, Luxembourg, and San Marino.","Фанаты отмечают влияние на песню певицы Авроры и песни «Keeping Your Head Up» певицы Birdy. 
 Среди соавторов песни есть Томас Стенгаард, соавтор песни «Only Teardrops», с которой Дания выиграла Евровидение в 2013 году.
-Соавтором песен для Великобритании, Люксембурга и Сан-Марино в этом году стала Kill J, ранее написавшая много других песен для Евровидения.",https://www.youtube.com/watch?v=DmVfJSRqgnI,,,SF2,4,4,NO,
+Соавтором песен для Великобритании, Люксембурга и Сан-Марино в этом году стала Kill J, ранее написавшая много других песен для Евровидения.",https://www.youtube.com/watch?v=DmVfJSRqgnI,,,https://www.youtube.com/watch?v=-oTfj9ysTJ0,SF2,4,4,NO,
 AM,Paloma Rumba,,,Палома Румба,English,,Английский,,"[Intro]
 Pa-la-la-la-la
 La-la-la-la-la
@@ -4803,7 +4803,7 @@ Go, one more time",,"[Интро]
 Па-ла-ла-ла-ла
 Иди, ещё разок",,"Pop, Pop-rock","Поп, Поп-рок","Some of the stickers on Simón’s clothes were signed by other artists from this year’s contest.
 The lyrics were written by Rosa Linn, the writer and performer of “Snap” for Armenia in 2022, whose staging also featured a huge number of stickers.","Некоторые стикеры на одежде Симона были подписаны другими исполнителями это года.
-Текст песни написала Роза Линн, авторка и исполнительница песни «Snap» (Армения-2022), на сцене которой тоже присутствовало огромное число стикеров.",,https://www.youtube.com/watch?v=5EXoK-lgocw,https://www.youtube.com/watch?v=-oIj3CXHlPY,SF2,7,6,NO,
+Текст песни написала Роза Линн, авторка и исполнительница песни «Snap» (Армения-2022), на сцене которой тоже присутствовало огромное число стикеров.",,https://www.youtube.com/watch?v=5EXoK-lgocw,https://www.youtube.com/watch?v=-oIj3CXHlPY,https://www.youtube.com/watch?v=Pw8UJGEDF-4,SF2,7,6,NO,
 CH,Alice,,,Алиса,English,,Английский,,"[Verse 1]
 Alice
 Your pretty green eyes are magic
@@ -4897,7 +4897,7 @@ From feather to stone? Baby, don't leave me alone",,"Алиса,
 Прошу, открой глаза, почему ты так охладела,
 Из нежной превратилась в кремень? Малышка, не оставляй меня одну.",,"Alternative pop, indie rock, blues-rock","Альт-поп, Инди-рок, Блюз-рок","In an interview, Veronika said that the song is about violence against women, and that its title character never gets a chance to say anything: the story is told entirely from someone else’s perspective.
 For Bulgaria, the United Kingdom, and Switzerland, the staging and choreography are directed by Fredrik Rydman, who previously directed Sweden in 2015 (“Heroes”, 1st place), Finland in 2023 (“Cha Cha Cha”, 2nd place), and Switzerland in 2024 (“The Code”, 1st place).","В интервью Вероника сказала, что песня посвящена насилию против женщин, и заглавная героиня в ней не получает возможность что-то сказать, история рассказана полностью от лица кого-то другого.
-Для Болгарии, Великобритании и Швейцарии режиссирует стейджинг и хореографию Фредрик Ридман, ранее режиссировавший Швецию в 2015 («Heroes», топ-1), Финляндию в 2023 («Cha Cha Cha», топ-2) и Швейцарию в 2024 («The Code», топ-1).",,https://www.youtube.com/watch?v=PfpYGAzW5dM,https://www.youtube.com/watch?v=nctwpN3Dvvc,SF2,8,7,NO,
+Для Болгарии, Великобритании и Швейцарии режиссирует стейджинг и хореографию Фредрик Ридман, ранее режиссировавший Швецию в 2015 («Heroes», топ-1), Финляндию в 2023 («Cha Cha Cha», топ-2) и Швейцарию в 2024 («The Code», топ-1).",,https://www.youtube.com/watch?v=PfpYGAzW5dM,https://www.youtube.com/watch?v=nctwpN3Dvvc,https://www.youtube.com/watch?v=ujoHtVkrx54,SF2,8,7,NO,
 LV,Ēnā,,In the shade,В тени,Latvian,,Латвийский,,"[1. Pants]
 Tik daudz silta aukstiem ļaudīm dots
 Bet pie tuviem atnāc iztukšots
@@ -4985,4 +4985,4 @@ Slowly, slowly you fade into shadow","[Куплет 1]
 (Медленно, медленно)
 
 [Аутро]
-Медленно, медленно в тени угасаешь",,"Indie pop, Ballad","Инди-поп, Баллада",,,https://www.youtube.com/watch?v=6C2ivaB5D00,,,SF2,11,9,NO,
+Медленно, медленно в тени угасаешь",,"Indie pop, Ballad","Инди-поп, Баллада",,,https://www.youtube.com/watch?v=6C2ivaB5D00,,,https://www.youtube.com/watch?v=m8QhLXwxGpg,SF2,11,9,NO,
