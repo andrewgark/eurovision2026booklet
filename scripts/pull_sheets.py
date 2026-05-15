@@ -63,7 +63,15 @@ BOOKLET_GIDS: dict[str, str] = {
 BOOKLET_ODDS_WIDE_COLUMNS_PINNED: tuple[str, ...] = (
     "odds_10_05_2026_BETSSON_winner",
     "odds_10_05_2026_BETSSON_qualify",
+    "odds_15_05_2026_BETSSON_winner",
 )
+
+# `scope` on each odds.json row: `default` → pre/SF booklets; `final` → grand-final booklet only.
+_ODDS_COLUMN_SCOPE: dict[str, str] = {
+    "odds_10_05_2026_BETSSON_winner": "default",
+    "odds_10_05_2026_BETSSON_qualify": "default",
+    "odds_15_05_2026_BETSSON_winner": "final",
+}
 
 # ISO 3166-1 alpha-2 → Wikidata country QID (flags). Fallback when the sheet has no QID column.
 WIKIDATA_QID_BY_ISO2: dict[str, str] = {
@@ -480,7 +488,7 @@ def pull_booklet(
                 },
                 "genre": {"en": _nonempty(r["genre_en"]), "ru": _nonempty(r["genre_ru"])},
                 "number_sf": _to_int(r["number_sf"]),
-                "number_f": _to_int(r.get("number_f", "") or ""),
+                "number_f": _to_int(r.get("number_final", "") or r.get("number_f", "") or ""),
                 "national_final_url": _nonempty(r["national_final_url"]),
                 "music_video_url": _nonempty(r["music_video_url"]),
                 "unofficial_live_url": _nonempty(r.get("unofficial_live_url", "") or ""),
@@ -524,6 +532,7 @@ def pull_booklet(
                     m.group("kind").lower(),
                 )
                 as_of = f"{yyyy}-{mm}-{dd}"
+                scope = _ODDS_COLUMN_SCOPE.get(col, "default")
                 if kind == "winner":
                     odds.append(
                         {
@@ -532,6 +541,7 @@ def pull_booklet(
                             "bookmaker": bookmaker,
                             "odds": val,
                             "as_of_date": as_of,
+                            "scope": scope,
                         }
                     )
                 else:
@@ -542,6 +552,7 @@ def pull_booklet(
                             "bookmaker": bookmaker,
                             "odds": val,
                             "as_of_date": as_of,
+                            "scope": scope,
                         }
                     )
     (out_data_dir / "odds.json").write_text(json.dumps(odds, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

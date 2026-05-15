@@ -7,6 +7,13 @@
 {%- set L_BOOKIES       = "Букмекеры считают:" if lang == "ru" else "Bookies expect:" -%}
 {%- set L_NF            = "Нацотбор"     if lang == "ru" else "National selection" -%}
 {%- set L_MV            = "Клип"         if lang == "ru" else "Official video" -%}
+{%- if e.qual_stamp_label and e.qual_stamp_kind == "qualified" -%}
+\SetQualStamp{\QualStampGraphic{BookletStampGreen}{ {{ e.qual_stamp_label }} }}
+{%- elif e.qual_stamp_label and e.qual_stamp_kind == "not-qualified" -%}
+\SetQualStamp{\QualStampGraphic{BookletStampRed}{ {{ e.qual_stamp_label }} }}
+{%- else -%}
+\SetQualStamp{}
+{%- endif -%}
 \SongPage{
 \SetSongFooter{ {%- if e.national_final_url or e.music_video_url -%}
 {%- if e.national_final_url -%}\VideoLinkFooter{ {{- e.national_final_url -}} }{ {{ L_NF }} }{%- endif -%}
@@ -18,8 +25,8 @@
     { {{ e.flag_path or "" }} }
     { {{ e.country_name }} }
     { {{ e.context_tag or "" }} }
-    { {{ e.number_label or "" }} }
-    { {{ e.vote_label or "" }} }
+    { {{- e.number_label -}} }
+    { {{- e.vote_label -}} }
 }{
 % LEFT column: stacked Artist / Country / Song panels.
 % Iteration 2+3: condensed measure + a bit of emergencystretch in this minipage.

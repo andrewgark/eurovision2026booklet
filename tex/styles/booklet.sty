@@ -17,7 +17,7 @@
 \RequirePackage{tcolorbox}
 \tcbuselibrary{skins}
 \RequirePackage{tikz}
-\usetikzlibrary{calc,positioning}
+\usetikzlibrary{calc,positioning,fit}
 % Full protrusion/expansion with \cyrillicfont (DejaVu Sans) can trigger
 % "invalid font identifier when asking 'fontsize'" under LuaLaTeX + fontspec.
 \RequirePackage[protrusion=false, expansion=false]{microtype}
@@ -95,6 +95,8 @@
 \definecolor{BookletProbRed}{HTML}{B87870}
 \definecolor{BookletProbAmber}{HTML}{C9B16A}
 \definecolor{BookletProbGreen}{HTML}{6E9A78}
+\definecolor{BookletStampGreen}{HTML}{16A34A}
+\definecolor{BookletStampRed}{HTML}{DC2626}
 \definecolor{BookletSoft}{HTML}{F3F4F9}        % panel background
 \definecolor{BookletRule}{HTML}{D9DDE5}        % hairline
 \definecolor{BookletMuted}{HTML}{5B6370}       % muted text
@@ -121,12 +123,45 @@
 % Per-song-page right-footer holder. Song pages call \SetSongFooter before
 % \SongPage to drop their video links into the bottom-right of the page.
 \newcommand{\BookletPageFooterContent}{}
+\newcommand{\BookletQualStampContent}{}
 \fancypagestyle{songpage}{%
   \fancyhf{}%
   \renewcommand{\headrulewidth}{0pt}%
   \renewcommand{\footrulewidth}{0pt}%
   \fancyfoot[C]{\color{BookletMuted}\footnotesize\sffamily\thepage}%
   \fancyfoot[R]{\BookletPageFooterContent}%
+}
+\newcommand{\SetQualStamp}[1]{%
+  \gdef\BookletQualStampContent{#1}%
+}
+% Rubber-stamp badge for final qualification (overall / semi-final booklets).
+\newcommand{\QualStampGraphic}[2]{%
+  \begingroup
+  \raisebox{-0.35mm}{%
+    \rotatebox{-11}{%
+      \begin{tikzpicture}[baseline=(s.base)]
+        \node[
+          draw=#1,
+          line width=1.1pt,
+          rounded corners=2.2pt,
+          inner xsep=7.5pt,
+          inner ysep=3.8pt,
+          fill=white!93,
+          text=#1,
+          font=\sffamily\bfseries\fontsize{6.2pt}{7.4pt}\selectfont,
+        ] (s) {#2};
+        \node[
+          draw=#1!55,
+          line width=0.6pt,
+          rounded corners=2.8pt,
+          inner sep=1.7pt,
+          fit=(s),
+          fill=none,
+        ] {};
+      \end{tikzpicture}%
+    }%
+  }%
+  \endgroup
 }
 % \gdef (not \def): \SongPage wraps body in \begingroup...\endgroup before
 % \newpage; a local \def would revert \BookletPageFooterContent to empty when
@@ -390,6 +425,27 @@
 %
 % When `number` is empty the right pane collapses and the title pane widens,
 % so overall_pre / overall_post don't leave a visible chunk of empty blue.
+% Right pane: qualification stamp (optional) + vote/number (optional), always raggedleft.
+\newcommand{\HeroBandRightPane}[2]{%
+  \begin{minipage}[c]{0.28\linewidth}%
+    \raggedleft
+    \ifblank{\BookletQualStampContent}{}{%
+      \BookletQualStampContent
+      \ifblank{#1}{}{\par\vspace{1.1mm}}%
+    }%
+    \ifblank{#1}{}{%
+      \begin{tabular}{@{}%
+        >{\sffamily\bfseries\color{BookletGold}\raggedleft\arraybackslash}%
+          m{\dimexpr\linewidth-2.85em\relax}%
+        @{\hspace{2.4mm}}%
+        >{\sffamily\bfseries\color{BookletGold}\centering\arraybackslash}%
+          m{2.85em}@{}}
+        \fontsize{15.5pt}{18.5pt}\selectfont #2 &
+        \fontsize{26pt}{28pt}\selectfont #1
+      \end{tabular}%
+    }%
+  \end{minipage}%
+}
 \newcommand{\HeroBand}[5]{%
   \begin{tcolorbox}[
     enhanced, sharp corners, colback=BookletAccent, colframe=BookletAccent,
@@ -409,14 +465,26 @@
       }%
     \end{minipage}\hspace{4mm}%
     \ifblank{#4}{%
-      % No running number → title pane takes the remaining width.
-      \begin{minipage}[c]{\dimexpr0.88\linewidth-4mm\relax}%
-        {\sffamily\fontsize{21pt}{23pt}\selectfont\bfseries\MixedBody{#2}}\par
-        \ifblank{#3}{}{%
-          \vspace{0.95mm}%
-          {\sffamily\small\color{white!80}\MixedBody{#3}}\par
-        }%
-      \end{minipage}%
+      \ifblank{\BookletQualStampContent}{%
+        % No running number and no stamp → title uses full width.
+        \begin{minipage}[c]{\dimexpr0.88\linewidth-4mm\relax}%
+          {\sffamily\fontsize{21pt}{23pt}\selectfont\bfseries\MixedBody{#2}}\par
+          \ifblank{#3}{}{%
+            \vspace{0.95mm}%
+            {\sffamily\small\color{white!80}\MixedBody{#3}}\par
+          }%
+        \end{minipage}%
+      }{%
+        % Stamp only → same 52% + 28% row as vote + number (fits on one line).
+        \begin{minipage}[c]{0.52\linewidth}%
+          {\sffamily\fontsize{21pt}{23pt}\selectfont\bfseries\MixedBody{#2}}\par
+          \ifblank{#3}{}{%
+            \vspace{0.95mm}%
+            {\sffamily\small\color{white!80}\MixedBody{#3}}\par
+          }%
+        \end{minipage}\hfill%
+        \HeroBandRightPane{}{}%
+      }%
     }{%
       \begin{minipage}[c]{0.52\linewidth}%
         {\sffamily\fontsize{21pt}{23pt}\selectfont\bfseries\MixedBody{#2}}\par
@@ -425,20 +493,7 @@
           {\sffamily\small\color{white!80}\MixedBody{#3}}\par
         }%
       \end{minipage}\hfill%
-      % Vote word + running number: `m` columns vertically center the smaller
-      % label against the tall digit; a wider pane fits ``Голосовать'' on one line.
-      \begin{minipage}[c]{0.28\linewidth}%
-        \raggedleft
-        \begin{tabular}{@{}%
-          >{\sffamily\bfseries\color{BookletGold}\raggedleft\arraybackslash}%
-            m{\dimexpr\linewidth-2.85em\relax}%
-          @{\hspace{2.4mm}}%
-          >{\sffamily\bfseries\color{BookletGold}\centering\arraybackslash}%
-            m{2.85em}@{}}
-          \fontsize{15.5pt}{18.5pt}\selectfont #5 &
-          \fontsize{26pt}{28pt}\selectfont #4
-        \end{tabular}%
-      \end{minipage}%
+      \HeroBandRightPane{#4}{#5}%
     }%
   \end{tcolorbox}%
 }

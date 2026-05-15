@@ -131,6 +131,24 @@ class EntryView:
     toc_flag_emoji: str
     # SF1/SF2/final: optional "[N]\\," before flag when number_sf / number_f is set in data.
     toc_index_prefix: str
+    # overall_* / sf*: rubber-stamp label in page header (empty on final booklet).
+    qual_stamp_label: str
+    qual_stamp_kind: str
+
+
+_QUAL_STAMP_VARIANTS: frozenset[Variant] = frozenset({"overall_pre", "overall_post", "sf1", "sf2"})
+
+
+def _qual_stamp_fields(*, variant: Variant, qualified: bool, lang: Lang) -> tuple[str, str]:
+    """Return (label, kind) for the final-qualification stamp, or empty when hidden."""
+    if variant not in _QUAL_STAMP_VARIANTS:
+        return "", ""
+    if lang == "ru":
+        label = "Прошли в финал" if qualified else "Не прошли в финал"
+    else:
+        label = "Qualified" if qualified else "Not Qualified"
+    kind = "qualified" if qualified else "not-qualified"
+    return label, kind
 
 
 @dataclass(frozen=True)
@@ -182,6 +200,8 @@ class BookletEntryRaw:
     vote_label: str
     toc_flag_emoji: str
     toc_index_prefix: str
+    qual_stamp_label: str
+    qual_stamp_kind: str
 
 
 def _read_json(path: Path) -> Any:
@@ -1184,6 +1204,17 @@ def _pick_probs(
     return {"win_percent": win_pct, "qualify_percent": qual_pct}
 
 
+def _odds_by_country_for_variant(
+    odds_rows: list[dict[str, Any]], variant: Variant
+) -> dict[tuple[str, str], dict[str, Any]]:
+    """Pick odds snapshot: `default` (10 May) for pre/SF booklets; `final` (15 May winner only) for the final booklet."""
+    scope = "final" if variant == "final" else "default"
+    scoped = [o for o in odds_rows if o.get("scope", "default") == scope]
+    if variant == "final":
+        scoped = [o for o in scoped if o.get("round") == "F"]
+    return {(o["round"], o["country_code"]): o for o in scoped}
+
+
 def _context_tag(
     *,
     variant: Variant,
@@ -1364,6 +1395,8 @@ def entry_raw_to_entry_view(raw: BookletEntryRaw, *, lang: Lang) -> EntryView:
         vote_label=_safe_tex(raw.vote_label),
         toc_flag_emoji=raw.toc_flag_emoji,
         toc_index_prefix=raw.toc_index_prefix,
+        qual_stamp_label=_safe_tex(raw.qual_stamp_label),
+        qual_stamp_kind=raw.qual_stamp_kind,
     )
 
 
@@ -1399,7 +1432,7 @@ def load_booklet_raw_context(variant: Variant, lang: Lang) -> BookletRawContext:
 
     include_codes = _filter_country_codes(variant, songs)
     songs_included = [s for s in songs if s["country_code"] in include_codes]
-    odds_by_country = {(o["round"], o["country_code"]): o for o in odds_rows}
+    odds_by_country = _odds_by_country_for_variant(odds_rows, variant)
 
     running_order: dict[tuple[str, str], int] = {}
     for row in rounds_doc.get("running_order", []):
@@ -1407,6 +1440,8 @@ def load_booklet_raw_context(variant: Variant, lang: Lang) -> BookletRawContext:
             running_order[(str(row["round"]), str(row["country_code"]))] = int(row["order"])
         except (KeyError, ValueError, TypeError):
             continue
+
+    number_f_by_cc = {s["country_code"]: int(s.get("number_f") or 0) for s in songs}
 
     L_VOTE = "Голосовать" if lang == "ru" else "Vote"
     current_year = int(config.get("year") or 0)
@@ -1504,6 +1539,9 @@ def load_booklet_raw_context(variant: Variant, lang: Lang) -> BookletRawContext:
         )
 
         qualified = str(s.get("qualified_to_final") or "").strip().lower() in {"yes", "true", "1"}
+        qual_stamp_label, qual_stamp_kind = _qual_stamp_fields(
+            variant=variant, qualified=qualified, lang=lang
+        )
         context_tag = _context_tag(
             variant=variant,
             auto_qualify=str(c.get("auto_qualify") or ""),
@@ -1518,9 +1556,9 @@ def load_booklet_raw_context(variant: Variant, lang: Lang) -> BookletRawContext:
             if n_sf:
                 number_label = str(n_sf)
         elif variant == "final":
-            n = running_order.get(("F", cc))
-            if n is not None:
-                number_label = str(n)
+            n_f = int(s.get("number_f") or 0)
+            if n_f:
+                number_label = str(n_f)
 
         vote_label = L_VOTE if number_label else ""
 
@@ -1610,6 +1648,8 @@ def load_booklet_raw_context(variant: Variant, lang: Lang) -> BookletRawContext:
                 vote_label=vote_label,
                 toc_flag_emoji=_regional_flag_emoji(cc),
                 toc_index_prefix=_toc_index_prefix(variant=variant, song=s),
+                qual_stamp_label=qual_stamp_label,
+                qual_stamp_kind=qual_stamp_kind,
             )
         )
 
@@ -1620,8 +1660,8 @@ def load_booklet_raw_context(variant: Variant, lang: Lang) -> BookletRawContext:
             n = running_order.get((rnd, e.country_code))
             return (0, n, e.country_name) if n is not None else (1, 0, e.country_name)
         if variant == "final":
-            n = running_order.get(("F", e.country_code))
-            return (0, n, e.country_name) if n is not None else (1, 0, e.country_name)
+            n_f = number_f_by_cc.get(e.country_code, 0)
+            return (0, n_f, e.country_name) if n_f > 0 else (1, 0, e.country_name)
         if variant == "overall_post":
             return (0, 0, e.country_name)
         return (0, 0, e.country_name)

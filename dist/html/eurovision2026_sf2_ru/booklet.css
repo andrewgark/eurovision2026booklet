@@ -384,9 +384,68 @@ a.toc-row {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 }
 
-.song-hero-main {
+.song-hero-center {
   flex: 1 1 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem 0.85rem;
   min-width: 0;
+  width: 100%;
+}
+
+.song-hero-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.song-hero-stamp {
+  margin-bottom: 0.15rem;
+}
+
+.qual-stamp {
+  display: inline-block;
+  position: relative;
+  transform: rotate(-11deg);
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.28));
+}
+
+.qual-stamp__ring {
+  position: absolute;
+  inset: -3px -5px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  opacity: 0.42;
+}
+
+.qual-stamp__label {
+  position: relative;
+  display: inline-block;
+  padding: 0.28rem 0.55rem;
+  border: 2.5px solid currentColor;
+  border-radius: 3px;
+  font-size: clamp(0.56rem, 2vw, 0.66rem);
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  line-height: 1.15;
+  text-align: center;
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.93);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5),
+    0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+html[lang="en"] .qual-stamp__label {
+  text-transform: uppercase;
+}
+
+.qual-stamp--qualified {
+  color: #16a34a;
+}
+
+.qual-stamp--not-qualified {
+  color: #dc2626;
 }
 
 .song-hero h1 {
@@ -404,10 +463,36 @@ a.toc-row {
 }
 
 .song-hero-aside {
-  flex: 0 1 auto;
+  flex: 0 0 auto;
   align-self: center;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
   text-align: center;
   min-width: min(42vw, 10.5rem);
+}
+
+@media (max-width: 420px) {
+  .song-hero-center {
+    flex-wrap: wrap;
+  }
+
+  .song-hero-aside {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: auto;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .qual-stamp__label {
+    font-size: 0.52rem;
+    padding: 0.24rem 0.45rem;
+  }
 }
 
 /* Semi / final: vote word + running number — two bold gold lines like PDF \HeroBand */

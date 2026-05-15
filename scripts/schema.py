@@ -130,6 +130,7 @@ class OddsRow(BaseModel):
     bookmaker: str
     odds: str
     as_of_date: date
+    scope: str = "default"
 
 
 class ResultsSummary(BaseModel):

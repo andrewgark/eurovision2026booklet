@@ -252,6 +252,10 @@ def build_html_one(variant: Variant, lang: Lang, *, repo: Path | None = None) ->
             base_ctx.update(
                 {
                     "e": raw_e,
+                    "qual_stamp_html": html.escape(raw_e.qual_stamp_label)
+                    if raw_e.qual_stamp_label
+                    else "",
+                    "qual_stamp_kind": raw_e.qual_stamp_kind,
                     "country_name_html": html.escape(raw_e.country_name),
                     "context_html": html.escape(raw_e.context_tag),
                     "number_html": html.escape(raw_e.number_label),
