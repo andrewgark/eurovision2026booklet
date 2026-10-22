@@ -45,7 +45,11 @@
 \setstretch{1.06}\RaggedRight
 {% if e.photo_path %}
 \begin{minipage}[t]{\linewidth}\vspace*{0pt}
+{% if artist_photo_max_height_mm %}
+\includegraphics[width=\linewidth,height={{ artist_photo_max_height_mm }}mm,keepaspectratio]{ {{ e.photo_path }} }
+{% else %}
 \includegraphics[width=\linewidth]{ {{ e.photo_path }} }
+{% endif %}
 \end{minipage}
 \par\vspace{1.45mm}
 {% endif %}

@@ -7,5 +7,10 @@ dist/*
 !dist/*.pdf
 !dist/html/
 !dist/html/**
+!dist/*/
+dist/*/*
+!dist/*/*.pdf
+!dist/*/html/
+!dist/*/html/**
 assets/cache/
 .texcache/

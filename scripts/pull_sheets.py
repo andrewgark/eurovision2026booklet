@@ -328,7 +328,7 @@ def pull_booklet(
         if auto_q not in {"", "HOST", "BIG_FIVE"}:
             auto_q = ""
         nat_q = _nonempty(r["national_qualify_type"]).upper()
-        if nat_q not in {"", "PUBLIC_CONTEST", "INTERNAL_SELECTION"}:
+        if nat_q not in {"", "PUBLIC_CONTEST", "INTERNAL_SELECTION", "MIXED_SELECTION"}:
             nat_q = ""
         ev_en = (
             f"Auto-qualify: {auto_q}. "

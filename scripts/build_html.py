@@ -14,7 +14,6 @@ if str(_REPO) not in sys.path:
     sys.path.insert(0, str(_REPO))
 
 from scripts.build import (
-    VARIANTS,
     BookletEntryRaw,
     Lang,
     Variant,
@@ -25,6 +24,7 @@ from scripts.build import (
     _split_rows_for_twoup,
     load_booklet_raw_context,
 )
+from scripts.edition import BookletEdition
 
 
 _FILL_CSS = {
@@ -160,11 +160,12 @@ def _lang_labels(lang: Lang) -> dict[str, str]:
     }
 
 
-def build_html_one(variant: Variant, lang: Lang, *, repo: Path | None = None) -> Path:
+def build_html_one(variant: Variant, lang: Lang, *, repo: Path | None = None, edition: str = "eurovision-2026") -> Path:
     repo = (_REPO if repo is None else repo).resolve()
-    ctx = load_booklet_raw_context(variant, lang)
-    stem = _pdf_jobname(variant, lang)
-    dist_dir = repo / "dist"
+    edition_settings = BookletEdition.load(edition, repo=repo)
+    ctx = load_booklet_raw_context(variant, lang, edition=edition)
+    stem = _pdf_jobname(variant, lang, edition)
+    dist_dir = edition_settings.dist_dir(repo)
     html_root = dist_dir / "html"
     out_dir = html_root / stem
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -305,10 +306,14 @@ def build_html_one(variant: Variant, lang: Lang, *, repo: Path | None = None) ->
 
 def main() -> None:
     p = argparse.ArgumentParser(description="Static HTML booklet under dist/html/<pdf-stem>/")
-    p.add_argument("--variant", required=True, choices=list(VARIANTS))
+    p.add_argument("--variant", required=True)
     p.add_argument("--lang", required=True, choices=["en", "ru"])
+    p.add_argument("--edition", default="eurovision-2026", help="Edition folder under editions/")
     args = p.parse_args()
-    out = build_html_one(args.variant, args.lang)  # type: ignore[arg-type]
+    edition = BookletEdition.load(args.edition)
+    if args.variant not in edition.variants:
+        p.error(f"variant must be one of: {', '.join(edition.variants)}")
+    out = build_html_one(args.variant, args.lang, edition=args.edition)  # type: ignore[arg-type]
     print(out)
 
 

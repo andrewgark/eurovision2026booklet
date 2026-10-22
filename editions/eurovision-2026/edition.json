@@ -1,0 +1,21 @@
+{
+  "edition_id": "eurovision-2026",
+  "event_name": "Eurovision Song Contest 2026",
+  "year": 2026,
+  "variants": [
+    "overall_pre",
+    "sf1",
+    "sf2",
+    "final",
+    "overall_post"
+  ],
+  "country_sort": "localized",
+  "legacy_data_dir": "data",
+  "output_stems": {
+    "overall_pre": "eurovision2026",
+    "overall_post": "eurovision2026_results",
+    "sf1": "eurovision2026_sf1",
+    "sf2": "eurovision2026_sf2",
+    "final": "eurovision2026_final"
+  }
+}

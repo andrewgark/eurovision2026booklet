@@ -1,0 +1,310 @@
+[
+  {
+    "country_code": "BD",
+    "country_name": {
+      "en": "Bangladesh",
+      "ru": "Бангладеш"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "flag": {
+      "wikidata_qid": "Q902"
+    },
+    "map": {
+      "iso_a2": "BD"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 0,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "BT",
+    "country_name": {
+      "en": "Bhutan",
+      "ru": "Бутан"
+    },
+    "basic_stats": {
+      "en": "In 2025, Bhutan launched a national selection for the yet-unannounced Eurovision Asia, revealing plans for the contest to fans for the first time. However, after four of the five planned episodes, the selection was cancelled just one day before the final at the request of Eurovision's rights holders, and all episodes were removed from the internet.\nOn 11 August 2026, Bhutan became the first country to select its Eurovision Asia entry.",
+      "ru": "В 2025 году Бутан начал отбор на ещё не анонсированное Евровидение Азия, впервые раскрыв планы проведения конкурса. Однако за день до финала, после четырёх из пяти выпусков, отбор отменили по требованию правообладателей Eurovision, а записи удалили из интернета.\n11 августа 2026 года Бутан первым среди участников Евровидения Азия выбрал свою конкурсную заявку."
+    },
+    "eurovision_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "flag": {
+      "wikidata_qid": "Q917"
+    },
+    "map": {
+      "iso_a2": "BT"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 0,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "KH",
+    "country_name": {
+      "en": "Cambodia",
+      "ru": "Камбоджа"
+    },
+    "basic_stats": {
+      "en": "Cambodia was the last country to select its entry, on 17 October.",
+      "ru": "Камбоджа последней определилась со своей заявкой — 17 октября."
+    },
+    "eurovision_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "flag": {
+      "wikidata_qid": "Q424"
+    },
+    "map": {
+      "iso_a2": "KH"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 0,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "KR",
+    "country_name": {
+      "en": "South Korea",
+      "ru": "Южная Корея"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "flag": {
+      "wikidata_qid": "Q884"
+    },
+    "map": {
+      "iso_a2": "KR"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 0,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "LA",
+    "country_name": {
+      "en": "Laos",
+      "ru": "Лаос"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "flag": {
+      "wikidata_qid": "Q819"
+    },
+    "map": {
+      "iso_a2": "LA"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 0,
+    "won_times": 0,
+    "national_qualify_type": "MIXED_SELECTION"
+  },
+  {
+    "country_code": "MN",
+    "country_name": {
+      "en": "Mongolia",
+      "ru": "Монголия"
+    },
+    "basic_stats": {
+      "en": "“Light”, the song with which Beck won Mongolia's national selection, was disqualified because it had already been released in 2018. Under Eurovision Asia rules, competing songs must not have been released or publicly performed before 1 July 2026. Since Mongolia had selected its artist in advance and held a vote only to choose the song, the song was replaced by the one which had finished second in the selection.",
+      "ru": "Песня «Light», с которой Beck победил в национальном отборе Монголии, была дисквалифицирована, поскольку её выпустили ещё в 2018 году. По правилам Евровидения Азия конкурсные песни не должны быть опубликованы или публично исполнены до 1 июля 2026 года. Поскольку в Монголии исполнитель был выбран заранее, а голосование проводилось только за песню, песню заменили на занявшую второе место в отборе."
+    },
+    "eurovision_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "flag": {
+      "wikidata_qid": "Q711"
+    },
+    "map": {
+      "iso_a2": "MN"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 0,
+    "won_times": 0,
+    "national_qualify_type": "MIXED_SELECTION"
+  },
+  {
+    "country_code": "MY",
+    "country_name": {
+      "en": "Malaysia",
+      "ru": "Малайзия"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "flag": {
+      "wikidata_qid": "Q833"
+    },
+    "map": {
+      "iso_a2": "MY"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 0,
+    "won_times": 0,
+    "national_qualify_type": "INTERNAL_SELECTION"
+  },
+  {
+    "country_code": "NP",
+    "country_name": {
+      "en": "Nepal",
+      "ru": "Непал"
+    },
+    "basic_stats": {
+      "en": "Nepal's national selection was originally scheduled for 19 September 2026, but was postponed to 7 October due to flooding in Nepal and neighbouring Tibet.",
+      "ru": "Изначально национальный отбор Непала был назначен на 19 сентября 2026 года, однако из-за наводнений в Непале и соседнем Тибете его перенесли на 7 октября."
+    },
+    "eurovision_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "flag": {
+      "wikidata_qid": "Q837"
+    },
+    "map": {
+      "iso_a2": "NP"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 0,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "PH",
+    "country_name": {
+      "en": "Philippines",
+      "ru": "Филиппины"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "flag": {
+      "wikidata_qid": "Q928"
+    },
+    "map": {
+      "iso_a2": "PH"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 0,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "TH",
+    "country_name": {
+      "en": "Thailand",
+      "ru": "Таиланд"
+    },
+    "basic_stats": {
+      "en": "Thailand hosts the first Eurovision Asia in Bangkok on 14 November.",
+      "ru": "Таиланд принимает первое Евровидение Азия 14 ноября в Бангкоке."
+    },
+    "eurovision_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "flag": {
+      "wikidata_qid": "Q869"
+    },
+    "map": {
+      "iso_a2": "TH"
+    },
+    "sources_urls": [],
+    "auto_qualify": "HOST",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 0,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "VN",
+    "country_name": {
+      "en": "Vietnam",
+      "ru": "Вьетнам"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "flag": {
+      "wikidata_qid": "Q881"
+    },
+    "map": {
+      "iso_a2": "VN"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 0,
+    "won_times": 0,
+    "national_qualify_type": "MIXED_SELECTION"
+  }
+]

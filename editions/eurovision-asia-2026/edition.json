@@ -1,0 +1,25 @@
+{
+  "edition_id": "eurovision-asia-2026",
+  "event_name": "Eurovision Song Contest Asia 2026",
+  "year": 2026,
+  "source_spreadsheet": "https://docs.google.com/spreadsheets/d/1bhZCOqhtiu-MrUQklLaZ8QzKQjTfEuAXiz2fqDR7xcc/edit",
+  "format": "single_final",
+  "participants": 11,
+  "running_order": "alphabetical by English country name",
+  "odds_available": false,
+  "variants": [
+    "final"
+  ],
+  "country_sort": "english",
+  "output_stems": {
+    "final": "eurovision_asia_2026_final"
+  },
+  "source_tabs": {
+    "Config": "0",
+    "Countries": "342702758",
+    "Artists": "725670095",
+    "Songs": "1442682824",
+    "Odds": "1797563105",
+    "Results": "1574072165"
+  }
+}

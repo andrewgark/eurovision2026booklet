@@ -1,0 +1,982 @@
+[
+  {
+    "country_code": "AL",
+    "country_name": {
+      "en": "Albania",
+      "ru": "Албания"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 1. Non-qualify streak: . Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 1. Non-qualify streak: . Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q222"
+    },
+    "map": {
+      "iso_a2": "AL"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 1,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "AM",
+    "country_name": {
+      "en": "Armenia",
+      "ru": "Армения"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 4. Non-qualify streak: . Last participation: 2025. Wins: 0. National selection: INTERNAL_SELECTION.",
+      "ru": "Auto-qualify: . Qualify streak: 4. Non-qualify streak: . Last participation: 2025. Wins: 0. National selection: INTERNAL_SELECTION."
+    },
+    "flag": {
+      "wikidata_qid": "Q399"
+    },
+    "map": {
+      "iso_a2": "AM"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 4,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 0,
+    "national_qualify_type": "INTERNAL_SELECTION"
+  },
+  {
+    "country_code": "AT",
+    "country_name": {
+      "en": "Austria",
+      "ru": "Австрия"
+    },
+    "basic_stats": {
+      "en": "Austria won the contest last year, finishing first in the jury vote. This year, Austria is hosting Eurovision in Vienna.",
+      "ru": "Австрия выиграла конкурс в прошлом году, заняв первое место по итогам голосования жюри. В этом году Австрия принимает Евровидение в Вене."
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: HOST. Qualify streak: 3. Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: HOST. Qualify streak: 3. Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q40"
+    },
+    "map": {
+      "iso_a2": "AT"
+    },
+    "sources_urls": [],
+    "auto_qualify": "HOST",
+    "qualify_streak": 3,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 3,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "AU",
+    "country_name": {
+      "en": "Australia",
+      "ru": "Австралия"
+    },
+    "basic_stats": {
+      "en": "If Australia wins, Eurovision will not be held there, because it would be inconvenient for most European viewers.",
+      "ru": "В случае победы Австралии, Евровидение не будет проводиться там, потому что это неудобно для большинства европейских зрителей."
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: . Non-qualify streak: 2. Last participation: 2025. Wins: 0. National selection: INTERNAL_SELECTION.",
+      "ru": "Auto-qualify: . Qualify streak: . Non-qualify streak: 2. Last participation: 2025. Wins: 0. National selection: INTERNAL_SELECTION."
+    },
+    "flag": {
+      "wikidata_qid": "Q408"
+    },
+    "map": {
+      "iso_a2": "AU"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 2,
+    "last_participation": 2025,
+    "won_times": 0,
+    "national_qualify_type": "INTERNAL_SELECTION"
+  },
+  {
+    "country_code": "AZ",
+    "country_name": {
+      "en": "Azerbaijan",
+      "ru": "Азербайджан"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: . Non-qualify streak: 3. Last participation: 2025. Wins: 1. National selection: INTERNAL_SELECTION.",
+      "ru": "Auto-qualify: . Qualify streak: . Non-qualify streak: 3. Last participation: 2025. Wins: 1. National selection: INTERNAL_SELECTION."
+    },
+    "flag": {
+      "wikidata_qid": "Q227"
+    },
+    "map": {
+      "iso_a2": "AZ"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 3,
+    "last_participation": 2025,
+    "won_times": 1,
+    "national_qualify_type": "INTERNAL_SELECTION"
+  },
+  {
+    "country_code": "BE",
+    "country_name": {
+      "en": "Belgium",
+      "ru": "Бельгия"
+    },
+    "basic_stats": {
+      "en": "The Belgian participant is chosen alternately by the Walloon broadcaster RTBF and the Flemish broadcaster VRT. Last year, the Flemish fan favourite Red Sebastian failed to qualify for the final. This year, it is Wallonia’s turn.\nAccording to some media reports, Belgium had initially selected singer Loïc Nottet, who represented Belgium in 2015 with “Rhythm Inside,” but he later withdrew because of Israel’s participation, so the choice had to be changed.",
+      "ru": "Бельгийского участника выбирают по очереди валлонский бродкастер RTBF и фламандский бродкастер VRT. В прошлом году любимец фанатов фламандец Red Sebastian не смог пройти в финал. В этом году пришла очередь Валлонии.\nПо информации некоторых СМИ, сначала от Бельгии был выбран певец Лоик Нотте, представлявший Бельгию в 2015 году с песней «Rhythm Inside», но позже он отказался от участия из-за участия Израиля, и выбор пришлось поменять."
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: . Non-qualify streak: 2. Last participation: 2025. Wins: 1. National selection: INTERNAL_SELECTION.",
+      "ru": "Auto-qualify: . Qualify streak: . Non-qualify streak: 2. Last participation: 2025. Wins: 1. National selection: INTERNAL_SELECTION."
+    },
+    "flag": {
+      "wikidata_qid": "Q31"
+    },
+    "map": {
+      "iso_a2": "BE"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 2,
+    "last_participation": 2025,
+    "won_times": 1,
+    "national_qualify_type": "INTERNAL_SELECTION"
+  },
+  {
+    "country_code": "BG",
+    "country_name": {
+      "en": "Bulgaria",
+      "ru": "Болгария"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2022. Wins: 0. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2022. Wins: 0. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q219"
+    },
+    "map": {
+      "iso_a2": "BG"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 1,
+    "last_participation": 2022,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "CH",
+    "country_name": {
+      "en": "Switzerland",
+      "ru": "Швейцария"
+    },
+    "basic_stats": {
+      "en": "In 2024, Switzerland won the contest, becoming the leader of the jury vote. A year later, it once again became one of the jury favourites, finishing second, but received no televote points.",
+      "ru": "В 2024 году Швейцария выиграла конкурс, став лидером голосования жюри. Год спустя она вновь вошла в число фаворитов жюри, заняв второе место, но при этом не набрала ни одного зрительского балла."
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 5. Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: INTERNAL_SELECTION.",
+      "ru": "Auto-qualify: . Qualify streak: 5. Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: INTERNAL_SELECTION."
+    },
+    "flag": {
+      "wikidata_qid": "Q39"
+    },
+    "map": {
+      "iso_a2": "CH"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 5,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 3,
+    "national_qualify_type": "INTERNAL_SELECTION"
+  },
+  {
+    "country_code": "CY",
+    "country_name": {
+      "en": "Cyprus",
+      "ru": "Кипр"
+    },
+    "basic_stats": {
+      "en": "Traditionally, Cyprus almost always gives 12 points to Greece.",
+      "ru": "По традиции, Кипр почти всегда отдаёт 12 баллов Греции"
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2025. Wins: 0. National selection: INTERNAL_SELECTION.",
+      "ru": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2025. Wins: 0. National selection: INTERNAL_SELECTION."
+    },
+    "flag": {
+      "wikidata_qid": "Q229"
+    },
+    "map": {
+      "iso_a2": "CY"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 1,
+    "last_participation": 2025,
+    "won_times": 0,
+    "national_qualify_type": "INTERNAL_SELECTION"
+  },
+  {
+    "country_code": "CZ",
+    "country_name": {
+      "en": "Czechia",
+      "ru": "Чехия"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: . Non-qualify streak: 2. Last participation: 2025. Wins: 0. National selection: INTERNAL_SELECTION.",
+      "ru": "Auto-qualify: . Qualify streak: . Non-qualify streak: 2. Last participation: 2025. Wins: 0. National selection: INTERNAL_SELECTION."
+    },
+    "flag": {
+      "wikidata_qid": "Q213"
+    },
+    "map": {
+      "iso_a2": "CZ"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 2,
+    "last_participation": 2025,
+    "won_times": 0,
+    "national_qualify_type": "INTERNAL_SELECTION"
+  },
+  {
+    "country_code": "DE",
+    "country_name": {
+      "en": "Germany",
+      "ru": "Германия"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: BIG_FIVE. Qualify streak: . Non-qualify streak: . Last participation: 2025. Wins: 2. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: BIG_FIVE. Qualify streak: . Non-qualify streak: . Last participation: 2025. Wins: 2. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q183"
+    },
+    "map": {
+      "iso_a2": "DE"
+    },
+    "sources_urls": [],
+    "auto_qualify": "BIG_FIVE",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 2,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "DK",
+    "country_name": {
+      "en": "Denmark",
+      "ru": "Дания"
+    },
+    "basic_stats": {
+      "en": "Last year’s Danish representative, Sissal, tried to make it to Eurovision again, but finished 3rd in the national selection.",
+      "ru": "Прошлогодняя исполнительница от Дании Sissal снова пыталась попасть на Евровидение, но заняла 3 место на отборе."
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 1. Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 1. Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q35"
+    },
+    "map": {
+      "iso_a2": "DK"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 1,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 3,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "EE",
+    "country_name": {
+      "en": "Estonia",
+      "ru": "Эстония"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 4. Non-qualify streak: . Last participation: 2025. Wins: 1. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 4. Non-qualify streak: . Last participation: 2025. Wins: 1. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q191"
+    },
+    "map": {
+      "iso_a2": "EE"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 4,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 1,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "FI",
+    "country_name": {
+      "en": "Finland",
+      "ru": "Финляндия"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 5. Non-qualify streak: . Last participation: 2025. Wins: 1. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 5. Non-qualify streak: . Last participation: 2025. Wins: 1. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q33"
+    },
+    "map": {
+      "iso_a2": "FI"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 5,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 1,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "FR",
+    "country_name": {
+      "en": "France",
+      "ru": "Франция"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: BIG_FIVE. Qualify streak: . Non-qualify streak: . Last participation: 2025. Wins: 5. National selection: INTERNAL_SELECTION.",
+      "ru": "Auto-qualify: BIG_FIVE. Qualify streak: . Non-qualify streak: . Last participation: 2025. Wins: 5. National selection: INTERNAL_SELECTION."
+    },
+    "flag": {
+      "wikidata_qid": "Q142"
+    },
+    "map": {
+      "iso_a2": "FR"
+    },
+    "sources_urls": [],
+    "auto_qualify": "BIG_FIVE",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 5,
+    "national_qualify_type": "INTERNAL_SELECTION"
+  },
+  {
+    "country_code": "GB",
+    "country_name": {
+      "en": "United Kingdom",
+      "ru": "Великобритания"
+    },
+    "basic_stats": {
+      "en": "In the United Kingdom, the contest has a large fan base, but the country’s songs are rarely popular. The phrase “0 points to the United Kingdom” has become a meme.",
+      "ru": "В Великобритании у конкурса большая фан-база, однако песни страны редко пользуются популярностью. Фраза «0 баллов Великобритании» стала мемом."
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: BIG_FIVE. Qualify streak: . Non-qualify streak: . Last participation: 2025. Wins: 5. National selection: INTERNAL_SELECTION.",
+      "ru": "Auto-qualify: BIG_FIVE. Qualify streak: . Non-qualify streak: . Last participation: 2025. Wins: 5. National selection: INTERNAL_SELECTION."
+    },
+    "flag": {
+      "wikidata_qid": "Q145"
+    },
+    "map": {
+      "iso_a2": "GB"
+    },
+    "sources_urls": [],
+    "auto_qualify": "BIG_FIVE",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 5,
+    "national_qualify_type": "INTERNAL_SELECTION"
+  },
+  {
+    "country_code": "GE",
+    "country_name": {
+      "en": "Georgia",
+      "ru": "Грузия"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2025. Wins: 0. National selection: INTERNAL_SELECTION.",
+      "ru": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2025. Wins: 0. National selection: INTERNAL_SELECTION."
+    },
+    "flag": {
+      "wikidata_qid": "Q230"
+    },
+    "map": {
+      "iso_a2": "GE"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 1,
+    "last_participation": 2025,
+    "won_times": 0,
+    "national_qualify_type": "INTERNAL_SELECTION"
+  },
+  {
+    "country_code": "GR",
+    "country_name": {
+      "en": "Greece",
+      "ru": "Греция"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 2. Non-qualify streak: . Last participation: 2025. Wins: 1. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 2. Non-qualify streak: . Last participation: 2025. Wins: 1. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q41"
+    },
+    "map": {
+      "iso_a2": "GR"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 2,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 1,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "HR",
+    "country_name": {
+      "en": "Croatia",
+      "ru": "Хорватия"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q224"
+    },
+    "map": {
+      "iso_a2": "HR"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 1,
+    "last_participation": 2025,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "IL",
+    "country_name": {
+      "en": "Israel",
+      "ru": "Израиль"
+    },
+    "basic_stats": {
+      "en": "Due to Israel’s participation this year, Ireland, Iceland, Spain, the Netherlands, and Slovenia are boycotting Eurovision.\nLast year, Israel received the highest number of televote points.",
+      "ru": "Из-за участия Израиля в этом году Ирландия, Исландия, Испания, Нидерланды и Словения бойкотируют Евровидение.\nВ прошлом году Израиль набрал больше всех зрительских голосов."
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 3. Non-qualify streak: . Last participation: 2025. Wins: 4. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 3. Non-qualify streak: . Last participation: 2025. Wins: 4. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q801"
+    },
+    "map": {
+      "iso_a2": "IL"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 3,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 4,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "IT",
+    "country_name": {
+      "en": "Italy",
+      "ru": "Италия"
+    },
+    "basic_stats": {
+      "en": "The last time Italy failed to reach the top 7 was in 2016.",
+      "ru": "Последний раз, когда Италия не попала в топ-7, был в 2016 году."
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: BIG_FIVE. Qualify streak: . Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: BIG_FIVE. Qualify streak: . Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q38"
+    },
+    "map": {
+      "iso_a2": "IT"
+    },
+    "sources_urls": [],
+    "auto_qualify": "BIG_FIVE",
+    "qualify_streak": 0,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 3,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "LT",
+    "country_name": {
+      "en": "Lithuania",
+      "ru": "Литва"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 5. Non-qualify streak: . Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 5. Non-qualify streak: . Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q37"
+    },
+    "map": {
+      "iso_a2": "LT"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 5,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "LU",
+    "country_name": {
+      "en": "Luxembourg",
+      "ru": "Люксембург"
+    },
+    "basic_stats": {
+      "en": "In the 20th century, Luxembourg was one of the most successful participants, but from 1995 to 2023 the country was absent from the contest.",
+      "ru": "В XX веке Люксембург входил в число наиболее успешных участников, но в период с 1995 по 2023 год страна отсутствовала на конкурсе."
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 2. Non-qualify streak: . Last participation: 2025. Wins: 5. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 2. Non-qualify streak: . Last participation: 2025. Wins: 5. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q32"
+    },
+    "map": {
+      "iso_a2": "LU"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 2,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 5,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "LV",
+    "country_name": {
+      "en": "Latvia",
+      "ru": "Латвия"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 2. Non-qualify streak: . Last participation: 2025. Wins: 1. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 2. Non-qualify streak: . Last participation: 2025. Wins: 1. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q211"
+    },
+    "map": {
+      "iso_a2": "LV"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 2,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 1,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "MD",
+    "country_name": {
+      "en": "Moldova",
+      "ru": "Молдова"
+    },
+    "basic_stats": {
+      "en": "Moldova is a fan favourite. It focuses not on powerful vocals, but on fun and lively songs.",
+      "ru": "Молдова — любимчик фанатов, делает упор не на сильный вокал, а на весёлые и живые песни."
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2024. Wins: 0. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2024. Wins: 0. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q217"
+    },
+    "map": {
+      "iso_a2": "MD"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 1,
+    "last_participation": 2024,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "ME",
+    "country_name": {
+      "en": "Montenegro",
+      "ru": "Черногория"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: . Non-qualify streak: 6. Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: . Non-qualify streak: 6. Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q236"
+    },
+    "map": {
+      "iso_a2": "ME"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 6,
+    "last_participation": 2025,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "MT",
+    "country_name": {
+      "en": "Malta",
+      "ru": "Мальта"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 1. Non-qualify streak: . Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 1. Non-qualify streak: . Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q233"
+    },
+    "map": {
+      "iso_a2": "MT"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 1,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "NO",
+    "country_name": {
+      "en": "Norway",
+      "ru": "Норвегия"
+    },
+    "basic_stats": {
+      "en": "This year, Norway could have been represented by Alexander Rybak, the winner of the 2009 contest. However, this time he finished only second in the national selection.",
+      "ru": "В этом году Норвегию мог представить Александр Рыбак, победитель конкурса 2009 года. Однако на этот раз он занял лишь второе место в национальном отборе."
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 8. Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 8. Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q20"
+    },
+    "map": {
+      "iso_a2": "NO"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 8,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 3,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "PL",
+    "country_name": {
+      "en": "Poland",
+      "ru": "Польша"
+    },
+    "basic_stats": {
+      "en": "Among Eurovision fans, Poland is known for excessive special effects and sexualisation on stage.",
+      "ru": "Среди фанатов Польша славится избыточными спецэффектами и сексуализацией на сцене"
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 1. Non-qualify streak: . Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 1. Non-qualify streak: . Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q36"
+    },
+    "map": {
+      "iso_a2": "PL"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 1,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "PT",
+    "country_name": {
+      "en": "Portugal",
+      "ru": "Португалия"
+    },
+    "basic_stats": {
+      "en": "Portugal often sounds noticeably different from other Eurovision participants. The country often relies on melodic, calm songs in Portuguese.",
+      "ru": "Португалия на Евровидении часто заметно отличается по звучанию от других участников. Страна нередко делает ставку на мелодичные, спокойные песни на португальском языке."
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 5. Non-qualify streak: . Last participation: 2025. Wins: 1. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 5. Non-qualify streak: . Last participation: 2025. Wins: 1. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q45"
+    },
+    "map": {
+      "iso_a2": "PT"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 5,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 1,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "RO",
+    "country_name": {
+      "en": "Romania",
+      "ru": "Румыния"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2023. Wins: 0. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2023. Wins: 0. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q218"
+    },
+    "map": {
+      "iso_a2": "RO"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 1,
+    "last_participation": 2023,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "RS",
+    "country_name": {
+      "en": "Serbia",
+      "ru": "Сербия"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2025. Wins: 1. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: . Non-qualify streak: 1. Last participation: 2025. Wins: 1. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q403"
+    },
+    "map": {
+      "iso_a2": "RS"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 0,
+    "non_qualify_streak": 1,
+    "last_participation": 2025,
+    "won_times": 1,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "SE",
+    "country_name": {
+      "en": "Sweden",
+      "ru": "Швеция"
+    },
+    "basic_stats": {
+      "en": "Sweden is considered one of the strongest countries in Eurovision history.",
+      "ru": "Швеция считается одной из самых сильных стран в истории Евровидения"
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 11. Non-qualify streak: . Last participation: 2025. Wins: 7. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 11. Non-qualify streak: . Last participation: 2025. Wins: 7. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q34"
+    },
+    "map": {
+      "iso_a2": "SE"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 11,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 7,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "SM",
+    "country_name": {
+      "en": "San Marino",
+      "ru": "Сан Марино"
+    },
+    "basic_stats": {
+      "en": "",
+      "ru": ""
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 1. Non-qualify streak: . Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 1. Non-qualify streak: . Last participation: 2025. Wins: 0. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q238"
+    },
+    "map": {
+      "iso_a2": "SM"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 1,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 0,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  },
+  {
+    "country_code": "UA",
+    "country_name": {
+      "en": "Ukraine",
+      "ru": "Украина"
+    },
+    "basic_stats": {
+      "en": "Ukraine has taken part in 15 semi-finals and has qualified for the final all 15 times.\nIn the national selection, third place went to singer Jerry Heil, who finished 3rd at Eurovision in 2024 with the song “Teresa & Maria.”",
+      "ru": "Украина участвовала в 15 полуфиналах и все 15 раз проходила в финал.\nНа отборе третье место заняла певица Jerry Heil, занявшая на Евровидении 3 место в 2024 году с песней Teresa & Maria."
+    },
+    "eurovision_stats": {
+      "en": "Auto-qualify: . Qualify streak: 15. Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: PUBLIC_CONTEST.",
+      "ru": "Auto-qualify: . Qualify streak: 15. Non-qualify streak: . Last participation: 2025. Wins: 3. National selection: PUBLIC_CONTEST."
+    },
+    "flag": {
+      "wikidata_qid": "Q212"
+    },
+    "map": {
+      "iso_a2": "UA"
+    },
+    "sources_urls": [],
+    "auto_qualify": "",
+    "qualify_streak": 15,
+    "non_qualify_streak": 0,
+    "last_participation": 2025,
+    "won_times": 3,
+    "national_qualify_type": "PUBLIC_CONTEST"
+  }
+]

@@ -8,12 +8,19 @@ import os
 import re
 import shutil
 import subprocess
+import sys
 import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Literal
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from scripts.edition import BookletEdition
 
 
 Lang = Literal["en", "ru"]
@@ -35,8 +42,6 @@ class ArtistBioChunkPlain:
     intro: str
     bullets: tuple[str, ...]
 
-VARIANTS: tuple[str, ...] = ("overall_pre", "sf1", "sf2", "final", "overall_post")
-
 # config.json `subtitle_*` / `intro_text_*` keys for each PDF variant
 VARIANT_SUBTITLE_KEY: dict[Variant, str] = {
     "overall_pre": "subtitle_pre",
@@ -53,18 +58,8 @@ VARIANT_INTRO_KEY: dict[Variant, str] = {
     "overall_post": "intro_text_post",
 }
 
-# LuaLaTeX output basename via `latexmk -jobname=` (distinct from `.tex` source name).
-_VARIANT_PDF_STEM: dict[Variant, str] = {
-    "overall_pre": "eurovision2026",
-    "overall_post": "eurovision2026_results",
-    "sf1": "eurovision2026_sf1",
-    "sf2": "eurovision2026_sf2",
-    "final": "eurovision2026_final",
-}
-
-
-def _pdf_jobname(variant: Variant, lang: Lang) -> str:
-    return f"{_VARIANT_PDF_STEM[variant]}_{lang}"
+def _pdf_jobname(variant: Variant, lang: Lang, edition: str = "eurovision-2026") -> str:
+    return BookletEdition.load(edition).pdf_jobname(variant, lang)
 
 
 def _config_lang_value(config: dict[str, Any], key: str, lang: Lang) -> str:
@@ -1106,11 +1101,19 @@ def _lgbtq_label(value: str, lang: Lang) -> str:
 
 
 def _selection_tag(c: dict[str, Any], lang: Lang) -> str:
-    """Localized one-word tag for national_qualify_type."""
+    """Localized label for how the country selected its entry."""
     nat = (c.get("national_qualify_type") or "").upper()
     if lang == "ru":
-        return {"PUBLIC_CONTEST": "открытый отбор", "INTERNAL_SELECTION": "внутренний отбор"}.get(nat, "")
-    return {"PUBLIC_CONTEST": "public selection", "INTERNAL_SELECTION": "internal selection"}.get(nat, "")
+        return {
+            "PUBLIC_CONTEST": "открытый отбор",
+            "INTERNAL_SELECTION": "внутренний отбор",
+            "MIXED_SELECTION": "артист заранее; песня — по голосам",
+        }.get(nat, "")
+    return {
+        "PUBLIC_CONTEST": "public selection",
+        "INTERNAL_SELECTION": "internal selection",
+        "MIXED_SELECTION": "artist preselected; song by vote",
+    }.get(nat, "")
 
 
 def _smart_truncate(s: str, max_chars: int) -> str:
@@ -1415,15 +1418,19 @@ class BookletRawContext:
     cover_subtitle_raw: str
     intro_raw: str
     raw_entries: list[BookletEntryRaw]
+    artist_photo_max_height_mm: float | None
     build_dir: Path
     repo: Path
 
 
-def load_booklet_raw_context(variant: Variant, lang: Lang) -> BookletRawContext:
+def load_booklet_raw_context(variant: Variant, lang: Lang, *, edition: str = "eurovision-2026") -> BookletRawContext:
     """Load config and build sorted `BookletEntryRaw` list (same source data as the PDF)."""
     repo = Path(__file__).resolve().parents[1]
-    data_dir = repo / "data"
-    build_dir = repo / "build"
+    edition_settings = BookletEdition.load(edition, repo=repo)
+    if variant not in edition_settings.variants:
+        raise ValueError(f"Variant {variant!r} is not configured for edition {edition!r}")
+    data_dir = edition_settings.data_dir(repo)
+    build_dir = edition_settings.build_dir(repo)
     build_dir.mkdir(parents=True, exist_ok=True)
 
     config = _read_json(data_dir / "config.json")
@@ -1520,6 +1527,7 @@ def load_booklet_raw_context(variant: Variant, lang: Lang) -> BookletRawContext:
         photo_file = str(a.get("photo_file") or "").strip()
         candidates: list[Path] = []
         if photo_file and not photo_file.lower().startswith(("http://", "https://")):
+            candidates.append(data_dir.parent / photo_file)
             candidates.append(repo / "assets" / "artists" / photo_file)
         for ext in ("jpg", "jpeg", "png"):
             candidates.append(repo / "assets" / "artists" / f"artist_{cc.upper()}.{ext}")
@@ -1660,16 +1668,17 @@ def load_booklet_raw_context(variant: Variant, lang: Lang) -> BookletRawContext:
 
     # Order entries per variant.
     def _sort_key_raw(e: BookletEntryRaw) -> tuple[int, Any, str]:
+        sort_name = edition_settings.sort_name(countries[e.country_code], lang)
         if variant in ("sf1", "sf2"):
             rnd = "SF1" if variant == "sf1" else "SF2"
             n = running_order.get((rnd, e.country_code))
-            return (0, n, e.country_name) if n is not None else (1, 0, e.country_name)
+            return (0, n, sort_name) if n is not None else (1, 0, sort_name)
         if variant == "final":
             n_f = number_f_by_cc.get(e.country_code, 0)
-            return (0, n_f, e.country_name) if n_f > 0 else (1, 0, e.country_name)
+            return (0, n_f, sort_name) if n_f > 0 else (1, 0, sort_name)
         if variant == "overall_post":
-            return (0, 0, e.country_name)
-        return (0, 0, e.country_name)
+            return (0, 0, sort_name)
+        return (0, 0, sort_name)
 
     raw_entries.sort(key=_sort_key_raw)
 
@@ -1682,22 +1691,26 @@ def load_booklet_raw_context(variant: Variant, lang: Lang) -> BookletRawContext:
         cover_subtitle_raw=cover_subtitle_raw,
         intro_raw=intro_raw,
         raw_entries=raw_entries,
+        artist_photo_max_height_mm=edition_settings.artist_photo_max_height_mm,
         build_dir=build_dir,
         repo=repo,
     )
 
 
-def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
+def build_one(variant: Variant, lang: Lang, *, run_latex: bool, edition: str = "eurovision-2026") -> Path:
     repo = Path(__file__).resolve().parents[1]
-    build_dir = repo / "build"
-    dist_dir = repo / "dist"
+    edition_settings = BookletEdition.load(edition, repo=repo)
+    if variant not in edition_settings.variants:
+        raise ValueError(f"Variant {variant!r} is not configured for edition {edition!r}")
+    build_dir = edition_settings.build_dir(repo)
+    dist_dir = edition_settings.dist_dir(repo)
     tex_styles_dir = repo / "tex" / "styles"
     templates_dir = repo / "tex" / "templates"
 
     build_dir.mkdir(parents=True, exist_ok=True)
     dist_dir.mkdir(parents=True, exist_ok=True)
 
-    ctx = load_booklet_raw_context(variant, lang)
+    ctx = load_booklet_raw_context(variant, lang, edition=edition)
     cover_subtitle = _safe_tex_multiline(ctx.cover_subtitle_raw) if ctx.cover_subtitle_raw else ""
     intro_text = _intro_text_to_tex(ctx.intro_raw) if ctx.intro_raw else ""
 
@@ -1718,6 +1731,7 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
         mode=mode,
         event_name=_safe_tex(ctx.config["event_name"][lang]),
         booklet_title=_safe_tex(ctx.config["booklet_title"][lang]),
+        artist_photo_max_height_mm=ctx.artist_photo_max_height_mm,
         cover_subtitle=cover_subtitle,
         intro_text=intro_text,
         entries=entries,
@@ -1733,7 +1747,7 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
                 "latexmk not found. Install TeX Live + latexmk, or run without --run-latex to only generate .tex."
             )
         env_texinputs = f"{tex_styles_dir}{os.pathsep}" + os.environ.get("TEXINPUTS", "")
-        stem = _pdf_jobname(variant, lang)
+        stem = _pdf_jobname(variant, lang, edition)
         legacy_tex_stem = f"booklet_{variant}_{lang}"
         # Clean per-variant intermediates so each run is deterministic and doesn't
         # reuse stale aux/log from previous (possibly errored) builds.
@@ -1777,12 +1791,17 @@ def build_one(variant: Variant, lang: Lang, *, run_latex: bool) -> Path:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--variant", required=True, choices=list(VARIANTS))
+    parser.add_argument("--variant", required=True)
     parser.add_argument("--lang", required=True, choices=["en", "ru"])
     parser.add_argument("--run-latex", action="store_true")
+    parser.add_argument("--edition", default="eurovision-2026", help="Edition folder under editions/")
     args = parser.parse_args()
 
-    path = build_one(args.variant, args.lang, run_latex=args.run_latex)
+    edition_settings = BookletEdition.load(args.edition)
+    if args.variant not in edition_settings.variants:
+        parser.error(f"variant must be one of: {', '.join(edition_settings.variants)}")
+
+    path = build_one(args.variant, args.lang, run_latex=args.run_latex, edition=args.edition)
     print(path)
 
 

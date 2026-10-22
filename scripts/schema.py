@@ -44,7 +44,7 @@ class CountryMapRef(BaseModel):
 
 
 AutoQualify = Literal["", "HOST", "BIG_FIVE"]
-NationalQualifyType = Literal["", "PUBLIC_CONTEST", "INTERNAL_SELECTION"]
+NationalQualifyType = Literal["", "PUBLIC_CONTEST", "INTERNAL_SELECTION", "MIXED_SELECTION"]
 
 
 class CountryModel(BaseModel):
